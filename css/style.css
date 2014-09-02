@@ -132,7 +132,7 @@ cite:before { content: "— " ;}
    ========================================================================== */
 
 a {
-  color: #d94d56;
+  color: #4183c4;
   text-decoration: none;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
@@ -449,6 +449,7 @@ nav a:hover {
 .italic { font-style: italic; }
 
 .valign-bottom { vertical-align: bottom; }
+.valign-middle { vertical-align: middle; }
 .valign-top { vertical-align: top; }
 
 .block { display: block; }
