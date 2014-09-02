@@ -13,7 +13,7 @@
    ========================================================================== */
 
 html {
-  font: 400 115%/1.5 "Open Sans", sans-serif; /* Weight Size/Space between lines */
+  font: 400 115%/1.5 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -33,28 +33,9 @@ header {
   width: 90%;
 }
 
-footer {
-  background: #2c2c2c;
-  color: #777;
-  font-size: .7em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 1em 0;
-  text-transform: uppercase;
-}
+footer { }
 
-.sig { float: left; }
-
-.top { float: right; }
-
-.top a { color: #fff; }
-
-.top a:hover {
-  color: #bbb;
-  text-decoration: none;
-}
-
-.github-footer {
+.footer {
   background-image: url(../img/github.png);
   display: block;
   height: 33px;
