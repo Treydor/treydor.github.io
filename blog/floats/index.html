@@ -7,15 +7,15 @@ title: Floats &amp; Clearfixes
   <div class="container">
     <section>
       <h1>Floats &amp; Clearfixes</h1>
-      <p>CSS floats are a positioning property that allows elements to be moved left, middle or right, allowing other elements to wrap around them. <code>float</code> has a variety of uses and can be extremely valuable when working with layouts.</p>
+      <p>CSS floats are a positioning property that allows elements to be moved left, middle or right, allowing other elements to wrap around them. The float property has a variety of uses and can be extremely valuable when working with layouts.</p>
 
-      <q class="quote-heading">When we float an element, we take it out of the normal flow of the HTML document.</q>
+      <q>When we float an element, we take it out of the normal flow of the HTML document.</q>
 
       <p>Using floats can get messy. This is because as you float certain elements they are removed from the normal flow of your HTML, causing some elements to overlap, or collide with one another. Luckily, a few very, very smart people have found a way that addresses these very issues. The way we deal with some of the problems associated with floats is most commonly known as a Clearfix.</p>
     </section>
 
     <section>
-      <h3>An introduction to floats</h3>
+      <h2>An introduction to floats</h2>
       <p>When I started this I had a hard time trying to explain exactly what I thought floats did, and how they differ from some properties that people use to accomplish similar goals. Below is an explanation that really put what floats do in perspective for me.</p>
 
       <blockquote>
@@ -38,7 +38,7 @@ title: Floats &amp; Clearfixes
         </div>
       </div>
 
-      <p>Here you can see what this layout looks like prior to the use of floats. Both <code>div</code> elements behave exactly like they should, forcing a line break after them. Let's see what happens when we add <code>float: left</code> and <code>float: right</code> to our elements.
+      <p>Here you can see what this layout looks like prior to the use of floats. Both div elements behave exactly like they should, forcing a line break after them. Let's see what happens when we add <code>float: left</code> and <code>float: right</code> to our elements.
 
       <script src="https://gist.github.com/Treydor/266669fd7979fcb0cb41.js"></script>
 
@@ -47,13 +47,13 @@ title: Floats &amp; Clearfixes
       <div class="example box">
         <div class="container">
           <div class="float-example">header</div>
-          <div class="float-example example-content float-left example-width">float-example</div>
+          <div class="float-example example-content float-left example-width">content</div>
           <div class="float-example float-side float-right example-width">side</div>
           <div class="float-example cf">footer</div>
         </div>
       </div>
 
-      <p>Neat! See how the floats are now side by side? Of course there is a little tweaking that needs to be done to get perfect margins between all the elements, but all said and done I feel that this simple example really showcases the effectiveness of the <code>float</code> property and provides a real-world situation on when to use it.</p>
+      <p>Neat! See how the floats are now side by side? Of course there is a little tweaking that needs to be done to get perfect margins between all the elements, but all said and done I feel that this simple example really showcases the effectiveness of the float property and provides a real-world situation on when to use it.</p>
     </section>
 
     <section>
@@ -70,7 +70,7 @@ title: Floats &amp; Clearfixes
       <div class="example box">
         <div class="container cf">
           <div class="float-example">header</div>
-          <div class="float-example example-content float-left">float-example</div>
+          <div class="float-example example-content float-left">content</div>
           <div class="float-example float-side float-right">side</div>
           <div class="float-example">footer</div>
         </div>
@@ -82,16 +82,18 @@ title: Floats &amp; Clearfixes
     </section>
 
     <section>
-      <h3>How to use clearfix in your CSS</h3>
+      <h2>How to use clearfix in your CSS</h2>
       <p>Creating a clearfix utility in your CSS is a great idea when working with floats on your page. A simple line of code in your CSS allows you to use your clearfix as needed.</p>
 
       <p>An extremely basic clearfix class in your CSS may look something like this:</p>
 
       <script src="https://gist.github.com/Treydor/dc35dc106c6775967768.js"></script>
+    </section>
 
+    <section>
       <h3>The clear property will make your life easier</h3>
 
-      <p>The <code>clear</code> property has a few commonly used values. The first is <code> clear: both</code>. This property clears floats on both the left and right. There is also left and right, each of which clears floats accordingly.</p>
+      <p>The clear property has a few commonly used values. The first is <code>clear: both</code>. This property clears floats on both the left and right. There is also left and right, each of which clears floats accordingly.</p>
 
       <blockquote>
       An element that has the clear property set on it will not move up adjacent to the float like the float desires, but will move itself down past the float. Clear has four valid values as well. Both is most commonly used, which clears floats coming from either direction. Left and Right can be used to only clear the float from one direction respectively. None is the default, which is typically unnecessary unless removing a clear value from a cascade.
@@ -105,7 +107,7 @@ title: Floats &amp; Clearfixes
       <div class="example box">
         <div class="container">
           <div class="float-example">header</div>
-          <div class="float-example example-content float-left">float-example</div>
+          <div class="float-example example-content float-left">content</div>
           <div class="float-example float-side float-right">side</div>
           <div class="float-example cf">footer</div>
         </div>

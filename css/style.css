@@ -113,10 +113,11 @@ q:after {
 
 blockquote{
   background: #faf5e4;
-  border-radius: 3px;
+  border-radius: 6px;
   box-shadow: 1px 1px 3px #ddd;
-  margin: 2em 5%;
+  margin: 2em auto;
   padding: 1em;
+  width: 85%;
 }
 
 blockquote cite {
@@ -188,13 +189,15 @@ nav a:hover {
    Boxes
    ========================================================================== */
 
-.box { margin: 2em 0; }
+.box {
+  background: #f3f3f3;
+  margin: 2em auto;
+}
 
 .example {
-  background: #f7f7f7;
   border-radius: 6px;
   color: #333;
-  padding: .5em 1em 1em 1em;
+  padding: 1em;
 }
 
 .example p, .example ul { margin: 0; }
@@ -341,28 +344,27 @@ nav a:hover {
 }
 
 .inline {
-  background: #e6f0eb;
-  color: #a6cab9;
+  background: #f1d399;
+  color: #fff;
   display: inline;
   padding: .3em;
 }
 
 .inline-block {
-  background: #d9ebf7;
-  color: #9ccce9;
+  background: #5dd2e9;
+  color: #fff;
   display: inline-block;
   width: 25%;
 }
 
 .large {
-  background: #e3e3e3;
-  color: #aaa;
-  padding: 1.6em .3em;
+  background: #cfd4d7;
+  padding: 1.8em .3em;
 }
 
 .block {
-  background: #f3ebdc;
-  color: #dfcaa3;
+  background: #8aefcd;
+  color: #fff;
   display: block;
   margin: .3em;
 }
@@ -370,16 +372,18 @@ nav a:hover {
 /* Blog #2 */
 
 .float-example {
-  background: #eee;
+  background: #e9e9e9;
+  border: 1px solid #e3e3e3;
   border-radius: 3px;
-  color: #b3b3b3;
+  color: #bbb;
   font-weight: 600;
   padding: .3em;
   text-align: center;
 }
 
 .example-content {
-  background: #9ee0ff;
+  background: #5dd2e9;
+  border: none;
   color: #fff;
   margin: .8em 0em;
   padding: 1em 0;
@@ -387,7 +391,8 @@ nav a:hover {
 }
 
 .float-side {
-  background: #9ae8bb;
+  background: #8aefcd;
+  border: none;
   color: #fff;
   margin: .8em 0;
   padding: 1em 0;
@@ -444,7 +449,6 @@ nav a:hover {
 .italic { font-style: italic; }
 
 .valign-bottom { vertical-align: bottom; }
-.valign-middle { vertical-align: middle; }
 .valign-top { vertical-align: top; }
 
 .block { display: block; }
@@ -468,7 +472,7 @@ code {
   Gists
   ========================================================================== */
 
-.gist { margin: 0; }
+.gist { margin: 2em auto; }
 
 .gist-syntax { padding: 1em; }
 
