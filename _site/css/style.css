@@ -111,25 +111,20 @@ q:after {
   font-family: "Georgia", serif;
 }
 
-.quote-heading {
-  display: block;
-  font-size: 1.2em;
-  margin-bottom: 1.5em;
-  text-align: center;
-}
-
 blockquote{
-  border-left: 4px solid #bbb;
-  margin: 2em 0;
-  padding: 0 0 0 1rem;
+  background: #faf5e4;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #ddd;
+  margin: 2em 5%;
+  padding: 1em;
 }
 
 blockquote cite {
-  font-size: .9em;
-  font-style: italic;
   display: block;
   text-align: right;
 }
+
+cite:before { content: "— " ;}
 
 /* ==========================================================================
    Links
@@ -193,23 +188,27 @@ nav a:hover {
    Boxes
    ========================================================================== */
 
-.example-box {
+.box { margin: 2em 0; }
+
+.example {
   background: #f7f7f7;
-  border-radius: 3px;
+  border-radius: 6px;
   color: #333;
-  margin: 2em 0;
-  padding: .6em;
+  padding: .5em 1em 1em 1em;
 }
 
-.example-box p, ul { margin: 0; }
+.example p, .example ul { margin: 0; }
 
-.example-box:before {
+.box .container { width: 100%; }
+
+.example:before {
   color: #bbb;
   content: "Example";
   display: block;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: .4em;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -332,25 +331,23 @@ nav a:hover {
 
 /* Blog #1 */
 
-.example {
+.example-element {
   border-radius: 3px;
   color: #bbb;
   font-size: .9em;
   font-weight: 700;
-  padding: .2em .3em;
+  padding: .5em 0;
   text-align: center;
 }
 
-.example-inline {
-  border: 1px solid #bbd7ca;
-  background: #f0f6f4;
-  color: #bbd7ca;
+.inline {
+  background: #e6f0eb;
+  color: #a6cab9;
   display: inline;
-  padding: .1em .2em;
+  padding: .3em;
 }
 
-.example-inline-block {
-  border: none;
+.inline-block {
   background: #d9ebf7;
   color: #9ccce9;
   display: inline-block;
@@ -358,12 +355,12 @@ nav a:hover {
 }
 
 .large {
-  background: #ebedee;
-  color: #bbb;
+  background: #e3e3e3;
+  color: #aaa;
   padding: 1.6em .3em;
 }
 
-.example-block {
+.block {
   background: #f3ebdc;
   color: #dfcaa3;
   display: block;
@@ -373,54 +370,28 @@ nav a:hover {
 /* Blog #2 */
 
 .float-example {
-  border: 1px dashed #bbb;
+  background: #eee;
   border-radius: 3px;
-  color: #bbb;
+  color: #b3b3b3;
   font-weight: 600;
-  padding: .2em 3em;
+  padding: .3em;
   text-align: center;
 }
 
-.layout-content {
+.example-content {
   background: #9ee0ff;
-  border: none;
   color: #fff;
   margin: .8em 0em;
   padding: 1em 0;
-  width: 70%;
+  min-width: 70%;
 }
 
-.layout-side {
+.float-side {
   background: #9ae8bb;
-  border: none;
   color: #fff;
   margin: .8em 0;
   padding: 1em 0;
-  width: 27%;
-}
-
-.example-width { width: 27%; }
-
-.layout-content2 {
-  background: #9ee0ff;
-  border: none;
-  border-radius: 3px;
-  color: #fff;
-  float: right;
-  margin: .8em 0em;
-  padding: 4em 0;
-  width: 74%;
-}
-
-.layout-row {
-  background: #9ae8bb;
-  border: none;
-  border-radius: 3px;
-  color: #fff;
-  float: left;
-  margin: .8em 0;
-  padding: .56em 0;
-  width: 23%;
+  min-width: 27%;
 }
 
 /* Blog #3 */
@@ -429,10 +400,13 @@ nav a:hover {
   background: #aab5c0;
   border-radius: 3px;
   color: #fff;
+  display: inline-block;
   font-size: .9em;
   font-weight: 600;
-  margin: .6em;
+  margin:.4em;
+  padding: 2em 0;
   text-align: center;
+  width: 30%;
 }
 
 /* ==========================================================================
@@ -480,15 +454,13 @@ nav a:hover {
    Code
    ========================================================================== */
 
-code,
-.inline {
-  background: #f7f7f7;
-  border: 1px solid #eee;
+code {
+  background: #ececec;
   border-radius: 3px;
   color: #777;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-size: .9em;
-  padding: .2em .2em;
+  padding: .2em .4em;
   white-space: nowrap;
  }
 
@@ -496,24 +468,56 @@ code,
   Gists
   ========================================================================== */
 
-.gist { margin: 2em 0; }
+.gist { margin: 0; }
 
-.gist-data, .gist-syntax .k {
-  color: #333 !important;
-  font-weight: normal !important;
+.gist-syntax { padding: 1em; }
+
+.gist-syntax:before {
+  color: #555;
+  content: "HTML/CSS";
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
 }
 
-.gist-file .gist-data {
-  background-color: #fff !important;
+.gist-data {
+  background-color: #3c3c3c !important;
+  border-radius: 6px;
+  color: #fff !important;
   font-size: .8em !important;
 }
 
 .gist .gist-file {
-  border-bottom: none !important;
+  border: none !important;
   overflow: hidden !important;
 }
 
+.k {
+  color: #66d9ef !important;
+  font-weight: 400 !important;
+}
+
+.m { color: #ae81ff !important; }
+
+.na { color: #6ac62e !important; }
+
+.nc {
+  color: #6ac62e !important;
+  font-weight: 400 !important;
+}
+
+.nt { color: #f92672 !important; }
+
+.o { color: #fff !important; }
+
+.s { color: #e6db74 !important; }
+
 .gist-meta { display: none; }
+
+.line-numbers { display: none; }
 
 /* ==========================================================================
   Clearfix
