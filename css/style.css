@@ -54,6 +54,14 @@ footer {
   text-decoration: none;
 }
 
+.github-footer {
+  background-image: url(../img/github.png);
+  display: block;
+  height: 33px;
+  margin: 3em auto;
+  width: 33px;
+}
+
 /* ==========================================================================
    Typography
    ========================================================================== */
