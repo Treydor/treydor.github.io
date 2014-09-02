@@ -1,0 +1,557 @@
+/* ==========================================================================
+   Style Guide
+   ========================================================================== */
+
+.color-primary { color: #bbb; }
+.color-accent { color: #777; }
+.color-background { color: #fff; }
+.color-background-shade { color: #ccc; }
+.color-link-hover { color: #d94d56 }
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+html {
+  font: 400 115%/1.5 "Open Sans", sans-serif; /* Weight Size/Space between lines */
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #fff;
+  color: #555;
+}
+
+header {
+  border-bottom: 1px solid #eee;
+  padding: 1.3em 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+
+footer {
+  background: #2c2c2c;
+  color: #777;
+  font-size: .7em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 1em 0;
+  text-transform: uppercase;
+}
+
+.sig { float: left; }
+
+.top { float: right; }
+
+.top a { color: #fff; }
+
+.top a:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5 {
+  color: #555;
+  display: block;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h1 { font-size: 2em; }
+
+h2 { font-size: 1.6em; }
+
+h3 { font-size: 1.2em; }
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+strong { font-weight: 600; }
+
+.large-heading {
+  font-size: 2.4em;
+  margin: 1.4em 0 1em 0;
+}
+
+.center-heading {
+  margin: 2em 0 .9em 0;
+  text-align: center;
+}
+
+article { margin: 3em 0; }
+
+article li { margin: .2em 0; }
+
+section { padding: 1em 0; }
+
+/* ==========================================================================
+   Quotes and Blockquotes
+   ========================================================================== */
+
+q { font-style: italic; }
+
+q:before {
+  content: "\201C";
+  font-family: "Georgia", serif;
+}
+
+q:after {
+  content: "\201D";
+  font-family: "Georgia", serif;
+}
+
+.quote-heading {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+blockquote{
+  border-left: 4px solid #bbb;
+  margin: 2em 0;
+  padding: 0 0 0 1rem;
+}
+
+blockquote cite {
+  font-size: .9em;
+  font-style: italic;
+  display: block;
+  text-align: right;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+  color: #d94d56;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+a:hover { text-decoration: underline; }
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.logo {
+  background-image: url('../../img/logo2.png');
+  display: block;
+  float: left;
+  height: 22px;
+  width: 32px;
+}
+
+nav {
+  float: right;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  float: left;
+  padding: 0 .4em;
+  }
+
+nav a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+.current a { color: #777; }
+
+.current a:hover { color: #777; }
+
+/* ==========================================================================
+   Boxes
+   ========================================================================== */
+
+.example-box {
+  background: #f7f7f7;
+  border-radius: 3px;
+  color: #333;
+  margin: 2em 0;
+  padding: .6em;
+}
+
+.example-box p, ul { margin: 0; }
+
+.example-box:before {
+  color: #bbb;
+  content: "Example";
+  display: block;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: .4em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Dividers
+   ========================================================================== */
+
+.section-divider {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.project-list { padding: 0; }
+
+.project-list ul { float: left; }
+
+.project-list li {
+  font-size: 1.1em;
+  list-style: none;
+  margin-bottom: .4em;
+}
+
+@media screen and (max-width: 500px) {
+  .project-list li {
+    display: block;
+    float: none;
+    margin-bottom: 1em;
+  }
+}
+
+.project-title { }
+
+.project-title a { color: #777; }
+
+.project-title a:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.project-date {
+  color: #bbb;
+  float: right;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+  .project-date {
+    display: block;
+    float: none;
+  }
+}
+
+/* ==========================================================================
+   Elements
+   ========================================================================== */
+
+.splash {
+  background-image: url(../img/splash.jpg);
+  background-position: 50% 25%;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .splash { height: 300px; }
+}
+
+.splash-text {
+  color: rgba(255,255,255,0.7);
+  font-size: .9em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.profile-box { width: 100%; }
+
+.profile {
+  background: #eee no-repeat center;
+  background-image: url(../img/profile.jpg);
+  background-position: 0 32%;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 1.2em;
+  width: 100%;
+}
+
+@media screen and (min-width: 559px) {
+  .profile {
+    border-radius: 3px;
+    height: 300px;
+    margin: 2em auto;
+    width: 540px;
+  }
+}
+
+.construction {
+  background: #fff4cd;
+  border-radius: 2px;
+  color: #555;
+  font-size: .7em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: .2em .5em;
+  position: static;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+  Examples
+  ========================================================================== */
+
+/* Blog #1 */
+
+.example {
+  border-radius: 3px;
+  color: #bbb;
+  font-size: .9em;
+  font-weight: 700;
+  padding: .2em .3em;
+  text-align: center;
+}
+
+.example-inline {
+  border: 1px solid #bbd7ca;
+  background: #f0f6f4;
+  color: #bbd7ca;
+  display: inline;
+  padding: .1em .2em;
+}
+
+.example-inline-block {
+  border: none;
+  background: #d9ebf7;
+  color: #9ccce9;
+  display: inline-block;
+  width: 25%;
+}
+
+.large {
+  background: #ebedee;
+  color: #bbb;
+  padding: 1.6em .3em;
+}
+
+.example-block {
+  background: #f3ebdc;
+  color: #dfcaa3;
+  display: block;
+  margin: .3em;
+}
+
+/* Blog #2 */
+
+.float-example {
+  border: 1px dashed #bbb;
+  border-radius: 3px;
+  color: #bbb;
+  font-weight: 600;
+  padding: .2em 3em;
+  text-align: center;
+}
+
+.layout-content {
+  background: #9ee0ff;
+  border: none;
+  color: #fff;
+  margin: .8em 0em;
+  padding: 1em 0;
+  width: 70%;
+}
+
+.layout-side {
+  background: #9ae8bb;
+  border: none;
+  color: #fff;
+  margin: .8em 0;
+  padding: 1em 0;
+  width: 27%;
+}
+
+.example-width { width: 27%; }
+
+.layout-content2 {
+  background: #9ee0ff;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  float: right;
+  margin: .8em 0em;
+  padding: 4em 0;
+  width: 74%;
+}
+
+.layout-row {
+  background: #9ae8bb;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  float: left;
+  margin: .8em 0;
+  padding: .56em 0;
+  width: 23%;
+}
+
+/* Blog #3 */
+
+.position-example {
+  background: #aab5c0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: .9em;
+  font-weight: 600;
+  margin: .6em;
+  text-align: center;
+}
+
+/* ==========================================================================
+  Utilites
+  ========================================================================== */
+
+.margin-bottom { margin-bottom: .5em; }
+.margin-bottom-large { margin-bottom: 4em;}
+.margin-top { margin-top: .5em; }
+.margin-top-large { margin-top: 2em; }
+.margin { margin: 2em; }
+.padding { padding: .5em; }
+
+.remove-margin { margin: 0; }
+.remove-margin-bottom { margin-bottom: 0; }
+.remove-margin-left { margin-left: 0; }
+.remove-margin-right { margin-right: 0; }
+.remove-margin-top { margin-top: 0; }
+
+.remove-padding { padding: 0; }
+.remove-padding-top { padding-top: 0; }
+
+.float-left { float: left; }
+.float-right { float: right; }
+.float-center { float: center; }
+
+.hide { display: none; }
+.show { display: block; }
+
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+
+.normal-weight { font-weight: 400; }
+.italic { font-style: italic; }
+
+.valign-bottom { vertical-align: bottom; }
+.valign-middle { vertical-align: middle; }
+.valign-top { vertical-align: top; }
+
+.block { display: block; }
+.right { text-align: right; }
+
+/* ==========================================================================
+   Code
+   ========================================================================== */
+
+code,
+.inline {
+  background: #f7f7f7;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  color: #777;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: .9em;
+  padding: .2em .2em;
+  white-space: nowrap;
+ }
+
+/* ==========================================================================
+  Gists
+  ========================================================================== */
+
+.gist { margin: 2em 0; }
+
+.gist-data, .gist-syntax .k {
+  color: #333 !important;
+  font-weight: normal !important;
+}
+
+.gist-file .gist-data {
+  background-color: #fff !important;
+  font-size: .8em !important;
+}
+
+.gist .gist-file {
+  border-bottom: none !important;
+  overflow: hidden !important;
+}
+
+.gist-meta { display: none; }
+
+/* ==========================================================================
+  Clearfix
+  ========================================================================== */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after { clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    clear: both;
+    *zoom: 1;
+}

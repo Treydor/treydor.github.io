@@ -1,0 +1,149 @@
+---
+layout: default
+name: Noah Rogers
+---
+<article>
+  <div class="container">
+    <section>
+      <h1>Floats &amp; Clearfixes</h1>
+      <p>CSS floats are a positioning property that allows elements to be moved left, middle or right, allowing other elements to wrap around them. <code>float</code> has a variety of uses and can be extremely valuable when working with layouts.</p>
+
+      <q class="quote-heading">When we float an element, we take it out of the normal flow of the HTML document.</q>
+
+      <p>Using floats can get messy. This is because as you float certain elements they are removed from the normal flow of your HTML, causing some elements to overlap, or collide with one another. Luckily, a few very, very smart people have found a way that addresses these very issues. The way we deal with some of the problems associated with floats is most commonly known as a Clearfix.</p>
+    </section>
+
+    <section>
+      <h3>An introduction to floats</h3>
+      <p>When I started this I had a hard time trying to explain exactly what I thought floats did, and how they differ from some properties that people use to accomplish similar goals. Below is an explanation that really put what floats do in perspective for me.</p>
+
+      <blockquote>
+        The float CSS property specifies that an element should be taken from the normal flow and placed along the left or right side of its container, where text and inline elements will wrap around it.
+        <cite>— Mozilla Developer Network</cite>
+      </blockquote>
+
+      <p>So let's take a look at exactly how floats work when used. Below is a layout in its very early stages. This layout is pretty standard and no floats are being used.
+
+      <script src="https://gist.github.com/Treydor/46a7d6c500a60a3457a8.js"></script>
+
+      <script src="https://gist.github.com/Treydor/bd99b76b65a0ac06b823.js"></script>
+
+      <div class="example-box">
+        <div class="float-example">header</div>
+        <div class="float-example layout-content example-width">float-example</div>
+        <div class="float-example layout-side example-width">side</div>
+        <div class="float-example">footer</div>
+      </div>
+
+      <p>Here you can see what this layout looks like prior to the use of floats. Both <code>div</code> elements behave exactly like they should, forcing a line break after them. Let's see what happens when we add <code>float: left</code> and <code>float: right</code> to our elements.
+
+      <script src="https://gist.github.com/Treydor/266669fd7979fcb0cb41.js"></script>
+
+      <p>With floats it is important to remember that the floated element will shift left or right until it touches the parent element or another floated element by default.</p>
+
+      <div class="example-box">
+        <div class="float-example">header</div>
+        <div class="float-example layout-content float-left example-width">float-example</div>
+        <div class="float-example layout-side float-right example-width">side</div>
+        <div class="float-example cf">footer</div>
+      </div>
+
+      <p>Adding a little bit of width to our <code>float-example</code> can create something that looks more like a layout than our previous examples.</p>
+
+      <div class="example-box">
+        <div class="float-example">header</div>
+        <div class="float-example layout-content float-left">float-example</div>
+        <div class="float-example layout-side float-right">side</div>
+        <div class="float-example cf">footer</div>
+      </div>
+
+      <p>Neat! See how the floats are now side by side? Of course there is a little tweaking that needs to be done to get perfect margins between all the elements, but all said and done I feel that this simple example really showcases the effectiveness of the <code>float</code> property and provides a real-world situation on when to use it.</p>
+    </section>
+
+    <section>
+      <h3>The drawbacks of floating your page elements</h3>
+
+      <p>So all is fine and good in the land of floats, right? Well... not exactly. There are some problems with using floats.</p>
+
+      <q class="quote-heading">...the float property was never actually intended to be used for layout and positioning purposes, and thus it comes with a few pitfalls.</q>
+
+      <p>Remember the float example from above? A clearfix was used on it to ensure that there was no collision between each of the floating elements <code>float-example</code> and <code>side</code>. This is what the example would look like without the use of a clearfix on the footer:
+
+      <script src="https://gist.github.com/Treydor/2cd9e605639dea0dd7a4.js"></script>
+
+      <div class="example-box">
+        <div class="float-example">header</div>
+        <div class="float-example layout-content float-left">float-example</div>
+        <div class="float-example layout-side float-right">side</div>
+        <div class="float-example">footer</div>
+      </div>
+
+      <p>Eww, gross. You can see that the footer is negatively impacted by both of our floated elements. The problem is that since these two  elements are set to float, our footer is trying to fill the space that the floated elements would have normally taken up. This is causing our two content items to float over the top and all around it. This is an extremely common problem when working with floats. Luckily, applying a clearfix will remedy this problem.</p>
+    </section>
+
+    <section>
+      <h3>How to use clearfix in your CSS</h3>
+      <p>Creating a clearfix utility in your CSS is a great idea when working with floats on your page. A simple line of code in your CSS allows you to use your clearfix as needed.</p>
+
+      <p>An extremely basic clearfix class in your CSS may look something like this:</p>
+
+      <script src="https://gist.github.com/Treydor/dc35dc106c6775967768.js"></script>
+
+      <h3>The clear property will make your life easier</h3>
+
+      <p>The <code>clear</code> property has a few commonly used values. The first is <code> clear: both</code>. This property clears floats on both the left and right. There is also left and right, each of which clears floats accordingly.</p>
+
+      <blockquote>
+      An element that has the clear property set on it will not move up adjacent to the float like the float desires, but will move itself down past the float. Clear has four valid values as well. Both is most commonly used, which clears floats coming from either direction. Left and Right can be used to only clear the float from one direction respectively. None is the default, which is typically unnecessary unless removing a clear value from a cascade.
+      <cite>— CSS Tricks</cite>
+      </blockquote>
+
+
+      <p>Let's remind ourselves how the example looks when a clearfix is used properly. Now we can see how the footer reacts when we add our new utility to our footer.</p>
+
+      <script src="https://gist.github.com/Treydor/2825b223a07b74bb53f6.js"></script>
+
+      <div class="example-box">
+        <div class="float-example">header</div>
+        <div class="float-example layout-content float-left">float-example</div>
+        <div class="float-example layout-side float-right">side</div>
+        <div class="float-example cf">footer</div>
+      </div>
+
+      <p>The last example I will leave you with is a real world example of how floats may be used. Here you can see our floats project we have been building throughout this post. You can see that it has been modified in such a way that it resembles a webpage with a navigation menu.</p>
+
+      <div class="example-box">
+        <div class="float-example">header</div>
+        <div class="float-example layout-row">Home</div>
+        <div class="float-example layout-content2">
+          <p>This is an example layout using floats.</p>
+        </div>
+        <div class="float-example layout-row remove-margin-top">Blog</div>
+        <div class="float-example layout-row remove-margin-top">About</div>
+        <div class="float-example cf">footer</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Takeaways from floats</h3>
+      <p>With floats it is crucial to remember how messy things can get. This is because when an element is floated it is essentially being taken out of your page and floated over your content, thus removing it from the normal flow of your HTML document. Make sure you are not only using clearfixes when working with floats, but that you are using them correctly.</p>
+    </section>
+  </div>
+
+  <div class="container">
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>
+          CSS Tricks: <a href="http://css-tricks.com/all-about-floats/" target="_blank">All About Floats</a>
+        </li>
+        <li>
+          Mozilla Developer Network: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank">Float</a>
+        </li>
+        <li>
+          Learn to code HTML &amp; CSS: <a href="http://learn.shayhowe.com/html-css/positioning-content/" target="_blank">Positioning Content</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</article>
