@@ -91,6 +91,8 @@ strong { font-weight: 600; }
 
 article { margin: 3em 0; }
 
+article ul { margin-bottom: 2em; }
+
 article li { margin: .2em 0; }
 
 section { padding: 1em 0; }
@@ -189,15 +191,11 @@ nav a:hover {
    Boxes
    ========================================================================== */
 
-.box {
-  background: #f3f3f3;
-  margin: 2em auto;
-}
+.box { margin: 2em auto; }
 
 .example {
   border-radius: 6px;
   color: #333;
-  padding: 1em;
 }
 
 .example p, .example ul { margin: 0; }
@@ -335,7 +333,6 @@ nav a:hover {
 /* Blog #1 */
 
 .example-element {
-  border-radius: 3px;
   color: #bbb;
   font-size: .9em;
   font-weight: 700;
@@ -358,7 +355,8 @@ nav a:hover {
 }
 
 .large {
-  background: #cfd4d7;
+  background: #eee;
+  color: #bbb;
   padding: 1.8em .3em;
 }
 
@@ -372,9 +370,7 @@ nav a:hover {
 /* Blog #2 */
 
 .float-example {
-  background: #e9e9e9;
-  border: 1px solid #e3e3e3;
-  border-radius: 3px;
+  background: #eee;
   color: #bbb;
   font-weight: 600;
   padding: .3em;
@@ -383,7 +379,6 @@ nav a:hover {
 
 .example-content {
   background: #5dd2e9;
-  border: none;
   color: #fff;
   margin: .8em 0em;
   padding: 1em 0;
@@ -392,7 +387,6 @@ nav a:hover {
 
 .float-side {
   background: #8aefcd;
-  border: none;
   color: #fff;
   margin: .8em 0;
   padding: 1em 0;
@@ -401,17 +395,38 @@ nav a:hover {
 
 /* Blog #3 */
 
-.position-example {
-  background: #aab5c0;
-  border-radius: 3px;
-  color: #fff;
+.column {
+  background: #f3f3f3;
+  border-radius: 6px;
   display: inline-block;
-  font-size: .9em;
-  font-weight: 600;
-  margin:.4em;
-  padding: 2em 0;
+  float: left;
+  margin: .6em;
+  padding: 1.2em;
   text-align: center;
-  width: 30%;
+}
+
+.column h3 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.position-example1 {
+  background: url('../img/projects/positioning/parent.png');
+  height: 150px;
+  margin-bottom: 2em;
+  width: 260px;
+}
+
+.position-example2 {
+  background: url('../img/projects/positioning/child.png');
+  height: 150px;
+  margin-bottom: 2em;
+  width: 260px;
 }
 
 /* ==========================================================================
