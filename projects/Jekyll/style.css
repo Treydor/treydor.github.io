@@ -5,7 +5,9 @@ html {
 
 body {
   background: #333;
+  border-top: 5px solid #fc0;
   color: #333;
+  margin: 0;
 }
 
 p {
@@ -39,7 +41,6 @@ h3 { font-size: 1.2em; }
   display: block;
   height: 139px;
   margin: 3em auto;
-  margin-bottom: 4em;
   width: 300px;
   position: relative;
 }
