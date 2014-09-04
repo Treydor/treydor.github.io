@@ -16,7 +16,6 @@
         {{ content }}
       </section>
 
-
       <section>
         <div class="posts-nav cf">
           {% if page.previous.url %}
@@ -25,7 +24,7 @@
           {% endif %} {% if page.next.url %}
           <p class="next"> <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">Next</a></p> {% endif %}
         </div>
-     </section>
+      </section>
     </article>
 
     {% include footer.html %}

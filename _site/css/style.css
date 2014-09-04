@@ -24,7 +24,7 @@ body {
 
 header {
   border-bottom: 1px solid #eee;
-  padding: 1.3em 0;
+  padding: 1.2em 0;
 }
 
 .container {
@@ -33,7 +33,7 @@ header {
   width: 90%;
 }
 
-footer { }
+footer { margin-top: 6em; }
 
 .footer {
   background-image: url(../img/github.png);
@@ -160,7 +160,6 @@ a:hover { text-decoration: underline; }
 nav {
   float: right;
   font-size: .9em;
-  font-weight: 600;
 }
 
 nav ul {
@@ -239,7 +238,8 @@ nav a:hover {
 
 .posts h3 a {
   color: #777;
-  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 .posts h3 a:hover {
@@ -259,24 +259,16 @@ nav a:hover {
 }
 
 .posts-nav a {
-  background: #777;
-  border-radius: 3px;
-  color: #fff;
   display: inline-block;
-  font-size: .7em;
-  padding: .5em 0;
-  text-align: center;
-  width: 80px;
+  font-size: .8em;
+  font-weight: 600;
 }
 
-.posts-nav a:hover {
-  background: #555;
-  text-decoration: none;
-}
+.posts-nav a:hover { }
 
 .previous, .next {
   display: inline-block;
-  margin: 0;
+  margin: 0 .3em;
   padding: 0;
 }
 
@@ -389,9 +381,10 @@ nav a:hover {
 /* Blog #1 */
 
 .example-element {
+  border-radius: 3px;
   color: #bbb;
   font-size: .9em;
-  font-weight: 700;
+  font-weight: 600;
   padding: .5em 0;
   text-align: center;
 }
@@ -427,6 +420,7 @@ nav a:hover {
 
 .float-example {
   background: #eee;
+  border-radius: 3px;
   color: #bbb;
   font-weight: 600;
   padding: .3em;
