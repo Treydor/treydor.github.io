@@ -1,13 +1,355 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title></title>
-    <description>Leanring HTML and CSS</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Sep 2014 21:34:23 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Sep 2014 21:34:23 -0500</lastBuildDate>
-    <generator>Jekyll v2.3.0</generator>
-    
-  </channel>
+    <channel>
+        <title>Noah Rogers</title>
+        <description>Leanring HTML and CSS</description>
+        <link></link>
+        <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+        
+            <item>
+                <title>My first blog post using Jekyll</title>
+                <description>&lt;p&gt;Hello! This is a test post.&lt;/p&gt;
+</description>
+                <pubDate>Tue, 02 Sep 2014 00:00:00 -0500</pubDate>
+                <link>/2014/09/02/first.html</link>
+                <guid isPermaLink="true">/2014/09/02/first.html</guid>
+            </item>
+        
+            <item>
+                <title>Positioning</title>
+                <description>&lt;p&gt;&lt;span class=&quot;construction&quot;&gt;Under Construction&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So far we have been introduced to inline, inline-block and block elements. We have also explored floats, how to use them and when to use them. From our floats blog we have learned a little bit about positioning and how to make basic layouts or navigations using floats. Let&#39;s build off what we know. It has been a while for me so I think it would be best to first start with a small review about what we learned in our last blog post.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Floats are a positioning property.&lt;/li&gt;
+&lt;li&gt;Floats allow elements to be moved left or right.&lt;/li&gt;
+&lt;li&gt;When an element is floated, the element is removed from the normal flow of the HTML.&lt;/li&gt;
+&lt;li&gt;When the float property is used, elements are shifted over until it touches the parent element, or another floated element.&lt;/li&gt;
+&lt;li&gt;Floats are not perfect, and usually require the use of clearfixes to tell surrounding elements how to behave around the float.&lt;/li&gt;
+&lt;li&gt;Floats are extremely useful, but may not be always be the best way of accomplishing desired effects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Parent &amp;amp; Child CSS Selectors&lt;/h3&gt;
+&lt;div class=&quot;content cf&quot;&gt;
+&lt;div class=&quot;column&quot;&gt;
+&lt;div class=&quot;position-example1&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Parent&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;column&quot;&gt;
+&lt;div class=&quot;position-example2&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Child&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Section II&lt;/h2&gt;
+&lt;p&gt;Maecenas ut euismod diam, eu mollis enim. Duis interdum nunc eu finibus eleifend. Nunc rhoncus pharetra nunc, id posuere est blandit vel. Duis quis augue enim. Duis rhoncus nisl eget leo dignissim dignissim. Etiam nisl lectus, fringilla eget nisl et, ultricies dapibus urna. Nulla bibendum risus et risus auctor sagittis. Maecenas sed odio orci. Duis id neque mattis, euismod mauris sollicitudin, ultrices nisi. Curabitur mattis velit ut interdum commodo. Cras rhoncus ultrices sagittis. Praesent vitae placerat mi. Aenean at gravida arcu, sit amet varius leo.&lt;/p&gt;
+
+&lt;p&gt;Aliquam non nisi tellus. Nam ac justo metus. Fusce molestie sodales mauris, ut placerat neque sagittis vitae. Sed cursus gravida ultrices. Nam tincidunt mauris felis, eu venenatis quam rutrum tempus. Donec aliquam blandit porta. Etiam pulvinar sapien nec placerat vestibulum. Praesent mollis convallis lectus ut hendrerit. Sed eleifend ullamcorper nisi vel bibendum. Fusce blandit augue libero, eget tempus sapien laoreet in. Aenean mattis, justo non dapibus commodo, odio libero feugiat diam, quis laoreet libero felis sit amet nisi. Pellentesque blandit at orci quis auctor. Mauris a tortor massa. Duis porta luctus ipsum, at facilisis odio ornare condimentum. Mauris suscipit condimentum interdum. Proin eleifend mollis ligula, eu ultrices dolor volutpat a.&lt;/p&gt;
+
+&lt;h2&gt;Section III&lt;/h2&gt;
+&lt;p&gt;Maecenas ut euismod diam, eu mollis enim. Duis interdum nunc eu finibus eleifend. Nunc rhoncus pharetra nunc, id posuere est blandit vel. Duis quis augue enim. Duis rhoncus nisl eget leo dignissim dignissim. Etiam nisl lectus, fringilla eget nisl et, ultricies dapibus urna. Nulla bibendum risus et risus auctor sagittis. Maecenas sed odio orci. Duis id neque mattis, euismod mauris sollicitudin, ultrices nisi. Curabitur mattis velit ut interdum commodo. Cras rhoncus ultrices sagittis. Praesent vitae placerat mi. Aenean at gravida arcu, sit amet varius leo.&lt;/p&gt;
+
+&lt;p&gt;Aliquam non nisi tellus. Nam ac justo metus. Fusce molestie sodales mauris, ut placerat neque sagittis vitae. Sed cursus gravida ultrices. Nam tincidunt mauris felis, eu venenatis quam rutrum tempus. Donec aliquam blandit porta. Etiam pulvinar sapien nec placerat vestibulum. Praesent mollis convallis lectus ut hendrerit. Sed eleifend ullamcorper nisi vel bibendum. Fusce blandit augue libero, eget tempus sapien laoreet in. Aenean mattis, justo non dapibus commodo, odio libero feugiat diam, quis laoreet libero felis sit amet nisi. Pellentesque blandit at orci quis auctor. Mauris a tortor massa. Duis porta luctus ipsum, at facilisis odio ornare condimentum. Mauris suscipit condimentum interdum. Proin eleifend mollis ligula, eu ultrices dolor volutpat a.&lt;/p&gt;
+
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Mozilla Developer Network: &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/position&quot; target=&quot;_blank&quot;&gt;Position&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+Learn to code HTML &amp;amp; CSS: &lt;a href=&quot;http://learn.shayhowe.com/html-css/positioning-content/&quot; target=&quot;_blank&quot;&gt;Positioning Content&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <pubDate>Tue, 26 Aug 2014 00:00:00 -0500</pubDate>
+                <link>/2014/08/26/positioning.html</link>
+                <guid isPermaLink="true">/2014/08/26/positioning.html</guid>
+            </item>
+        
+            <item>
+                <title>Floats &amp; Clearfixes</title>
+                <description>&lt;p&gt;CSS floats are a positioning property that allows elements to be moved left, middle or right, allowing other elements to wrap around them. The float property has a variety of uses and can be extremely valuable when working with layouts.&lt;/p&gt;
+
+&lt;p&gt;&lt;q&gt;When we float an element, we take it out of the normal flow of the HTML document.&lt;/q&gt;&lt;/p&gt;
+
+&lt;p&gt;Using floats can get messy. This is because as you float certain elements they are removed from the normal flow of your HTML, causing some elements to overlap, or collide with one another. Luckily, a few very, very smart people have found a way that addresses these very issues. The way we deal with some of the problems associated with floats is most commonly known as a Clearfix.&lt;/p&gt;
+
+&lt;h2&gt;An introduction to floats&lt;/h2&gt;
+&lt;p&gt;When I started this I had a hard time trying to explain exactly what I thought floats did, and how they differ from some properties that people use to accomplish similar goals. Below is an explanation that really put what floats do in perspective for me.&lt;/p&gt;
+
+&lt;blockquote&gt;
+The float CSS property specifies that an element should be taken from the normal flow and placed along the left or right side of its container, where text and inline elements will wrap around it.
+&lt;cite&gt;Mozilla Developer Network&lt;/cite&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So let&#39;s take a look at exactly how floats work when used. Below is a layout in its very early stages. This layout is pretty standard and no floats are being used.
+
+&lt;script src=&quot;https://gist.github.com/Treydor/46a7d6c500a60a3457a8.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://gist.github.com/Treydor/bd99b76b65a0ac06b823.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;example box&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;float-example&quot;&gt;header&lt;/div&gt;
+&lt;div class=&quot;float-example example-content&quot;&gt;content&lt;/div&gt;
+&lt;div class=&quot;float-example float-side&quot;&gt;side&lt;/div&gt;
+&lt;div class=&quot;float-example&quot;&gt;footer&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here you can see what this layout looks like prior to the use of floats. Both div elements behave exactly like they should, forcing a line break after them. Let&#39;s see what happens when we add &lt;code&gt;float: left&lt;/code&gt; and &lt;code&gt;float: right&lt;/code&gt; to our elements.
+
+&lt;script src=&quot;https://gist.github.com/Treydor/266669fd7979fcb0cb41.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;With floats it is important to remember that the floated element will shift left or right until it touches the parent element or another floated element by default.&lt;/p&gt;
+
+&lt;div class=&quot;example box&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;float-example&quot;&gt;header&lt;/div&gt;
+&lt;div class=&quot;float-example example-content float-left example-width&quot;&gt;content&lt;/div&gt;
+&lt;div class=&quot;float-example float-side float-right example-width&quot;&gt;side&lt;/div&gt;
+&lt;div class=&quot;float-example cf&quot;&gt;footer&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Neat! See how the floats are now side by side? Of course there is a little tweaking that needs to be done to get perfect margins between all the elements, but all said and done I feel that this simple example really showcases the effectiveness of the float property and provides a real-world situation on when to use it.&lt;/p&gt;
+
+
+&lt;h3&gt;The drawbacks of floating your page elements&lt;/h3&gt;
+
+&lt;p&gt;So all is fine and good in the land of floats, right? Well... not exactly. There are some problems with using floats. While researching and playing around with floats it quickly became apparent to methat there are some obvious drawbacks to floats.&lt;/p&gt;
+
+&lt;p&gt;Remember the float example from above? One thing you may have not known was that a clearfix was used on it to ensure that there was no collision between each of the floating elements.&lt;/p&gt;
+
+&lt;p&gt;Let&#39;s remove the clearfix so we can see exactly what is happening here.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Treydor/2cd9e605639dea0dd7a4.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;example box&quot;&gt;
+&lt;div class=&quot;container cf&quot;&gt;
+&lt;div class=&quot;float-example&quot;&gt;header&lt;/div&gt;
+&lt;div class=&quot;float-example example-content float-left&quot;&gt;content&lt;/div&gt;
+&lt;div class=&quot;float-example float-side float-right&quot;&gt;side&lt;/div&gt;
+&lt;div class=&quot;float-example&quot;&gt;footer&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Not the best looking example out there, that&#39;s for sure.&lt;/p&gt;
+
+&lt;p&gt;You can see that the footer is negatively impacted by both of our floated elements. The problem is that our footer is trying to fill the space that the floated elements would have normally taken up. This is causing our two content items to float over the top of footer and not respect the set margins. This is an extremely common problem when working with floats. Luckily, applying a clearfix will remedy this problem.&lt;/p&gt;
+
+
+&lt;h2&gt;How to use clearfix in your CSS&lt;/h2&gt;
+&lt;p&gt;Creating a clearfix utility in your CSS is a great idea when working with floats on your page. A simple line of code in your CSS allows you to use your clearfix as needed.&lt;/p&gt;
+
+&lt;p&gt;An extremely basic clearfix class in your CSS may look something like this:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Treydor/dc35dc106c6775967768.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;h3&gt;The clear property will make your life easier&lt;/h3&gt;
+
+&lt;p&gt;The clear property has a few commonly used values. The first is &lt;code&gt;clear: both&lt;/code&gt;. This property clears floats on both the left and right. There is also left and right, each of which clears floats accordingly.&lt;/p&gt;
+
+&lt;blockquote&gt;
+An element that has the clear property set on it will not move up adjacent to the float like the float desires, but will move itself down past the float. Clear has four valid values as well. Both is most commonly used, which clears floats coming from either direction. Left and Right can be used to only clear the float from one direction respectively. None is the default, which is typically unnecessary unless removing a clear value from a cascade.
+&lt;cite&gt;CSS Tricks&lt;/cite&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let&#39;s remind ourselves how the example looks when a clearfix is used properly. Now we can see how the footer reacts when we add our new utility to our footer.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Treydor/2825b223a07b74bb53f6.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;example box&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;float-example&quot;&gt;header&lt;/div&gt;
+&lt;div class=&quot;float-example example-content float-left&quot;&gt;content&lt;/div&gt;
+&lt;div class=&quot;float-example float-side float-right&quot;&gt;side&lt;/div&gt;
+&lt;div class=&quot;float-example cf&quot;&gt;footer&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Takeaways from learning about floats and clearfixes&lt;/h3&gt;
+&lt;p&gt;With floats it is crucial to remember how messy things can get. This is because when an element is floated it is essentially being taken out of your page and floated over your content, thus removing it from the normal flow of your HTML document. Make sure you are not only using clearfixes when working with floats, but that you are using them correctly.&lt;/p&gt;
+
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+CSS Tricks: &lt;a href=&quot;http://css-tricks.com/all-about-floats/&quot; target=&quot;_blank&quot;&gt;All About Floats&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+Mozilla Developer Network: &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/float&quot; target=&quot;_blank&quot;&gt;Float&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+Learn to code HTML &amp;amp; CSS: &lt;a href=&quot;http://learn.shayhowe.com/html-css/positioning-content/&quot; target=&quot;_blank&quot;&gt;Positioning Content&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;/p&gt;
+</description>
+                <pubDate>Sat, 28 Jun 2014 00:00:00 -0500</pubDate>
+                <link>/2014/06/28/floats.html</link>
+                <guid isPermaLink="true">/2014/06/28/floats.html</guid>
+            </item>
+        
+            <item>
+                <title>Inline, Inline-Block &amp; Block Elements</title>
+                <description>&lt;p&gt;When using HTML elements to create your website it is important to know which of the elements you are working with are block or inline and how they differ from one another.&lt;/p&gt;
+&lt;h2&gt;Inline Elements&lt;/h2&gt;
+
+&lt;p&gt;These are some of the more commonly used inline elements and how they might be written in your HTML.&lt;/p&gt;
+
+&lt;p&gt;I think the first inline element worth mentioning is span.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Treydor/64bdb243a8a7d1193f31.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;box example&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;p&gt;This is a &lt;span class=&quot;example-element inline&quot;&gt;span&lt;/span&gt;. It will remain inline.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The span class can be used in a variety of different ways. On this page I have used a span to add a box around various HTML and CSS elements I mention in this post because it is important to distinguish code from normal text.&lt;/p&gt;
+
+&lt;p&gt;Below are some more common inline elements. Throughout this project I&amp;rsquo;ll do my best to first demonstrate them in HTML, followed by an example of how they will look in browser.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Treydor/cf56a04c2134e3383e77.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;box example&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;p&gt;This will be &lt;strong&gt;bold&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This will be &lt;em&gt;italic&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This &lt;a href=&quot;http://www.google.com&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt; will take you to Google.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Inline elements are just that, in &lt;em&gt;the&lt;/em&gt; line. As you can see above, these inline elements stay in the same line they are used. Because these elements are inline, they can have their margin and padding changed, but height and width will be ignored because the inline element is determined by the property it is wrapped around in the HTML.&lt;/p&gt;
+
+&lt;h3&gt;So, what did we learn about inline?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Does not force a line break when used.&lt;/li&gt;
+&lt;li&gt;Commonly used to create a link, bold, italicize or create boxes around words and sentences.&lt;/li&gt;
+&lt;li&gt;Margin and padding can be changed, but the height and width properties will be ignored.&lt;/li&gt;
+&lt;li&gt;Using a block element inside of inline elements is not a good thing. If you want a block element to behave like an inline element continue on to the next section.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+&lt;h2&gt;Inline-Block Elements&lt;/h2&gt;
+
+&lt;p&gt;inline-block borrow aspects from both &amp;lt;inline and block. This property can be used in your CSS by adding a &lt;code&gt;display: inline&lt;/code&gt;, &lt;code&gt;display: inline-block&lt;/code&gt; or &lt;code&gt;display: block&lt;/code&gt; property to your element.&lt;/p&gt;
+
+&lt;p&gt;Below are a few division elements that use a &lt;code&gt;display: inline-block&lt;/code&gt; property:
+
+&lt;script src=&quot;https://gist.github.com/Treydor/4329fe9a6ed92a74c1f3.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;box example&quot;&gt;
+&lt;div class=&quot;container center&quot;&gt;
+&lt;div class=&quot;example-element inline-block&quot;&gt;inline-block&lt;/div&gt;
+&lt;div class=&quot;example-element inline-block&quot;&gt;inline-block&lt;/div&gt;
+&lt;div class=&quot;example-element inline-block&quot;&gt;inline-block&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;There are a few advantages of using inline-block as you can set the height, width, padding and margins on this property while still allowing it to remain inline.&lt;/p&gt;
+
+&lt;p&gt;One of the biggest advantages of inline-block is the ability to use the &lt;code&gt;vertical-align&lt;/code&gt; property. This property can be written in to your CSS as demonstrated below:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Treydor/8e29d5b283eaca8da999.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;To make the example clear I styled one of the elements by coloring it grey and giving it some height. Below are the three &lt;code&gt;vertical-align:&lt;/code&gt; properties:&lt;/p&gt;
+
+&lt;div class=&quot;example box&quot;&gt;
+&lt;div class=&quot;container center margin-bottom&quot;&gt;
+&lt;div class=&quot;example-element inline-block large&quot;&gt;top&lt;/div&gt;
+&lt;div class=&quot;example-element inline-block valign-top remove-margin&quot;&gt;inline-block&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container center margin-bottom&quot;&gt;
+&lt;div class=&quot;example-element inline-block large&quot;&gt;middle&lt;/div&gt;
+&lt;div class=&quot;example-element inline-block valign-middle remove-margin&quot;&gt;inline-block&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container center&quot;&gt;
+&lt;div class=&quot;example-element inline-block large&quot;&gt;bottom&lt;/div&gt;
+&lt;div class=&quot;example-element inline-block valign-bottom remove-margin&quot;&gt;inline-block&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;A few things to remember about inline-block...&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Inline-Block elements allow you to set a height, width, margin and padding properties, while still allowing the element to remain inline.&lt;/li&gt;
+&lt;li&gt;Inline-Block elements may make use of the vertical-align property as demonstrated above.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Block Elements&lt;/h2&gt;
+
+&lt;p&gt;Like inline, there are a variety of block elements. Below are just a few of some of the more commonly used block elements as well as some examples of how they may be used&lt;/p&gt;
+
+&lt;p&gt;We will start with one of the most common, if not the most common block element, division.&lt;/p&gt;
+
+&lt;p&gt;A division, or div, is an extremely common block element that you will surely use on your page. The example below is shows exactly how a division works in the browser.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Treydor/82f82b8d8752eb3e43ad.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;example box&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;example-element block&quot;&gt;div&lt;/div&gt;
+&lt;div class=&quot;example-element block&quot;&gt;div&lt;/div&gt;
+&lt;div class=&quot;example-element block&quot;&gt;div&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can see that this element takes up all the space that is available from left-right. A block elements will always force a line break after them.&lt;/p&gt;
+
+&lt;p&gt;As you can imagine div elements have numerous uses. More commonly, these elements can be used as containers for just about anything. So you may be asking yourself &lt;q&gt;what are some real world examples of block elements working with one another?&lt;/q&gt; Well you are in luck! Below are a few &lt;strong&gt;very&lt;/strong&gt; common example of block elements in their most basic forms.
+
+&lt;script src=&quot;https://gist.github.com/Treydor/bf39ca2026c03eee1f99.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;example box&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;h2&gt;Example Header&lt;/h2&gt;
+&lt;p&gt;This is an example of how a paragraph works in relation to a header.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here you can see our example header automatically force a line break when it is used. This is a block element working exactly as intented.&lt;/p&gt;
+
+&lt;p&gt;Other block elements include include li and ol elements. These are demonstrated below:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Treydor/62da44cfe3aaff1fa2dc.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;example box&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As you can see from above, these list elements can be extremely useful for many reasons when creating a layout, a system for blog posts, or creating a general list.&lt;/p&gt;
+
+&lt;h3&gt;Let&amp;rsquo;s recap block elements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Unless otherwise specified, block elements start on a new line and will always force a line break when being used.&lt;/li&gt;
+&lt;li&gt;If the width property is not set, block elements will fill the entire space available from left to right.&lt;/li&gt;
+&lt;li&gt;Block elements can contain inline elements and are frequently used to &quot;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements&quot; target=&quot;_blank&quot;&gt;create larger structures&lt;/a&gt;&quot; than inline elements.&lt;/li&gt;
+&lt;li&gt;Lastly, block elements can have margins, padding, height and width, but, unlike inline-block elements, ignore the vertical-align property.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Block/Inline-level elements &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements&quot; target=&quot;_blank&quot;&gt;Mozilla Developer Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Difference between block and inline (CSS) &lt;a href=&quot;http://www.impressivewebs.com/difference-block-inline-css/&quot; target=&quot;_blank&quot;&gt;Impressive Webs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Getting to Know HTML &lt;a href=&quot;http://learn.shayhowe.com/html-css/getting-to-know-html/&quot; target=&quot;_blank&quot;&gt;learn.shayhowe.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/div&gt;
+</description>
+                <pubDate>Wed, 18 Jun 2014 00:00:00 -0500</pubDate>
+                <link>/2014/06/18/elements.html</link>
+                <guid isPermaLink="true">/2014/06/18/elements.html</guid>
+            </item>
+        
+    </channel>
 </rss>
