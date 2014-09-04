@@ -32,13 +32,12 @@
 
   <div class="container">
     <article>
-      <section>
         <h1>Inline, Inline-Block &amp; Block Elements</h1>
         <span>June 18, 2014</span>
-      </section>
 
       <section>
         <p>When using HTML elements to create your website it is important to know which of the elements you are working with are block or inline and how they differ from one another.</p>
+
 <h2>Inline Elements</h2>
 
 <p>These are some of the more commonly used inline elements and how they might be written in your HTML.</p>
@@ -48,9 +47,9 @@
 <script src="https://gist.github.com/Treydor/64bdb243a8a7d1193f31.js"></script>
 
 <div class="box example">
-<div class="container">
-<p>This is a <span class="example-element inline">span</span>. It will remain inline.</p>
-</div>
+  <div class="container">
+    <p>This is a <span class="example-element inline">span</span>. It will remain inline.</p>
+  </div>
 </div>
 
 <p>The span class can be used in a variety of different ways. On this page I have used a span to add a box around various HTML and CSS elements I mention in this post because it is important to distinguish code from normal text.</p>
@@ -60,38 +59,37 @@
 <script src="https://gist.github.com/Treydor/cf56a04c2134e3383e77.js"></script>
 
 <div class="box example">
-<div class="container">
-<p>This will be <strong>bold</strong>.</p>
-<p>This will be <em>italic</em>.</p>
-<p>This <a href="http://www.google.com" target="_blank">link</a> will take you to Google.</p>
-</div>
+  <div class="container">
+    <p>This will be <strong>bold</strong>.</p>
+    <p>This will be <em>italic</em>.</p>
+    <p>This <a href="http://www.google.com" target="_blank">link</a> will take you to Google.</p>
+  </div>
 </div>
 
 <p>Inline elements are just that, in <em>the</em> line. As you can see above, these inline elements stay in the same line they are used. Because these elements are inline, they can have their margin and padding changed, but height and width will be ignored because the inline element is determined by the property it is wrapped around in the HTML.</p>
 
 <h3>So, what did we learn about inline?</h3>
 <ul>
-<li>Does not force a line break when used.</li>
-<li>Commonly used to create a link, bold, italicize or create boxes around words and sentences.</li>
-<li>Margin and padding can be changed, but the height and width properties will be ignored.</li>
-<li>Using a block element inside of inline elements is not a good thing. If you want a block element to behave like an inline element continue on to the next section.</li>
+  <li>Does not force a line break when used.</li>
+  <li>Commonly used to create a link, bold, italicize or create boxes around words and sentences.</li>
+  <li>Margin and padding can be changed, but the height and width properties will be ignored.</li>
+  <li>Using a block element inside of inline elements is not a good thing. If you want a block element to behave like an inline element continue on to the next section.</li>
 </ul>
 
-<div class="container">
 <h2>Inline-Block Elements</h2>
 
 <p>inline-block borrow aspects from both &lt;inline and block. This property can be used in your CSS by adding a <code>display: inline</code>, <code>display: inline-block</code> or <code>display: block</code> property to your element.</p>
 
-<p>Below are a few division elements that use a <code>display: inline-block</code> property:
+<p>Below are a few division elements that use a <code>display: inline-block</code> property:</p>
 
 <script src="https://gist.github.com/Treydor/4329fe9a6ed92a74c1f3.js"></script>
 
-<div class="box example">
-<div class="container center">
-<div class="example-element inline-block">inline-block</div>
-<div class="example-element inline-block">inline-block</div>
-<div class="example-element inline-block">inline-block</div>
-</div>
+<div class="box example center">
+  <div class="container">
+    <div class="example-element inline-block">inline-block</div>
+    <div class="example-element inline-block">inline-block</div>
+    <div class="example-element inline-block">inline-block</div>
+  </div>
 </div>
 
 <p>There are a few advantages of using inline-block as you can set the height, width, padding and margins on this property while still allowing it to remain inline.</p>
@@ -102,27 +100,27 @@
 
 <p>To make the example clear I styled one of the elements by coloring it grey and giving it some height. Below are the three <code>vertical-align:</code> properties:</p>
 
-<div class="example box">
-<div class="container center margin-bottom">
-<div class="example-element inline-block large">top</div>
-<div class="example-element inline-block valign-top remove-margin">inline-block</div>
-</div>
+<div class="example box center">
+  <div class="container">
+    <div class="example-element inline-block large">top</div>
+    <div class="example-element inline-block valign-top">inline-block</div>
+  </div>
 
-<div class="container center margin-bottom">
-<div class="example-element inline-block large">middle</div>
-<div class="example-element inline-block valign-middle remove-margin">inline-block</div>
-</div>
+  <div class="container">
+    <div class="example-element inline-block large">middle</div>
+    <div class="example-element inline-block valign-middle">inline-block</div>
+  </div>
 
-<div class="container center">
-<div class="example-element inline-block large">bottom</div>
-<div class="example-element inline-block valign-bottom remove-margin">inline-block</div>
-</div>
+  <div class="container">
+    <div class="example-element inline-block large">bottom</div>
+    <div class="example-element inline-block valign-bottom">inline-block</div>
+  </div>
 </div>
 
 <h3>A few things to remember about inline-block...</h3>
 <ul>
-<li>Inline-Block elements allow you to set a height, width, margin and padding properties, while still allowing the element to remain inline.</li>
-<li>Inline-Block elements may make use of the vertical-align property as demonstrated above.</li>
+  <li>Inline-Block elements allow you to set a height, width, margin and padding properties, while still allowing the element to remain inline.</li>
+  <li>Inline-Block elements may make use of the vertical-align property as demonstrated above.</li>
 </ul>
 
 <h2>Block Elements</h2>
@@ -136,11 +134,11 @@
 <script src="https://gist.github.com/Treydor/82f82b8d8752eb3e43ad.js"></script>
 
 <div class="example box">
-<div class="container">
-<div class="example-element block">div</div>
-<div class="example-element block">div</div>
-<div class="example-element block">div</div>
-</div>
+  <div class="container">
+    <div class="example-element block">div</div>
+    <div class="example-element block">div</div>
+    <div class="example-element block">div</div>
+  </div>
 </div>
 
 <p>You can see that this element takes up all the space that is available from left-right. A block elements will always force a line break after them.</p>
@@ -150,55 +148,68 @@
 <script src="https://gist.github.com/Treydor/bf39ca2026c03eee1f99.js"></script>
 
 <div class="example box">
-<div class="container">
-<h2>Example Header</h2>
-<p>This is an example of how a paragraph works in relation to a header.</p>
-</div>
+  <div class="container">
+    <h2>Example Header</h2>
+    <p>This is an example of how a paragraph works in relation to a header.</p>
+  </div>
 </div>
 
-<p>Here you can see our example header automatically force a line break when it is used. This is a block element working exactly as intented.</p>
+<p>Here you can see our example header automatically force a line break when it is used. This is a block element working exactly as intended.</p>
 
-<p>Other block elements include include li and ol elements. These are demonstrated below:</p>
+<p>Other block elements include li and ol elements. These are demonstrated below:</p>
 
 <script src="https://gist.github.com/Treydor/62da44cfe3aaff1fa2dc.js"></script>
 
 <div class="example box">
-<div class="container">
-<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-  <li>Item 4</li>
-</ul>
-</div>
+  <div class="container">
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+  </div>
 </div>
 
 <p>As you can see from above, these list elements can be extremely useful for many reasons when creating a layout, a system for blog posts, or creating a general list.</p>
 
 <h3>Let&rsquo;s recap block elements</h3>
 <ul>
-<li>Unless otherwise specified, block elements start on a new line and will always force a line break when being used.</li>
-<li>If the width property is not set, block elements will fill the entire space available from left to right.</li>
-<li>Block elements can contain inline elements and are frequently used to "<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">create larger structures</a>" than inline elements.</li>
-<li>Lastly, block elements can have margins, padding, height and width, but, unlike inline-block elements, ignore the vertical-align property.</li>
+  <li>
+    Unless otherwise specified, block elements start on a new line and will always force a line break when being used.
+  </li>
+  <li>
+    If the width property is not set, block elements will fill the entire space available from left to right.
+  </li>
+  <li>
+    Block elements can contain inline elements and are frequently used to "<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">create larger structures</a>" than inline elements.
+  </li>
+  <li>
+    Lastly, block elements can have margins, padding, height and width, but, unlike inline-block elements, ignore the vertical-align property.
+  </li>
 </ul>
 
 <h2>References</h2>
 <ul>
-<li>Block/Inline-level elements <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Mozilla Developer Network</a></li>
-<li>Difference between block and inline (CSS) <a href="http://www.impressivewebs.com/difference-block-inline-css/" target="_blank">Impressive Webs</a></li>
-<li>Getting to Know HTML <a href="http://learn.shayhowe.com/html-css/getting-to-know-html/" target="_blank">learn.shayhowe.com</a></li>
+  <li>
+    Block/Inline-level elements <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Mozilla Developer Network</a>
+  </li>
+  <li>
+    Difference between block and inline (CSS) <a href="http://www.impressivewebs.com/difference-block-inline-css/" target="_blank">Impressive Webs</a>
+  </li>
+  <li>
+    Getting to Know HTML <a href="http://learn.shayhowe.com/html-css/getting-to-know-html/" target="_blank">learn.shayhowe.com</a>
+  </li>
 </ul>
-</p></p></div>
+</p>
 
       </section>
 
-      <section>
         <div class="posts-nav cf">
            
           <p class="next"> <a href="/2014/06/28/floats.html" rel="next" title="Floats &amp; Clearfixes">Next</a></p> 
         </div>
-      </section>
+
     </article>
 
     <footer>

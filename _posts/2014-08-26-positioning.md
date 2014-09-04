@@ -10,24 +10,23 @@ blog: true
 <p>So far we have been introduced to inline, inline-block and block elements. We have also explored floats, how to use them and when to use them. From our floats blog we have learned a little bit about positioning and how to make basic layouts or navigations using floats. Let's build off what we know. It has been a while for me so I think it would be best to first start with a small review about what we learned in our last blog post.</p>
 
 <ul>
-<li>Floats are a positioning property.</li>
-<li>Floats allow elements to be moved left or right.</li>
-<li>When an element is floated, the element is removed from the normal flow of the HTML.</li>
-<li>When the float property is used, elements are shifted over until it touches the parent element, or another floated element.</li>
-<li>Floats are not perfect, and usually require the use of clearfixes to tell surrounding elements how to behave around the float.</li>
-<li>Floats are extremely useful, but may not be always be the best way of accomplishing desired effects.</li>
+  <li>Floats are a positioning property.</li>
+  <li>Floats allow elements to be moved left or right.</li>
+  <li>When an element is floated, the element is removed from the normal flow of the HTML.</li>
+  <li>When the float property is used, elements are shifted over until it touches the parent element, or another floated element.</li>
+  <li>Floats are not perfect, and usually require the use of clearfixes to tell surrounding elements how to behave around the float.</li>
+  <li>Floats are extremely useful, but may not be always be the best way of accomplishing desired effects.</li>
 </ul>
 
-<h3>Parent &amp; Child CSS Selectors</h3>
 <div class="content cf">
-<div class="column">
-<div class="position-example1"></div>
-<h3>Parent</h3>
-</div>
-<div class="column">
-<div class="position-example2"></div>
-<h3>Child</h3>
-</div>
+  <div class="column">
+    <div class="position-example1"></div>
+    <h3>Parent</h3>
+  </div>
+  <div class="column">
+    <div class="position-example2"></div>
+    <h3>Child</h3>
+  </div>
 </div>
 
 <h2>Section II</h2>
@@ -42,10 +41,10 @@ blog: true
 
 <h2>References</h2>
 <ul>
-<li>
-Mozilla Developer Network: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">Position</a>
-</li>
-<li>
-Learn to code HTML &amp; CSS: <a href="http://learn.shayhowe.com/html-css/positioning-content/" target="_blank">Positioning Content</a>
-</li>
+  <li>
+    Mozilla Developer Network: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">Position</a>
+  </li>
+  <li>
+    Learn to code HTML &amp; CSS: <a href="http://learn.shayhowe.com/html-css/positioning-content/" target="_blank">Positioning Content</a>
+  </li>
 </ul>

@@ -85,12 +85,11 @@ strong { font-weight: 600; }
 }
 
 .center-heading {
-  font-size: 2.2em;
-  margin: 1.5em 0;
+  margin: 2em 0;
   text-align: center;
 }
 
-article { margin: 3em 0; }
+article { margin: 4em 0; }
 
 article ul { margin-bottom: 2em; }
 
@@ -191,11 +190,13 @@ nav a:hover {
    Boxes
    ========================================================================== */
 
-.box { margin: 2em auto; }
+.box { margin: 3em auto; }
 
 .example {
+  background: #eee;
   border-radius: 6px;
-  color: #333;
+  color: #555;
+  padding: 1em;
 }
 
 .example p, .example ul { margin: 0; }
@@ -208,7 +209,7 @@ nav a:hover {
   display: block;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: .4em;
+  margin-bottom: 1em;
   text-align: left;
   text-transform: uppercase;
 }
@@ -234,12 +235,12 @@ nav a:hover {
   padding: 0;
 }
 
-.posts li { margin-bottom: 2em; }
+.posts li { margin-bottom: 3em; }
 
 .posts h3 a {
   color: #777;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-size: 1.1em;
 }
 
 .posts h3 a:hover {
@@ -324,21 +325,20 @@ nav a:hover {
   background-image: url(../img/splash.jpg);
   background-position: 50% 25%;
   background-size: cover;
-  height: 500px;
+  height: 600px;
+  margin: 0 auto;
   width: 100%;
 }
 
 @media screen and (max-width: 600px) {
-  .splash { height: 300px; }
+  .splash { height: 400px; }
 }
 
 .splash-text {
-  color: rgba(255,255,255,0.7);
-  font-size: .9em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin: 0 auto;
-  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 10%;
 }
 
 .profile-box { width: 100%; }
@@ -385,7 +385,8 @@ nav a:hover {
   color: #bbb;
   font-size: .9em;
   font-weight: 600;
-  padding: .5em 0;
+  margin: .3em 0;
+  padding: .6em 0;
   text-align: center;
 }
 
@@ -404,31 +405,31 @@ nav a:hover {
 }
 
 .large {
-  background: #eee;
-  color: #bbb;
-  padding: 1.8em .3em;
+  background: #1ba9c5;
+  color: #fff;
+  padding: 2em 0;
 }
 
 .block {
   background: #8aefcd;
   color: #fff;
   display: block;
-  margin: .3em;
 }
 
 /* Blog #2 */
 
 .float-example {
-  background: #eee;
+  border: 2px dashed #bbb;
   border-radius: 3px;
   color: #bbb;
   font-weight: 600;
-  padding: .3em;
+  padding: .7em .3em;
   text-align: center;
 }
 
 .example-content {
   background: #5dd2e9;
+  border: none;
   color: #fff;
   margin: .8em 0em;
   padding: 1em 0;
@@ -437,6 +438,7 @@ nav a:hover {
 
 .float-side {
   background: #8aefcd;
+  border: none;
   color: #fff;
   margin: .8em 0;
   padding: 1em 0;
