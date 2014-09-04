@@ -1,5 +1,5 @@
 html {
-  font: 400 115%/1.5 "Open Sans", sans-serif;
+  font: 400 110%/1.5 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -54,9 +54,10 @@ h3 { font-size: 1.2em; }
 .command-list li {
   background: #ddd;
   border-radius: 6px;
+  box-shadow: 1px 1px 1px #000;
   display: block;
-  margin: 1.7em auto;
+  margin: 1.3em auto;
   max-width: 300px;
-  padding: 1em;
+  padding: .8em;
   text-align: center;
 }

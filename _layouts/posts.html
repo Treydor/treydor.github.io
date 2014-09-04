@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+<body>
+  {% include header.html %}
+
+  <div class="container">
+    <article>
+      <section>
+        <h1>{{ page.title }}</h1>
+        <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      </section>
+
+      <section>
+        {{ content }}
+      </section>
+
+
+      <section>
+        <div class="posts-nav cf">
+          {% if page.previous.url %}
+          <p class="previous"><a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">Previous</a></p>
+
+          {% endif %} {% if page.next.url %}
+          <p class="next"> <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">Next</a></p> {% endif %}
+        </div>
+     </section>
+    </article>
+
+    {% include footer.html %}
+
+  </div>
+
+</body>
+</html>
