@@ -1,3 +1,5 @@
-.sass-cache
-_sass
 _site
+.DS_Store
+site/_site/
+_site
+.sass-cache
