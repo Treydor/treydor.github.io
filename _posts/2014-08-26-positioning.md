@@ -5,7 +5,6 @@ title: Positioning
 date: August 26, 2014
 blog: true
 ---
-
 <span class="construction">Under Construction</span>
 <p>So far we have been introduced to inline, inline-block and block elements. We have also explored floats, how to use them and when to use them. From our floats blog we have learned a little bit about positioning and how to make basic layouts or navigations using floats. Let's build off what we know. It has been a while for me so I think it would be best to first start with a small review about what we learned in our last blog post.</p>
 

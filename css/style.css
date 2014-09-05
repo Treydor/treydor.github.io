@@ -24,7 +24,7 @@ body {
 
 header {
   border-bottom: 1px solid #eee;
-  padding: 1.2em 0;
+  padding: 1.5em 0;
 }
 
 .container {
@@ -159,6 +159,7 @@ a:hover { text-decoration: underline; }
 nav {
   float: right;
   font-size: .9em;
+  font-weight: 600;
 }
 
 nav ul {
@@ -191,6 +192,8 @@ nav a:hover {
    ========================================================================== */
 
 .box { margin: 3em auto; }
+
+.box p, .box h1, .box h2, .box h3 { margin-top: 0; }
 
 .example {
   background: #eee;
@@ -235,7 +238,11 @@ nav a:hover {
   padding: 0;
 }
 
+.posts:first-child { margin-top: 5em; }
+
 .posts li { margin-bottom: 3em; }
+
+article h2, article h3 { margin-top: 2em; }
 
 .posts h3 a {
   color: #777;
@@ -271,50 +278,6 @@ nav a:hover {
   display: inline-block;
   margin: 0 .3em;
   padding: 0;
-}
-
-/* ==========================================================================
-   Project List
-   ========================================================================== */
-
-.project-list { padding: 0; }
-
-.project-list ul { float: left; }
-
-.project-list li {
-  font-size: 1.1em;
-  list-style: none;
-  margin-bottom: .4em;
-}
-
-@media screen and (max-width: 500px) {
-  .project-list li {
-    display: block;
-    float: none;
-    margin-bottom: 1em;
-  }
-}
-
-.project-title { }
-
-.project-title a { color: #777; }
-
-.project-title a:hover {
-  color: #bbb;
-  text-decoration: none;
-}
-
-.project-date {
-  color: #bbb;
-  float: right;
-  white-space: nowrap;
-}
-
-@media screen and (max-width: 500px) {
-  .project-date {
-    display: block;
-    float: none;
-  }
 }
 
 /* ==========================================================================
@@ -468,14 +431,14 @@ nav a:hover {
 }
 
 .position-example1 {
-  background: url('../img/projects/positioning/parent.png');
+  background: url('/img/projects/positioning/parent.png');
   height: 150px;
   margin-bottom: 2em;
   width: 260px;
 }
 
 .position-example2 {
-  background: url('../img/projects/positioning/child.png');
+  background: url('img/projects/positioning/child.png');
   height: 150px;
   margin-bottom: 2em;
   width: 260px;
