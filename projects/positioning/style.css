@@ -3,9 +3,14 @@
    ========================================================================== */
 
 html {
-  font: 400 115%/1.5 "Open Sans", sans-serif;
+  font: 400 110%/1.5 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+@media screen and (max-width: 600px) {
+  html { font: 400 100%/1.5 "Open Sans", sans-serif; }
+}
+
 
 body {
   background: #fff;
@@ -19,6 +24,10 @@ header {
   background-size: cover;
   padding: 14em 0;
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  header { padding: 4em 0; }
 }
 
 footer {

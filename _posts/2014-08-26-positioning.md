@@ -6,6 +6,7 @@ date: August 26, 2014
 blog: true
 ---
 <span class="construction">Under Construction</span>
+
 <p>So far we have been introduced to inline, inline-block and block elements. We have also explored floats, how to use them and when to use them. From our floats blog we have learned a little bit about positioning and how to make basic layouts or navigations using floats. Let's build off what we know. It has been a while for me so I think it would be best to first start with a small review about what we learned in our last blog post.</p>
 
 <ul>
@@ -15,35 +16,4 @@ blog: true
   <li>When the float property is used, elements are shifted over until it touches the parent element, or another floated element.</li>
   <li>Floats are not perfect, and usually require the use of clearfixes to tell surrounding elements how to behave around the float.</li>
   <li>Floats are extremely useful, but may not be always be the best way of accomplishing desired effects.</li>
-</ul>
-
-<div class="content cf">
-  <div class="column">
-    <div class="position-example1"></div>
-    <h3>Parent</h3>
-  </div>
-  <div class="column">
-    <div class="position-example2"></div>
-    <h3>Child</h3>
-  </div>
-</div>
-
-<h2>Section II</h2>
-<p>Maecenas ut euismod diam, eu mollis enim. Duis interdum nunc eu finibus eleifend. Nunc rhoncus pharetra nunc, id posuere est blandit vel. Duis quis augue enim. Duis rhoncus nisl eget leo dignissim dignissim. Etiam nisl lectus, fringilla eget nisl et, ultricies dapibus urna. Nulla bibendum risus et risus auctor sagittis. Maecenas sed odio orci. Duis id neque mattis, euismod mauris sollicitudin, ultrices nisi. Curabitur mattis velit ut interdum commodo. Cras rhoncus ultrices sagittis. Praesent vitae placerat mi. Aenean at gravida arcu, sit amet varius leo.</p>
-
-<p>Aliquam non nisi tellus. Nam ac justo metus. Fusce molestie sodales mauris, ut placerat neque sagittis vitae. Sed cursus gravida ultrices. Nam tincidunt mauris felis, eu venenatis quam rutrum tempus. Donec aliquam blandit porta. Etiam pulvinar sapien nec placerat vestibulum. Praesent mollis convallis lectus ut hendrerit. Sed eleifend ullamcorper nisi vel bibendum. Fusce blandit augue libero, eget tempus sapien laoreet in. Aenean mattis, justo non dapibus commodo, odio libero feugiat diam, quis laoreet libero felis sit amet nisi. Pellentesque blandit at orci quis auctor. Mauris a tortor massa. Duis porta luctus ipsum, at facilisis odio ornare condimentum. Mauris suscipit condimentum interdum. Proin eleifend mollis ligula, eu ultrices dolor volutpat a.</p>
-
-<h2>Section III</h2>
-<p>Maecenas ut euismod diam, eu mollis enim. Duis interdum nunc eu finibus eleifend. Nunc rhoncus pharetra nunc, id posuere est blandit vel. Duis quis augue enim. Duis rhoncus nisl eget leo dignissim dignissim. Etiam nisl lectus, fringilla eget nisl et, ultricies dapibus urna. Nulla bibendum risus et risus auctor sagittis. Maecenas sed odio orci. Duis id neque mattis, euismod mauris sollicitudin, ultrices nisi. Curabitur mattis velit ut interdum commodo. Cras rhoncus ultrices sagittis. Praesent vitae placerat mi. Aenean at gravida arcu, sit amet varius leo.</p>
-
-<p>Aliquam non nisi tellus. Nam ac justo metus. Fusce molestie sodales mauris, ut placerat neque sagittis vitae. Sed cursus gravida ultrices. Nam tincidunt mauris felis, eu venenatis quam rutrum tempus. Donec aliquam blandit porta. Etiam pulvinar sapien nec placerat vestibulum. Praesent mollis convallis lectus ut hendrerit. Sed eleifend ullamcorper nisi vel bibendum. Fusce blandit augue libero, eget tempus sapien laoreet in. Aenean mattis, justo non dapibus commodo, odio libero feugiat diam, quis laoreet libero felis sit amet nisi. Pellentesque blandit at orci quis auctor. Mauris a tortor massa. Duis porta luctus ipsum, at facilisis odio ornare condimentum. Mauris suscipit condimentum interdum. Proin eleifend mollis ligula, eu ultrices dolor volutpat a.</p>
-
-<h2>References</h2>
-<ul>
-  <li>
-    Mozilla Developer Network: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">Position</a>
-  </li>
-  <li>
-    Learn to code HTML &amp; CSS: <a href="http://learn.shayhowe.com/html-css/positioning-content/" target="_blank">Positioning Content</a>
-  </li>
 </ul>

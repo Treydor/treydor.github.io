@@ -18,6 +18,7 @@
             <item>
                 <title>Positioning</title>
                 <description>&lt;p&gt;&lt;span class=&quot;construction&quot;&gt;Under Construction&lt;/span&gt;&lt;/p&gt;
+
 &lt;p&gt;So far we have been introduced to inline, inline-block and block elements. We have also explored floats, how to use them and when to use them. From our floats blog we have learned a little bit about positioning and how to make basic layouts or navigations using floats. Let&#39;s build off what we know. It has been a while for me so I think it would be best to first start with a small review about what we learned in our last blog post.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -27,37 +28,6 @@
   &lt;li&gt;When the float property is used, elements are shifted over until it touches the parent element, or another floated element.&lt;/li&gt;
   &lt;li&gt;Floats are not perfect, and usually require the use of clearfixes to tell surrounding elements how to behave around the float.&lt;/li&gt;
   &lt;li&gt;Floats are extremely useful, but may not be always be the best way of accomplishing desired effects.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;content cf&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;position-example1&quot;&gt;&lt;/div&gt;
-    &lt;h3&gt;Parent&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;div class=&quot;position-example2&quot;&gt;&lt;/div&gt;
-    &lt;h3&gt;Child&lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2&gt;Section II&lt;/h2&gt;
-&lt;p&gt;Maecenas ut euismod diam, eu mollis enim. Duis interdum nunc eu finibus eleifend. Nunc rhoncus pharetra nunc, id posuere est blandit vel. Duis quis augue enim. Duis rhoncus nisl eget leo dignissim dignissim. Etiam nisl lectus, fringilla eget nisl et, ultricies dapibus urna. Nulla bibendum risus et risus auctor sagittis. Maecenas sed odio orci. Duis id neque mattis, euismod mauris sollicitudin, ultrices nisi. Curabitur mattis velit ut interdum commodo. Cras rhoncus ultrices sagittis. Praesent vitae placerat mi. Aenean at gravida arcu, sit amet varius leo.&lt;/p&gt;
-
-&lt;p&gt;Aliquam non nisi tellus. Nam ac justo metus. Fusce molestie sodales mauris, ut placerat neque sagittis vitae. Sed cursus gravida ultrices. Nam tincidunt mauris felis, eu venenatis quam rutrum tempus. Donec aliquam blandit porta. Etiam pulvinar sapien nec placerat vestibulum. Praesent mollis convallis lectus ut hendrerit. Sed eleifend ullamcorper nisi vel bibendum. Fusce blandit augue libero, eget tempus sapien laoreet in. Aenean mattis, justo non dapibus commodo, odio libero feugiat diam, quis laoreet libero felis sit amet nisi. Pellentesque blandit at orci quis auctor. Mauris a tortor massa. Duis porta luctus ipsum, at facilisis odio ornare condimentum. Mauris suscipit condimentum interdum. Proin eleifend mollis ligula, eu ultrices dolor volutpat a.&lt;/p&gt;
-
-&lt;h2&gt;Section III&lt;/h2&gt;
-&lt;p&gt;Maecenas ut euismod diam, eu mollis enim. Duis interdum nunc eu finibus eleifend. Nunc rhoncus pharetra nunc, id posuere est blandit vel. Duis quis augue enim. Duis rhoncus nisl eget leo dignissim dignissim. Etiam nisl lectus, fringilla eget nisl et, ultricies dapibus urna. Nulla bibendum risus et risus auctor sagittis. Maecenas sed odio orci. Duis id neque mattis, euismod mauris sollicitudin, ultrices nisi. Curabitur mattis velit ut interdum commodo. Cras rhoncus ultrices sagittis. Praesent vitae placerat mi. Aenean at gravida arcu, sit amet varius leo.&lt;/p&gt;
-
-&lt;p&gt;Aliquam non nisi tellus. Nam ac justo metus. Fusce molestie sodales mauris, ut placerat neque sagittis vitae. Sed cursus gravida ultrices. Nam tincidunt mauris felis, eu venenatis quam rutrum tempus. Donec aliquam blandit porta. Etiam pulvinar sapien nec placerat vestibulum. Praesent mollis convallis lectus ut hendrerit. Sed eleifend ullamcorper nisi vel bibendum. Fusce blandit augue libero, eget tempus sapien laoreet in. Aenean mattis, justo non dapibus commodo, odio libero feugiat diam, quis laoreet libero felis sit amet nisi. Pellentesque blandit at orci quis auctor. Mauris a tortor massa. Duis porta luctus ipsum, at facilisis odio ornare condimentum. Mauris suscipit condimentum interdum. Proin eleifend mollis ligula, eu ultrices dolor volutpat a.&lt;/p&gt;
-
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    Mozilla Developer Network: &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/position&quot; target=&quot;_blank&quot;&gt;Position&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    Learn to code HTML &amp;amp; CSS: &lt;a href=&quot;http://learn.shayhowe.com/html-css/positioning-content/&quot; target=&quot;_blank&quot;&gt;Positioning Content&lt;/a&gt;
-  &lt;/li&gt;
 &lt;/ul&gt;
 </description>
                 <pubDate>Tue, 26 Aug 2014 00:00:00 -0500</pubDate>
