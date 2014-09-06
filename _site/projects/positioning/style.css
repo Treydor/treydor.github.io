@@ -230,7 +230,11 @@ section {
 
 .references li { padding: .1em 0; }
 
-.references h2 { padding: .3em 0; }
+.references h3 {
+  font-size: 1.8em;
+  padding: .2em 0;
+  text-transform: none;
+}
 
 .yoshi {
   background: url('yoshi-egg-off.png');
