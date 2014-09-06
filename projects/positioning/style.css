@@ -1,0 +1,363 @@
+/* ==========================================================================
+   Basic Page Styles
+   ========================================================================== */
+
+html {
+  font: 400 110%/1.5 "Merriweather", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  margin: 0;
+}
+
+header {
+  background: url('test2.png');
+  background-position: 70%;
+  background-size: cover;
+  padding: 14em 0;
+  width: 100%;
+}
+
+footer {
+  color: #000;
+  font-size: .6em;
+  margin: 150px 0 50px 0;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5 {
+  color: #333;
+  display: block;
+  font-family: "Open Sans" sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+h1 { font-size: 2.4em; }
+
+h2 { font-size: 2.2em; }
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: .3em;
+}
+
+p {
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+strong { font-weight: 700; }
+
+q { }
+
+q:before {
+  content: "\201C";
+  font-family: "Georgia", serif;
+}
+
+q:after {
+  content: "\201D";
+  font-family: "Georgia", serif;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a { color: #333; }
+
+a:hover { color: #777; }
+
+/* ==========================================================================
+   Page Layout
+   ========================================================================== */
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+  width: 90%;
+}
+
+section {
+  margin: 200px 0;
+  width: 100%;
+}
+
+.special {
+  background: #ed1c24;
+  color: #000;
+  font-size: 1.2em;
+  margin: 8em 0;
+  padding: 4em 0;
+}
+
+.row {
+  background: #eee;
+  border-radius: 6px;
+  margin-bottom: 2em;
+  padding: 1.5em;
+  width: 90%;
+}
+
+.column {
+  border: 4px dashed #777;
+  float: left;
+  padding: 0 .3em;
+  width: 45%
+}
+
+.column:first-child { margin-right: 5%; }
+
+.column-heading {
+  font-size: 2em;
+  margin: .4em 0 .2em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.column-summary {
+  margin: 0;
+  text-align: center;
+}
+
+.column p {
+  padding: 0;
+  margin: 0 0 .7em 0;
+}
+
+.box {
+  background: #eee;
+  border-radius: 6px;
+  margin-bottom: 2em;
+  padding: 1.5em;
+  width: 90%;
+}
+
+.box-title {
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+.box p { font-size: 1.1em; }
+
+/* ==========================================================================
+   Page Elements
+   ========================================================================== */
+
+.title {
+  border: 2px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  padding: .1em .5em;
+  text-align: center;
+  text-shadow: 1px 1px 3px #333;
+  text-transform: uppercase;
+}
+
+.special-title {
+  color: #fff;
+  margin-bottom: 1em;
+  text-align: center;
+  text-shadow: 1px 1px 3px #333;
+}
+
+.title-summary {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  margin-top: 2em;
+}
+
+.toad {
+  background: url('toad2.png');
+  height: 220px;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  width: 442px;
+}
+
+.section-list {
+  list-style: none;
+  margin: 3em 0;
+  padding: 0;
+}
+
+.section-list li {
+  float: left;
+  padding: 1em;
+  width: 45%;
+}
+
+.section-list h3 {
+  border-bottom: 1px solid #ccc;
+  color: #bbb;
+}
+
+.section-list p {
+  margin-top: .5em;
+  padding: 0;
+}
+
+.references {
+  float: left;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.references li { padding: .1em 0; }
+
+.references h2 { padding: .3em 0; }
+
+.yoshi {
+  background: url('yoshi-egg-off.png');
+  display: block;
+  height: 55px;
+  margin: 20px auto;
+  width: 55px;
+}
+
+.yoshi:hover {
+  background: url('yoshi-egg-hover.png')
+}
+
+/* ==========================================================================
+   Project Examples
+   ========================================================================== */
+
+.star {
+  background: url('star.png');
+  height: 81px;
+  margin: 25px;
+  position: fixed;
+  width: 82px;
+  z-index: 100;
+}
+
+.mario {
+  background: url('mario.png');
+  height: 258px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.bowser {
+  background: url('bowser.png');
+  height: 258px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.mario2 {
+  background: url('mario2.png');
+  height: 258px;
+  margin: 0 auto;
+  position: static;
+  width: 300px;
+}
+
+.bowser-relative {
+  background: url('bowser.png');
+  bottom: 50px;
+  height: 258px;
+  left: 100px;
+  position: relative;
+  width: 300px;
+}
+
+.mario2-relative {
+  background: url('mario2.png');
+  bottom: -25px;
+  height: 258px;
+  left: -50px;
+  position: relative;
+  width: 300px;
+}
+
+.bowser-absolute {
+  background: url('bowser.png');
+  height: 258px;
+  left: 130px;
+  position: absolute;
+  width: 300px;
+}
+
+.luigi {
+  background: url('luigi.png');
+  height: 258px;
+  position: absolute;
+  width: 300px;
+}
+
+.star2 {
+  background: url('star2.png');
+  height: 258px;
+  position: relative;
+  width: 300px;
+}
+
+.z-index-1 { z-index: 1; }
+
+.z-index-2 { z-index: 2; }
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+.remove-border { border: none; }
+
+.remove-margin { margin: 0; }
+
+.remove-padding { padding: 0; }
+
+.center { text-align: center; }
+
+.bg-none { background: none; }
+
+
+/* ==========================================================================
+  Clearfix
+  ========================================================================== */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after { clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    clear: both;
+    *zoom: 1;
+}
