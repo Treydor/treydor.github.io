@@ -22,7 +22,7 @@ header {
   background: #333;
   background-position: 70%;
   background-size: cover;
-  padding: 14em 0;
+  padding: 20em 0;
   width: 100%;
 }
 
@@ -91,7 +91,6 @@ a:hover { color: #777; }
 .container {
   margin: 0 auto;
   max-width: 800px;
-  position: relative;
   width: 90%;
 }
 
