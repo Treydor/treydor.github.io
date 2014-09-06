@@ -48,7 +48,6 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2em;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
 }
 
 h1 { font-size: 2.4em; }
@@ -130,7 +129,6 @@ section {
   font-size: 2em;
   margin: .4em 0 .2em 0;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .column-summary {
@@ -233,7 +231,6 @@ section {
 .references h3 {
   font-size: 1.8em;
   padding: .2em 0;
-  text-transform: none;
 }
 
 .yoshi {
