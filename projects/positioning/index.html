@@ -24,8 +24,6 @@
     <section>
       <div class="container">
         <div class="box">
-          <div class="toad"></div>
-          <h2 class="box-title">Introduction</h2>
           <p>When thinking about positioning in terms of HTML and CSS, most of us agree that there are multiple ways to accomplish the same goal. What we don't always know is which is the most efficient.</p>
           <p>In our last blog we talked about the advantages as well as the disadvantages of floats. Floats are an extremely useful tool that really give us a lot of freedom to organize and put things where we want.</p>
           <p>Let's add to what we already know about positioning from floats and talk about a few very common positioning types. We will also talk about how these properties work with one another and at the end we will take a look at another very essential property that coincides with positioning.</p>
@@ -35,6 +33,7 @@
 
     <section>
       <div class="container">
+        <h2 class="box-title">Properties</h2>
         <ul class="section-list cf">
           <li>
             <h3>Static</h3>
@@ -48,12 +47,11 @@
           </li>
           <li>
             <h3>Absolute</h3>
-            <p>Elements with an absolute position property are taken out of the normal flow of your HTML document. Elements that are positioned using absolute are, by default, <q>attached</q> to the closest relative or absolute positioned parent element.
-            <p>With absolute positioning you can literally move your element wherever you want on your page using offset properties.</p>
+            <p>Elements with an absolute position property are taken out of the normal flow of your HTML document and are, by default, <q>attached</q> to the closest relative or absolute positioned parent element. With absolute positioning you can move your element wherever you want on your page using offset properties. <p>The only catch to absolute is if not <q>attached</q> to another element, it is at the mercy of the user's viewport because it has been taken out of the normal flow of the HTML document.</p>
           </li>
           <li>
             <h3>Fixed</h3>
-            <p>An element with a fixed position is positioned in relation to the user's viewport. A fixed position element will hold the specified location even if the user scrolls the page or resizes the window. This type of positioning property is not common, but certainly has some uses. Navigations are a great example.</p>
+            <p>An element with a fixed position is positioned in relation to the user's viewport. The element's position will remain in its location when the user scrolls up or down the page and resizes the window. This type of positioning property is not common, but certainly has some uses. Navigations are a great example.</p>
             <p>Do you see any elements with a fixed position?</p>
           </li>
         </ul>
@@ -99,7 +97,7 @@
         <div class="row cf">
           <div class="column remove-border ">
             <h3 class="example-heading">Parent: Relative<br>Child: Absolute</h3>
-            <p>Here everything looks pretty good. In this example we have changed our parent element to relative added a bottom: -25px and a left: -50px. We then set our child element, Bowser, to absolute with a left: 130px. This ensures that the child element will be 130px away of wherever our mario is moved.</p>
+            <p>Here everything looks pretty good. In this example we have changed our parent element to relative added a bottom: -25px and a left: -50px. We then set our child element, Bowser, to absolute with a left: 130px. This ensures that the child element will be 130px away of wherever our Mario is moved.</p>
           </div>
           <div class="column">
             <div class="mario2-relative">
@@ -123,7 +121,7 @@
       <div class="container">
         <div class="box cf">
           <h2 class="box-title">z-index</h2>
-          <p>The z-index property controls the stacking order of positioned elements, allowing them overlap one another. Think of it as using layers. How z-index works is very simple, basically, the higher the z-index, the greater priority for it to be the top-most <q>layer</q>.</p>
+          <p>The z-index property controls the stacking order of positioned elements, allowing them overlap one another. Think of it as using layers. How z-index works is very simple, basically, the higher the number associated with z-index means the greater priority for it to be the top-most <q>layer</q>.</p>
         </div>
         <div class="row cf">
           <div class="column">
@@ -131,8 +129,9 @@
             <div class="star2 z-index-1"></div>
           </div>
           <div class="column remove-border">
-            <h3 class="example-heading">Luigi's z-index = 2<br>Star's z-index = 1</h3>
-            <p>In this situation the star will always be behind Luigi in the stack order since the number associated with it is less than Luigi's.</p>
+            <h3 class="example-heading">Luigi = 2 : Star = 1</h3>
+            <p>In this situation the star will always be behind Luigi in the stack order since it's z-index is 1 and Luigi's is 2.</p>
+            <p>On a fun, side note, the z-index number range is huge, we're talking millions. The current max range supported by most browsers is 2147483638.
           </div>
         </div>
         <div class="row cf">
@@ -141,14 +140,14 @@
             <div class="star2 z-index-2"></div>
           </div>
           <div class="column remove-border">
-            <h3 class="example-heading">Luigi's z-index = 1<br>Star's z-Index = 2</h3>
-            <p>Changing the z-index of both Luigi and the Star we adjust the stack order. This allows to put the star comfortably in Luigi's hand.</p>
-            <p>Great job! We got the star!</p>
+            <h3 class="example-heading">Luigi = 1 : Star = 2</h3>
+            <p>Swapping the z-index for both Luigi and the Star we reversing the stack order. This allows the star to come forward where it now rests comfortably in Luigi's hand.</p>
+            <p>Great job, we helped Luigi get the Star!</p>
           </div>
         </div>
 
-        <div class="box bg-none remove-padding-top">
-          <p>When using z-index it is important to remember that there are limits. One of the biggest things to remember is that z-index only works on positioned elements. The second thing you want to take into account is nesting. When nested your child element can never have a greater z-index than its parent.</p>
+        <div class="box">
+          <p>When using z-index it is important to remember that there are limits. One of the biggest things to remember is that <strong>z-index only works on positioned elements</strong>. The second thing you want to <strong>take into account is nesting</strong>. When nested, your child element can never have a greater z-index than its parent.</p>
         </div>
       </div>
     </section>
@@ -180,16 +179,13 @@
             <li>
               <a href="http://vector.me/browse/832151/super_mario_bros" target="_blank">Super Mario Bros. Pack by CCorreaDesigns</a>
             </li>
-            <li>
-              <a href="http://shadowthrust.deviantart.com/" target="_blank">Yoshi Egg by ShadowThrust</a>
-            </li>
           </ul>
         </div>
       </div>
 
     <footer>
-      <div class="container">
-        <a href="#" class="yoshi" alt="Top"></a>
+      <div class="container cf">
+        <a class="toad" href="#" alt="Top"></a>
         <p>All content on this website, including articles, artwork, screen shots, graphics, logos, digital downloads and other files, is the property of <a href="http://www.nintendo.com/corp/copyright.jsp" target="_blank">Nintendo of America Inc.</a>, unless owned by a third party, and is protected by United States and international copyright, trademark and other intellectual property laws. Trademarks and copyrights for third-party games and characters are owned by the companies that market or license those products.</p>
       </div>
     </footer>
