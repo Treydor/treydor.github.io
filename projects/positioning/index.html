@@ -11,9 +11,7 @@
   </head>
 
   <body>
-
     <div class="star fixed"></div>
-
     <header>
       <div class="container center">
         <div class="title">Positioning</div>
@@ -25,7 +23,6 @@
 
     <section>
       <div class="container">
-
         <div class="box">
           <div class="toad"></div>
           <h2 class="box-title">Introduction</h2>
@@ -33,14 +30,11 @@
           <p>In our last blog we talked about the advantages as well as the disadvantages of floats. Floats are an extremely useful tool that really give us a lot of freedom to organize and put things where we want.</p>
           <p>Let's add to what we already know about positioning from floats and talk about a few very common positioning types. We will also talk about how these properties work with one another and at the end we will take a look at another very essential property that coincides with positioning.</p>
         </div>
-
       </div>
     </section>
 
-
     <section>
       <div class="container">
-
         <ul class="section-list cf">
           <li>
             <h3>Static</h3>
@@ -63,100 +57,75 @@
             <p>Do you see any elements with a fixed position?</p>
           </li>
         </ul>
-
       </div>
     </section>
 
-
     <section>
       <div class="container">
-
         <div class="row cf">
-
           <div class="column remove-border">
             <div class="mario"></div>
             <h2 class="column-heading">Parent</h2>
             <p class="column-summary">Mario will represent the parent element. A Parent Element contains children elements.</p>
           </div>
-
           <div class="column remove-border">
             <div class="bowser"></div>
             <h2 class="column-heading">Child</h2>
             <p class="column-summary">Bowser will represent the child element. The child element is contained by its parent element.</p>
           </div>
-
         </div>
-
         <div class="row cf">
-
           <div class="remove-border column">
             <h3 class="example-heading">Mario needs help!</h3>
             <p>Mario seems to be stuck behind Bowser. This is because when a child element is put inside of a parent element, the child element is essentially layered on top. In this example, both the parent and child elements are set to static. A static positioning property is the default of every element we use. Let's see if we can use some other elements to uncover Mario.</p>
           </div>
-
           <div class="column">
             <div class="mario2">
               <div class="bowser"></div>
             </div>
           </div>
-
         </div>
 
         <div class="row cf">
-
           <div class="column remove-border">
             <h3 class="example-heading">Parent: Static<br>Child: Relative</h3>
-            <p>Here our friend Mario is now visible. In this example we left our parent element, Mario, positioned as static. We have set our child element to a relative position. In addition to changing the position, we have also added a left and bottom property to place Bowser exactly where desire. Let's try and line these two up so they can get a good look at each other.</p>
+            <p>Mario is now visible, things still look kind of off. In this example we left our parent element, Mario, positioned as static and changed our child element to a position of relative. In addition to changing the position, we have also added a property of left: 100px and bottom: 50px to place Bowser exactly where we desire. Let's try and line these two up so they can get a better look at each other.</p>
           </div>
-
           <div class="column">
             <div class="mario2 static">
               <div class="bowser-relative"></div>
             </div>
           </div>
-
         </div>
-
         <div class="row cf">
           <div class="column remove-border ">
             <h3 class="example-heading">Parent: Relative<br>Child: Absolute</h3>
-            <p>Here everything looks pretty good except the fact that we are now outside of our border. In this example we have changed our parent element to relative, and positioned it accordingly using bottom and left properties. We then set our child element, Bowser, to absolute. This ensures that the child element will remain <q>attached</q> to its parent regardless of where the parent is moved.</p>
+            <p>Here everything looks pretty good. In this example we have changed our parent element to relative added a bottom: -25px and a left: -50px. We then set our child element, Bowser, to absolute with a left: 130px. This ensures that the child element will remain 130px to the left of wherever our mario is moved.</p>
           </div>
           <div class="column">
             <div class="mario2-relative">
               <div class="bowser-absolute"></div>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
 
     <section class="special">
       <div class="container">
-
         <h1 class="special-title">What about the star?</h1>
         <p>The star that has been following us is set to a fixed position. This property allows whatever element we specify to be set to a fixed position within the browser's viewing area, or viewport.</p>
-
         <p>The star in the upper right has been fixed to the top-right corner with a 25px margin.</p>
-
         <p>With the star in our reach, I will introduce the last and final property that is essential when talking about positioning properties.</p>
-
       </div>
     </section>
 
     <section>
       <div class="container">
-
-
-
-
         <div class="box cf">
           <h2 class="box-title">z-index</h2>
           <p>The z-index property controls the stacking order of positioned elements, allowing them overlap one another. Think of it as using layers. How z-index works is very simple, basically, the higher the z-index, the greater priority for it to be the top-most <q>layer</q>.</p>
         </div>
-
         <div class="row cf">
           <div class="column">
             <div class="luigi z-index-2"></div>
@@ -167,7 +136,6 @@
             <p>In this situation the star will always be behind Luigi in the stack order since the number associated with it is less than Luigi's.</p>
           </div>
         </div>
-
         <div class="row cf">
           <div class="column">
             <div class="luigi z-index-1"></div>
@@ -183,13 +151,11 @@
         <div class="box bg-none remove-padding-top">
           <p>When using z-index it is important to remember that there are limits. One of the biggest things to remember is that z-index only works on positioned elements. The second thing you want to take into account is nesting. When nested your child element can never have a greater z-index than its parent.</p>
         </div>
-
       </div>
     </section>
 
       <div class="container cf">
         <div class="column remove-border">
-
           <ul class="references cf">
             <h3>References</h3>
             <li>
@@ -202,10 +168,8 @@
               <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">Mozilla Developer Network - Position</a>
             </li>
           </ul>
-
         </div>
         <div class="column remove-border">
-
           <ul class="references cf">
           <h3>Credits</h3>
             <li>
@@ -221,7 +185,6 @@
               <a href="http://shadowthrust.deviantart.com/" target="_blank">Yoshi Egg by ShadowThrust</a>
             </li>
           </ul>
-
         </div>
       </div>
 
