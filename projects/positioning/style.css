@@ -101,7 +101,6 @@ section {
   border-radius: 6px;
   margin-bottom: 2em;
   padding: 1.5em;
-  width: 90%;
 }
 
 .column {
@@ -264,7 +263,7 @@ section {
   background: url('mario2.png');
   bottom: -25px;
   height: 258px;
-  left: -50px;
+  left: -40px;
   position: relative;
   width: 300px;
 }
