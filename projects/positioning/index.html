@@ -37,22 +37,22 @@
         <ul class="section-list cf">
           <li>
             <h3>Static</h3>
-            <p>The default positioning property for all elements. Static keeps your element within the normal flow of your HTML document and does not work with any offset properties like top, right, left and bottom.</p>
-            <p>Static positioning should be used when trying to forcefully remove a positioning property for an element.</p>
+            <p>This property is the default positioning property for all elements. A static property keeps your element within the normal flow of your HTML document and does not work with any offset properties like top, right, left and bottom.</p>
+            <p>One of the most common uses for static is that it gives us the ability to forcefully remove a positioning property from an element that was inherited elsewhere.</p>
           </li>
           <li>
             <h3>Relative</h3>
-            <p>Relative positioning is one of the most used and most confusing positioning properties. A relative property works very similar to static in the sense that it will not take your element out of the normal flow of your HTML document. The big difference between static and relative is that you are able to use offset properties.</p>
-            <p>It is important to remember that changing an elements position to relative and not assigning offset properties will result in no change to the element.</p>
+            <p>Relative positioning is one of the most used and most confusing of the positioning properties. A relative property works very similar to static in the sense that it will not take your element out of the normal flow of your HTML document. The big difference between static and relative is that with relative you are able to use offset properties.</p>
+            <p>It is important to remember that changing an element's position to relative and not assigning offset properties will result in no change to the element.</p>
           </li>
           <li>
             <h3>Absolute</h3>
-            <p>Elements with an absolute position property are taken out of the normal flow of your HTML document and are, by default, <q>attached</q> to the closest relative or absolute positioned parent element. With absolute positioning you can move your element wherever you want on your page using offset properties. <p>The only catch to absolute is if not <q>attached</q> to another element, it is at the mercy of the user's viewport because it has been taken out of the normal flow of the HTML document.</p>
+            <p>Elements with an absolute positioning property are taken out of the normal flow of your HTML document and are, by default, <q>attached</q> to the closest relative or absolute positioned parent element. With absolute positioning you can move your element wherever you want on your page using offset properties. <p>The only catch to absolute is if not <q>attached</q> to another element, it is at the mercy of the user's viewport because it has been taken out of the normal flow of the HTML document.</p>
           </li>
           <li>
             <h3>Fixed</h3>
-            <p>An element with a fixed position is positioned in relation to the user's viewport. The element's position will remain in its location when the user scrolls up or down the page and resizes the window. This type of positioning property is not common, but certainly has some uses. Navigations are a great example.</p>
-            <p>Do you see any elements with a fixed position?</p>
+            <p>An element with a fixed position is essentially <q>anchored</q> to a certain spot within the user's viewport. A fixed position is neat because the element will remain in its location even when the user scrolls up, down or resizes the window. This type of positioning property is not common, but certainly has some uses. A Navigation you want to follow you down the page is a great example.</p>
+            <p>Speaking of fixed positioning, do you see any elements on this page with this property?</p>
           </li>
         </ul>
       </div>
@@ -64,7 +64,7 @@
           <div class="column remove-border">
             <div class="mario"></div>
             <h2 class="column-heading">Parent</h2>
-            <p class="column-summary">Mario will represent the parent element. A Parent Element contains children elements.</p>
+            <p class="column-summary">Mario will represent the parent element. A parent element contains children elements.</p>
           </div>
           <div class="column remove-border">
             <div class="bowser"></div>
@@ -75,7 +75,7 @@
         <div class="row cf">
           <div class="remove-border column">
             <h3 class="example-heading">Parent: Static<br>Child: Static</h3>
-            <p>Mario seems to be stuck behind Bowser. This is because when a child element is put inside of a parent element, the child element is essentially layered on top. In this example, both the parent and child elements are set to static. A static positioning property is the default of every element we use. Let's see if we can use some other elements to uncover Mario.</p>
+            <p>Uh oh, it looks like Mario is stuck behind Bowser. This is because when a child element is put inside of a parent element, the child element is essentially layered on top. In this example, both the parent and child elements are set to static. A static positioning property is the default of every element we use. Let's see if we can use some other properties to help Mario.</p>
           </div>
           <div class="column">
             <div class="mario2">
@@ -86,7 +86,7 @@
         <div class="row cf">
           <div class="column remove-border">
             <h3 class="example-heading">Parent: Static<br>Child: Relative</h3>
-            <p>Mario is now visible, things still look kind of off. In this example we left our parent element, Mario, positioned as static and changed our child element to a position of relative. In addition to changing the position, we have also added a property of left: 100px and bottom: 50px to place Bowser exactly where we desire. Let's try and line these two up so they can get a better look at each other.</p>
+            <p>Mario is now visible, but things still look off. In this example we left our parent element, Mario, positioned as static and gave our child element a position of relative. In addition to changing the positioning, we have also added a property of left: 100px and bottom: 50px. These are called <strong>offset properties</strong>. Offset properties give us even more control of exactly where we want to position elements. Let's keep going with this and see if we can give these two a  better look at each other.</p>
           </div>
           <div class="column">
             <div class="mario2 static">
@@ -97,7 +97,7 @@
         <div class="row cf">
           <div class="column remove-border ">
             <h3 class="example-heading">Parent: Relative<br>Child: Absolute</h3>
-            <p>Here everything looks pretty good. In this example we have changed our parent element to relative added a bottom: -25px and a left: -50px. We then set our child element, Bowser, to absolute with a left: 130px. This ensures that the child element will be 130px away of wherever our Mario is moved.</p>
+            <p>Here everything looks pretty good. In this example we have changed our parent element to relative and added offset properties bottom: -25px and left: -50px. We then set our child element, Bowser, to absolute with an offset property of left: 130px. This ensures that the child element will be 130px away of wherever our Mario is moved.</p>
           </div>
           <div class="column">
             <div class="mario2-relative">
@@ -111,9 +111,9 @@
     <section class="special">
       <div class="container">
         <h1 class="special-title">What about the star?</h1>
-        <p>The star that has been following us is set to a fixed position. This property allows whatever element we specify to be set to a fixed position within the browser's viewing area, or viewport.</p>
-        <p>The star in the upper right has been fixed to the top-right corner with a 25px margin.</p>
-        <p>With the star in our reach, I will introduce the last and final property that is essential when talking about positioning properties.</p>
+        <p>The star that has been following us on the left side of the screen is set to a fixed position. This property allows whatever element we specify to be set to a fixed area within the browser's viewing area, or viewport.</p>
+        <p>This particular element does not have offset properties. Instead, this element has a simple 25px margin.</p>
+        <p>With the star in our reach, we should take a look at the last and final property we will be talking about today. This next property is very useful when working with positioning properties.</p>
       </div>
     </section>
 
@@ -121,7 +121,7 @@
       <div class="container">
         <div class="box cf">
           <h2 class="box-title">z-index</h2>
-          <p>The z-index property controls the stacking order of positioned elements, allowing them overlap one another. Think of it as using layers. How z-index works is very simple, basically, the higher the number associated with z-index means the greater priority for it to be the top-most <q>layer</q>.</p>
+          <p>The z-index property controls the stacking order of positioned elements, allowing them to overlap one another. An easy way to think of it is like using layers. How z-index works is very simple, basically, the higher the number associated with z-index means the greater priority for it to be the top-most <q>layer</q>.</p>
         </div>
         <div class="row cf">
           <div class="column">
@@ -131,7 +131,7 @@
           <div class="column remove-border">
             <h3 class="example-heading">Luigi = 2 : Star = 1</h3>
             <p>In this situation the star will always be behind Luigi in the stack order since it's z-index is 1 and Luigi's is 2.</p>
-            <p>On a fun, side note, the z-index number range is huge, we're talking millions. The current max range supported by most browsers is 2147483638.
+            <p>On a fun, side note, the z-index number range is huge, we're talking billions. The current max range supported by most browsers is 2,147,483,638.</p>
           </div>
         </div>
         <div class="row cf">
@@ -141,13 +141,13 @@
           </div>
           <div class="column remove-border">
             <h3 class="example-heading">Luigi = 1 : Star = 2</h3>
-            <p>Swapping the z-index for both Luigi and the Star we reversing the stack order. This allows the star to come forward where it now rests comfortably in Luigi's hand.</p>
+            <p>Swapping the z-index for both Luigi and the Star we reverse the stack order. This allows the star to come forward where it now rests comfortably in Luigi's hand.</p>
             <p>Great job, we helped Luigi get the Star!</p>
           </div>
         </div>
 
         <div class="box">
-          <p>When using z-index it is important to remember that there are limits. One of the biggest things to remember is that <strong>z-index only works on positioned elements</strong>. The second thing you want to <strong>take into account is nesting</strong>. When nested, your child element can never have a greater z-index than its parent.</p>
+          <p>When using z-index it is important to remember is that there are boundaries. The first thing to remember is that <strong>z-index only works on positioned elements</strong>. The second thing you want to <strong>take into account is nesting</strong>. When nested, your child element can never have a greater z-index than its parent.</p>
         </div>
       </div>
     </section>

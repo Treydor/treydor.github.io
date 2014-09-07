@@ -2,7 +2,7 @@
 layout: posts
 name: Noah Rogers
 title: Positioning
-date: August 26, 2014
+date: September 4, 2014
 blog: true
 ---
 <span class="construction">Under Construction</span>
@@ -17,3 +17,5 @@ blog: true
   <li>Floats are not perfect, and usually require the use of clearfixes to tell surrounding elements how to behave around the float.</li>
   <li>Floats are extremely useful, but may not be always be the best way of accomplishing desired effects.</li>
 </ul>
+
+<p>Positioning properties</p>
