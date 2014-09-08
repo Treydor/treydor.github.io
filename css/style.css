@@ -24,7 +24,7 @@ body {
 
 header {
   border-bottom: 1px solid #eee;
-  padding: 1.5em 0;
+  padding: 1em 0;
 }
 
 .container {
@@ -159,7 +159,6 @@ a:hover { text-decoration: underline; }
 nav {
   float: right;
   font-size: .9em;
-  font-weight: 600;
 }
 
 nav ul {
@@ -288,13 +287,9 @@ article h2, article h3 { margin-top: 2em; }
   background-image: url(../img/splash.jpg);
   background-position: 50% 25%;
   background-size: cover;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
   width: 100%;
-}
-
-@media screen and (max-width: 600px) {
-  .splash { height: 400px; }
 }
 
 .splash-text {
