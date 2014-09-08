@@ -18,13 +18,14 @@ html {
 }
 
 body {
-  background: #fff;
-  color: #555;
+  background: #f6f6f6;
+  color: #333;
 }
 
 header {
+  background: #fefefe;
   border-bottom: 1px solid #eee;
-  padding: 1em 0;
+  padding: 1.2em 0;
 }
 
 .container {
@@ -48,7 +49,7 @@ footer { margin-top: 6em; }
    ======================================================================= */
 
 h1, h2, h3, h4, h5 {
-  color: #777;
+  color: #555;
   display: block;
   font-family: 'Roboto Slab', serif;
   margin: 0;
@@ -57,7 +58,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2em;
 }
 
-h1 { font-size: 2em; }
+h1 { font-size: 1.9em; }
 
 h2 { font-size: 1.6em; }
 
@@ -134,7 +135,7 @@ cite:before { content: "— " ;}
    ======================================================================= */
 
 a {
-  color: #4183c4;
+  color: #70a2a2;
   text-decoration: none;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
@@ -158,7 +159,8 @@ a:hover { text-decoration: underline; }
 
 nav {
   float: right;
-  font-size: .9em;
+  font-size: .8em;
+  padding-top: 3px;
 }
 
 nav ul {
@@ -169,11 +171,12 @@ nav ul {
 
 nav li {
   float: left;
-  padding: 0 .4em;
-  }
+  margin-left: 1em;
+}
 
 nav a {
   color: #bbb;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -284,20 +287,14 @@ article h2, article h3 { margin-top: 2em; }
    ======================================================================= */
 
 .splash {
-  background-image: url(../img/splash.jpg);
-  background-position: 50% 25%;
-  background-size: cover;
-  height: 400px;
-  margin: 0 auto;
+  color: #555;
+  font-size: 1.1em;
+  margin: 8em auto;
+  text-align: center;
   width: 100%;
 }
 
-.splash-text {
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: 600;
-  padding: 10%;
-}
+.splash-title { font-weight: 600; }
 
 .profile-box { width: 100%; }
 
