@@ -18,14 +18,13 @@ html {
 }
 
 body {
-  background: #f6f6f6;
+  background: #fcfcfc;
   color: #333;
 }
 
 header {
-  background: #fefefe;
   border-bottom: 1px solid #eee;
-  padding: 1.2em 0;
+  padding: .9em;
 }
 
 .container {
@@ -171,7 +170,7 @@ nav ul {
 
 nav li {
   float: left;
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 
 nav a {
@@ -249,7 +248,7 @@ article h2, article h3 { margin-top: 2em; }
 .posts h3 a {
   color: #777;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .posts h3 a:hover {
