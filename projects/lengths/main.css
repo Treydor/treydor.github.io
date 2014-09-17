@@ -1,0 +1,239 @@
+/* =======================================================================
+   Style Guide
+   ======================================================================= */
+
+.color-primary { #3f9a82; }
+.color-accent { #e9dc7e; }
+.color-background { #3b596a; }
+
+/* =======================================================================
+   Essentials & Layout
+   ======================================================================= */
+
+html {
+  font: 400 120%/1.5 "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #3b596a;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+@media screen and (min-width: 800px) {
+  .container { max-width: 800px; }
+}
+
+@media screen and (max-width: 600px) {
+  nav .container { padding: 0; }
+}
+
+/* =======================================================================
+   Typography
+   ======================================================================= */
+
+h1, h2, h3, h4, h5 {
+  color: #e9dc7e;
+  display: block;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-size: 2em; }
+
+h2 { font-size: 1.6em; }
+
+h3 { font-size: 1.4em; }
+
+h4 { font-size: 1.2em; }
+
+p {
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+strong { font-weight: 700; }
+
+/* =======================================================================
+   Quotes
+   ======================================================================= */
+
+q { font-style: italic; }
+
+q:before {
+  content: "\201C";
+  font-family: "Georgia", serif;
+}
+
+q:after {
+  content: "\201D";
+  font-family: "Georgia", serif;
+}
+
+blockquote{
+  background: #faf5e4;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px #ddd;
+  margin: 2em auto;
+  padding: 1em;
+  width: 85%;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+}
+
+cite:before { content: "— " ;}
+
+/* =======================================================================
+   Hyperlinks
+   ======================================================================= */
+
+a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+a:hover { text-decoration: underline; }
+
+/* =======================================================================
+   Page Elements
+   ======================================================================= */
+
+header {
+  background: #333;
+  font-size: 1.1em;
+}
+
+nav { background: #3f9a82; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  nav ul { text-align: right; }
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  width: 24%;
+}
+
+@media screen and (min-width: 600px) {
+  nav li { width: 65px; }
+}
+
+nav li a {
+  display: block;
+  padding: .9em 0;
+}
+
+nav li a:hover {
+  background: #3a8e78;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  nav li a:hover { border-bottom: 2px solid #e9dc7e; }
+}
+
+.title-small {
+  color: #fff;
+  float: left;
+  letter-spacing: 2px;
+  padding: .95em 1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .title-small { display: none; }
+}
+
+@media screen and (min-width: 600px) {
+  .title-large { display: none; }
+}
+
+@media screen and (max-width: 600px) {
+  .title-large {
+    display: block;
+    float: none;
+    font-size: 3em;
+    padding: 1.3em 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.content-list {
+  list-style: none;
+  padding: 0;
+}
+
+.content-list li { margin-top: 4em; }
+
+.content-title {
+  color: #ecdb60;
+  font-size: 1.6em;
+  margin-bottom: .2em;
+}
+
+.content-list p {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+footer { margin: 5em 0; }
+
+.references {
+  margin: 0 2em;
+  padding: 0;
+}
+
+/* =======================================================================
+   Clearfix
+   ======================================================================= */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after { clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    clear: both;
+    *zoom: 1;
+}
