@@ -104,7 +104,7 @@ a:hover { text-decoration: underline; }
 header {
   background: #2b424e;
   font-size: 1.1em;
-  margin: 2.5em 0;
+  margin: 2em 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -181,19 +181,19 @@ nav li a:hover {
 
 .circle-header {
   background: #2b424e;
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   border-radius: 50%;
   color: #e9dc7e;
-  font-size: 1.5em;
+  font-size: 1.4em;
   height: 90px;
-  line-height: 2.9em;
+  line-height: 3em;
   margin: 3.5em auto 1.5em auto;
   text-align: center;
   width: 90px;
 }
 
 @media screen and (max-width: 600px) {
-  .circle-header { line-height: 3.2em; }
+  .circle-header { line-height: 3.3em; }
 }
 
 .references {
@@ -226,7 +226,7 @@ footer li:last-child { margin-right: 0; }
 
 .row {
   background: #2b424e;
-  border-radius: 12px;
+  border-radius: 6px;
   margin: 3em auto;
   padding: 3em .8em;
   text-align: center;

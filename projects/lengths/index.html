@@ -36,14 +36,14 @@
     <section>
       <div class="container">
         <h2>Absolute Length Units</h2>
-        <p>Absolute length units are probably the most familiar to those just starting out. An absolute length is an static measurement not defined by another element or the viewport. Like inches or feet in the real world, absolute values within CSS operate much the same way.</p>
+        <p>Absolute length units are probably the most familiar to those just starting out. An absolute length is a static measurement that is not defined by another element or the viewport. Like inches or feet in the real world, absolute values within CSS operate much the same way.</p>
       </div>
     </section>
 
     <section>
       <div class="container">
         <div class="circle-header" id="px">px</div>
-        <p>The first and most common absolute element within our CSS is the pixel length. Before I say any more on pixel, it is important to first remember that pixel, in terms of CSS lengths, has nothing to do with screen pixels, and therefore should be thought of as <q>device pixels</q>.</p>
+        <p>The first and most common absolute element is the pixel. Before I say any more on pixel, it is important to first remember that pixel, in terms of CSS lengths, has nothing to do with screen pixels, and therefore should be thought of as different.</p>
         <p>Notated as <strong>px</strong> in CSS, pixels are a unit of measure that are great for setting fixed font sizes, heights, widths, borders, letter spacing and media queries to our elements. These values will not change when the browser window is resized.</p>
 
         <div class="row">
@@ -76,17 +76,16 @@
     <section>
       <div class="container">
         <h2>Relative Length Units</h2>
-        <p>Relative length units are <q>font-relative</q>. This means that the actual length is determined by the font-size of the element. Relative length units are great because the variable in sizes allows us to create smooth, scalable layouts. This is extremely important in responsive web design.</p>
-        <p>There are numerous relative length values. I have highlighted a few them below. I have also provided a few instances when I use them.</p>
+        <p>Relative length units are <q>font-relative</q>. This means that the actual length is determined by the font-size of the element. Relative length units are great because the fluidity in sizes allows us to create smooth, scalable layouts. This is extremely important in responsive web design.</p>
+        <p>There are numerous relative length values. I have highlighted a few them below and also provided a few instances of when I would use them.</p>
       </div>
     </section>
 
     <section>
       <div class="container">
-
         <div class="circle-header" id="em">em</div>
-        <p>An em's size is determined from the inherited font-size of its parent element. With em we are not limited to strictly defining font sizes, but it is also common practice to use em to define margins, padding and line-heights as well.</p>
-        <p>Remember, if a font size is not defined, the em unit's size will inherit the base font size of its nearest parent element that has a defined font size and calculate from there.</p>
+        <p>An em's size is determined from the inherited font-size of its parent element. With em we are not limited to strictly defining font sizes, but it is also common practice to use em to define margins, padding and line-heights.</p>
+        <p>Remember, if a font size is not defined then the em unit's size will inherit the base font size of its nearest parent element that has a defined font size and calculate from there.</p>
 
         <div class="row">
           <div class="column">
@@ -111,11 +110,11 @@
         </div>
 
         <h4>How is em size calculated?</h4>
-        <p>A very simple explanation that really helped put how em work goes like this. Assuming there is no outside influencing CSS, let's say we have an element with a font-size of 20px and a width of 5em. Knowing that one em is equal to the defined font-size of 20px, we can determine the width of the element in pixels. The element's width is actually 100px (20px*5em=100px). Still don't understand? Click <a href="http://codepen.io/anon/pen/rbEiu" target="_blank">here</a> for an example.</p>
+        <p>A simple explanation that helped put em sizes goes something like this. Assuming there is no outside properties influencing the CSS, let's say we have an element with a font-size of 20px and a width of 5em. Knowing that one em is equal to the defined font-size of 20px, we can determine the width of the element in pixels. The element's width is actually 100px (20px*5em=100px). Still don't understand? Click <a href="http://codepen.io/anon/pen/rbEiu" target="_blank">here</a> for an example.</p>
 
         <div class="circle-header" id="rem">rem</div>
-        <p>Root em units are notated as <strong>rem</strong> in our CSS. These units are extremely similar to <strong>em</strong> units in the sense that its size is actually dictated from another element's defined font-size.</p>
-        <p>In the case of rem, the size is defined from the root element, which is usually the html element within our CSS</p>
+        <p>Root em units are notated as <strong>rem</strong> in our CSS. These units are extremely similar to <strong>em</strong> units in the sense that its size is actually determined based on another element's defined font-size.</p>
+        <p>In the case of rem, the size is defined from the root element, or html element, within our CSS</p>
 
         <div class="row">
           <div class="column">
@@ -128,14 +127,14 @@
           </div>
         </div>
 
-        <h4>Wait, I'm confused...</h4>
+        <h4>rem vs. em</h4>
         <p>You can see that the text with a font size of 2rem is slightly smaller than the text with a font-size of 2em. This is because the root (html) element font size is set to 100%, while the body font size is set to 125%.
 
         <p>Remember what I said earlier? If a font size is not defined, the em unit's size will inherit the base font size of its nearest parent element that has a defined font size. In this case, the body is the nearest parent element.</p>
 
         <div class="circle-header" id="percent">%</div>
-        <p>Percentages are notated with a <strong>%</strong> in CSS and are an extremely common property. Although not technically a length unit, percentages have a wide variety of uses and are most closely related to the relative length units.</p>
-        <p>Percentages are great for creating fluid web pages that change and adjust given the user's viewport. This helps tremendously when talking about responsive web design.</p>
+        <p>Percentages are notated with a <strong>%</strong> in CSS and are an extremely common CSS length. Although not technically a length unit, percentages have a wide variety of uses and are most closely related to relative length units.</p>
+        <p>Percentages are great for creating fluid web pages that change and adjust given the user's viewport and window size. The flexibility of pecentages helps tremendously when working to create a responsive website.</p>
 
         <div class="row">
           <div class="column">
@@ -149,10 +148,9 @@
         </div>
 
         <h4>Go ahead and test for yourself!</h4>
-        <p>If you resize your window you will notice that the box with a width of 40px will not grow or shrink, while the box with a width of 90% will adjust with your viewport horizontally.</p>
-        <p>I personally like using percentages for containers and various aspects of a page's layout. These boxes and containers that contain content can easily adjust to perfectly fit the user's viewport whichever device they are using.</p>
+        <p>If you resize your window you will notice that the box with a width of 40px above will not grow or shrink, while the box with a width of 90% will adjust with your viewport horizontally.</p>
+        <p>I personally like using percentages for containers and various aspects of a page's layout. These larger element that contain content easily adjust to fit the user's viewport giving a uniform look on whichever device people may be using.</p>
         <p>This entire page is made up of a combination of these elements. See if you can find which elements are absolute and which are relative!</p>
-
       </div>
     </section>
 
