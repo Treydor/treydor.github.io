@@ -5,7 +5,7 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/ico" href="../../img/page-icon.ico">
     <title>Lengths of CSS</title>
   </head>
@@ -13,57 +13,174 @@
   <body>
 
     <header>
-      <div class="title-large cf">CSS <strong>Lengths</strong></div>
+      <div class="title-large cf">CSS Lengths</div>
         <nav>
           <div class="container cf">
-            <div class="title-small">CSS <strong>Lengths</strong></div>
+            <div class="title-small">CSS Lengths</div>
             <ul>
-              <li><a href="#percent">%</a></li>
+              <li><a href="#px">px</a></li>
               <li><a href="#em">em</a></li>
               <li><a href="#rem">rem</a></li>
-              <li><a href="#px">px</a></li>
+              <li><a href="#percent">%</a></li>
             </ul>
           </div>
         </nav>
     </header>
 
-    <div class="container">
-      <ul class="content-list">
-        <li>
-          <h3 id="percent">%</h3>
-          <p>Ne case movet has, id vel fabellas atomorum neglegentur. Detraxit persequeris has no, eos omnes dicant homero eu. Mea zril cotidieque eu. Discere vivendum praesent eum te, vim ne summo denique delectus. Id suscipit ocurreret eum, eius voluptaria conclusionemque ea mel, at sed dicit nobis. Eam te meis idque mundi, inermis scaevola complectitur eam in.</p>
-        </li>
-        <li>
-          <h3 id="em">em</h3>
-          <p>Ne case movet has, id vel fabellas atomorum neglegentur. Detraxit persequeris has no, eos omnes dicant homero eu. Mea zril cotidieque eu. Discere vivendum praesent eum te, vim ne summo denique delectus. Id suscipit ocurreret eum, eius voluptaria conclusionemque ea mel, at sed dicit nobis. Eam te meis idque mundi, inermis scaevola complectitur eam in.</p>
-        </li>
-        <li>
-          <h3 id="rem">rem</h3>
-          <p>Ne case movet has, id vel fabellas atomorum neglegentur. Detraxit persequeris has no, eos omnes dicant homero eu. Mea zril cotidieque eu. Discere vivendum praesent eum te, vim ne summo denique delectus. Id suscipit ocurreret eum, eius voluptaria conclusionemque ea mel, at sed dicit nobis. Eam te meis idque mundi, inermis scaevola complectitur eam in.</p>
-        </li>
-        <li>
-          <h3 id="px">px</h3>
-          <p>Ne case movet has, id vel fabellas atomorum neglegentur. Detraxit persequeris has no, eos omnes dicant homero eu. Mea zril cotidieque eu. Discere vivendum praesent eum te, vim ne summo denique delectus. Id suscipit ocurreret eum, eius voluptaria conclusionemque ea mel, at sed dicit nobis. Eam te meis idque mundi, inermis scaevola complectitur eam in.</p>
-        </li>
-      </ul>
-    </div>
+    <section>
+      <div class="container intro">
+        Lengths, in the context of CSS, can be broken down in to two categories, <strong>Absolute</strong> and <strong>Relative</strong>.
+      </div>
+    </section>
 
-      <footer>
-        <div class="container">
-          <h3>References</h3>
-          <ul class="references">
-            <li>
-              <a href="#" target="_blank">Source 1</a>
-            </li>
-            <li>
-              <a href="#" target="_blank">Source 2</a>
-            </li>
-            <li>
-              <a href="#" target="_blank">Source 3</a>
-            </li>
-          </ul>
+    <section>
+      <div class="container">
+        <h2>Absolute Length Units</h2>
+        <p>Absolute length units are probably the most familiar to those just starting out. An absolute length is an static measurement not defined by another element or the viewport. Like inches or feet in the real world, absolute values within CSS operate much the same way.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="circle-header" id="px">px</div>
+        <p>The first and most common absolute element within our CSS is the pixel length. Before I say any more on pixel, it is important to first remember that pixel, in terms of CSS lengths, has nothing to do with screen pixels, and therefore should be thought of as <q>device pixels</q>.</p>
+        <p>Notated as <strong>px</strong> in CSS, pixels are a unit of measure that are great for setting fixed font sizes, heights, widths, borders, letter spacing and media queries to our elements. These values will not change when the browser window is resized.</p>
+
+        <div class="row">
+          <div class="column">
+            <div class="px">Aa</div>
+            <div>font-size: 30px</div>
+          </div>
+          <div class="column">
+            <div class="px-large">Aa</div>
+            <div>font-size: 50px</div>
+          </div>
         </div>
-      </footer>
+
+        <div class="row">
+          <div class="column">
+            <div class="box small"></div>
+            <div>height/width: 40px</div>
+          </div>
+          <div class="column">
+            <div class="box large"></div>
+            <div>height/width: 75px</div>
+          </div>
+        </div>
+
+        <h4>So that's it? Just pixels?</h4>
+        <p>Pixels are not the only absolute length value, but they are by far the most common. Other absolute units include points (pt), millimeters (mm), centimeters (cm) and inches (in), but none of these have any advantage to pixel and are not commonly used.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Relative Length Units</h2>
+        <p>Relative length units are <q>font-relative</q>. This means that the actual length is determined by the font-size of the element. Relative length units are great because the variable in sizes allows us to create smooth, scalable layouts. This is extremely important in responsive web design.</p>
+        <p>There are numerous relative length values. I have highlighted a few them below. I have also provided a few instances when I use them.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="circle-header" id="em">em</div>
+        <p>An em's size is determined from the inherited font-size of its parent element. With em we are not limited to strictly defining font sizes, but it is also common practice to use em to define margins, padding and line-heights as well.</p>
+        <p>Remember, if a font size is not defined, the em unit's size will inherit the base font size of its nearest parent element that has a defined font size and calculate from there.</p>
+
+        <div class="row">
+          <div class="column">
+            <div class="px">Aa</div>
+            <div>font-size: 1em</div>
+          </div>
+          <div class="column">
+            <div class="em">Aa</div>
+            <div>font-size: 4em</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="box padding-px">box</div>
+            <div>padding: 5px</div>
+          </div>
+          <div class="column">
+            <div class="box padding-em">box</div>
+            <div>padding: 1em</div>
+          </div>
+        </div>
+
+        <h4>How is em size calculated?</h4>
+        <p>A very simple explanation that really helped put how em work goes like this. Assuming there is no outside influencing CSS, let's say we have an element with a font-size of 20px and a width of 5em. Knowing that one em is equal to the defined font-size of 20px, we can determine the width of the element in pixels. The element's width is actually 100px (20px*5em=100px). Still don't understand? Click <a href="http://codepen.io/anon/pen/rbEiu" target="_blank">here</a> for an example.</p>
+
+        <div class="circle-header" id="rem">rem</div>
+        <p>Root em units are notated as <strong>rem</strong> in our CSS. These units are extremely similar to <strong>em</strong> units in the sense that its size is actually dictated from another element's defined font-size.</p>
+        <p>In the case of rem, the size is defined from the root element, which is usually the html element within our CSS</p>
+
+        <div class="row">
+          <div class="column">
+            <div class="rem-font">Aa</div>
+            <div>font-size: 2rem</div>
+          </div>
+          <div class="column">
+            <div class="em-font">Aa</div>
+            <div>font-size: 2em</div>
+          </div>
+        </div>
+
+        <h4>Wait, I'm confused...</h4>
+        <p>You can see that the text with a font size of 2rem is slightly smaller than the text with a font-size of 2em. This is because the root (html) element font size is set to 100%, while the body font size is set to 125%.
+
+        <p>Remember what I said earlier? If a font size is not defined, the em unit's size will inherit the base font size of its nearest parent element that has a defined font size. In this case, the body is the nearest parent element.</p>
+
+        <div class="circle-header" id="percent">%</div>
+        <p>Percentages are notated with a <strong>%</strong> in CSS and are an extremely common property. Although not technically a length unit, percentages have a wide variety of uses and are most closely related to the relative length units.</p>
+        <p>Percentages are great for creating fluid web pages that change and adjust given the user's viewport. This helps tremendously when talking about responsive web design.</p>
+
+        <div class="row">
+          <div class="column">
+            <div class="box small"></div>
+            <div>width: 40px</div>
+          </div>
+          <div class="column">
+            <div class="box percent"></div>
+            <div>width: 90%</div>
+          </div>
+        </div>
+
+        <h4>Go ahead and test for yourself!</h4>
+        <p>If you resize your window you will notice that the box with a width of 40px will not grow or shrink, while the box with a width of 90% will adjust with your viewport horizontally.</p>
+        <p>I personally like using percentages for containers and various aspects of a page's layout. These boxes and containers that contain content can easily adjust to perfectly fit the user's viewport whichever device they are using.</p>
+        <p>This entire page is made up of a combination of these elements. See if you can find which elements are absolute and which are relative!</p>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>References</h2>
+        <ul class="references">
+          <li>
+            <a href="http://css-tricks.com/the-lengths-of-css/" target="_blank">The Lengths of CSS</a> - CSS Tricks
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" target="_blank">Length</a> - Mozilla Developer Network
+          </li>
+          <li>
+            <a href="http://learn.shayhowe.com/html-css/getting-to-know-css/" target="_blank">Getting to know CSS</a> - Learn to Code
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <ul>
+          <li><a href="/projects/">Back to Projects</a></li>
+          <li><a href="#">Top of Page</a></li>
+        </ul>
+      </div>
+    </footer>
 
   </body>
 </html>

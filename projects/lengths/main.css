@@ -5,19 +5,21 @@
 .color-primary { #3f9a82; }
 .color-accent { #e9dc7e; }
 .color-background { #3b596a; }
+.color-shadow { #2b424e; }
 
 /* =======================================================================
    Essentials & Layout
    ======================================================================= */
 
 html {
-  font: 400 120%/1.5 "Lato", sans-serif;
+  font: 400 100%/1.6 "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
   background: #3b596a;
   color: #fff;
+  font-size: 125%;
   margin: 0;
 }
 
@@ -31,7 +33,14 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  nav .container { padding: 0; }
+  header .container { padding: 0; }
+}
+
+section { margin: 5em 0 7em 0; }
+
+.intro {
+  font-size: 1.4em;
+  text-align: center;
 }
 
 /* =======================================================================
@@ -47,17 +56,20 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
-h1 { font-size: 2em; }
+h1 { font-size: 2.2em; }
 
 h2 { font-size: 1.6em; }
 
-h3 { font-size: 1.4em; }
+h3 {
+  font-size: 1em;
+  padding: .12em 0;
+}
 
-h4 { font-size: 1.2em; }
+h4 { font-size: 1em; }
 
 p {
   display: block;
-  margin-bottom: 1.5em;
+  margin: .3em 0 2em 0;
 }
 
 strong { font-weight: 700; }
@@ -99,12 +111,8 @@ cite:before { content: "— " ;}
    ======================================================================= */
 
 a {
-  color: #fff;
+  color: #d3d3d3;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease 0s;
-  -moz-transition: all 0.2s ease 0s;
-  -o-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
 }
 
 a:hover { text-decoration: underline; }
@@ -114,8 +122,13 @@ a:hover { text-decoration: underline; }
    ======================================================================= */
 
 header {
-  background: #333;
+  background: #2b424e;
   font-size: 1.1em;
+  margin: 2.5em 0;
+}
+
+@media screen and (max-width: 600px) {
+  header { margin: 0; }
 }
 
 nav { background: #3f9a82; }
@@ -134,7 +147,7 @@ nav ul {
 nav li {
   display: inline-block;
   text-align: center;
-  width: 24%;
+  width: 23%;
 }
 
 @media screen and (min-width: 600px) {
@@ -142,8 +155,10 @@ nav li {
 }
 
 nav li a {
+  color: #fff;
   display: block;
   padding: .9em 0;
+  text-decoration: none;
 }
 
 nav li a:hover {
@@ -158,7 +173,8 @@ nav li a:hover {
 .title-small {
   color: #fff;
   float: left;
-  letter-spacing: 2px;
+  font-weight: 700;
+  letter-spacing: 1px;
   padding: .95em 1em;
   text-transform: uppercase;
 }
@@ -175,38 +191,99 @@ nav li a:hover {
   .title-large {
     display: block;
     float: none;
-    font-size: 3em;
+    font-size: 2em;
+    font-weight: 700;
     padding: 1.3em 0;
     text-align: center;
     text-transform: uppercase;
   }
 }
 
-.content-list {
-  list-style: none;
-  padding: 0;
+.circle-header {
+  background: #2b424e;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  color: #e9dc7e;
+  font-size: 1.5em;
+  height: 90px;
+  line-height: 2.9em;
+  margin: 3.5em auto 1.5em auto;
+  text-align: center;
+  width: 90px;
 }
-
-.content-list li { margin-top: 4em; }
-
-.content-title {
-  color: #ecdb60;
-  font-size: 1.6em;
-  margin-bottom: .2em;
-}
-
-.content-list p {
-  font-size: 1em;
-  margin: 0;
-  padding: 0;
-}
-
-footer { margin: 5em 0; }
 
 .references {
-  margin: 0 2em;
+  list-style: circle;
+  margin: .3em 1.2em;
   padding: 0;
 }
+
+footer {
+  font-size: .9em;
+  margin: 5rem 0 3em 0;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 .5em;
+}
+
+/* =======================================================================
+   Content Examples
+   ======================================================================= */
+
+.row {
+  background: #2b424e;
+  border-radius: 12px;
+  margin: 3em auto;
+  padding: 3em 1em;
+  text-align: center;
+  width: 90%;
+}
+
+.alt { font-size: 26px; }
+
+.column {
+  display: inline-block;
+  width: 49%;
+}
+
+.px { font-size: 30px; }
+
+.px-large { font-size: 50px; }
+
+.box {
+  background: #3f9a82;
+  border-radius: 3px;
+  display: inline-block;
+  margin: .8em 0;
+}
+
+.small {
+  height: 40px;
+  width: 40px;
+}
+
+.large {
+  height: 75px;
+  width: 75px;
+}
+
+.em { font-size: 4em; }
+
+.padding-px { padding: 5px; }
+
+.padding-em { padding: 1.5em; }
+
+.percent {
+  height: 40px;
+  width: 90%;
+}
+
+.em-font { font-size: 3em; }
+
+.rem-font { font-size: 3rem; }
 
 /* =======================================================================
    Clearfix
