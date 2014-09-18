@@ -23,6 +23,10 @@ body {
   margin: 0;
 }
 
+@media screen and (max-width: 600px) {
+  body { font-size: 115%; }
+}
+
 .container {
   margin: 0 auto;
   padding: 0 1em;
@@ -56,9 +60,9 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
-h1 { font-size: 2.2em; }
+h1 { font-size: 2em; }
 
-h2 { font-size: 1.6em; }
+h2 { font-size: 1.4em; }
 
 h3 {
   font-size: 1em;
@@ -212,6 +216,10 @@ nav li a:hover {
   width: 90px;
 }
 
+@media screen and (max-width: 600px) {
+  .circle-header { line-height: 3.2em; }
+}
+
 .references {
   list-style: circle;
   margin: .3em 1.2em;
@@ -224,10 +232,17 @@ footer {
   text-align: center;
 }
 
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
 footer li {
   display: inline-block;
-  margin: 0 .5em;
+  margin-right: 1em;
 }
+
+footer li:last-child { margin-right: 0; }
 
 /* =======================================================================
    Content Examples
@@ -237,7 +252,7 @@ footer li {
   background: #2b424e;
   border-radius: 12px;
   margin: 3em auto;
-  padding: 3em 1em;
+  padding: 3em .8em;
   text-align: center;
   width: 90%;
 }
@@ -281,9 +296,9 @@ footer li {
   width: 90%;
 }
 
-.em-font { font-size: 3em; }
+.em-font { font-size: 2.8em; }
 
-.rem-font { font-size: 3rem; }
+.rem-font { font-size: 2.8rem; }
 
 /* =======================================================================
    Clearfix
