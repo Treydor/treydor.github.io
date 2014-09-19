@@ -111,7 +111,10 @@ header {
   header { margin: 0; }
 }
 
-nav { background: #3f9a82; }
+nav {
+  background: #3f9a82;
+  box-shadow: 0px 0px 6px #2b424e;
+}
 
 nav ul {
   list-style: none;
