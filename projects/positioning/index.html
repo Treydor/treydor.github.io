@@ -33,7 +33,7 @@
 
     <section>
       <div class="container">
-        <h2 class="box-title">Properties</h2>
+      <h2 class="box-title">Properties</h2>
         <ul class="section-list cf">
           <li>
             <h3>Static</h3>
@@ -129,8 +129,7 @@
             <div class="star2 z-index-1"></div>
           </div>
           <div class="column remove-border">
-            <h3 class="example-heading">Luigi = 2 : Star = 1</h3>
-            <p>In this situation the star will always be behind Luigi in the stack order since it's z-index is 1 and Luigi's is 2.</p>
+            <p>In this situation the star will always be behind Luigi in the stack order since it's z-index is 1 and Luigi's z-index is 2.</p>
             <p>On a fun, side note, the z-index number range is huge, we're talking billions. The current max range supported by most browsers is 2,147,483,638.</p>
           </div>
         </div>
@@ -140,8 +139,8 @@
             <div class="star2 z-index-2"></div>
           </div>
           <div class="column remove-border">
-            <h3 class="example-heading">Luigi = 1 : Star = 2</h3>
-            <p>Swapping the z-index for both Luigi and the Star we reverse the stack order. This allows the star to come forward where it now rests comfortably in Luigi's hand.</p>
+            <p>Changing the z-index of Luigi to 1, and the star to 2 reverses the stack order.</p>
+            <p>This allows the star to come forward where it now rests comfortably in Luigi's hand.</p>
             <p>Great job, we helped Luigi get the Star!</p>
           </div>
         </div>
@@ -182,7 +181,11 @@
 
     <footer>
       <div class="container cf">
-        <a class="toad" href="#" alt="Top"></a>
+        <div class="toad"></div>
+        <ul>
+          <li><a href="/projects/">Back to Projects</a></li>
+          <li><a href="#">Top of Page</a></li>
+        </ul>
         <p>All content on this website, including articles, artwork, screen shots, graphics, logos, digital downloads and other files, is the property of <a href="http://www.nintendo.com/corp/copyright.jsp" target="_blank">Nintendo of America Inc.</a>, unless owned by a third party, and is protected by United States and international copyright, trademark and other intellectual property laws. Trademarks and copyrights for third-party games and characters are owned by the companies that market or license those products.</p>
       </div>
     </footer>
