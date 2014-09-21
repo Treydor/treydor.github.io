@@ -2,11 +2,10 @@
    Style Guide
    ======================================================================= */
 
-.color-primary { color: #bbb; }
-.color-accent { color: #777; }
-.color-background { color: #fff; }
-.color-background-shade { color: #ccc; }
-.color-link-hover { color: #d94d56 }
+.color-primary { color: #555; }
+.color-accent { color: #d35765; }
+.color-background { color: #f7f7f7; }
+.color-background-shade { color: #e9e9e9; }
 
 /* =======================================================================
    Essentials & Layout
@@ -61,7 +60,10 @@ h1 { font-size: 1.9em; }
 
 h2 { font-size: 1.6em; }
 
-h3 { font-size: 1.2em; }
+h3 {
+  font-size: 1em;
+  font-weight: 700;
+}
 
 h4 {
   font-size: .8em;
@@ -132,7 +134,7 @@ cite:before { content: "— " ;}
    ======================================================================= */
 
 a {
-  color: #da727e;
+  color: #d35765;
   text-decoration: none;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
@@ -174,7 +176,6 @@ nav li:last-child { margin-right: 0; }
 
 nav a {
   color: #bbb;
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -196,9 +197,8 @@ nav a:hover {
 .box p, .box h1, .box h2, .box h3 { margin-top: 0; }
 
 .example {
-  background: #eee;
+  background: #ececec;
   border-radius: 6px;
-  color: #555;
   padding: 1em;
 }
 
@@ -210,9 +210,10 @@ nav a:hover {
   color: #bbb;
   content: "Example";
   display: block;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 1em;
+  margin-bottom: .7rem;
   text-align: left;
   text-transform: uppercase;
 }
@@ -244,34 +245,35 @@ nav a:hover {
 
 article h2, article h3 { margin-top: 2em; }
 
-.posts h3 a { font-size: 1em; }
+.posts h3 a { font-size: 1.2rem; }
 
 .posts h3 a:hover {
-  color: #e18d97;
+  color: #da727e;
   text-decoration: none;
 }
 
-.posts .date { color: #b3b3b3; }
+.posts .date { color: #bbb; }
 
 .posts p { margin: .5em 0; }
 
 .posts-nav {
-  font-size: 1em;
+  font-size: .9rem;
   list-style: none;
-  margin: 2em auto;
+  margin: 3rem 0;
   padding: 0;
 }
 
 .posts-nav a {
-  display: inline-block;
-  font-weight: 600;
+  color: #bbb;
+  font-weight: 400;
 }
 
-.previous, .next {
-  display: inline-block;
-  margin: 0 .3em;
-  padding: 0;
+.posts-nav a:hover {
+  color: #777;
+  text-decoration: none;
 }
+
+.previous, .next { display: inline-block; }
 
 .next { float: right; }
 
@@ -295,7 +297,6 @@ article h2, article h3 { margin-top: 2em; }
 .profile-box { width: 100%; }
 
 .profile {
-  background: #eee no-repeat center;
   background-image: url(../img/profile.jpg);
   background-position: 50% 20%;
   background-size: cover;
@@ -307,7 +308,7 @@ article h2, article h3 { margin-top: 2em; }
 @media screen and (min-width: 615px) {
   .profile {
     border: 1px solid #eee;
-    border-radius: 12px;
+    border-radius: 3px;
     height: 300px;
     margin: 3em auto;
     width: 500px;
@@ -327,14 +328,11 @@ article h2, article h3 { margin-top: 2em; }
 }
 
 /* =======================================================================
-   Examples
+   Blog #1 Examples
    ======================================================================= */
-
-/* Blog #1 */
 
 .example-element {
   border-radius: 3px;
-  color: #bbb;
   font-size: .9em;
   font-weight: 600;
   margin: .3em 0;
@@ -368,7 +366,9 @@ article h2, article h3 { margin-top: 2em; }
   display: block;
 }
 
-/* Blog #2 */
+/* =======================================================================
+   Blog #2 Examples
+   ======================================================================= */
 
 .float-example {
   border: 2px dashed #bbb;
@@ -395,39 +395,6 @@ article h2, article h3 { margin-top: 2em; }
   margin: .8em 0;
   padding: 1em 0;
   min-width: 27%;
-}
-
-/* Blog #3 */
-
-.column {
-  background: #f3f3f3;
-  border-radius: 6px;
-  display: inline-block;
-  float: left;
-  margin: .6em;
-  padding: 1.2em;
-  text-align: center;
-}
-
-.column h3 { text-transform: uppercase; }
-
-.content {
-  margin: 0 auto;
-  padding: 1em;
-}
-
-.position-example1 {
-  background: url('/img/projects/positioning/parent.png');
-  height: 150px;
-  margin-bottom: 2em;
-  width: 260px;
-}
-
-.position-example2 {
-  background: url('img/projects/positioning/child.png');
-  height: 150px;
-  margin-bottom: 2em;
-  width: 260px;
 }
 
 /* =======================================================================
@@ -483,13 +450,13 @@ code {
   font-size: .8em;
   padding: .2em .4em;
   white-space: nowrap;
- }
+}
 
 /* =======================================================================
    Gists
    ======================================================================= */
 
-.gist { margin: 2em auto; }
+.gist { margin: 2rem auto; }
 
 .gist .file-data {
   font-size: .8rem !important;
@@ -499,26 +466,30 @@ code {
 .gist-syntax { padding: 1em; }
 
 .gist-syntax:before {
-  color: #555;
+  color: #515151;
   content: "Code";
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
   text-transform: uppercase;
 }
 
 .gist-data {
-  background-color: #3c3c3c !important;
+  background-color: #313131 !important;
   border-radius: 6px;
   color: #fff !important;
+  padding: 1rem !important;
 }
 
 .gist .gist-file {
   border: none !important;
   overflow: hidden !important;
 }
+
+.gist .gist-file .line-data { padding: 0 !important; }
 
 .k {
   color: #66d9ef !important;
