@@ -4,7 +4,7 @@
 
 .color-primary { color: #555; }
 .color-accent { color: #d35765; }
-.color-background { color: #f7f7f7; }
+.color-background { color: #fcfcfc; }
 .color-background-shade { color: #e9e9e9; }
 
 /* =======================================================================
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: #f7f7f7;
+  background: #f9f9f9;
   color: #555;
 }
 
@@ -134,7 +134,7 @@ cite:before { content: "— " ;}
    ======================================================================= */
 
 a {
-  color: #d35765;
+  color: #de5250;
   text-decoration: none;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
@@ -159,6 +159,7 @@ a:hover { text-decoration: underline; }
 nav {
   float: right;
   font-size: .9em;
+  font-weight: 600;
 }
 
 nav ul {
@@ -248,7 +249,7 @@ article h2, article h3 { margin-top: 2em; }
 .posts h3 a { font-size: 1.2rem; }
 
 .posts h3 a:hover {
-  color: #da727e;
+  color: #e67c7b;
   text-decoration: none;
 }
 
@@ -265,7 +266,7 @@ article h2, article h3 { margin-top: 2em; }
 
 .posts-nav a {
   color: #bbb;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .posts-nav a:hover {
@@ -307,8 +308,7 @@ article h2, article h3 { margin-top: 2em; }
 
 @media screen and (min-width: 615px) {
   .profile {
-    border: 1px solid #eee;
-    border-radius: 3px;
+    border: 1px solid #e9e9e9;
     height: 300px;
     margin: 3em auto;
     width: 500px;
