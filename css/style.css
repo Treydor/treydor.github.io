@@ -3,8 +3,8 @@
    ======================================================================= */
 
 .color-primary { color: #555; }
-.color-accent { color: #d35765; }
-.color-background { color: #fcfcfc; }
+.color-accent { color: #d57a8a; }
+.color-background { color: #f9f9f9; }
 .color-background-shade { color: #e9e9e9; }
 
 /* =======================================================================
@@ -12,7 +12,7 @@
    ======================================================================= */
 
 html {
-  font: 400 115%/1.5 "Open Sans", sans-serif;
+  font: 400 110%/1.5 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -33,7 +33,7 @@ header {
   width: 90%;
 }
 
-footer { margin-top: 6em; }
+footer { margin-top: 6rem; }
 
 .footer {
   background-image: url(../img/github.png);
@@ -134,7 +134,7 @@ cite:before { content: "— " ;}
    ======================================================================= */
 
 a {
-  color: #de5250;
+  color: #d57a8a;
   text-decoration: none;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
@@ -246,14 +246,18 @@ nav a:hover {
 
 article h2, article h3 { margin-top: 2em; }
 
-.posts h3 a { font-size: 1.2rem; }
+.posts h3 a { font-size: 1.3rem; }
 
 .posts h3 a:hover {
-  color: #e67c7b;
+  color: #dd94a1;
   text-decoration: none;
 }
 
-.posts .date { color: #bbb; }
+.date {
+  color: #a3a3a3;
+  display: inline-block;
+  margin: .1rem 0;
+}
 
 .posts p { margin: .5em 0; }
 
@@ -264,19 +268,19 @@ article h2, article h3 { margin-top: 2em; }
   padding: 0;
 }
 
-.posts-nav a {
-  color: #bbb;
+.previous, .next {
+  display: inline-block;
+  font-size: .8rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
-
-.posts-nav a:hover {
-  color: #777;
-  text-decoration: none;
-}
-
-.previous, .next { display: inline-block; }
 
 .next { float: right; }
+
+.posts-nav a:hover {
+color: #dd94a1;
+  text-decoration: none;
+}
 
 /* =======================================================================
    Style Guide
