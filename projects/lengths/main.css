@@ -161,16 +161,12 @@ nav li a:hover {
   text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
-  nav li a:hover { border-bottom: 2px solid #e9dc7e; }
-}
-
 .title-small {
   color: #fff;
   float: left;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: .95em 1em;
+  padding: .9em 1em;
   text-transform: uppercase;
 }
 
@@ -195,7 +191,7 @@ nav li a:hover {
 }
 
 .circle-header {
-  background: #2b424e;
+  background: #35505f;
   border: 3px solid #fff;
   border-radius: 50%;
   color: #e9dc7e;
@@ -283,11 +279,6 @@ footer a:hover { text-decoration: none; }
 
 .padding-em { padding: 1.5em; }
 
-.percent {
-  height: 40px;
-  width: 90%;
-}
-
 .rem-font { font-size: 2.8rem; }
 
 .em-font { font-size: 2.8em; }
@@ -295,6 +286,17 @@ footer a:hover { text-decoration: none; }
 .special { font-size: 14px; }
 
 .normal { font-size: 1rem; }
+
+.percent {
+  height: 40px;
+  width: 90%;
+}
+
+.large-percent { font-size: 200%; }
+
+.px26 { font-size: 26px; }
+
+.px52 { font-size: 52px; }
 
 /* =======================================================================
    Clearfix

@@ -144,6 +144,7 @@
       <div class="container">
         <div class="circle-header" id="percent">%</div>
         <p>Percentages, notated as <strong>%</strong>, are an extremely common CSS length. Although not technically a length unit, percentages have a wide variety of uses and are most closely related to relative length units.</p>
+
         <p>Percentages are great for creating fluid web pages that change and adjust given the user's viewport and window size. The flexibility of percentages help tremendously when working to create a responsive website.</p>
 
         <div class="row">
@@ -159,6 +160,31 @@
 
         <h4>Go ahead and test for yourself!</h4>
         <p>If you resize your window you will notice that the box with a width of 40px will not adjust with your window, while the box with a width of 90% will scale horizontally with your window.</p>
+
+        <p>You can also use percentages as a font size. Here you can see an example of a defined font size of 26px. The font size is then given a property to increase its size to 200%. Using a percentage in this case essentially increases the font size to 52px (26px*200%=52px).</p>
+
+        <div class="row px26">
+          <div class="column">
+            <div>Aa</div>
+            <div class="normal">font-size: 26px</div>
+          </div>
+          <div class="column">
+            <div class="large-percent">Aa</div>
+            <div class="normal">font-size: 200%</div>
+          </div>
+        </div>
+
+        <div class="row px26">
+          <div class="column">
+            <div class="large-percent">Aa</div>
+            <div class="normal">font-size: 200%</div>
+          </div>
+          <div class="column">
+            <div class="px52">Aa</div>
+            <div class="normal">font-size: 52px</div>
+          </div>
+        </div>
+
         <p>This entire page is made up of a combination of these elements. See if you can find which elements are absolute and which are relative!</p>
       </div>
     </section>
