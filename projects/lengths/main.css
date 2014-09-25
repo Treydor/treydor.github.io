@@ -31,6 +31,12 @@ body {
   padding: 0 1rem ;
 }
 
+.intro {
+  font-size: 1.4rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
 @media screen and (min-width: 800px) {
   .container {
     max-width: 800px;
@@ -44,11 +50,6 @@ section {
 }
 
 .alt { background: #35505f; }
-
-.intro {
-  font-size: 1.4rem;
-  text-align: center;
-}
 
 .last { border-bottom: none; }
 
@@ -115,7 +116,7 @@ a:hover { text-decoration: underline; }
 header {
   background: #2b424e;
   font-size: 1.1em;
-  margin: 2em 0;
+  margin-top: 2em;
 }
 
 @media screen and (max-width: 600px) {
