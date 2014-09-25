@@ -469,21 +469,11 @@ code {
 
 .gist-syntax { padding: 1em; }
 
-.gist-syntax:before {
-  color: #515151;
-  content: "Code";
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: .5rem;
-  text-transform: uppercase;
-}
+
 
 .gist-data {
-  background-color: #313131 !important;
-  border-radius: 6px;
+  background-color: #3c3c3c !important;
+  border-radius: 0;
   color: #fff !important;
   padding: 1rem !important;
 }
