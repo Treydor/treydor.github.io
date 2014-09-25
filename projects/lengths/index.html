@@ -33,7 +33,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="alt">
       <div class="container">
         <h2>Absolute Length Units</h2>
         <p>Absolute length units are probably the most familiar to those just starting out. An absolute length is a static measurement that is not defined by another element or the viewport. Like inches or feet in the real world, absolute values within CSS operate much the same way.</p>
@@ -68,12 +68,12 @@
           </div>
         </div>
 
-        <h4>So that's it? Just pixels?</h4>
+        <h4>Other absolute length values</h4>
         <p>Pixels are not the only absolute length value, but they are by far the most common. Other absolute units include points (pt), millimeters (mm), centimeters (cm) and inches (in), but none of these have any advantage to pixel and are not commonly used.</p>
       </div>
     </section>
 
-    <section>
+    <section class="alt">
       <div class="container">
         <h2>Relative Length Units</h2>
         <p>Relative length units are <q>font-relative</q>. This means that the actual length is determined by the font-size of the element. Relative length units are great because the fluidity in sizes allows us to create smooth, scalable layouts. This is extremely important in responsive web design.</p>
@@ -109,27 +109,39 @@
           </div>
         </div>
 
-        <h4>How is em size calculated?</h4>
+        <h4>The calculation of em</h4>
         <p>Assuming there is no outside properties influencing the CSS, an element with a font-size of 20px and a width of 5em. Knowing that one em is equal to the defined font-size of 20px, we can determine the width of the element in pixels. The element's width is actually 100px (20px*5em=100px). Still don't understand? Click <a href="http://codepen.io/anon/pen/rbEiu" target="_blank">here</a> for an example.</p>
+      </div>
+    </section>
 
+
+    <section>
+      <div class="container">
         <div class="circle-header" id="rem">rem</div>
-        <p><strong>rem</strong>, or root em units are extremely similar to <strong>em</strong> units in the sense that their size is determined based on another element's defined font-size.</p>
-        <p>In the case of rem, the size is defined from the root element within our CSS</p>
+        <p><strong>rem</strong>, or root em, are extremely similar to <strong>em</strong> units in the sense that their size is determined based on another element's defined font-size.</p>
+        <p>In the case of rem, the size is defined from the root element within our CSS, while em size is inherited from the nearest parent element.</p>
 
         <div class="row">
           <div class="column">
             <div class="rem-font">Aa</div>
             <div>font-size: 2.8rem</div>
+            <div>root: 130%</div>
           </div>
-          <div class="column">
+          <div class="column special">
             <div class="em-font">Aa</div>
-            <div>font-size: 2.8em</div>
+            <div class="normal">font-size: 2.8em</div>
+            <div class="normal">parent: 14px</div>
           </div>
         </div>
 
-        <h4>rem vs. em</h4>
-        <p>You can see that the text with a font size of 2rem is slightly smaller than the text with a font-size of 2em. This is because the root (html) element font size is set to 100%, while the body font size is set to 125%.
+        <h3>The difference, explained.</h3>
+        <p>Here you can see that our rem font size is slightly larger than than the em font size. Although both font sizes are 2.8, the rem font size is derived from the root element in our CSS, which is our html element. Alternatively, the em font size is based upon it's parent element font size of 16px.</p>
 
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
         <div class="circle-header" id="percent">%</div>
         <p>Percentages, notated as <strong>%</strong>, are an extremely common CSS length. Although not technically a length unit, percentages have a wide variety of uses and are most closely related to relative length units.</p>
         <p>Percentages are great for creating fluid web pages that change and adjust given the user's viewport and window size. The flexibility of percentages help tremendously when working to create a responsive website.</p>
@@ -151,7 +163,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="last">
       <div class="container">
         <h2>References</h2>
         <ul class="references">
@@ -169,12 +181,10 @@
     </section>
 
     <footer>
-      <div class="container">
-        <ul>
-          <li><a href="/projects/">Back to Projects</a></li>
-          <li><a href="#">Top of Page</a></li>
-        </ul>
-      </div>
+      <ul>
+        <li><a href="/projects/">Back to Projects</a></li>
+        <li><a href="#">Top of Page</a></li>
+      </ul>
     </footer>
 
   </body>

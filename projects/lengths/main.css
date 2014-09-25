@@ -12,36 +12,45 @@
    ======================================================================= */
 
 html {
-  font: 400 100%/1.6 "Lato", sans-serif;
+  font: 400 125%/1.6 "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 600px) {
+  html { font-size: 115%; }
 }
 
 body {
   background: #3b596a;
   color: #fff;
-  font-size: 125%;
   margin: 0;
-}
-
-@media screen and (max-width: 600px) {
-  body { font-size: 115%; }
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1rem ;
 }
 
 @media screen and (min-width: 800px) {
-  .container { max-width: 800px; }
+  .container {
+    max-width: 800px;
+    padding: 0;
+  }
 }
 
-section { margin: 5em 0 7em 0; }
+section {
+  border-bottom: 1px solid #35505f;
+  padding: 3rem 0;
+}
+
+.alt { background: #35505f; }
 
 .intro {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   text-align: center;
 }
+
+.last { border-bottom: none; }
 
 /* =======================================================================
    Typography
@@ -56,21 +65,23 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
-h1 { font-size: 2em; }
+h1 { font-size: 1.8rem; }
 
-h2 { font-size: 1.4em; }
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
 
 h3 {
-  font-size: 1em;
+  font-size: 1.1rem;
   padding: .12em 0;
 }
 
-h4 { font-size: 1em; }
+h4 { font-size: 1rem; }
 
-p {
-  display: block;
-  margin: .3em 0 2em 0;
-}
+p { margin: .2rem 0 1.5rem 0;}
+
+p:last-child { margin-bottom: 0; }
 
 strong { font-weight: 700; }
 
@@ -113,8 +124,9 @@ header {
 
 nav {
   background: #3f9a82;
-  box-shadow: 0px 0px 8px #2b424e;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 nav ul {
   list-style: none;
@@ -190,7 +202,7 @@ nav li a:hover {
   font-size: 1.4em;
   height: 90px;
   line-height: 3em;
-  margin: 3.5em auto 1.5em auto;
+  margin: 0 auto 3rem auto;
   text-align: center;
   width: 90px;
 }
@@ -207,7 +219,7 @@ nav li a:hover {
 
 footer {
   font-size: .9em;
-  margin: 5rem 0 3em 0;
+  padding: 2rem 0;
   text-align: center;
 }
 
@@ -223,23 +235,24 @@ footer li {
 
 footer li:first-child { margin-right: 2rem; }
 
+footer a:hover { text-decoration: none; }
+
 /* =======================================================================
    Content Examples
    ======================================================================= */
 
 .row {
-  background: #2b424e;
-  border-radius: 6px;
-  margin: 3em auto;
-  padding: 3em .8em;
+  background: #35505f;
+  border-radius: 9px;
+  margin: 3rem auto;
+  padding: 2rem 0;
   text-align: center;
   width: 90%;
 }
 
-.alt { font-size: 26px; }
-
 .column {
   display: inline-block;
+  vertical-align: bottom;
   width: 49%;
 }
 
@@ -275,9 +288,13 @@ footer li:first-child { margin-right: 2rem; }
   width: 90%;
 }
 
+.rem-font { font-size: 2.8rem; }
+
 .em-font { font-size: 2.8em; }
 
-.rem-font { font-size: 2.8rem; }
+.special { font-size: 14px; }
+
+.normal { font-size: 1rem; }
 
 /* =======================================================================
    Clearfix
