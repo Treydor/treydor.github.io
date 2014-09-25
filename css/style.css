@@ -134,7 +134,7 @@ cite:before { content: "— " ;}
    ======================================================================= */
 
 a {
-  color: #d57a8a;
+  color: #d87c5a;
   text-decoration: none;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
@@ -249,7 +249,7 @@ article h2, article h3 { margin-top: 2em; }
 .posts h3 a { font-size: 1.3rem; }
 
 .posts h3 a:hover {
-  color: #dd94a1;
+  color: #e29d83;
   text-decoration: none;
 }
 
