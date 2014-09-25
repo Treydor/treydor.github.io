@@ -245,7 +245,7 @@ footer a:hover { text-decoration: none; }
   background: #35505f;
   border-radius: 9px;
   margin: 3rem auto;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   text-align: center;
   width: 90%;
 }
