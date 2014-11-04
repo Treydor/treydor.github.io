@@ -1,0 +1,195 @@
+/* =======================================================================
+   Style Guide
+   ======================================================================= */
+
+.color-primary { }
+.color-accent { }
+.color-background { }
+.color-shadow { }
+
+/* =======================================================================
+   Basic Page Styles
+   ======================================================================= */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font: 400 112%/1.5 "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #ececec;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #576b77;
+  font: 1rem "Montserrat", sans-serif;
+  height: 55px;
+  margin-bottom: 2rem;
+}
+
+section { }
+
+li, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+a { color: #83ffdc; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* =======================================================================
+   Typography
+   ======================================================================= */
+
+h1, h2, h3, h4, h5 {
+  color: #f30;
+  margin: 0;
+}
+
+p {
+  display: block;
+  margin: 0 0 1.2rem 0;
+}
+
+p:last-child { margin-bottom: 0;}
+
+strong { }
+
+q { }
+
+blockquote { }
+
+/* =======================================================================
+   Page Elements
+   ======================================================================= */
+
+.logo {
+  background: url('/projects/travel/img/logo.png');
+  display: block;
+  float: left;
+  height: 55px;
+  width: 154px;
+}
+
+nav {
+  float: right;
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+nav li {
+  display: inline;
+  padding: 0 .5rem;
+}
+
+nav li:last-child { padding-right: 0; }
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+nav a:hover { color: #eee; }
+
+.mobile { display: none; }
+
+@media screen and (max-width: 740px) {
+
+}
+
+.table {
+  border: 2px dashed #ccc;
+  padding: 1rem;
+}
+
+.row {
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.row:last-child { margin-bottom: 0; }
+
+.column {
+  float: left;
+  margin: 0;
+  padding: 1rem;
+}
+
+.column div {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.column.full { width: 100%; }
+.column.two-thirds { width: 66.7%; }
+.column.half { width: 50%; }
+.column.third { width: 33.3%; }
+.column.fourth { width: 25%; }
+.column.flow-opposite { float: right; }
+
+
+.box {
+  background: #fff;
+  box-shadow: 1px 1px 2px #ddd;
+  margin: 1rem auto;
+}
+
+.content { padding: 1rem; }
+
+/* =======================================================================
+   Clearfix
+   ======================================================================= */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after { clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    clear: both;
+    *zoom: 1;
+}
