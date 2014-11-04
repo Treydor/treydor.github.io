@@ -17,13 +17,13 @@ html {
 }
 
 body {
-  background: #f9f9f9;
+  background: #fafafa;
   color: #555;
 }
 
 header {
   background: #fff;
-  border-bottom: 1px solid #e9e9e9;
+  border-bottom: 1px solid #eee;
   padding: 1.2em 0;
 }
 
@@ -96,6 +96,11 @@ article ul { margin-bottom: 2em; }
 
 article li { margin: .2em 0; }
 
+article h1 {
+  color: #777;
+  margin-bottom: .2rem;
+}
+
 section { padding-bottom: .5em; }
 
 /* =======================================================================
@@ -159,7 +164,7 @@ a:hover { text-decoration: underline; }
 nav {
   float: right;
   font-size: .9em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 nav ul {
@@ -278,7 +283,7 @@ article h2, article h3 { margin-top: 2em; }
 .next { float: right; }
 
 .posts-nav a:hover {
-color: #dd94a1;
+  color: #e29d83;
   text-decoration: none;
 }
 
@@ -312,7 +317,6 @@ color: #dd94a1;
 
 @media screen and (min-width: 615px) {
   .profile {
-    border: 1px solid #e9e9e9;
     height: 300px;
     margin: 3em auto;
     width: 500px;
