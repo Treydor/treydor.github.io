@@ -24,16 +24,18 @@ html {
 
 body {
   background: #ececec;
+  border-top: 4px solid #b5e655;
   color: #000;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: #576b77;
+  background: #4bb5c1;
   font: 1rem "Montserrat", sans-serif;
   height: 55px;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem 0;
+  width: 100%;
 }
 
 section { }
@@ -91,46 +93,29 @@ blockquote { }
 
 nav {
   float: right;
-  font-size: .8rem;
-  font-weight: 700;
-  line-height: 55px;
+  font-size: .9rem;
 }
 
-nav li {
-  display: inline;
-  padding: 0 .5rem;
-}
+nav li { display: inline; }
 
 nav li:last-child { padding-right: 0; }
 
 nav a {
   color: #fff;
+  display: inline-block;
+  line-height: 55px;
+  padding: 0 .5rem;
   text-decoration: none;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-  text-transform: uppercase;
-  -moz-transition: color 0.2s ease;
-  -ms-transition: color 0.2s ease;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
 
-nav a:hover { color: #eee; }
-
-.mobile { display: none; }
-
-@media screen and (max-width: 740px) {
-
-}
+nav a:hover { background: #b5e655; }
 
 /* =======================================================================
    Grid by Adam Kaplan (adamkaplan.me)
    ======================================================================= */
 
-
-.table {
-  border: 2px dashed #ccc;
-  padding: 1rem;
-}
+.table { }
 
 .row {
   border: 1px solid #ddd;
@@ -150,7 +135,6 @@ nav a:hover { color: #eee; }
   border-radius: 3px;
   box-shadow: 1px 1px 2px #ddd;
   padding: 1rem;
-  text-align: center;
 }
 
 .column.full { width: 100%; }
