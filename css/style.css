@@ -57,7 +57,7 @@ h1, h2, h3, h4 {
 
 h1 { font-size: 1.6rem; }
 
-h2 { font-size: 1.3rem; }
+h2 { font-size: 1.4rem; }
 
 h3 {
   font-size: 1.1rem;
@@ -132,7 +132,7 @@ cite:before { content: "— " ;}
    ======================================================================= */
 
 a {
-  color: #d87c5a;
+  color: #4a9fd9;
   text-decoration: none;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
@@ -207,9 +207,7 @@ nav a:hover {
   color: #bbb;
   content: "Live Example";
   display: block;
-  font-family: "Lato", sans-serif;
-  font-size: .8rem;
-  font-weight: 700;
+  font: 700 .8rem "Lato", sans-serif;
   letter-spacing: 1px;
   margin-bottom: .7rem;
   text-align: left;
@@ -244,7 +242,7 @@ nav a:hover {
 article h2, article h3 { margin-top: 2em; }
 
 .posts h2 a:hover {
-  color: #e29d83;
+  color: #2e90d3;
   text-decoration: none;
 }
 
@@ -265,15 +263,19 @@ article h2, article h3 { margin-top: 2em; }
 
 .previous, .next {
   display: inline-block;
-  font-size: .8rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: .9rem;
 }
 
 .next { float: right; }
 
+.posts-nav a {
+  color: #999;
+  padding: .4rem .6rem;
+}
+
 .posts-nav a:hover {
-  color: #e29d83;
+  background: #ddd;
+  border-radius: 3px;
   text-decoration: none;
 }
 
@@ -311,6 +313,12 @@ article h2, article h3 { margin-top: 2em; }
     margin: 2em auto;
     width: 500px;
   }
+}
+
+.profile-title {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .construction {
@@ -465,19 +473,6 @@ code {
   padding: 1.4rem !important;
   border-bottom: 0 !important;
   box-shadow: 0 !important;
-}
-
-.file-data:before {
-  color: #bbb;
-  content: "Code Example";
-  display: block;
-  font-family: "Lato", sans-serif;
-  font-size: .8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: .7rem;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 .line-data { font-size: .9rem; }
