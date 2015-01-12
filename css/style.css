@@ -160,6 +160,7 @@ a:hover { text-decoration: underline; }
   .logo {
     display: block;
     float: none;
+    margin: 0 auto;
   }
 }
 
@@ -195,8 +196,27 @@ nav a:hover {
   nav {
     display: block;
     float: none;
-    padding-top: 1rem;
+    padding-top: .6rem;
   }
+}
+
+@media screen and (max-width: 400px) {
+  nav li {
+    border-bottom: 1px solid #efefef;
+    display: block;
+    float: none;
+    margin: 0;
+    padding: .4rem 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav li:first-child { border-top: 1px solid #efefef; }
+}
+
+@media screen and (max-width: 400px) {
+  nav li:last-child { border-bottom: none; }
 }
 
 /* =======================================================================
