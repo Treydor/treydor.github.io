@@ -24,7 +24,7 @@ body {
 header {
   background: #fff;
   border-bottom: 1px solid #ececec;
-  padding: 1.4rem 0;
+  padding: 1.7rem 0;
 }
 
 .container {
@@ -32,6 +32,8 @@ header {
   max-width: 700px;
   width: 90%;
 }
+
+header .container { max-width: 1000px; }
 
 footer { margin-top: 6rem; }
 
