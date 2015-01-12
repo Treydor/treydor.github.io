@@ -17,13 +17,13 @@ html {
 }
 
 body {
-  background: #f4f4f4;
+  background: #fafafa;
   color: #3c3c3c;
 }
 
 header {
   background: #fff;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #f3f3f3;
   padding: 1.7rem 0;
 }
 
