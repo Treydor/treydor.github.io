@@ -190,14 +190,15 @@ nav a:hover {
    Boxes
    ======================================================================= */
 
-.box { margin: 2rem auto; }
+.box {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 1.4rem;
+}
 
 .box p, .box h1, .box h2, .box h3 { margin-top: 0; }
 
-.example {
-  background: #fff;
-  padding: 1.4rem;
-}
+.example { padding: 1.4rem; }
 
 .example p, .example ul { margin: 0; }
 
@@ -235,9 +236,12 @@ nav a:hover {
   padding: 0;
 }
 
-.posts:first-child { margin-top: 5em; }
+.posts:first-child { margin-top: 3rem; }
 
-.posts li { margin-bottom: 3em; }
+.posts li {
+  border-bottom: 1px dotted #dedede;
+  padding: 2rem 0;
+}
 
 article h2, article h3 { margin-top: 2em; }
 
@@ -283,41 +287,32 @@ article h2, article h3 { margin-top: 2em; }
    Style Guide
    ======================================================================= */
 
-.splash {
-  font-size: 1.1rem;
-  margin: 8em 0;
-  text-align: center;
-  width: 100%;
-}
-
-.splash-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: .3rem 0;
-}
-
 .profile-box { width: 100%; }
 
 .profile {
   background-image: url(../img/profile.jpg);
   background-position: 50% 20%;
   background-size: cover;
-  height: 350px;
+  height: 300px;
   margin-bottom: 2em;
   width: 100%;
 }
 
-@media screen and (min-width: 615px) {
+@media screen and (min-width: 700px) {
   .profile {
+    border: 1px solid #ececec;
+    border-radius: 6px;
     height: 300px;
-    margin: 2em auto;
+    margin: 3rem auto 2rem auto;
     width: 500px;
   }
 }
 
 .profile-title {
-  font-size: 1.6rem;
-  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 3rem;
+  padding: 0;
   text-align: center;
 }
 
