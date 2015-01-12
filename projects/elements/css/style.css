@@ -24,19 +24,12 @@ html {
 
 body {
   background: #ececec;
-  border-top: 4px solid #b5e655;
   color: #000;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background: #4bb5c1;
-  font: 1rem "Montserrat", sans-serif;
-  height: 55px;
-  margin: 0 auto 2rem 0;
-  width: 100%;
-}
+header { }
 
 section { }
 
@@ -61,10 +54,9 @@ a { color: #83ffdc; }
    Typography
    ======================================================================= */
 
-h1, h2, h3, h4, h5 {
-  color: #f30;
-  margin: 0;
-}
+h1, h2, h3, h4, h5 { margin: 0; }
+
+h1 { font-size: 1.6rem; }
 
 p {
   display: block;
@@ -83,75 +75,15 @@ blockquote { }
    Page Elements
    ======================================================================= */
 
-.logo {
-  background: url('/projects/travel/img/logo.png');
-  display: block;
-  float: left;
-  height: 55px;
-  width: 154px;
+.title {
+  font-size: 4rem;
+  text-align: center;
 }
-
-nav {
-  float: right;
-  font-size: .9rem;
-}
-
-nav li { display: inline; }
-
-nav li:last-child { padding-right: 0; }
-
-nav a {
-  color: #fff;
-  display: inline-block;
-  line-height: 55px;
-  padding: 0 .5rem;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-}
-
-nav a:hover { background: #b5e655; }
 
 /* =======================================================================
    Grid by Adam Kaplan (adamkaplan.me)
    ======================================================================= */
 
-.table { }
-
-.row {
-  border: 1px solid #ddd;
-  margin-bottom: 1rem;
-}
-
-.row:last-child { margin-bottom: 0; }
-
-.column {
-  float: left;
-  margin: 0;
-  padding: 1rem;
-}
-
-.column div {
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 1px 1px 2px #ddd;
-  padding: 1rem;
-}
-
-.column.full { width: 100%; }
-.column.two-thirds { width: 66.7%; }
-.column.half { width: 50%; }
-.column.third { width: 33.3%; }
-.column.fourth { width: 25%; }
-.column.flow-opposite { float: right; }
-
-
-.box {
-  background: #fff;
-  box-shadow: 1px 1px 2px #ddd;
-  margin: 1rem auto;
-}
-
-.content { padding: 1rem; }
 
 /* =======================================================================
    Clearfix
