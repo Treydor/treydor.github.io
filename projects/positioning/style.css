@@ -3,7 +3,7 @@
    ========================================================================== */
 
 html {
-  font: 400 110%/1.5 "Open Sans", sans-serif;
+  font: 400 105%/1.5 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -16,7 +16,7 @@ body {
 header {
   background: #333;
   margin-bottom: 150px;
-  padding: 200px 0;
+  padding: 8rem 0;
   width: 100%;
 }
 
@@ -52,22 +52,23 @@ footer p { font-size: .7em; }
 h1, h2, h3, h4, h5 {
   color: #333;
   display: block;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  line-height: 1.2em;
+  line-height: 1.2rem;
 }
 
-h1 { font-size: 2.4em; }
+h1 { font-size: 2.4rem; }
 
-h2 { font-size: 2em; }
+h2 { font-size: 1.6rem; }
 
 h3 {
-  font-size: 1.5em;
-  margin-bottom: .3em;
+  font-size: 1.3rem;
+  margin-bottom: .3rem;
 }
 
 p {
   display: block;
-  margin-bottom: 1.5em;
+  margin-bottom: 1rem;
 }
 
 strong { font-weight: 700; }
@@ -104,14 +105,14 @@ a:hover { color: #e28e94; }
 }
 
 section {
-  margin-bottom: 200px;
+  margin-bottom: 4rem;
   width: 100%;
 }
 
 .special {
   background: #cd3d47;
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.1rem;
   padding: 4em 0;
 }
 
@@ -148,44 +149,39 @@ section {
 }
 
 .box-title {
-  margin-bottom: 1em;
-  text-align: center;
-  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: center;  
 }
-
-.box p { font-size: 1.1em; }
 
 /* ==========================================================================
    Page Elements
    ========================================================================== */
 
-.title {
-  border: 2px solid #fff;
-  border-radius: 6px;
+.title {  
+  border-radius: 3px;
   color: #fff;
   display: inline-block;
-  font-family: "Lato", sans-serif;
-  font-size: 4em;
-  font-weight: 700;
-  padding: .1em .5em;
-  text-align: center;
-  text-shadow: 1px 1px 3px #333;
-  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;  
+  text-align: center;  
 }
 
 .special-title {
   color: #fff;
-  margin-bottom: 1em;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
   text-align: center;
   text-shadow: 1px 1px 3px #333;
 }
 
 .title-summary {
   color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 1.3em;
-  line-height: 1.5em;
-  margin-top: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
 }
 
 .section-list {
@@ -204,9 +200,11 @@ section {
 }
 
 .example-heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin: 0;
-  margin-bottom: .3em;
-  padding: 0;
+  padding: 0;  
 }
 
 .references {
@@ -224,8 +222,15 @@ section {
 }
 
 .references a {
+  border-bottom: 1px solid #333;
   color: #333;
-  text-decoration: underline;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.references a:hover {
+  border-bottom: 1px solid #777; 
+  color: #777; 
 }
 
 .toad {
