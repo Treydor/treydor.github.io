@@ -15,7 +15,7 @@
     <header>
       <div class="container center">
         <div class="title">Positioning</div>
-        <div class="title-summary">A brief introduction to the common positioning properties.</div>
+        <div class="title-summary">A brief introduction to the web's most common positioning properties.</div>
       </div>
     </header>
 
@@ -50,7 +50,7 @@
           <li>
             <h3>4. Fixed</h3>
             <p>An element with a fixed position is essentially <q>anchored</q> to a certain spot within the user's viewport. A fixed position is neat because the element will remain in its location even when the user scrolls up, down or resizes the window. This type of positioning property is not common, but certainly has some uses. A Navigation you want to follow you down the page is a great example.</p>
-            <p>Can you find any elements with a fixed positioning property?</p>
+            <p>Now that we know the basic properties, let's take a look at a few live eamples of how parent and child elements interact with one another.</p>
           </li>
         </ul>
       </div>
@@ -74,7 +74,7 @@
           <div class="remove-border column">
             <div class="example-heading">Parent: Static</div>
             <div class="example-heading">Child: Static</div>            
-            <p>Uh oh, it looks like Mario is stuck behind Bowser. This is because when a child element is put inside of a parent element, the child element is essentially layered on top. In this example, both the parent and child elements are set to static. A static positioning property is the default of every element we use. Let's see if we can use some other properties to help Mario.</p>
+            <p>Uh oh, it looks like Mario is stuck behind Bowser. This is because when a child element is put inside of a parent element, the child element is essentially layered on top. In this example, both the parent and child elements are set to static. A static positioning property is the default of every element we use.</p>
           </div>
           <div class="column">
             <div class="mario2">
@@ -86,7 +86,7 @@
           <div class="column remove-border">
             <div class="example-heading">Parent: Static</div>
             <div class="example-heading">Child: Relative</div>
-            <p>Mario is now visible, but things still look off. In this example we left our parent element, Mario, positioned as static and gave our child element a position of relative. In addition to changing the positioning, we have also added a property of left: 100px and bottom: 50px. These are called <strong>offset properties</strong>. Offset properties give us even more control of exactly where we want to position elements. Let's keep going with this and see if we can give these two a  better look at each other.</p>
+            <p>Here Mario is now visible, but things still look off. Our parent element, Mario, is positioned as static and Bowser is now positioned relative. In addition to changing the positioning, we have also added offeset properties of left 100px and bottom 50px. <strong>Offset properties</strong> give us control of exactly where we want to position elements these elements.</p>
           </div>
           <div class="column">
             <div class="mario2 static">
@@ -98,7 +98,7 @@
           <div class="column remove-border ">
             <div class="example-heading">Parent: Relative</div>
             <div class="example-heading">Child: Absolute</div>
-            <p>Here everything looks pretty good. In this example we have changed our parent element to relative and added offset properties bottom: -25px and left: -50px. We then set our child element, Bowser, to absolute with an offset property of left: 130px. This ensures that the child element will be 130px away of wherever our Mario is moved.</p>
+            <p>Here we have changed our parent element to relative and added offset properties bottom -25px and left -50px. We then set our child element, Bowser, to absolute with an offset property of left 130px. This ensures that the child element will be 130px away of wherever our Mario is moved.</p>
           </div>
           <div class="column">
             <div class="mario2-relative">
@@ -111,10 +111,8 @@
 
     <section class="special">
       <div class="container">
-        <div class="special-title">What about the star?</div>
+        <div class="special-title">What about the Star?</div>
         <p>The star that has been following us on the left side of the screen is set to a fixed position. This property allows whatever element we specify to be set to a fixed area within the browser's viewing area, or viewport.</p>
-        <p>This particular element does not have offset properties. Instead, this element has a simple 25px margin.</p>
-        <p>With the star in our reach, we should take a look at the last and final property we will be talking about today. This next property is very useful when working with positioning properties.</p>
       </div>
     </section>
 
@@ -169,7 +167,8 @@
             </li>
           </ul>
         </div>
-        <div class="column remove-border">
+
+        <div class="column remove-border">       
           <ul class="references cf">
           <h3>Credits</h3>
             <li>
@@ -180,17 +179,16 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div>    
 
-    <footer>
-      <div class="container cf">
-        <div class="toad"></div>
-        <ul>
-          <li><a href="/projects/">Back to Projects</a></li>
-          <li><a href="#">Top of Page</a></li>
-        </ul>
-        <p>All content on this website, including articles, artwork, screen shots, graphics, logos, digital downloads and other files, is the property of <a href="http://www.nintendo.com/corp/copyright.jsp" target="_blank">Nintendo of America Inc.</a>, unless owned by a third party, and is protected by United States and international copyright, trademark and other intellectual property laws. Trademarks and copyrights for third-party games and characters are owned by the companies that market or license those products.</p>
-      </div>
+      <footer>
+        <div class="container">
+          <a href="#" class="toad"></a>
+          <div class="legal">
+            All content on this website, including articles, artwork, screen shots, graphics, logos, digital downloads and other files, is the property of <a href="http://www.nintendo.com/corp/copyright.jsp" target="_blank">Nintendo of America Inc.</a>, unless owned by a third party, and is protected by United States and international copyright, trademark and other intellectual property laws. Trademarks and copyrights for third-party games and characters are owned by the companies that market or license those products.
+          </div>
+        </div>
+      
     </footer>
 
   </body>

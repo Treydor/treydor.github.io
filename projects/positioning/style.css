@@ -20,29 +20,23 @@ header {
   width: 100%;
 }
 
-footer {
+footer {   
   color: #000;
-  font-size: .9rem;
-  margin: 0;
-  margin-top: 100px;
-  padding: 2em 0;
+  font-size: .9rem;  
+  margin: 2rem 0 0 0;
+  padding: 1rem;
   text-align: center;
-}
-
-footer ul {
-  list-style: none;
-  margin: 4em 0;
-  padding: 0;
-}
-
-footer li {
-  display: inline-block;
-  text-align: center;
+  width: 100%;
 }
 
 footer li:first-child { margin-right: 2rem; }
 
 footer p { font-size: .7em; }
+
+.legal {
+  font-size: .7rem;
+  margin: 0 auto;   
+}
 
 
 /* ==========================================================================
@@ -88,11 +82,11 @@ q:after {
    ========================================================================== */
 
 a {
-  color: #cd3d47;
+  color: #c2373d;
   text-decoration: none;
 }
 
-a:hover { color: #e28e94; }
+a:hover { color: #000; }
 
 /* ==========================================================================
    Page Layout
@@ -104,37 +98,37 @@ a:hover { color: #e28e94; }
   width: 90%;
 }
 
-section {
-  margin-bottom: 4rem;
-  width: 100%;
+section { 
+  margin: 2rem 0;
+  width: 100%; 
 }
 
 .special {
-  background: #cd3d47;
+  background: #c2373d;
   color: #fff;
-  font-size: 1.1rem;
-  padding: 4em 0;
+  margin: 10rem 0;
+  padding: 2rem 0;
 }
 
 .row {
   background: #eee;
   border-radius: 6px;
-  margin-bottom: 2em;
-  padding: 1.5em;
+  margin: 0 auto 2rem auto;
+  padding: 1.2rem;
+  width: 90%;
 }
 
 .column {
-  border: 4px dashed #777;
+  border: 2px dashed #777;
   float: left;
-  padding: 0 .3em;
   width: 45%
 }
 
 .column:first-child { margin-right: 5%; }
 
 .column-heading {
-  font-size: 2em;
-  margin: .4em 0 .2em 0;
+  font-size: 1.4rem;
+  margin: 1.4rem 0;
   text-align: center;
 }
 
@@ -179,8 +173,7 @@ section {
 .title-summary {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1rem; 
   margin-top: 2rem;
 }
 
@@ -210,27 +203,15 @@ section {
 .references {
   float: left;
   list-style: none;
-  margin: 0 auto;
+  margin: 4rem auto;
   padding: 0;
 }
 
 .references li { padding: .1em 0; }
 
 .references h3 {
-  font-size: 1.8em;
+  font-size: 1.2rem;
   padding: .2em 0;
-}
-
-.references a {
-  border-bottom: 1px solid #333;
-  color: #333;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.references a:hover {
-  border-bottom: 1px solid #777; 
-  color: #777; 
 }
 
 .toad {
