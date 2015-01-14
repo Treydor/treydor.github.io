@@ -18,15 +18,24 @@
 }
 
 html {
-  font: 400 120%/1.5 "Lato", sans-serif;
+  font: 400 90%/1.5 "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: #fcfcfc;
-  color: #fff;
-  margin: 2rem 0;
+  background: #bbb;
+  color: #000;
+  margin: 0;
   padding: 0;
+}
+
+header {
+  background: #333;
+  color: #fff;  
+  line-height: 40px;
+  margin-bottom: 2rem;  
+  text-transform: uppercase;
+  width: 100%;
 }
 
 a {
@@ -44,12 +53,18 @@ a {
   width: 90%;
 }
 
+.home {
+  background: #3c3c3c;
+  color: #999;
+  font-weight: 700; 
+}
+
 /* =======================================================================
    Typography
    ======================================================================= */
 
 h1, h2, h3, h4, h5 {
-  color: #999;
+  color: #000;
   margin: 0;
 }
 
@@ -58,42 +73,82 @@ p {
   margin: 0 0 1.2rem 0;
 }
 
-.title {
-  border-radius: 3px;
-  font-size: 1.8rem;
-  margin: 1rem auto;
-  text-align: center;
+strong { font-weight: 700; }
+
+.header { 
+  float: left;
+  font-size: 1rem;
+  padding: 0 1rem;
 }
 
+.title { 
+  color: #bababa;  
+  font-weight: 700;
+  line-height: 60px;  
+}
+
+nav {
+  float: right;
+  padding: 0 1rem;  
+}
+
+nav ul { 
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+nav li {  
+  display: inline-block;  
+  margin: 0;
+  padding: 0;
+  text-align: center;  
+}
+
+nav a { 
+  display: inline-block; 
+  line-height: 60px;
+  width: 90px;
+}
+
+nav a:hover { background: #3c3c3c; }
+
 /* =======================================================================
-   Grid by Adam Kaplan (adamkaplan.me)
+   Project
    ======================================================================= */
 
 .table {
-  background: #edf5fc;
-  border: 1px dashed #c1def5;
-  padding: 1rem;
+  border-radius: 3px;  
+  color: #fff;  
+  font-weight: 700;  
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #555;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .row {
-  border: 1px dashed #86beec;
-  margin-bottom: 1rem;
+  border-radius: 3px;
+  background: #e4eaf0;  
+  padding: 1rem; 
 }
 
 .row:last-child { margin-bottom: 0; }
 
 .column {
-  background: #cfe6f7;
+  border: 1px solid #c1def5;
+  border-radius: 3px;
+  background: #cfe5f8;
   float: left;
-  margin: 0;
   padding: 1rem;
+  margin: 0;
 }
 
 .column div {
-  background: #86beec;
   border-radius: 3px;
+  background: #86beec;  
   padding: 1rem;
-  text-align: center;
 }
 
 .column.full { width: 100%; }
