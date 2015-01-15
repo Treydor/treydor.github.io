@@ -51,7 +51,7 @@ blog: true
 
 <h2>Inline-Block Elements</h2>
 
-<p>inline-block borrow aspects from both <inline</code> and block. This property can be used in your CSS by adding a <code>display: inline</code>, <code>display: inline-block</code> or <code>display: block</code> property to your element.</p>
+<p>Inline-Block borrow aspects from both <inline</code> and block. This property can be used in your CSS by adding a <code>display: inline</code>, <code>display: inline-block</code> or <code>display: block</code> property to your element.</p>
 
 <p>Below are a few division elements that use a <code>display: inline-block</code> property:</p>
 
@@ -129,7 +129,7 @@ blog: true
 
 <p>Here you can see our example header automatically force a line break when it is used. This is a block element working exactly as intended.</p>
 
-<p>Other block elements include li and ol elements. These are demonstrated below:</p>
+<p>Other block elements include ol, ul and li elements. Typically used for creating lists, these elements and how they function are demonstrated below:</p>
 
 <script src="https://gist.github.com/Treydor/62da44cfe3aaff1fa2dc.js"></script>
 
