@@ -28,7 +28,7 @@ header {
 }
 
 @media screen and (max-width: 400px) {
-  header { padding: 1rem 0 .5rem 0; }
+  header { padding: 1rem 0 .3rem 0; }
 }
 
 .container {
@@ -199,22 +199,18 @@ nav a:hover {
 }
 
 @media screen and (max-width: 400px) {
-  nav li {
-    border-bottom: 1px solid #efefef;
+  nav li {    
+    border-top: 1px solid #efefef;
     display: block;
     float: none;
     margin: 0;
-    padding: .4rem 0;
+    padding: .5rem 0;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 400px) {
   nav li:first-child { border-top: 1px solid #efefef; }
-}
-
-@media screen and (max-width: 400px) {
-  nav li:last-child { border-bottom: none; }
 }
 
 /* =======================================================================
