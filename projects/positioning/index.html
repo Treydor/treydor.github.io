@@ -12,8 +12,7 @@
 
   <body>
     <div class="yoshi"></div>
-    <header>
-
+    <header>      
       <div class="wrapper">
         <div class="container">
           <div class="project-title">Positioning</div>
@@ -21,20 +20,15 @@
         </div>
       </div>
     </header>
-
     <section class="intro">
       <div class="wrapper">
         <div class="container">          
           <p>Positioning gives us a lot of control over our elements. The position property has multiple dependencies and is mostly influenced by the properties of parent elements.</p>
-
           <p>In this project we will take a look at the basic types of positioning and how they interact with each other. We'll also learn about offset properties and z-index.</p>
-
-          <p>Let's get started!</p>
-        
+          <p>Let's get started!</p>        
         </div>
       </div>
     </section>
-
     <section>
       <div class="wrapper">
         <div class="container">
@@ -60,15 +54,12 @@
               <p>Now that we know the basic properties, let's take a look at a few live examples of how parent and child elements interact with one another.</p>
             </li>
           </ul>
-
         </div>
       </div>
     </section>
-
     <section>
       <div class="wrapper">
         <div class="container">
-
           <div class="table">
             <div class="row center cf">
               <div class="column half">
@@ -83,7 +74,6 @@
               </div>
             </div>
           </div>
-
           <div class="table">
             <div class="row cf">
               <div class="column half remove-padding-left">
@@ -110,15 +100,12 @@
               </div>
             </div>
           </div>
-
           <h3 class="summary">Properties that allow you to move positioned elements</h3>
           <p>Using offset properties can be extremely helpful. In the example above, a property of <code>right: 60px;</code> was added to our parent element. This in turn gave us more room to move our child element. Adding <code>left: 125px;</code> to our child element lets us move our child element 125 pixels to the left of our parent element.</p>
           <p>The nice thing about these properties is that the child element will always remain 194 pixels to the left of our parent element regardless of where it is moved since it is positioned as absolute.</p>
-
         </div>
       </div>
     </section>
-
     <section class="special">
       <div class="wrapper">
         <div class="container">          
@@ -127,15 +114,12 @@
         </div>
       </div>
     </section>
-
-      <section>
-        <div class="wrapper">
-          <div class="container">
-
+    <section>
+      <div class="wrapper">
+        <div class="container">
           <h2>z-index</h2>
           <p>The z-index property controls the stacking order of positioned elements, allowing them to overlap one another.</p>          
           <p>Confused about z-index? I was too. Here is an example that demonstrates exactly how it works.</p>
-
             <div class="table top-margin">
               <div class="row cf">
                 <div class="column half add-border">
@@ -162,51 +146,41 @@
                 </div>
               </div>
             </div>
-
             <h3 class="summary">There are times when you cannot use z-index</h3>
-            <p>There are boundaries with z-index. Remember, z-index only works on absolute, relative and fixed positioned elements. Also, make sure you take in nesting in to account when using z-index. If one element is nested within another, it can never have a higher z-index than it's parent.</p>                
-                       
+            <p>There are boundaries with z-index. Remember, z-index only works on absolute, relative and fixed positioned elements. Also, make sure you take in nesting in to account when using z-index. If one element is nested within another, it can never have a higher z-index than it's parent.</p>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="wrapper">
-          <div class="container">
-
-            <div class="row cf">
-              <div class="column half remove-padding-left">
-                <h3>References</h3>
-                  <ul>
-                    <li><a href="http://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ" target="_blank">CSS Tricks: Absolute, Relative, Fixed Positioning: How Do They Differ?</a></li>
-                    <li><a href="http://learn.shayhowe.com/html-css/positioning-content/" target="_blank">Learn to Code HTML &amp; CSS: Positioning</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">Mozilla Developer Network: Position</a></li>
-                  </ul>
-                </div>
-                <div class="column half remove-padding-right">
-                  <h3>Credits</h3>
-                  <ul>
-                    <li><a href="http://www.freevector.com/super-mario-characters/" target="_blank">Super Mario Bros. Pack by CCorreaDesigns</a></li>
-                  </ul>
-                </div>
+      </div>      
+    </section>
+    <section>
+      <div class="wrapper">
+        <div class="container">
+          <div class="row cf">
+            <div class="column half remove-padding-left">
+              <h3>References</h3>
+                <ul>
+                  <li><a href="http://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ" target="_blank">CSS Tricks: Absolute, Relative, Fixed Positioning: How Do They Differ?</a></li>
+                  <li><a href="http://learn.shayhowe.com/html-css/positioning-content/" target="_blank">Learn to Code HTML &amp; CSS: Positioning</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">Mozilla Developer Network: Position</a></li>
+                </ul>
+              </div>
+              <div class="column half remove-padding-right">
+                <h3>Credits</h3>
+                <ul>
+                  <li><a href="http://www.freevector.com/super-mario-characters/" target="_blank">Super Mario Bros. Pack by CCorreaDesigns</a></li>
+                </ul>
               </div>
             </div>
-
-
-            <div class="footer-nav cf">
-              <a href="#" class="top">Top of Page</a>
-              <a href="/projects" class="back">Back to Projects</a>
-            </div>
-
-            <div class="toad"></div>
-            
-            <div class="copyright">All content on this website, including articles, artwork, screen shots, graphics, logos, digital downloads and other files, is the property of <a href="http://www.nintendo.com/corp/copyright.jsp" target="_blank">Nintendo of America Inc.</a>, unless owned by a third party, and is protected by United States and international copyright, trademark and other intellectual property laws. Trademarks and copyrights for third-party games and characters are owned by the companies that market or license those products.</div>
-
+          </div>          
+          <div class="footer-nav cf">
+            <a href="#" class="top">Top of Page</a>
+            <a href="/projects" class="back">Back to Projects</a>
+          </div>
+          <div class="toad"></div>
+          <div class="copyright">
+            All content on this website, including articles, artwork, screen shots, graphics, logos, digital downloads and other files, is the property of <a href="http://www.nintendo.com/corp/copyright.jsp" target="_blank">Nintendo of America Inc.</a>, unless owned by a third party, and is protected by United States and international copyright, trademark and other intellectual property laws. Trademarks and copyrights for third-party games and characters are owned by the companies that market or license those products.
           </div>
         </div>
-      </section>
-
-
- 
+      </div>
+    </section> 
   </body>
 </html>

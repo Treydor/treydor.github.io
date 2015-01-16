@@ -206,11 +206,7 @@ a {
 }
 
 .column.full { width: 100%; }
-.column.two-thirds { width: 66.7%; }
 .column.half { width: 50%; }
-.column.third { width: 33.3%; }
-.column.fourth { width: 25%; }
-.column.flow-opposite { float: right; }
 
 /* ==========================================================================
    Project Examples
@@ -219,7 +215,7 @@ a {
 .yoshi {
   background: url('img/yoshi.png');
   height: 71px;
-  margin: 25px 90%;
+  margin: 20px;
   position: fixed;
   width: 55px;
 }
