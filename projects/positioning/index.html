@@ -11,184 +11,202 @@
   </head>
 
   <body>
-    <div class="star fixed"></div>
+    <div class="yoshi"></div>
     <header>
-      <div class="container center">
-        <div class="title">Positioning</div>
-        <div class="title-summary">A brief introduction to the web's most common positioning properties.</div>
+
+      <div class="wrapper">
+        <div class="container">
+          <div class="project-title">Positioning</div>
+          <div>A brief introduction to the web's most common positioning properties.</div>
+        </div>
       </div>
     </header>
 
-    <section>
-      <div class="container">
-        <div class="box">
-          <p>When thinking about positioning in terms of HTML and CSS, most of us agree that there are multiple ways to accomplish the same goal. What we don't always know is which is the most efficient.</p>
-          <p>In our last project we talked about the advantages and disadvantages of floating your elements. Floats are an extremely useful tool that really give us a lot of freedom to organize and put things where we want.</p>
-          <p>Let's add to what we already know about positioning from floats and talk about a few very common positioning types. We will also talk about how these properties work with one another and at the end we will take a look at another very essential property that coincides with positioning.</p>
-          <p>Let's take a look at some of the most common positioning properties that we currently have available to us.</p>
+    <section class="intro">
+      <div class="wrapper">
+        <div class="container">          
+          <p>Positioning gives us a lot of control over our elements. The position property has multiple dependencies and is mostly influenced by the properties of parent elements.</p>
+
+          <p>In this project we will take a look at the basic types of positioning and how they interact with each other. We'll also learn about offset properties and z-index.</p>
+
+          <p>Let's get started!</p>
+        
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container">      
-        <ul class="section-list cf">
-          <li>
-            <h3>1. Static</h3>
-            <p>This property is the default positioning property for all elements. A static property keeps your element within the normal flow of your HTML document and does not work with any offset properties like top, right, bottom and left.</p>
-            <p>One of the most common uses for static is that it gives us the ability to forcefully remove a positioning property from an element that was inherited elsewhere.</p>
-          </li>
-          <li>
-            <h3>2. Relative</h3>
-            <p>Relative positioning is one of the most used and most confusing of the positioning properties. A relative property works very similar to static in the sense that it will not take your element out of the normal flow of your HTML document. The big difference between static and relative is that with relative you are able to use offset properties.</p>
-            <p>It is important to remember that changing an element's position to relative and not assigning offset properties will result in no change to the element.</p>
-          </li>
-          <li>
-            <h3>3. Absolute</h3>
-            <p>Elements with an absolute positioning property are taken out of the normal flow of your HTML document and are, by default, <q>attached</q> to the closest relative or absolute positioned parent element. With absolute positioning you can move your element wherever you want on your page using offset properties. <p>The only catch to absolute is if not <q>attached</q> to another element, it is at the mercy of the user's viewport because it has been taken out of the normal flow of the HTML document.</p>
-          </li>
-          <li>
-            <h3>4. Fixed</h3>
-            <p>An element with a fixed position is essentially <q>anchored</q> to a certain spot within the user's viewport. A fixed position is neat because the element will remain in its location even when the user scrolls up, down or resizes the window. This type of positioning property is not common, but certainly has some uses. A Navigation you want to follow you down the page is a great example.</p>
-            <p>Now that we know the basic properties, let's take a look at a few live examples of how parent and child elements interact with one another.</p>
-          </li>
-        </ul>
+      <div class="wrapper">
+        <div class="container">
+          <ul class="section-list">
+            <li>
+              <h2>Static</h2>
+              <p>This property is the default positioning property for all elements. A static property keeps your element within the normal flow of your HTML document and does not work with any offset properties like top, right, bottom and left.</p>
+              <p>One of the most common uses for static is that it gives us the ability to forcefully remove a positioning property from an element that was inherited elsewhere.</p>
+            </li>
+            <li>
+              <h2>Relative</h2>
+              <p>Relative positioning is one of the most used and most confusing of the positioning properties. A relative positioning property works very similar to static in the sense that it will not take your element out of the normal flow of your HTML document. The big difference between static and relative is that with relative you are able to use top, right, bottom and left properties.</p>
+              <p>It is important to remember that changing an element's position to relative and not assigning move properties will result in no visual change to the element.</p>
+            </li>
+            <li>
+              <h2>Absolute</h2>
+              <p>Elements with an absolute positioning property are taken out of the normal flow of your HTML document and are, by default, attached to the closest relative or absolute positioned parent element. With absolute positioning you can move your element wherever you want on your page using top, right, bottom and left properties.</p>
+              <p>The only catch to absolute is if not attached to another element, it is at the mercy of the user's viewport because it has been taken out of the normal flow of the HTML document.</p>
+            </li>
+            <li>
+              <h2>Fixed</h2>
+              <p>An element with a fixed position is essentially anchored to a certain spot within the user's viewport. A fixed position is neat because the element will remain in its location even when the user scrolls up, down or resizes the window. This type of positioning property is not common, but certainly has some uses.</p>
+              <p>Now that we know the basic properties, let's take a look at a few live examples of how parent and child elements interact with one another.</p>
+            </li>
+          </ul>
+
+        </div>
       </div>
     </section>
 
     <section>
-      <div class="container">
-        <div class="row cf">
-          <div class="column remove-border">
-            <div class="mario"></div>
-            <h2 class="column-heading">Parent</h2>
-            <p class="column-summary">Mario will represent the parent element. A parent element contains children elements.</p>
-          </div>
-          <div class="column remove-border">
-            <div class="bowser"></div>
-            <h2 class="column-heading">Child</h2>
-            <p class="column-summary">Bowser will represent a child element. The child element is contained by the parent element.</p>
-          </div>
-        </div>
-        <div class="row cf">
-          <div class="remove-border column">
-            <div class="example-heading">Parent: Static</div>
-            <div class="example-heading">Child: Static</div>            
-            <p>Uh oh, it looks like Mario is stuck behind Bowser. This is because when a child element is put inside of a parent element, the child element is essentially layered on top. In this example, both the parent and child elements are set to static. A static positioning property is the default of every element we use.</p>
-          </div>
-          <div class="column">
-            <div class="mario2">
-              <div class="bowser"></div>
+      <div class="wrapper">
+        <div class="container">
+
+          <div class="table">
+            <div class="row center cf">
+              <div class="column half">
+                <div class="mario"></div>
+                <h2>Parent</h2>
+                <p>Mario will represent a parent element. A parent element contains children elements.</p>
+              </div>
+              <div class="column half">
+                <div class="bowser"></div>
+                <h2>Child</h2>
+                <p>Bowser will represent a child element. Child elements are contained within parent elements.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row cf">
-          <div class="column remove-border">
-            <div class="example-heading">Parent: Static</div>
-            <div class="example-heading">Child: Relative</div>
-            <p>Here Mario is now visible, but things still look off. Our parent element, Mario, is positioned as static and Bowser is now positioned relative. In addition to changing the positioning, we have also added offeset properties of left 100px and bottom 50px. <strong>Offset properties</strong> give us control of exactly where we want to position these elements.</p>
-          </div>
-          <div class="column">
-            <div class="mario2 static">
-              <div class="bowser-relative"></div>
+
+          <div class="table">
+            <div class="row cf">
+              <div class="column half remove-padding-left">
+                <h2 class="title">Child: Static</h2>
+                <h2 class="title">Parent: Static</h2>
+                <div class="top-margin">Here we have our child element nested within our parent element. This ensures that the child element will be the top most <q>layer</q>. All elements are positioned as static by default.</div>
+              </div>
+              <div class="column half add-border">
+                <div class="mario">
+                  <div class="bowser"></div>
+                </div> 
+              </div>
+            </div>
+            <div class="row cf">
+              <div class="column half remove-padding-left">
+                <h2 class="title">Child: Relative</h2>
+                <h2 class="title">Parent: Absolute</h2>
+                <div class="top-margin">Changing the positioning type and adding offset properties to our elements give us even more control of where we want to place them.</div>
+              </div>
+              <div class="column half add-border">
+                <div class="mario-relative">
+                  <div class="bowser-absolute"></div>
+                </div> 
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row cf">
-          <div class="column remove-border ">
-            <div class="example-heading">Parent: Relative</div>
-            <div class="example-heading">Child: Absolute</div>
-            <p>Here we have changed our parent element to relative and added offset properties bottom -25px and left -50px. We then set our child element, Bowser, to absolute with an offset property of left 130px. This ensures that the child element will be 130px away of wherever our Mario is moved.</p>
-          </div>
-          <div class="column">
-            <div class="mario2-relative">
-              <div class="bowser-absolute"></div>
-            </div>
-          </div>
+
+          <h3 class="summary">Properties that allow you to move positioned elements</h3>
+          <p>Using offset properties can be extremely helpful. In the example above, a property of <code>right: 60px;</code> was added to our parent element. This in turn gave us more room to move our child element. Adding <code>left: 125px;</code> to our child element lets us move our child element 125 pixels to the left of our parent element.</p>
+          <p>The nice thing about these properties is that the child element will always remain 194 pixels to the left of our parent element regardless of where it is moved since it is positioned as absolute.</p>
+
         </div>
       </div>
     </section>
 
     <section class="special">
-      <div class="container">
-        <div class="special-title">What about the Star?</div>
-        <p>The star that has been following us on the left side of the screen is set to a fixed position. This property allows whatever element we specify to be set to a fixed area within the browser's viewing area, or viewport.</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="box cf">
-          <h2 class="box-title">z-index</h2>
-          <p>The z-index property controls the stacking order of positioned elements, allowing them to overlap one another. An easy way to think of it is like using layers. How z-index works is very simple, basically, the higher the number associated with z-index means the greater priority for it to be the top-most <q>layer</q>.</p>
-          <p>Here is an example that demonstrates exactly how z-index works.</p>
-        </div>
-        <div class="row cf">
-          <div class="column">
-            <div class="luigi z-index-2"></div>
-            <div class="star2 z-index-1"></div>
-          </div>
-          <div class="column remove-border">
-            <p>In this situation the star will always be behind Luigi in the stack order since it's z-index is 1 and Luigi's z-index is 2.</p>
-            <p>On a fun, side note, the z-index number range is huge, we're talking billions. The current max range supported by most browsers is 2,147,483,638.</p>
-          </div>
-        </div>
-        <div class="row cf">
-          <div class="column">
-            <div class="luigi z-index-1"></div>
-            <div class="star2 z-index-2"></div>
-          </div>
-          <div class="column remove-border">
-            <p>Changing the z-index of Luigi to 1, and the star to 2 reverses the stack order.</p>
-            <p>This allows the star to come forward where it now rests comfortably in Luigi's hand.</p>
-          </div>
-        </div>
-
-        <div class="box">
-          <p>When using z-index it is important to remember is that there are boundaries. The first thing to remember is that <strong>z-index only works on positioned elements</strong>.</p>
-          <p>The second thing you want to take into account is how your elements are nested within each other. When nested, your <strong>child element can never have a greater z-index than its parent</strong>.</p>
+      <div class="wrapper">
+        <div class="container">          
+          <div class="special-title">What's the deal with Yoshi's egg?</div>
+          <div>The egg in the top-right corner is set to a fixed position. This property allows whatever element we specify to be set to a fixed area within the browser's viewing area, or viewport.</div>
         </div>
       </div>
     </section>
 
-      <div class="container cf">
-        <div class="column remove-border">
-          <ul class="references cf">
-            <h3>References</h3>
-            <li>
-              <a href="http://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/" target="_blank">CSS Tricks - How Do They Differ?</a>
-            </li>
-            <li>
-              <a href="http://learn.shayhowe.com/html-css/positioning-content/" target="_blank">Learn to Code HTML &amp; CSS - Positioning</a>
-            </li>
-            <li>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">Mozilla Developer Network - Position</a>
-            </li>
-          </ul>
-        </div>
+      <section>
+        <div class="wrapper">
+          <div class="container">
 
-        <div class="column remove-border">       
-          <ul class="references cf">
-          <h3>Credits</h3>
-            <li>
-              <a href="http://aidancotter.com/" target="_blank">Cartoon Bubble Vectors by Aidan Cotter</a>
-            </li>
-            <li>
-              <a href="http://www.freevector.com/super-mario-characters" target="_blank">Super Mario Bros. Pack by CCorreaDesigns</a>
-            </li>
-          </ul>
-        </div>
-      </div>    
+          <h2>z-index</h2>
+          <p>The z-index property controls the stacking order of positioned elements, allowing them to overlap one another.</p>          
+          <p>Confused about z-index? I was too. Here is an example that demonstrates exactly how it works.</p>
 
-      <footer>
-        <div class="container">
-          <a href="#" class="toad"></a>
-          <div class="legal">
-            All content on this website, including articles, artwork, screen shots, graphics, logos, digital downloads and other files, is the property of <a href="http://www.nintendo.com/corp/copyright.jsp" target="_blank">Nintendo of America Inc.</a>, unless owned by a third party, and is protected by United States and international copyright, trademark and other intellectual property laws. Trademarks and copyrights for third-party games and characters are owned by the companies that market or license those products.
+            <div class="table top-margin">
+              <div class="row cf">
+                <div class="column half add-border">
+                  <div class="luigi z-index-2"></div>
+                  <div class="star2 z-index-1"></div>
+                </div>
+                <div class="column half">
+                  <div class="remove-padding-right">
+                    <p>In this situation the star is behind Luigi in the stack order since it's z-index is less than Luigis'.</p>
+                    <p>Think of z-index as layers, the higher the number associated with z-index, the greater priority for it to be the top-most layer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row cf">
+                <div class="column half add-border">
+                  <div class="luigi z-index-1"></div>
+                  <div class="star2 z-index-2"></div>
+                </div>
+                <div class="column half">
+                  <div class="remove-padding-right">
+                  <p>Swapping the z-index of the elements reverses the stack order, putting our star on top.</p>
+                  <p>The current range for z-index is about 2,147,483,638 on the most common browsers, so go crazy with all your z-indexing! :)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="summary">There are times when you cannot use z-index</h3>
+            <p>There are boundaries with z-index. Remember, z-index only works on absolute, relative and fixed positioned elements. Also, make sure you take in nesting in to account when using z-index. If one element is nested within another, it can never have a higher z-index than it's parent.</p>                
+                       
           </div>
         </div>
-      
-    </footer>
+      </section>
 
+      <section>
+        <div class="wrapper">
+          <div class="container">
+
+            <div class="row cf">
+              <div class="column half remove-padding-left">
+                <h3>References</h3>
+                  <ul>
+                    <li><a href="http://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ" target="_blank">CSS Tricks: Absolute, Relative, Fixed Positioning: How Do They Differ?</a></li>
+                    <li><a href="http://learn.shayhowe.com/html-css/positioning-content/" target="_blank">Learn to Code HTML &amp; CSS: Positioning</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">Mozilla Developer Network: Position</a></li>
+                  </ul>
+                </div>
+                <div class="column half remove-padding-right">
+                  <h3>Credits</h3>
+                  <ul>
+                    <li><a href="http://www.freevector.com/super-mario-characters/" target="_blank">Super Mario Bros. Pack by CCorreaDesigns</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="footer-nav cf">
+              <a href="#" class="top">Top of Page</a>
+              <a href="/projects" class="back">Back to Projects</a>
+            </div>
+
+            <div class="toad"></div>
+            
+            <div class="copyright">All content on this website, including articles, artwork, screen shots, graphics, logos, digital downloads and other files, is the property of <a href="http://www.nintendo.com/corp/copyright.jsp" target="_blank">Nintendo of America Inc.</a>, unless owned by a third party, and is protected by United States and international copyright, trademark and other intellectual property laws. Trademarks and copyrights for third-party games and characters are owned by the companies that market or license those products.</div>
+
+          </div>
+        </div>
+      </section>
+
+
+ 
   </body>
 </html>

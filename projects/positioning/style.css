@@ -1,9 +1,15 @@
 /* ==========================================================================
-   Basic Page Styles
+   Page Styles
    ========================================================================== */
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
-  font: 400 105%/1.5 "Open Sans", sans-serif;
+  font: 400 108%/1.5 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -15,53 +21,113 @@ body {
 
 header {
   background: #333;
-  margin-bottom: 5rem;
-  padding: 8rem 0;
-  width: 100%;
-}
-
-footer {   
-  color: #000;
-  font-size: .9rem;  
-  margin: 2rem 0 0 0;
-  padding: 1rem;
+  color: #fff;
+  padding: 6rem 0;
   text-align: center;
   width: 100%;
 }
 
-footer li:first-child { margin-right: 2rem; }
+ul { 
+  margin: 0;
+  padding: .3rem 1rem;
+}
 
-footer p { font-size: .7em; }
+li { 
+  margin: 0;
+  padding: 0;
+}
 
-.legal {
-  font-size: .7rem;
-  margin: 0 auto;   
+section { padding: 1rem 0; }
+
+.intro { margin: 3rem 0 2rem 0; }
+
+.special { 
+  background: #339943;
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+  padding: 6rem 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 92%;
+}
+
+.section-list { 
+  list-style: none;
+  margin: 0;  
+  padding: 0;
+}
+
+.section-list h2 { margin: 0 0 .5rem 0; }
+
+.section-list p { margin: 0 0 1.2rem 0; }
+
+.section-list li { padding: 1.5rem 0;}
+
+.summary { margin: 3rem 0 .7rem 0; }
+
+.copyright {
+  color: #000;
+  font-size: .6rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.footer-nav { 
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.top, .back { 
+  background: #339943;
+  border-bottom: 3px solid #2b8038;
+  border-radius: 3px;
+  color: #e5f6e8;
+  display: inline-block;
+  font-size: .9rem;
+  margin: .3rem 0;
+  padding: .3rem .5rem;  
+}
+
+.top:hover, .back:hover { 
+  background: #2f8c3d;
+  color: #fff;
 }
 
 /* ==========================================================================
    Typography
    ========================================================================== */
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   color: #333;
   display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+  margin: 0 0 .5rem 0;
+  padding: 0;
   line-height: 1.2rem;
 }
 
-h1 { font-size: 2.4rem; }
+h1 { font-size: 2rem; }
 
-h2 { font-size: 1.6rem; }
-
-h3 {
-  font-size: 1.3rem;
-  margin-bottom: .3rem;
+h2 { 
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
 }
 
-p {
+h3 { font-size: 1.1rem; }
+
+p { 
   display: block;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 strong { font-weight: 700; }
@@ -76,162 +142,86 @@ q:after {
   font-family: "Georgia", serif;
 }
 
+code {
+  background: #ececec;
+  border-radius: 3px;
+  color: #333;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  padding: .2rem .4rem;
+  white-space: nowrap;
+}
+
+.project-title {
+  display: inline-block;
+  font: 700 2.8rem "Raleway", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.title { 
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: .3rem 0 .7rem 0;
+  text-align: center;
+}
+
+.table p { margin: 0 0 1rem 0; }
+
+.special-title {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;  
+  text-align: center;}
+
 /* ==========================================================================
    Links
    ========================================================================== */
 
 a {
-  color: #c2373d;
+  border-bottom: 1px solid #000;
+  color: #000;  
   text-decoration: none;
 }
 
-a:hover { color: #000; }
-
 /* ==========================================================================
-   Page Layout
+   Grid by Adam Kaplan (http://adamkaplan.me/grid/)
    ========================================================================== */
 
-.container {
-  margin: 0 auto;
-  max-width: 800px;
-  width: 90%;
-}
-
-section { 
-  margin: 2rem 0;
-  width: 100%;
-}
-
-.special {
-  background: #c2373d;
-  color: #fff;
-  margin: 8rem 0 6rem 0;
-  padding: 2rem 0;
-}
-
-.row {
+.table {
   background: #eee;
   border-radius: 6px;
-  margin: 0 auto 2rem auto;
-  padding: 1.2rem;
-  width: 100%;
+  margin: 1rem 1rem 2rem 1rem;
+  padding: 1.5rem;
 }
 
-.column {
-  border: 2px dashed #777;
+.row { margin-bottom: 2.5rem; }
+
+.row:last-child { margin-bottom: 0; }
+
+.column {  
   float: left;
-  width: 45%
-}
-
-.column:first-child { margin-right: 5%; }
-
-.column-heading {
-  font-size: 1.4rem;
-  margin: 1.4rem 0;
-  text-align: center;
-}
-
-.column-summary {
   margin: 0;
-  text-align: center;
+  padding: 0 2rem;
 }
 
-.column p {
-  padding: 0;
-  margin: 1em 0;
-}
-
-.box-title {
-  margin-bottom: 2rem;
-  text-align: center;  
-}
-
-/* ==========================================================================
-   Page Elements
-   ========================================================================== */
-
-.title {  
-  border-radius: 3px;
-  color: #fff;
-  display: inline-block;
-  font-family: "Raleway", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 700;  
-  text-align: center;  
-}
-
-.special-title {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-  text-shadow: 1px 1px 3px #333;
-}
-
-.title-summary {
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem; 
-  margin-top: 2rem;
-}
-
-.section-list {
-  list-style: none;
-  margin-bottom: 2em;
-  padding: 0;
-}
-
-.section-list li { margin-bottom: 4em; }
-
-.section-list li:last-child { margin-right: 0; }
-
-.section-list p {
-  margin-top: .6em;
-  padding: 0;
-}
-
-.example-heading {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;  
-}
-
-.references {
-  float: left;
-  list-style: none;
-  margin: 4rem auto;
-  padding: 0;
-}
-
-.references li { padding: .1em 0; }
-
-.references h3 {
-  font-size: 1.2rem;
-  padding: .2em 0;
-}
-
-.toad {
-  background: url('img/toad2.png');
-  display: block;
-  height: 158px;
-  margin: 0 auto 40px auto;
-  width: 329px;
-}
+.column.full { width: 100%; }
+.column.two-thirds { width: 66.7%; }
+.column.half { width: 50%; }
+.column.third { width: 33.3%; }
+.column.fourth { width: 25%; }
+.column.flow-opposite { float: right; }
 
 /* ==========================================================================
    Project Examples
    ========================================================================== */
 
-.star {
-  background: url('img/star.png');
-  height: 81px;
-  margin: 25px;
+.yoshi {
+  background: url('img/yoshi.png');
+  height: 71px;
+  margin: 25px 90%;
   position: fixed;
-  width: 82px;
-  z-index: 100;
+  width: 55px;
 }
 
 .mario {
@@ -241,45 +231,33 @@ section {
   width: 300px;
 }
 
+.mario-alt {
+  background: url('img/mario2.png');
+  height: 258px;  
+  width: 300px;  
+}
+
+.mario-relative {
+  background: url('img/mario2.png');
+  height: 258px;
+  position: relative;
+  width: 300px;  
+  right: 60px;
+}
+
 .bowser {
   background: url('img/bowser.png');
-  height: 258px;
+  height: 258px;  
+  width: 300px;
   margin: 0 auto;
-  width: 300px;
-}
-
-.mario2 {
-  background: url('img/mario2.png');
-  height: 258px;
-  margin: 0 auto;
-  position: static;
-  width: 300px;
-}
-
-.bowser-relative {
-  background: url('img/bowser.png');
-  bottom: 50px;
-  height: 258px;
-  left: 100px;
-  position: relative;
-  width: 300px;
-}
-
-.mario2-relative {
-  background: url('img/mario2.png');
-  bottom: -25px;
-  height: 258px;
-  left: -40px;
-  position: relative;
-  width: 300px;
 }
 
 .bowser-absolute {
   background: url('img/bowser.png');
   height: 258px;
-  left: 130px;
   position: absolute;
   width: 300px;
+  left: 125px;
 }
 
 .luigi {
@@ -296,17 +274,37 @@ section {
   width: 300px;
 }
 
+.toad {
+  background: url('img/toad2.png');
+  display: block;
+  height: 158px;
+  margin: 0 auto 40px auto;
+  width: 329px;
+}
+
 /* ==========================================================================
    Utilities
    ========================================================================== */
 
 .center { text-align: center; }
 
-.remove-border { border: none; }
+.add-border { 
+  background: #e3e3e3;
+  border: 3px dashed #bbb;
+}
+
+.remove-background { background: none; }
 
 .z-index-1 { z-index: 1; }
-
 .z-index-2 { z-index: 2; }
+
+.margin-bottom { margin-bottom: 2rem; }
+.remove-margin { margin: 0; }
+.top-margin { margin-top: 2rem; }
+.remove-margin-bottom { margin-bottom: 0; }
+.remove-padding { padding: 0; }
+.remove-padding-left { padding-left: 0; }
+.remove-padding-right { padding-right: 0; }
 
 /* ==========================================================================
   Clearfix
