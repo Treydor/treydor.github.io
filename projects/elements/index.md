@@ -1,9 +1,8 @@
 ---
 layout: posts
 name: Noah Rogers
-title: Basic HTML elements
+title: The basic HTML elements
 date: June 18, 2014
-blog: true
 ---
 <p>When using HTML elements to create your website it is important to know which of the elements you are working with are block or inline and how they differ from one another.</p>
 
