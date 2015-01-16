@@ -1,9 +1,8 @@
 ---
 layout: posts
 name: Noah Rogers
-title: Floating elements and clearfixes
+title: Floats and clearfixes
 date: June 28, 2014
-blog: true
 ---
 <p>CSS floats are a positioning property that allows elements to be moved left, middle or right, allowing other elements to wrap around them. The float property has a variety of uses and can be extremely valuable when working with layouts.</p>
 
