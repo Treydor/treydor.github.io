@@ -18,22 +18,20 @@
 }
 
 html {
-  font: 400 90%/1.5 "Lato", sans-serif;
+  font: 400 100%/1.5 "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: #bbb;
+  background: #fff;
   color: #000;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background: #333;
-  color: #fff;  
+header {  
   line-height: 40px;
-  margin-bottom: 2rem;  
+  margin-bottom: 2rem;
   text-transform: uppercase;
   width: 100%;
 }
@@ -81,8 +79,7 @@ strong { font-weight: 700; }
   padding: 0 1rem;
 }
 
-.title { 
-  color: #bababa;  
+.title {
   font-weight: 700;
   line-height: 60px;  
 }
@@ -118,38 +115,23 @@ nav a:hover { background: #3c3c3c; }
    ======================================================================= */
 
 .table {
-  border-radius: 3px;  
-  color: #fff;  
-  font-weight: 700;  
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px #555;
-  text-align: center;
-  text-transform: uppercase;
+  margin: 1rem auto;
+  padding: 1rem;
   width: 100%;
 }
 
-.row {
-  border-radius: 3px;
-  background: #e4eaf0;  
-  padding: 1rem; 
-}
+.row { padding: 1rem; }
 
 .row:last-child { margin-bottom: 0; }
 
 .column {
-  border: 1px solid #c1def5;
-  border-radius: 3px;
-  background: #cfe5f8;
   float: left;
-  padding: 1rem;
-  margin: 0;
+  margin: 0 auto;
+  padding: 1rem;  
+  text-align: center;
 }
 
-.column div {
-  border-radius: 3px;
-  background: #86beec;  
-  padding: 1rem;
-}
+.column div { }
 
 .column.full { width: 100%; }
 .column.two-thirds { width: 66.7%; }
@@ -159,13 +141,71 @@ nav a:hover { background: #3c3c3c; }
 .column.flow-opposite { float: right; }
 
 
-.box {
-  background: #fff;
-  box-shadow: 1px 1px 2px #ddd;
-  margin: 1rem auto;
-}
+.box { margin: 1rem auto; }
 
 .content { padding: 1rem; }
+
+.property { position: absolute; }
+
+
+
+.margin-example { 
+  background: #f9cc9d;
+  border: 1px dashed #000;  
+  padding: 2rem;
+  
+  width: 300px;
+}
+
+.border-example { 
+  background: #fcdb99;
+  border: 1px solid #000;
+  padding: 2rem;
+}
+
+.padding-example { 
+  background: #c2cd88;
+  border: 1px dashed #808080;
+  padding: 2rem;
+}
+
+.content-example { 
+  background: #8db5c0;
+  border: 1px solid #808080;
+  height: 75px;
+}
+
+
+/* =======================================================================
+   Gists Style
+   ======================================================================= */
+
+.gist-file {
+  border: 0 !important;
+  box-shadow: 0 !important;
+  display: inline-block !important;
+}
+
+.gist-data {
+  background: #f7f7f7 !important;
+  border: 0 !important;
+  border-radius: 6px;
+  padding: 1rem !important;
+}
+
+.file-data {
+
+  border-bottom: 0 !important;
+  box-shadow: 0 !important;
+}
+
+.line-data { 
+  background: #f7f7f7 !important;
+  font-size: .9rem; 
+}
+
+.line-numbers { display: none !important; }
+.gist-meta { display: none !important; }
 
 /* =======================================================================
    Clearfix
