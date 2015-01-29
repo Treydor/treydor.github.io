@@ -153,7 +153,7 @@ code {
 
 .project-title {
   display: inline-block;
-  font: 700 2.8rem "Raleway", sans-serif;
+  font: 700 2.4rem "Raleway", sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -179,9 +179,8 @@ code {
    ========================================================================== */
 
 a {
-  border-bottom: 1px solid #000;
   color: #000;  
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* ==========================================================================

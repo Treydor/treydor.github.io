@@ -5,43 +5,52 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/ico" href="./img/icon.ico">
   <title>The CSS Box Model</title>
 </head>
 
 <body>
 
-  <header class="cf">
+<header>  
+  <div class="container cf">
+    <div class="title">The CSS Box Model</div>
+  </div>  
+</header>
 
-    <div class="header">
-      <span class="title">The CSS Box Model</span>
-    </div>
 
-  </header>
+  <div class="container">
 
-    <div class="wrapper">
-      <div class="container">
+    <div class="table">
+      <div class="row cf">
 
-        <div class="table margin-example">
-          <div class="row border-example cf">
-            <div class="column padding-example full">
-              <div class="content-example"></div>
+        <div class="column">
+          <div class="margin-example">
+            <div class="border-example">
+              <div class="padding-example">
+                <div class="content-example"></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="table">
-          <div class="row cf">
-            <div class="column fourth">margin</div>
-            <div class="column fourth">border</div>
-            <div class="column fourth">padding</div>
-            <div class="column fourth">content</div>
+        <div class="column">
+          <div class="box">
+            <ul class="circle-list">
+              <li class="margin-example circle">Margin</li>
+              <li class="border-example circle">Border</li>
+              <li class="padding-example circle">Padding</li>
+              <li class="content-example circle">Content</li>
+            </ul>
           </div>
         </div>
 
       </div>
     </div>
+
+  </div>
+</div>
+
 
 
 </body>
