@@ -116,10 +116,7 @@ strong { font-weight: 700; }
   padding: 0;
 }
 
-.circle-list li {
-
-  margin-right: 1rem; 
-}
+.circle-list li { margin-right: 1rem; }
 
 .circle-list li:last-child { margin-right: 0; }
 
