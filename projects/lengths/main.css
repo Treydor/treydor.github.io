@@ -12,7 +12,7 @@
    ======================================================================= */
 
 html {
-  font: 400 125%/1.6 "Lato", sans-serif;
+  font: 400 120%/1.6 "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -37,25 +37,20 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 860px) {
   .container {
     max-width: 800px;
     padding: 0;
   }
 }
 
-section { 
-  border-bottom: 4px solid #35505f;
-  padding: 3rem 0; }
+section { padding: 3rem 0; }
 
 .alt { background: #35505f; }
 
-.last { 
-  background: #35505f;
-  border-bottom: none; }
+.last { border-bottom: none; }
 
 footer {
-  background: #2b424e;
   font-size: .9em;
   padding: 1.5rem 0;
   text-align: center;
