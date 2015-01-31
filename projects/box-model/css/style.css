@@ -40,12 +40,23 @@ header { margin: 2rem 0; }
 }
 
 .title { 
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
-.box { background: #eee; }
+.box { 
+  background: #eee;
+  margin: 1rem;
+  padding: 1rem;
+}
 
+ul { 
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li { padding: .5rem 0;}
 
 /* =======================================================================
    Typography
@@ -107,27 +118,16 @@ strong { font-weight: 700; }
 .content-example { 
   background: #8db5c0;
   border: 1px solid #808080;
-  height: 65px;
+  height: 2rem;
 }
-
-.circle-list { 
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.circle-list li { margin-right: 1rem; }
-
-.circle-list li:last-child { margin-right: 0; }
 
 .circle {
-  border-radius: 50%;
-  float: left;
-  height: 90px;
-  line-height: 86px;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
   margin: 0;
   padding: 0;
-  width: 90px;
+  width: 35px;
 }
 
 /* =======================================================================

@@ -44,14 +44,36 @@ body {
   }
 }
 
-section {
-  border-bottom: 1px solid #35505f;
-  padding: 3rem 0;
-}
+section { 
+  border-bottom: 4px solid #35505f;
+  padding: 3rem 0; }
 
 .alt { background: #35505f; }
 
-.last { border-bottom: none; }
+.last { 
+  background: #35505f;
+  border-bottom: none; }
+
+footer {
+  background: #2b424e;
+  font-size: .9em;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  text-align: center;
+}
+
+footer li:first-child { margin-right: 2rem; }
+
+footer a:hover { text-decoration: none; }
 
 /* =======================================================================
    Typography
@@ -125,9 +147,8 @@ header {
 
 nav {
   background: #3f9a82;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
-
 
 nav ul {
   list-style: none;
@@ -194,7 +215,7 @@ nav li a:hover {
 
 .circle-header {
   background: #35505f;
-  border: 3px solid #fff;
+  border: 4px solid #fff;
   border-radius: 50%;
   color: #e9dc7e;
   font-size: 1.4em;
@@ -214,26 +235,6 @@ nav li a:hover {
   margin: .3em 1.2em;
   padding: 0;
 }
-
-footer {
-  font-size: .9em;
-  padding: 2rem 0;
-  text-align: center;
-}
-
-footer ul {
-  margin: 0;
-  padding: 0;
-}
-
-footer li {
-  display: inline-block;
-  text-align: center;
-}
-
-footer li:first-child { margin-right: 2rem; }
-
-footer a:hover { text-decoration: none; }
 
 /* =======================================================================
    Content Examples
