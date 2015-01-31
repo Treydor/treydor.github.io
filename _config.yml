@@ -3,6 +3,6 @@ description: Leanring HTML and CSS
 
 # Build settings
 encoding: utf-8
-highlighter: rouge
+highlighter: pygments
 markdown: kramdown
 
