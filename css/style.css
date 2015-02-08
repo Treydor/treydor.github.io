@@ -184,7 +184,7 @@ nav li {
 nav li:last-child { margin-right: 0; }
 
 nav a {
-  color: #999;
+  color: #aaa;
   text-decoration: none;
 }
 
@@ -277,7 +277,7 @@ nav a:hover {
 article h2, article h3 { margin-top: 2em; }
 
 .date {
-  color: #999;
+  color: #9c9c9c;
   display: inline-block;
   font-size: 1rem;
 }
@@ -285,7 +285,7 @@ article h2, article h3 { margin-top: 2em; }
 .posts p { margin: .1rem 0; }
 
 .post-title a {
-  color: #3c3c3c;
+  color: #2c2c2c;
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -333,14 +333,15 @@ article h2, article h3 { margin-top: 2em; }
 @media screen and (min-width: 700px) {
   .profile {    
     border-radius: 50%;
-    height: 240px;
-    margin: 2rem auto;
-    width: 240px;
+    border: 4px solid #fff;
+    height: 220px;
+    margin: 3.5rem auto 2rem auto;
+    width: 220px;
   }
 }
 
 .profile-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 2rem 0;
   padding: 0;
   text-align: center;
