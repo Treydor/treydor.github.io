@@ -51,7 +51,7 @@ footer { margin-top: 6rem; }
    ======================================================================= */
 
 h1, h2, h3, h4 {
-  color: #333;
+  color: #777;
   display: block;
   margin: 0;
   padding: 0;
@@ -276,16 +276,21 @@ nav a:hover {
 
 article h2, article h3 { margin-top: 2em; }
 
-.date {
-  color: #9c9c9c;
+.date { 
+  background: #e7e7e7;
+  border-radius: 3px;
+  color: #555;
   display: inline-block;
-  font-size: 1rem;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: 1px; 
+  text-transform: uppercase;
 }
 
 .posts p { margin: .1rem 0; }
 
 .post-title a {
-  color: #2c2c2c;
+  color: #777;
   font-size: 1.3rem;
   font-weight: 700;
 }
