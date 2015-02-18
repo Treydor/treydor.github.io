@@ -92,15 +92,19 @@ section { padding: 1rem 0; }
   border-radius: 3px;
   color: #e5f6e8;
   display: inline-block;
-  font-size: .9rem;
+  font-size: .8rem;
+  font-weight: 600;
   margin: .3rem 0;
-  padding: .3rem .5rem;  
+  padding: .5rem .7rem;
+  text-transform: uppercase;
 }
 
 .top:hover, .back:hover { 
   background: #2f8c3d;
   color: #fff;
 }
+
+a.top,.back { text-decoration: none; }
 
 /* ==========================================================================
    Typography
@@ -179,7 +183,7 @@ code {
    ========================================================================== */
 
 a {
-  color: #000;  
+  color: #000;
   text-decoration: underline;
 }
 

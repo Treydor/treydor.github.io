@@ -210,12 +210,13 @@ nav li a:hover {
 
 .circle-header {
   background: #35505f;
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   border-radius: 50%;
   color: #e9dc7e;
-  font-size: 1.4em;
+  font-size: 1.2rem;
+  font-weight: 700;
   height: 90px;
-  line-height: 3em;
+  line-height: 90px;
   margin: 0 auto 3rem auto;
   text-align: center;
   width: 90px;
@@ -226,7 +227,7 @@ nav li a:hover {
 }
 
 .references {
-  list-style: circle;
+  
   margin: .3em 1.2em;
   padding: 0;
 }

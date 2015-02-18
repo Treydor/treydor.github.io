@@ -51,7 +51,7 @@ footer { margin-top: 6rem; }
    ======================================================================= */
 
 h1, h2, h3, h4 {
-  color: #777;
+  color: #666;
   display: block;
   margin: 0;
   padding: 0;
@@ -290,7 +290,7 @@ article h2, article h3 { margin-top: 2em; }
 
 .post-title a {
   color: #777;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
@@ -301,22 +301,27 @@ article h2, article h3 { margin-top: 2em; }
   padding: 0;
 }
 
-.previous, .next {
+.posts-nav a {
+  color: #aaa;
   display: inline-block;
-  font-size: .9rem;
+  text-decoration: none;
 }
+
+.previous, .next { display: inline-block; }
 
 .next { float: right; }
 
-.posts-nav a {
-  color: #999;
-  padding: .4rem .6rem;
-  text-decoration: none;
+.posts-nav a:hover { color: #ccc; }
+
+.page-box { 
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
 }
 
-.posts-nav a:hover {
-  color: #bebebe;
-  text-decoration: none;
+.page-header {
+  color: #666;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /* =======================================================================
@@ -334,12 +339,12 @@ article h2, article h3 { margin-top: 2em; }
   width: 100%;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .profile {    
     border-radius: 50%;
-    height: 220px;
+    height: 275px;
     margin: 3.5rem auto 2rem auto;
-    width: 220px;
+    width: 275px;
   }
 }
 
