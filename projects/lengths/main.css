@@ -181,11 +181,9 @@ nav li a:hover {
 .title-small {
   color: #fff;
   float: left;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 2px;
-  padding: 1.2em 0;
-  text-transform: uppercase;
+  padding: 1.2em 0; 
 }
 
 @media screen and (max-width: 600px) {
@@ -204,7 +202,6 @@ nav li a:hover {
     font-weight: 700;
     padding: 1.3em 0;
     text-align: center;
-    text-transform: uppercase;
   }
 }
 
@@ -215,9 +212,10 @@ nav li a:hover {
   color: #e9dc7e;
   font-size: 1.2rem;
   font-weight: 700;
-  height: 90px;
-  line-height: 90px;
+  line-height: 1.2rem;
+  height: 58px;
   margin: 0 auto 3rem auto;
+  padding-top: 30px;
   text-align: center;
   width: 90px;
 }
