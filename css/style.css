@@ -3,7 +3,7 @@
    ======================================================================= */
 
 html {
-  font: 400 110%/1.5 "Lato", sans-serif;
+  font: 400 110%/1.5 "Lato", serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -12,18 +12,14 @@ html {
 }
 
 body {
-  background: #f5f5f5;
-  color: #3c3c3c;
+  background: #fafafa;
+  color: #333;
 }
 
-header {
+header { 
   background: #fff;
-  border-bottom: 1px solid #eee;
-  padding: 1.5rem 0;
-}
-
-@media screen and (max-width: 400px) {
-  header { padding: 1rem 0 .3rem 0; }
+  border: 1px solid #f3f3f3;
+  padding: 1.5rem 0; 
 }
 
 .container {
@@ -36,7 +32,7 @@ header {
   .container { width: 94%; }
 }
 
-footer { margin-top: 6rem; }
+footer { margin-top: 5rem; }
 
 .footer {
   background-image: url(../img/github.png);
@@ -51,7 +47,7 @@ footer { margin-top: 6rem; }
    ======================================================================= */
 
 h1, h2, h3, h4 {
-  color: #666;
+  color: #333;
   display: block;
   margin: 0;
   padding: 0;
@@ -75,25 +71,15 @@ p {
   margin-bottom: 1.5em;
 }
 
-strong { font-weight: 600; }
+strong { font-weight: 700; }
 
-.large-heading {
-  font-size: 2.4em;
-  margin: 1.4em 0 1em 0;
-}
+article { margin: 4rem 0; }
 
-.center-heading {
-  margin: 2em 0;
-  text-align: center;
-}
+article ul { margin-bottom: 2rem; }
 
-article { margin: 4em 0; }
+article li { margin: .2rem 0; }
 
-article ul { margin-bottom: 2em; }
-
-article li { margin: .2em 0; }
-
-section { padding-bottom: .5em; }
+section { padding-bottom: .5rem; }
 
 /* =======================================================================
    Quotes
@@ -156,18 +142,10 @@ a:hover {
   width: 32px;
 }
 
-@media screen and (max-width: 400px) {
-  .logo {
-    display: block;
-    float: none;
-    margin: 0 auto;
-  }
-}
-
 nav { 
   float: right;
   font-size: .9rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 nav ul {
@@ -184,36 +162,13 @@ nav li {
 nav li:last-child { margin-right: 0; }
 
 nav a {
-  color: #aaa;
+  color: #999;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #bebebe;
+  color: #777;
   text-decoration: none;
-}
-
-@media screen and (max-width: 400px) {
-  nav {
-    display: block;
-    float: none;
-    padding-top: .7rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  nav li {    
-    border-top: 1px solid #efefef;
-    display: block;
-    float: none;
-    margin: 0;
-    padding: .5rem 0;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  nav li:first-child { border-top: 1px solid #efefef; }
 }
 
 /* =======================================================================
@@ -238,8 +193,8 @@ nav a:hover {
   color: #bebebe;
   content: "Example";
   display: block;
-  font-size: .8rem;
-  font-weight: 600;
+  font-size: .9rem;
+  font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: .7rem;
   text-align: left;
@@ -269,27 +224,20 @@ nav a:hover {
 
 .posts:first-child { margin-top: 3rem; }
 
-.posts li {
-  border-bottom: 1px dotted #eee;
-  padding: 1.2rem 0;
-}
+.posts li { padding: 1.1rem 0; }
 
 article h2, article h3 { margin-top: 2em; }
 
-.date { 
-  background: #e7e7e7;
-  color: #555;
+.date {
+  color: #777;
   display: inline-block;
-  font-size: .7rem;
-  font-weight: 600;
-  letter-spacing: 1px; 
-  text-transform: uppercase;
+  font-size: .9rem;
 }
 
 .posts p { margin: .1rem 0; }
 
 .post-title a {
-  color: #777;
+  color: #333;
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -302,7 +250,7 @@ article h2, article h3 { margin-top: 2em; }
 }
 
 .posts-nav a {
-  color: #aaa;
+  color: #999;
   display: inline-block;
   text-decoration: none;
 }
@@ -311,7 +259,7 @@ article h2, article h3 { margin-top: 2em; }
 
 .next { float: right; }
 
-.posts-nav a:hover { color: #ccc; }
+.posts-nav a:hover { color: #777; }
 
 .page-box { 
   margin-bottom: 1rem;
@@ -319,9 +267,8 @@ article h2, article h3 { margin-top: 2em; }
 }
 
 .page-header {
-  color: #666;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 /* =======================================================================
@@ -335,36 +282,17 @@ article h2, article h3 { margin-top: 2em; }
   background-position: 50% 20%;
   background-size: cover;
   height: 300px;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   width: 100%;
 }
 
 @media screen and (min-width: 800px) {
-  .profile {    
+  .profile {
     border-radius: 50%;
-    height: 275px;
-    margin: 3.5rem auto 2rem auto;
-    width: 275px;
+    height: 220px;
+    margin: 3rem auto 2rem auto;
+    width: 220px;
   }
-}
-
-.profile-title {
-  font-size: 1.2rem;
-  margin: 2rem 0;
-  padding: 0;
-  text-align: center;
-}
-
-.construction {
-  background: #fff4cd;
-  border-radius: 2px;
-  color: #555;
-  font-size: .7em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: .2em .5em;
-  position: static;
-  text-transform: uppercase;
 }
 
 /* =======================================================================
@@ -372,11 +300,10 @@ article h2, article h3 { margin-top: 2em; }
    ======================================================================= */
 
 .example-element {
-  border-radius: 3px;
-  font-size: .9em;
-  font-weight: 600;
-  margin: .3em 0;
-  padding: .6em 0;
+  font-size:  .9rem;
+  font-weight: 700;
+  margin: .5rem 0;
+  padding: .6rem 0;
   text-align: center;
 }
 
@@ -384,7 +311,7 @@ article h2, article h3 { margin-top: 2em; }
   background: #f1d399;
   color: #fff;
   display: inline;
-  padding: .3em;
+  padding: .5em;
 }
 
 .inline-block {
@@ -397,13 +324,14 @@ article h2, article h3 { margin-top: 2em; }
 .large {
   background: #1ba9c5;
   color: #fff;
-  padding: 2em 0;
+  padding: 2rem 0;
 }
 
 .block {
   background: #8aefcd;
   color: #fff;
   display: block;
+  margin: .2rem;
 }
 
 /* =======================================================================
@@ -412,10 +340,10 @@ article h2, article h3 { margin-top: 2em; }
 
 .float-example {
   border: 1px dashed #bbb;
-  border-radius: 3px;
   color: #bbb;
-  font-weight: 600;
-  padding: .7em .3em;
+  font-size: .9rem;
+  font-weight: 700;
+  padding: .7rem .3rem;
   text-align: center;
 }
 
@@ -423,8 +351,8 @@ article h2, article h3 { margin-top: 2em; }
   background: #5dd2e9;
   border: none;
   color: #fff;
-  margin: .8em 0em;
-  padding: 1em 0;
+  margin: .8rem 0;
+  padding: 1rem 0;
   min-width: 70%;
 }
 
@@ -432,8 +360,8 @@ article h2, article h3 { margin-top: 2em; }
   background: #8aefcd;
   border: none;
   color: #fff;
-  margin: .8em 0;
-  padding: 1em 0;
+  margin: .8rem 0;
+  padding: 1rem 0;
   min-width: 27%;
 }
 
@@ -441,12 +369,12 @@ article h2, article h3 { margin-top: 2em; }
    Utilities
    ======================================================================= */
 
-.margin-bottom { margin-bottom: .5em; }
-.margin-bottom-large { margin-bottom: 4em;}
-.margin-top { margin-top: .5em; }
-.margin-top-large { margin-top: 3em; }
-.margin { margin: 2em; }
-.padding { padding: .5em; }
+.margin-bottom { margin-bottom: .5rem; }
+.margin-bottom-large { margin-bottom: 4rem;}
+.margin-top { margin-top: .5rem; }
+.margin-top-large { margin-top: 3rem; }
+.margin { margin: 2rem; }
+.padding { padding: .5rem; }
 
 .remove-margin { margin: 0; }
 .remove-margin-bottom { margin-bottom: 0; }
@@ -483,12 +411,12 @@ article h2, article h3 { margin-top: 2em; }
    ======================================================================= */
 
 code {
-  background: #ececec;
+  background: #eee;
   border-radius: 3px;
-  color: #777;
+  color: #555;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-size: .8em;
-  padding: .2em .4em;
+  font-size: .9rem;
+  padding: .2rem .4rem;
   white-space: nowrap;
 }
 

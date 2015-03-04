@@ -6,15 +6,13 @@ date: June 18, 2014
 ---
 <p>When using HTML elements to create your website it is important to know which of the elements you are working with are block or inline and how they differ from one another.</p>
 
-<p>There are three main elements I will be demonstrating today. These elements are essientially the crux of almost every website you see.</p>
-
-<p>These elements are Inline, Inline-Block and of course, Block.</p>
+<p>There are three main types of elements. Virtually every item you see on an internet website falls in to one of the following categories: Inline, Inline-Block, and Block. Let's go ahead and get started.</p>
 
 <h2>Inline Elements</h2>
 
-<p>These are some of the more commonly used inline elements and how they might be written in your HTML.</p>
+<p>The first example is Inline elemtns. Inline elements are very common. Here a few common examples of inline elements, and how you may use them:</p>
 
-<p>I think the first inline element worth mentioning is span.</p>
+<p><strong>span</strong> classes can be used in a variety of different ways. On this page I have used a span to add a box around various HTML and CSS elements I mention in this post because it is important to distinguish code from normal text.</p>
 
 <script src="https://gist.github.com/Treydor/64bdb243a8a7d1193f31.js"></script>
 
@@ -23,8 +21,6 @@ date: June 18, 2014
     <p>This is a <span class="example-element inline">span</span>. It will remain inline.</p>
   </div>
 </div>
-
-<p>The span class can be used in a variety of different ways. On this page I have used a span to add a box around various HTML and CSS elements I mention in this post because it is important to distinguish code from normal text.</p>
 
 <p>Below are some more common inline elements. Throughout this project I&rsquo;ll do my best to first demonstrate them in HTML, followed by an example of how they will look in browser.</p>
 
