@@ -176,7 +176,10 @@ nav a:hover {
 
 .box p, .box h1, .box h2, .box h3 { margin-top: 0; }
 
-.example { padding: 1.4rem; }
+.example {
+  background: #f3f3f3;
+  padding: 1.4rem;
+}
 
 .example p, .example ul { margin: 0; }
 
@@ -459,7 +462,7 @@ code {
 .line-numbers { display: none !important; }
 .gist-meta { display: none !important; }
 
-.pl-ent { color: #e80000 !important; }
+.pl-ent { color: #d92659 !important; }
 
 .pl-e { color: #2cff2f !important; }
 
