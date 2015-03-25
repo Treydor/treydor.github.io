@@ -51,9 +51,11 @@ section { padding: 3rem 0; }
 .last { border-bottom: none; }
 
 footer {
-  font-size: .9em;
+  font-size: .8rem;
+  font-weight: 600;
   padding: 1.5rem 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 footer ul {
@@ -62,11 +64,16 @@ footer ul {
 }
 
 footer li {
+  background: #3f9a82;
+  border-radius: 3px;
   display: inline-block;
+  padding: 7px 10px;
   text-align: center;
 }
 
-footer li:first-child { margin-right: 2rem; }
+footer li:first-child { margin-right: 1rem; }
+
+footer a { color: #fff; }
 
 footer a:hover { text-decoration: none; }
 
@@ -143,6 +150,7 @@ header {
 nav {
   background: #3f9a82;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  height: 80px;
 }
 
 nav ul {
@@ -158,6 +166,7 @@ nav ul {
 
 nav li {
   display: inline-block;
+  line-height: 80px;
   text-align: center;
   width: 23%;
 }
@@ -169,7 +178,6 @@ nav li {
 nav li a {
   color: #fff;
   display: block;
-  padding: .9rem 0;
   text-decoration: none;
 }
 
@@ -181,9 +189,10 @@ nav li a:hover {
 .title-small {
   color: #fff;
   float: left;
-  font-size: 1rem;
   font-weight: 700;
-  padding: 1.2em 0; 
+  letter-spacing: 1px;
+  line-height: 80px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
@@ -198,10 +207,11 @@ nav li a:hover {
   .title-large {
     display: block;
     float: none;
-    font-size: 2em;
+    font-size: 2.3rem;
     font-weight: 700;
     padding: 1.3em 0;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
