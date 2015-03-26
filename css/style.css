@@ -69,7 +69,7 @@ p {
 
 strong { font-weight: 700; }
 
-article { margin: 4rem 0; }
+article { margin: 2rem 0 4rem 0; }
 
 article ul { margin-bottom: 2rem; }
 
@@ -159,7 +159,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #555;
+  color: #777;
   text-decoration: none;
 }
 
@@ -217,11 +217,13 @@ nav a:hover {
   padding: 0;
 }
 
-.posts:first-child { margin-top: 3rem; }
+.posts:first-child {margin-top: 2rem; }
 
-.posts li { padding: 1.4rem 0; }
+.posts li { margin: 1.5rem 0; }
 
-article h2, article h3 { margin-top: 2em; }
+.posts li:first-child { margin-top: 0; }
+
+article h2, article h3 { margin-top: 2rem; }
 
 .date { color: #999; }
 
@@ -235,12 +237,11 @@ article h2, article h3 { margin-top: 2em; }
 }
 
 .post-title a:hover { 
-  color: #333;
+  color: #555;
   text-decoration: none; 
 }
 
 .posts-nav {
-  font-size: .9rem;
   list-style: none;
   margin: 3rem 0;
   padding: 0;
