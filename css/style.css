@@ -44,7 +44,6 @@ h1, h2, h3, h4 {
   font-weight: 600;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
 }
 
 h1 { font-size: 1.5rem; 
@@ -139,7 +138,6 @@ nav {
   float: right;
   font-size: .9rem;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 nav ul {
@@ -246,7 +244,6 @@ article h2, article h3 { margin-top: 2em; }
   list-style: none;
   margin: 3rem 0;
   padding: 0;
-  text-transform: uppercase;
 }
 
 .posts-nav a {
