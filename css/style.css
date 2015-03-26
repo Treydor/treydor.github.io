@@ -96,13 +96,14 @@ q:after {
 blockquote {
   background: #faf5e4;
   box-shadow: 1px 1px 3px #ddd;
-  margin: 2em auto;
-  padding: 2em 1.2em;
-  width: 85%;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  width: 80%;
 }
 
 blockquote cite {
   display: block;
+  margin-top: 1rem;
   text-align: right;
 }
 
@@ -217,11 +218,8 @@ nav a:hover {
   padding: 0;
 }
 
-.posts:first-child {margin-top: 2rem; }
 
-.posts li { margin: 1.5rem 0; }
-
-.posts li:first-child { margin-top: 0; }
+.posts li { margin: 2rem 0; }
 
 article h2, article h3 { margin-top: 2rem; }
 
@@ -321,27 +319,27 @@ article h2, article h3 { margin-top: 2rem; }
 }
 
 .inline {
-  background: #53d394;
+  background: #ff6666;
   color: #fff;
   display: inline;
   padding: .4em;
 }
 
 .inline-block {
-  background: #ff6666;
+  background: #66b3ff;
   color: #fff;
   display: inline-block;
   width: 25%;
 }
 
 .large {
-  background: #f77;
+  background: #88c4ff;
   color: #fff;
   padding: 2rem 0;
 }
 
 .block {
-  background: #66b3ff;
+  background: #53d394;
   color: #fff;
   display: block;
   margin-bottom: .2rem;
@@ -442,7 +440,11 @@ code {
   box-shadow: 0 !important;
 }
 
-.gist-data { border: 0 !important; }
+.gist-data { 
+  background: #333 !important;
+  border: 0 !important;
+  border-radius: 3px !important;
+}
 
 .file-data {
   background: #333 !important;
