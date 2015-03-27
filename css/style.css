@@ -460,6 +460,19 @@ code {
   font-size: .9rem !important;
 }
 
+.line-data:before {
+  color: #999;
+  content: "HTML/CSS";
+  display: block;
+  font-family: "Lato", serif;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: .7rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 .line-numbers { display: none !important; }
 .gist-meta { display: none !important; }
 
