@@ -186,8 +186,8 @@ nav a:hover {
 .box .container { width: 100%; }
 
 .example:before {
-  color: #bbb;
-  content: "Live Example";
+  color: #999;
+  content: "Example";
   display: block;
   font-size: .9rem;
   font-weight: 700;
