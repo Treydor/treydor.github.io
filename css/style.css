@@ -16,7 +16,7 @@ body {
   color: #333;
 }
 
-header { padding: 2rem 0; }
+header { padding: 3rem 0; }
 
 .container {
   margin: 0 auto;
@@ -69,7 +69,7 @@ p {
 
 strong { font-weight: 700; }
 
-article { margin: 2rem 0 4rem 0; }
+article { margin: 0 0 4rem 0; }
 
 article ul { margin-bottom: 2rem; }
 
@@ -194,6 +194,7 @@ nav a:hover {
   font-family: "Open Sans", serif;
   font-size: .9rem;
   font-weight: 700;
+  letter-spacing: 1px;
   margin-bottom: .8rem;
   text-align: left;
   text-transform: uppercase;
@@ -222,6 +223,8 @@ nav a:hover {
 
 .posts li { margin: 2rem 0; }
 
+.posts li:first-child { margin-top: 0;}
+
 article h2, article h3 { margin-top: 2rem; }
 
 .date { color: #999; }
@@ -231,7 +234,7 @@ article h2, article h3 { margin-top: 2rem; }
 .post-title a {
   color: #333;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -469,6 +472,7 @@ code {
   font-family: "Open Sans", serif !important;
   font-size: .9rem !important;
   font-weight: 700 !important;
+  letter-spacing: 1px !important;
   margin-bottom: .8rem !important;
   text-align: left !important;
   text-transform: uppercase !important;
