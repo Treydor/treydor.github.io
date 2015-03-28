@@ -3,7 +3,7 @@
    ======================================================================= */
 
 html {
-  font: 400 120%/1.5 "Lato", serif;
+  font: 400 120%/1.5 "Open Sans", serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -96,6 +96,7 @@ q:after {
 blockquote {
   background: #faf5e4;
   box-shadow: 1px 1px 3px #ddd;
+  font-style: italic;
   margin: 2rem auto;
   padding: 2rem 1.5rem;
   width: 80%;
@@ -103,6 +104,7 @@ blockquote {
 
 blockquote cite {
   display: block;
+  font-style: italic;
   margin-top: 1rem;
   text-align: right;
 }
@@ -218,7 +220,6 @@ nav a:hover {
   padding: 0;
 }
 
-
 .posts li { margin: 2rem 0; }
 
 article h2, article h3 { margin-top: 2rem; }
@@ -230,7 +231,7 @@ article h2, article h3 { margin-top: 2rem; }
 .post-title a {
   color: #333;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -257,10 +258,9 @@ article h2, article h3 { margin-top: 2rem; }
 
 .posts-nav a:hover { color: #777; }
 
-.page-box { 
-  margin-bottom: 1rem;
-  padding-bottom: .5rem;
-}
+.page-title { font-size: 1.6rem; }
+
+.page-box { margin-bottom: 1rem; }
 
 /* =======================================================================
    Style Guide
