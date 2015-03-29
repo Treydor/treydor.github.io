@@ -224,7 +224,7 @@ nav li a:hover {
   font-weight: 700;
   height: 90px;
   line-height: 90px;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
   text-align: center;
   width: 90px;
 }
