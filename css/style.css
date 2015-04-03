@@ -3,12 +3,12 @@
    ======================================================================= */
 
 html {
-  font: 400 120%/1.5 "Open Sans", serif;
+  font: 400 105%/1.5 "Open Sans", serif;
   -webkit-font-smoothing: antialiased;
 }
 
 @media screen and (max-width: 500px) {
-  html { font-size: 105%; }
+  html { font-size: 100%; }
 }
 
 body {
@@ -221,7 +221,7 @@ nav a:hover {
   padding: 0;
 }
 
-.posts li { margin: 2rem 0; }
+.posts li { margin: 2.5rem 0; }
 
 .posts li:first-child { margin-top: 0;}
 
@@ -234,14 +234,11 @@ article h2, article h3 { margin-top: 2rem; }
 .post-title a {
   color: #333;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
-.post-title a:hover { 
-  color: #555;
-  text-decoration: none; 
-}
+.post-title a:hover { color: #333; }
 
 .posts-nav {
   list-style: none;
