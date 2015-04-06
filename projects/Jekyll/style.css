@@ -16,19 +16,19 @@ p {
 }
 
 h1, h2, h3 {
-  color: #2c2c2c;
+  color: #333;
   display: block;
   font-family: 'Roboto Slab', serif;
-  margin: 0;
-  padding: .3em;
   font-weight: 600;
-  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
 }
-h1 { font-size: 2em; }
 
-h2 { font-size: 1.5em; }
+h1 { font-size: 2rem; }
 
-h3 { font-size: 1.2em; }
+h2 { font-size: 1.3rem; }
+
+h3 { font-size: 1.2rem; }
 
 a {
   color: #fc0;
@@ -59,15 +59,16 @@ a:hover { color: #fea; }
 }
 
 .command-list li {
-  background: #ddd;
-  border-radius: 6px;
-  box-shadow: 1px 1px 1px #000;
+  background: #d3d3d3;
+  border-radius: 3px;
   display: block;
-  margin: 1.3em auto;
+  margin: 1.3rem auto;
   max-width: 300px;
-  padding: .8em;
+  padding: 1rem 0;
   text-align: center;
 }
+
+.command-list li:hover { background: #ddd; }
 
 footer {
   font-size: .9em;

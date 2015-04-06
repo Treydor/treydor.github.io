@@ -3,7 +3,7 @@
    ======================================================================= */
 
 html {
-  font: 400 105%/1.5 "Open Sans", serif;
+  font: 400 110%/1.5 "Open Sans", serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -69,7 +69,7 @@ p {
 
 strong { font-weight: 700; }
 
-article { margin: 1.25rem 0 4rem 0; }
+article { margin: 2rem 0 4rem 0; }
 
 article ul { margin-bottom: 2rem; }
 
@@ -217,7 +217,7 @@ nav a:hover {
 
 .posts {
   list-style: none;
-  margin: 1.25rem 0 0 0;
+  margin: 2rem 0 0 0;
   padding: 0;
 }
 
@@ -234,11 +234,14 @@ article h2, article h3 { margin-top: 2rem; }
 .post-title a {
   color: #333;
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
-.post-title a:hover { color: #333; }
+.post-title a:hover { 
+  color: #333;
+  text-decoration: none;
+}
 
 .posts-nav {
   list-style: none;
