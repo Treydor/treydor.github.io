@@ -12,11 +12,15 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #fafafa;
   color: #333;
 }
 
-header { padding: 2rem 0; }
+header { 
+  background: #fff;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 2rem 0; 
+}
 
 .container {
   margin: 0 auto;
@@ -178,7 +182,7 @@ nav a:hover {
 .box p, .box h1, .box h2, .box h3 { margin-top: 0; }
 
 .example {
-  background: #f3f3f3;
+  background: #fff;
   border-radius: 3px;
   padding: 1.4rem;
 }
@@ -240,7 +244,7 @@ article h2, article h3 { margin-top: 2rem; }
 
 .post-title a:hover { 
   color: #333;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .posts-nav {
@@ -283,7 +287,7 @@ article h2, article h3 { margin-top: 2rem; }
   .profile {
     border-radius: 50%;
     height: 240px;
-    margin: 1rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     width: 240px;
   }
 }
