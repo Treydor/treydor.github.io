@@ -17,14 +17,12 @@
   box-sizing: border-box;
 }
 
-html {
-  font: 400 100%/1.5 "Muli", serif;
-  -webkit-font-smoothing: antialiased;
-}
+html { -webkit-font-smoothing: antialiased; }
 
 body {
   background: #fcfcfc;
   color: #eee;
+  font: 400 100%/1.5 "Muli", serif;
   margin: 2rem 0;
   padding: 0;
 }
@@ -56,7 +54,7 @@ a {
   color: #fff;
   float: left;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   padding: 0 1.5rem;
   text-transform: uppercase;
@@ -84,12 +82,16 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover { text-decoration: underline; }
+nav a:hover {
+  color: #4c5e67;
+  text-decoration: none;
+}
 
 .top-deals { 
   color: #4c5e67;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 1rem .5rem 1rem;
 }
 
 /* =======================================================================
@@ -97,8 +99,8 @@ nav a:hover { text-decoration: underline; }
    ======================================================================= */
 
 h1, h2, h3, h4, h5 {
-  color: #000;  
-  font-weight: 600;
+  color: #000;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -155,28 +157,22 @@ p {
    ======================================================================= */
 
 .deal {
-  color: #000;
+  background: #eee;
+  border: 2px dashed #bbb;
+  color: #bbb;
+  height: 125px;
+  line-height: 125px;
   overflow: hidden;
+  text-align: center;
   width: 100%;
 }
 
 .banner {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: .3rem 0 0 .5rem;
   text-shadow: 1px 1px 1px #000;
 }
-
-.carribean { 
-  background-image: url(http://www.globaladventuress.com/wp-content/uploads/2015/01/IMG_1928-400x400-300x300.jpg);
-  background-position: 50% 50%;
-}
-
-.winter { 
-  background-image: url(http://www.traveldee.com/wp-content/uploads/2011/12/ivan-andreevich-nature-photography-2.jpg);
-  background-position: 50% 12%;
-}
-
 
 /* =======================================================================
    Clearfix
