@@ -18,20 +18,20 @@
 }
 
 html {
-  font: 400 110%/1.5 "Muli", serif;
+  font: 400 100%/1.5 "Muli", serif;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: #3f5666;
+  background: #fcfcfc;
   color: #eee;
   margin: 2rem 0;
   padding: 0;
 }
 
 a {
-  color: #86beec;
-  text-decoration: none;
+  color: #000;
+  text-decoration: underline;
 }
 
 .wrapper {
@@ -45,14 +45,21 @@ a {
   width: 94%;
 }
 
-.header { 
-  color: #fff;
+.header {
+  color: #000;
+  line-height: 40px;
   margin-bottom: 2rem;
 }
 
 .logo {
+  background: #4c5e67;
   color: #fff;
   float: left;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
 }
 
 nav { float: right; }
@@ -70,10 +77,19 @@ nav li {
 
 nav li:last-child { padding-right: 0; }
 
+nav a { 
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav a:hover { text-decoration: underline; }
+
 .top-deals { 
-  color: #f9cf5d;
+  color: #4c5e67;
   font-size: 1.2rem;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 /* =======================================================================
@@ -101,8 +117,7 @@ p {
    ======================================================================= */
 
 .table {
-  background: #324451;
-  border-radius: 6px;
+  background: #f1f3f4;
   margin-bottom: 1rem;
   padding: 1rem;
 }
@@ -140,8 +155,7 @@ p {
    ======================================================================= */
 
 .deal {
-  color: #fff;
-  height: 160px;
+  color: #000;
   overflow: hidden;
   width: 100%;
 }
