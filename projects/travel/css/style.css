@@ -2,10 +2,10 @@
    Style Guide
    ======================================================================= */
 
-.color-primary { }
-.color-accent { }
-.color-background { }
-.color-shadow { }
+.color-primary { #363f45; }
+.color-accent { #ffeb79; }
+.color-background { #f3f3f3; }
+.color-shadow { #3d484f; }
 
 /* =======================================================================
    Basic Page Styles
@@ -17,13 +17,15 @@
   box-sizing: border-box;
 }
 
-html { -webkit-font-smoothing: antialiased; }
+html { font: 400 110%/1.5 "Muli", serif; }
+
+@media screen and (max-width: 600px) {
+  html { font: 400 100%/1.5 "Muli", serif; }
+}
 
 body {
   background: #fcfcfc;
-  color: #eee;
-  font: 400 100%/1.5 "Muli", serif;
-  margin: 2rem 0;
+  color: #000;
   padding: 0;
 }
 
@@ -32,66 +34,25 @@ a {
   text-decoration: underline;
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1000px;
-}
-
 .container {
   margin: 0 auto;
-  padding: 1rem 0;
-  width: 94%;
-}
-
-.header {
-  color: #000;
-  line-height: 40px;
-  margin-bottom: 2rem;
-}
-
-.logo {
-  background: #4c5e67;
-  color: #fff;
-  float: left;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 0 1.5rem;
-  text-transform: uppercase;
-}
-
-nav { float: right; }
-
-nav ul { 
-  list-style: none;
-  margin: 0;
+  max-width: 900px;
   padding: 0;
+  width: 90%;
 }
 
-nav li {
-  display: inline-block;
-  padding-right: 1.1rem;
+@media screen and (max-width: 400px) {
+  .container { width: 100%; }
 }
 
-nav li:last-child { padding-right: 0; }
+header { margin: 3rem 0; }
 
-nav a { 
-  color: #000;
-  font-size: 1rem;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #4c5e67;
-  text-decoration: none;
-}
-
-.top-deals { 
-  color: #4c5e67;
-  font-size: 1.3rem;
-  font-weight: 700;
-  padding: 1rem 1rem .5rem 1rem;
+@media screen and (max-width: 540px) {
+  header { 
+    background: #fff;
+    margin: 0;
+    padding-top: 2rem;
+  }
 }
 
 /* =======================================================================
@@ -99,15 +60,17 @@ nav a:hover {
    ======================================================================= */
 
 h1, h2, h3, h4, h5 {
-  color: #000;
+  color: #3d484f;
   font-weight: 700;
   margin: 0;
+  padding: 0;
 }
 
-h1 { 
-  font-size: 1.7rem;
-  letter-spacing: 1px;
-}
+h1 { font-size: 1.5rem; }
+
+h2 { font-size: 1.2rem; }
+
+h4 { font-size: 1rem; }
 
 p {
   display: block;
@@ -115,26 +78,164 @@ p {
 }
 
 /* =======================================================================
-   Grid by Adam Kaplan (adamkaplan.me)
+   Logo & Nav Styles
    ======================================================================= */
 
-.table {
-  background: #f1f3f4;
-  margin-bottom: 1rem;
+.logo {
+  background: #363f45;
+  color: #ffeb79;
+  float: left;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 70px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+@media screen and (max-width: 570px) {
+  .logo {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+nav { 
+  float: right;
+  line-height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+nav li:last-child { padding-right: 0; }
+
+nav a { 
+  color: #4b5f6d;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #4b5f6d;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 570px) {
+  nav {
+    float: none;
+    font-size: 1.1rem;
+    line-height: 50px;
+    margin-top: .5rem;
+    text-align: center;
+  }
+}
+
+/* =======================================================================
+   Forms
+   ======================================================================= */
+
+.input {
+  background: #fff;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  color: #555;
+  line-height: 1.4rem;
+  outline: none;
+  padding: .7rem;
+  width: 100%;
+}
+
+/* =======================================================================
+   Footer Page Styles
+   ======================================================================= */
+
+.footer {
+  background: #363f45;
+  color: #fff;
+  font-size: .9rem;
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 90%; 
+}
+
+.footer-header {
+  border-bottom: 2px solid #3d484f;
+  margin-bottom: .5rem;
   padding: 1rem;
 }
 
-.row { }
+.footer-logo {
+  color: #ffeb79;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.slogan { color: #c9c9c9; }
+
+.footer-section { margin-bottom: 1rem; }
+
+.footer-section:last-child { margin-bottom: 0; }
+
+.footer-section h4 { color: #fff; }
+
+.footer ul { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer a { 
+  color: #5e7c88;
+  text-decoration: none;
+}
+
+.footer a:hover { color: #8ca5af; }
+
+/* =======================================================================
+   Grid by Adam Kaplan (http://adamkaplan.me/grid/) **NO LONGER SUPPORTED
+   ======================================================================= */
+
+.table {
+  background: #f1f1f1;
+  border-radius: 6px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 400px) {
+  .table { border-radius: 0 }
+}
 
 .row:last-child { margin-bottom: 0; }
 
 .column {
   float: left;
   margin: 0;
-  padding: 1rem;
+  padding: 1rem ;
 }
-
-.column div { }
 
 .column.full { width: 100%; }
 .column.two-thirds { width: 66.7%; }
@@ -143,35 +244,42 @@ p {
 .column.fourth { width: 25%; }
 .column.flow-opposite { float: right; }
 
+.column.fifth { width: 20%; }
+.column.forty { width: 40%; }
 
-.box {
-  background: #fff;
-  box-shadow: 1px 1px 2px #ddd;
-  margin: 1rem auto;
+@media screen and (max-width: 720px) {
+  .column.full,.column.two-thirds,.column.half,.column.third,.column.fourth,.column.fifth,.column.forty { width: 100%; }
 }
+
+.box { padding: 1rem 0; }
 
 .content { padding: 1rem; }
 
 /* =======================================================================
-   
+   Placeholders
    ======================================================================= */
+
+.top-bar { 
+  background: #c9c9c9;
+  padding: .9rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.top-bar .container { 
+  margin: 0 auto;
+  width: 80%; 
+}
 
 .deal {
   background: #eee;
   border: 2px dashed #bbb;
   color: #bbb;
-  height: 125px;
-  line-height: 125px;
+  height: 175px;
+  line-height: 175px;
   overflow: hidden;
   text-align: center;
   width: 100%;
-}
-
-.banner {
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: .3rem 0 0 .5rem;
-  text-shadow: 1px 1px 1px #000;
 }
 
 /* =======================================================================
@@ -189,8 +297,8 @@ p {
  */
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .cf:after { clear: both; }
@@ -200,6 +308,6 @@ p {
  * Include this rule to trigger hasLayout and contain floats.
  */
 .cf {
-    clear: both;
-    *zoom: 1;
+  clear: both;
+  *zoom: 1;
 }
