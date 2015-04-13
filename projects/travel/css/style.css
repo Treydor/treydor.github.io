@@ -49,10 +49,9 @@ a {
   .container { width: 100%; }
 }
 
-header { 
-  background: #363f45;
+header {
   height: 80px;
-  margin: 0;
+  margin: 2rem 0;
 }
 
 @media screen and (max-width: 570px) {
@@ -97,8 +96,9 @@ p {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 3px;
-  line-height: 80px;
+  line-height: 60px;
   margin: 0;
+  padding: 0 1rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -115,7 +115,7 @@ p {
 
 nav { 
   float: right;
-  line-height: 80px;
+  line-height: 60px;
 }
 
 nav ul {
