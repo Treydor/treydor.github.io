@@ -29,10 +29,6 @@ body {
   padding: 0;
 }
 
-@media screen and (max-width: 400px) {
-  body { background: #f1f1f1; }
-}
-
 a {
   color: #000;
   text-decoration: underline;
@@ -45,23 +41,7 @@ a {
   width: 90%;
 }
 
-@media screen and (max-width: 400px) {
-  .container { width: 100%; }
-}
-
-header {
-  height: 80px;
-  margin: 2rem 0;
-}
-
-@media screen and (max-width: 570px) {
-  header {
-  height: auto;
-  margin-bottom: 2rem;
-  padding: 1rem 0;
-  }
-}
-
+header { margin: 2rem 0; }
 
 /* =======================================================================
    Typography
@@ -91,32 +71,28 @@ p {
 
 .logo {
   background: #363f45;
-  color: #ffeb79;
+  color: #f5d25d;
   float: left;
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 3px;
-  line-height: 60px;
-  margin: 0;
   padding: 0 1rem;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
   .logo {
     display: block;
     float: none;
-    line-height: 60px;
     margin: 0 auto;
-    text-align: center;
+    padding: .3rem 0;
+    width: 250px;
   }
 }
 
-nav { 
-  float: right;
-  line-height: 60px;
-}
+nav { float: right; }
 
 nav ul {
   list-style: none;
@@ -132,7 +108,7 @@ nav li {
 nav li:last-child { padding-right: 0; }
 
 nav a { 
-  color: #5e7c88;
+  color: #363f45; 
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
@@ -140,15 +116,15 @@ nav a {
 }
 
 nav a:hover {
-  color: #8ca5af;
+  color: #5e7c88;
   text-decoration: none;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
   nav {
+    display: block;
     float: none;
-    font-size: 1.1rem;
-    line-height: 30px;
+    margin-top: 1.2rem;
     text-align: center;
   }
 }
@@ -192,7 +168,7 @@ nav a:hover {
 }
 
 .footer-logo {
-  color: #ffeb79;
+  color: #f5d25d;
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 700;
@@ -232,10 +208,6 @@ nav a:hover {
   padding: 1.5rem;
 }
 
-@media screen and (max-width: 400px) {
-  .table { border-radius: 0; }
-}
-
 .row:last-child { margin-bottom: 0; }
 
 .column {
@@ -269,6 +241,7 @@ nav a:hover {
 .top-bar { 
   background: #f5d25d;
   color: #000;
+  font-size: .9rem;
   padding: .9rem 0;
   text-align: center;
   width: 100%;
