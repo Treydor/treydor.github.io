@@ -83,12 +83,13 @@ p {
    ======================================================================= */
 
 .logo {
-  background: #363f45;
+  background: #3d484f;
   color: #f5d25d;
   float: left;
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 3px;
+  padding: 0 1rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -182,15 +183,20 @@ nav a:hover {
 }
 
 .footer-logo {
+  background: #3d484f;
   color: #f5d25d;
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 2px;
+  padding: 0 1rem;
   text-transform: uppercase;
 }
 
-.slogan { color: #c9c9c9; }
+.slogan { 
+  color: #c9c9c9;
+  padding: .5rem 0;
+}
 
 .footer-section { margin-bottom: 1rem; }
 
