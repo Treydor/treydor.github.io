@@ -3,7 +3,7 @@
    ======================================================================= */
 
 html {
-  font: 400 110%/1.5 "Open Sans", sans-serif;
+  font: 400 105%/1.5 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -142,7 +142,7 @@ a:hover {
 
 nav { 
   float: right;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 nav ul {

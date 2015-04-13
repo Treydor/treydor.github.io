@@ -17,7 +17,7 @@
   box-sizing: border-box;
 }
 
-html { font: 400 110%/1.5 "Muli", serif; }
+html { font: 400 105%/1.5 "Muli", serif; }
 
 @media screen and (max-width: 600px) {
   html { font: 400 100%/1.5 "Muli", serif; }
@@ -32,6 +32,11 @@ body {
 a {
   color: #000;
   text-decoration: underline;
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
 }
 
 .container {
@@ -41,7 +46,15 @@ a {
   width: 90%;
 }
 
-header { margin: 2rem 0; }
+@media screen and (max-width: 400px) {
+  .container { width: 94%; }
+}
+
+header { 
+  background: #363f45;
+  margin-bottom: 3rem;
+  padding: 1.5rem 0;
+}
 
 /* =======================================================================
    Typography
@@ -76,8 +89,6 @@ p {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 3px;
-  padding: 0 1rem;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -86,8 +97,10 @@ p {
   .logo {
     display: block;
     float: none;
+    font-size: 1.6rem;
     margin: 0 auto;
     padding: .3rem 0;
+    text-align: center;
     width: 250px;
   }
 }
@@ -108,15 +121,16 @@ nav li {
 nav li:last-child { padding-right: 0; }
 
 nav a { 
-  color: #363f45; 
+  color: #fff; 
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
+  line-height: 37px;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #5e7c88;
+  color: #ddd;
   text-decoration: none;
 }
 
