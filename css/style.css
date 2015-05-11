@@ -12,18 +12,15 @@ html {
 }
 
 body {
-  background: #fcfcfc;
-  color: #333;
+  background: #f7f7f7;
+  color: #2c2c2c;
 }
 
-header { 
-  border-bottom: 1px solid #eee;
-  padding: 2rem 0; 
-}
+header { padding: 2rem 0; }
 
 .container {
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 600px;
   width: 90%;
 }
 
@@ -49,8 +46,7 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
-h1 { font-size: 1.5rem; 
-}
+h1 { font-size: 1.5rem; }
 
 h2 { font-size: 1.3rem; }
 
@@ -264,7 +260,7 @@ article h2, article h3 { margin-top: 3rem; }
 
 .page-box { margin-bottom: 2rem; }
 
-.page-box h1 { font-size: 1.8rem; }
+.page-box h1 { font-size: 1.6rem; }
 
 /* =======================================================================
    Style Guide
@@ -282,10 +278,11 @@ article h2, article h3 { margin-top: 3rem; }
 
 @media screen and (min-width: 800px) {
   .profile {
+    border: 1px solid #eee;
     border-radius: 3px;
-    height: 240px;
-    margin: 2rem auto 0 auto;
-    width: 440px;
+    height: 220px;
+    margin: 2rem auto 3rem auto;
+    width: 460px;
   }
 }
 
