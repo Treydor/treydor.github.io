@@ -3,7 +3,7 @@
    ======================================================================= */
 
 html {
-  font: 400 105%/1.5 "Open Sans", sans-serif;
+  font: 400 100%/1.5 "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -12,12 +12,12 @@ html {
 }
 
 body {
-  background: #fafafa;
+  background: #fcfcfc;
   color: #333;
 }
 
 header { 
-  background: #fff;
+  border-bottom: 1px solid #eee;
   padding: 2rem 0; 
 }
 
@@ -44,7 +44,7 @@ footer { margin-top: 5rem; }
 h1, h2, h3, h4 {
   color: #333;
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 }
@@ -235,8 +235,8 @@ article h2, article h3 { margin-top: 3rem; }
 .post-title a {
   color: #333;
   display: inline-block;
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .post-title a:hover { 
@@ -282,10 +282,10 @@ article h2, article h3 { margin-top: 3rem; }
 
 @media screen and (min-width: 800px) {
   .profile {
-    border-radius: 50%;
+    border-radius: 3px;
     height: 240px;
     margin: 2rem auto 0 auto;
-    width: 240px;
+    width: 440px;
   }
 }
 
