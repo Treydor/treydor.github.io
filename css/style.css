@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background: #f7f7f7;
-  color: #2c2c2c;
+  background: #fff;
+  color: #212121;
 }
 
 header { padding: 2rem 0; }
@@ -50,10 +50,7 @@ h1 { font-size: 1.5rem; }
 
 h2 { font-size: 1.3rem; }
 
-h3 { 
-  font-size: 1.1rem;
-  text-transform: none;
-}
+h3 { font-size: 1.1rem; }
 
 h4 {
   font-size: .8rem;
@@ -121,7 +118,7 @@ a {
 
 a:hover {
   color: #4c95c7;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 /* =======================================================================
@@ -136,7 +133,7 @@ a:hover {
   width: 32px;
 }
 
-nav { 
+nav {
   float: right;
   font-weight: 400;
 }
@@ -147,7 +144,7 @@ nav ul {
   margin: 0;
 }
 
-nav li { 
+nav li {
   display: inline-block;
   margin-right: 1.2rem;
 }
@@ -235,7 +232,7 @@ article h2, article h3 { margin-top: 3rem; }
   font-weight: 700;
 }
 
-.post-title a:hover { 
+.post-title a:hover {
   color: #333;
   text-decoration: underline;
 }
@@ -432,7 +429,7 @@ code {
   box-shadow: 0 !important;
 }
 
-.gist-data { 
+.gist-data {
   background: #333 !important;
   border: 0 !important;
   border-radius: 3px !important;
@@ -446,7 +443,7 @@ code {
   padding: 1rem !important;
 }
 
-.line-data { 
+.line-data {
   background: #333 !important;
   color: #fff !important;
   font-size: .9rem !important;
