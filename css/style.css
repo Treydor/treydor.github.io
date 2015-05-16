@@ -3,7 +3,7 @@
    ======================================================================= */
 
 html {
-  font: 400 100%/1.5 "Noto Sans", sans-serif;
+  font: 400 105%/1.5 "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -133,10 +133,7 @@ a:hover {
   width: 32px;
 }
 
-nav {
-  float: right;
-  font-weight: 400;
-}
+nav { float: right; }
 
 nav ul {
   list-style-type: none;
@@ -275,11 +272,10 @@ article h2, article h3 { margin-top: 3rem; }
 
 @media screen and (min-width: 800px) {
   .profile {
-    border: 1px solid #eee;
-    border-radius: 3px;
-    height: 220px;
+    border-radius: 50%;
+    height: 160px;
     margin: 2rem auto 3rem auto;
-    width: 460px;
+    width: 160px;
   }
 }
 
