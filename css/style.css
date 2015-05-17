@@ -273,9 +273,9 @@ article h2, article h3 { margin-top: 3rem; }
 @media screen and (min-width: 420px) {
   .profile {
     border-radius: 50%;
-    height: 160px;
+    height: 200px;
     margin: 2rem auto 3rem auto;
-    width: 160px;
+    width: 200px;
   }
 }
 
