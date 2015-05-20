@@ -3,7 +3,7 @@
    ======================================================================= */
 
 html {
-  font: 400 105%/1.5 "Noto Sans", sans-serif;
+  font: 400 105%/1.5 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -41,14 +41,14 @@ footer { margin-top: 5rem; }
 h1, h2, h3, h4 {
   color: #333;
   display: block;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-h1 { font-size: 1.5rem; }
+h1 { font-size: 1.6rem; }
 
-h2 { font-size: 1.3rem; }
+h2 { font-size: 1.2rem; }
 
 h3 { font-size: 1.1rem; }
 
@@ -232,7 +232,8 @@ article h2, article h3 { margin-top: 3rem; }
 .post-title a {
   color: #212121;
   display: block;
-  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -268,7 +269,7 @@ article h2, article h3 { margin-top: 3rem; }
    ======================================================================= */
 
 .profile {
-  background-image: url(../img/noah.jpg);
+  background-image: url(../img/noah2.jpg);
   background-position: 50% 20%;
   background-size: cover;
   height: 260px;
@@ -294,7 +295,6 @@ article h2, article h3 { margin-top: 3rem; }
 .intro p { margin-bottom: 0; }
 
 .intro p:first-child { margin-top: 0; }
-
 
 /* =======================================================================
    Blog #1 Examples
