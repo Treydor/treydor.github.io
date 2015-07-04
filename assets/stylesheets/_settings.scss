@@ -1,0 +1,30 @@
+// Font Weights
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+// Body Font
+$body-font: $light 110%/1.5 "Lato", sans-serif;
+
+// Header Font
+$header-font: $light 110%/1.25 "Lato", sans-serif;
+
+// Colors
+$primary: #3f4d5f;
+$white: #fff;
+$black: #222;
+$light-gray: #f3f3f3;
+$gray: #ccc;
+
+// Border Colors
+$border-light: #eee;
+
+// Medium Screens
+$medium: "(min-width: 600px)";
+
+// Medium Screens
+$large: "(min-width: 800px)";
+
+// Animation Duration and Timing
+$duration: .2s;
+$timing: ease-in-out;

@@ -1,0 +1,46 @@
+/*------ Work Grid List ------*/
+
+.work {
+  @include clean-list;
+  @extend %clearfix;
+}
+
+.work__item {
+  display: table;
+  margin-bottom: 1.5rem;
+  width: 100%;
+
+  @media #{$large} {
+    float: left;
+    margin-bottom: 0;
+    margin-right: 4%;
+    width: 48.11%;
+
+    &:last-of-type { margin-right: 0; }
+  }
+}
+
+.work__link {
+  border-radius: 3px;
+  display: table-cell;
+  height: 250px;
+  text-align: center;
+  vertical-align: middle;
+
+  @media #{$large} { height: 300px; }
+}
+
+/*------ Work ------*/
+
+.citypak {
+  background: #f8f8f8;
+  border: 1px solid #eee;
+
+  img { width: 140px; }
+}
+
+.greatpeaks {
+  background: #333;
+
+  img { width: 280px; }
+}

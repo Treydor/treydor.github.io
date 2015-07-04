@@ -1,0 +1,44 @@
+/*------ Main Layout Elements ------*/
+
+html { }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font: $body-font;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media #{$medium} { font-size: 120%; }
+}
+
+body { background: $white; }
+
+.wrapper { @extend %clearfix; }
+
+.container {
+  @extend %clearfix;
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 90%;
+
+  @media #{$medium} { max-width: 700px; }
+}
+
+/*------ Sections ------*/
+
+.section--alt { background: $light-gray; }
+
+/*------ Section Title Line ------*/
+
+.section__line {
+  background: $primary;
+  margin-bottom: 3rem;
+  width: 120px;
+}

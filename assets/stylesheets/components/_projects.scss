@@ -1,0 +1,14 @@
+/*------ Project List ------*/
+
+.project { @include clean-list; }
+
+.project__item {
+  margin-bottom: 1.5rem;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+.project__title {
+  font-weight: $regular;
+  text-decoration: none;
+}

@@ -1,8 +1,12 @@
+# Site settings
 name: Noah Rogers
-description: Leanring HTML and CSS
+title: Noah Rogers
+description: "Personal blog and projects"
+highlighter: pygments
 
 # Build settings
-encoding: utf-8
-highlighter: pygments
 markdown: kramdown
 
+# Sass settings
+sass:
+  sass_dir: assets/stylesheets
