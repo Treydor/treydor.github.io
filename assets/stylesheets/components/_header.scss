@@ -11,7 +11,6 @@ header .container {
 /*------ Logo ------*/
 
 .logo {
-  color: $white;
   font-weight: $bold;
   text-align: center;
   text-decoration: none;
@@ -20,6 +19,7 @@ header .container {
 }
 
 .logo__name {
+  color: $white;
   font-weight: $bold;
   margin-bottom: 0;
   text-transform: uppercase;
