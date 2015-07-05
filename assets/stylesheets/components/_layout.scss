@@ -38,7 +38,9 @@ body { background: $white; }
 /*------ Section Title Line ------*/
 
 .section__line {
-  background: $primary;
-  margin-bottom: 3rem;
+  background: $black;
+  border: 0;
+  height: 1px;
+  margin: 0 auto 3rem;
   width: 120px;
 }
