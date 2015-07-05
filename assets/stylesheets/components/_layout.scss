@@ -1,7 +1,5 @@
 /*------ Main Layout Elements ------*/
 
-html { }
-
 *, *:before, *:after {
   box-sizing: inherit;
   -moz-box-sizing: border-box;
@@ -20,6 +18,8 @@ html {
 
 body { background: $white; }
 
+/*------ Wrapper and Container ------*/
+
 .wrapper { @extend %clearfix; }
 
 .container {
@@ -32,6 +32,8 @@ body { background: $white; }
 }
 
 /*------ Sections ------*/
+
+section { }
 
 .section--alt { background: $light-gray; }
 
