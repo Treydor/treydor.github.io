@@ -27,7 +27,7 @@ header .container {
 }
 
 .logo__title {
-  color: $gray;
+  color: $light-gray;
   font-weight: $light;
   margin-bottom: 0;
 }
@@ -60,4 +60,6 @@ nav { flex: auto; }
   text-decoration: none;
 }
 
-.navigation-list__link--current { text-decoration: underline; }
+.navigation-list__link--current {
+  color: darken($white, 17%);
+}

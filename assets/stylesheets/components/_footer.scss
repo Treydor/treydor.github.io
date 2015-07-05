@@ -1,15 +1,1 @@
 /*------ Footer ------*/
-
-footer {
-  font-size: .9rem;
-
-  a { color: $black; }
-}
-
-.footer {
-  @include clean-list;
-}
-
-.footer__item {
-  display: block;
-}
