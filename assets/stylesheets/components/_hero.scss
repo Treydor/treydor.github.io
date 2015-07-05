@@ -7,10 +7,17 @@
 .hero--introduction {
   background: $primary;
   color: $white;
+  display: table;
+  height: 100vh;
+  width: 100%;
+
+  @media #{$medium} { height: 550px; }
 }
 
 .hero--introduction .container {
-  padding: 10rem 0;
+  display: table-cell;
+  padding: 0 10%;
+  vertical-align: middle;
 }
 
 .hero--introduction__photo {
