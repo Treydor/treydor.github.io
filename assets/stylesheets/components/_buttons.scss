@@ -2,9 +2,9 @@
 
 .button {
   @include transition ($duration $timing);
-  border: 2px solid $primary;
+  border: 2px solid $button-primary;
   border-radius: 3px;
-  color: $primary;
+  color: $button-primary;
   display: inline-block;
   font-size: .9rem;
   font-weight: $bold;
@@ -13,7 +13,7 @@
   text-decoration: none;
 
   &:hover {
-    background: $primary;
+    background: $button-primary;
     color: $white;
   }
 }

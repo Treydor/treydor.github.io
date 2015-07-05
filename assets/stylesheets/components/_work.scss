@@ -23,6 +23,7 @@
 }
 
 .work__link {
+  @include transition ($duration $timing);
   border-radius: 3px;
   display: table-cell;
   height: 250px;
@@ -39,11 +40,17 @@
   background: #f8f8f8;
   border: 1px solid #ddd;
 
-  img { width: 140px; }
+  img {
+    max-width: 150px;
+    width: 50%;
+  }
 }
 
 .greatpeaks {
   background: #333;
 
-  img { width: 280px; }
+  img {
+    max-width: 300px;
+    width: 90%;
+  }
 }
