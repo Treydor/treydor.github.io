@@ -2,7 +2,7 @@
 My personal website
 
 ### To do
-* Create individual page for each work item that highlights some of my contributions to each.
+* Create individual page for each work item that highlights my contributions.
 
 ### Viewing the project
 
