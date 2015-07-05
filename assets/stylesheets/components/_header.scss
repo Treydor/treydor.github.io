@@ -4,8 +4,9 @@ header { background: $primary; }
 
 header .container {
   align-items: center;
-  display: flex;
   padding: 1.5rem 0;
+
+  @media #{$medium} { display: flex }
 }
 
 /*------ Logo ------*/
@@ -21,7 +22,7 @@ header .container {
 .logo__name {
   color: $white;
   font-weight: $bold;
-  margin-bottom: 0;
+  margin-bottom: .3rem;
   text-transform: uppercase;
 }
 
@@ -37,8 +38,14 @@ nav { flex: auto; }
 
 .navigation-list {
   @include clean-list;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 1.5rem;
+  text-align: center;
+
+  @media #{$medium} {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
 }
 
 .navigation-list__item {
