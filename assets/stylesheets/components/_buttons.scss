@@ -2,12 +2,11 @@
 
 .button {
   @include transition ($duration $timing);
-  border: 2px solid $button-primary;
+  border: 1px solid $button-primary;
   border-radius: 3px;
   color: $button-primary;
   display: inline-block;
-  font-size: .9rem;
-  font-weight: $bold;
+  font-weight: $regular;
   padding: .6rem 1.5rem;
   text-align: center;
   text-decoration: none;
