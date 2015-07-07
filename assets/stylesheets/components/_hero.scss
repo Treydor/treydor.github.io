@@ -20,7 +20,11 @@
   vertical-align: middle;
 }
 
-.hero--introduction__photo {
+.hero__title { margin-bottom: 1.5rem; }
+
+/*------ About Hero ------*/
+
+.about__self-photo {
   background-image: url(/assets/images/noah.jpeg);
   background-position: 50% 20%;
   background-size: cover;
@@ -30,9 +34,7 @@
   width: 120px;
 }
 
-/*------ Noah & Hannah Hero ------*/
-
-.noah-hannah {
+.about__nh-photo {
   background: url('/assets/images/noahhannah.jpg') no-repeat;
   background-position: 45% 40%;
   background-size: cover;
