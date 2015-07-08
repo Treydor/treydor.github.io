@@ -49,7 +49,7 @@
   @include transition ($duration $timing);
   background: $light-gray;
   border: 1px solid $border-light;
-  border-radius: 3px;
+  border-radius: $border-radius;
   color: $gray;
   display: block;
   font-weight: $bold;

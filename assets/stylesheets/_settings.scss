@@ -1,13 +1,12 @@
 // Font Weights
-$light: 300;
 $regular: 400;
 $bold: 700;
 
 // Body Font
-$body-font: $light 110%/1.5 "Open Sans", sans-serif;
+$body-font: $regular 110%/1.5 "Open Sans", sans-serif;
 
 // Header Font
-$header-font: $light 110%/1.25 "Open Sans", sans-serif;
+$header-font: $regular 110%/1.25 "Open Sans", sans-serif;
 
 // Colors
 $primary: #4a5f6f;
@@ -18,6 +17,9 @@ $gray: #999;
 
 // Border Colors
 $border-light: #eee;
+
+// Border Radius
+$border-radius: 3px;
 
 // Button Colors
 $button-primary: #658298;

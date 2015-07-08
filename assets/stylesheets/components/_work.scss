@@ -24,7 +24,7 @@
 
 .work__link {
   @include transition ($duration $timing);
-  border-radius: 3px;
+  border-radius: $border-radius;
   display: table-cell;
   height: 250px;
   text-align: center;
