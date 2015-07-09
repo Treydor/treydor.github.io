@@ -3,10 +3,8 @@
 header { background: $primary; }
 
 header .container {
-  align-items: center;
+  display: flex;
   padding: 1.5rem 0;
-
-  @media #{$medium} { display: flex }
 }
 
 /*------ Logo ------*/
@@ -23,14 +21,8 @@ nav { flex: auto; }
 
 .navigation-list {
   @include clean-list;
-  margin-top: 1.5rem;
-  text-align: center;
-
-  @media #{$medium} {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0;
-  }
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navigation-list__item {
