@@ -4,7 +4,7 @@ header { background: $primary; }
 
 header .container {
   display: flex;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 
 /*------ Logo ------*/
@@ -27,7 +27,7 @@ nav { flex: auto; }
 
 .navigation-list__item {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 
   &:last-child { margin-right: 0; }
 }

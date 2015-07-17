@@ -2,12 +2,12 @@
 
 .button {
   @include transition ($duration $timing);
-  background: $button-primary;
+  border: 1px solid $button-primary;
   border-radius: $border-radius;
-  color: $white;
+  color: $button-primary;
   display: inline-block;
   font-weight: $regular;
-  padding: .8rem 1.5rem;
+  padding: .6rem 1.5rem;
   text-align: center;
   text-decoration: none;
 
@@ -25,6 +25,4 @@
   margin: 3rem auto 0;
   max-width: 180px;
   text-align: center;
-
-  &:hover { background: lighten($button-primary, 7%); }
 }
