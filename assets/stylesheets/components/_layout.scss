@@ -16,7 +16,10 @@ html {
   @media #{$medium} { font-size: 120%; }
 }
 
-body { background: $white; }
+body {
+  background: $white;
+  color: $black;
+}
 
 /*------ Wrapper and Container ------*/
 

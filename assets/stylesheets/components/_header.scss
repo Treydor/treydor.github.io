@@ -27,7 +27,7 @@ nav { flex: auto; }
 
 .navigation-list__item {
   display: inline-block;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 
   &:last-child { margin-right: 0; }
 }
@@ -38,5 +38,5 @@ nav { flex: auto; }
 }
 
 .navigation-list__link--current {
-  color: darken($white, 17%);
+  color: darken($white, 20%);
 }
