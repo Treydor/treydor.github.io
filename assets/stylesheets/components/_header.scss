@@ -13,7 +13,7 @@ header .container {
 /*------ Logo ------*/
 
 .logo {
-  color: $black;
+  color: $gray;
   font-weight: $bold;
   text-decoration: none;
 }
@@ -30,13 +30,13 @@ nav { flex: auto; }
 
 .navigation-list__item {
   display: inline-block;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 
   &:last-child { margin-right: 0; }
 }
 
 .navigation-list__link {
-  color: $black;
+  color: $gray;
   text-decoration: none;
 }
 
