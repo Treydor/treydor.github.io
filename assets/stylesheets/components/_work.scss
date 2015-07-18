@@ -26,12 +26,12 @@
   @include transition ($duration $timing);
   border-radius: $border-radius;
   display: table-cell;
-  height: 250px;
+  height: 160px;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
 
-  @media #{$large} { height: 300px; }
+  @media #{$large} { height: 220px; }
 }
 
 /*------ Work ------*/

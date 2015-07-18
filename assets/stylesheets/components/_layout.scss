@@ -13,11 +13,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @media #{$medium} { font-size: 120%; }
+  @media #{$medium} { font-size: 110%; }
 }
 
 body {
-  background: $white;
+  background: $light-gray;
   color: $black;
 }
 
@@ -38,7 +38,11 @@ body {
 
 section { }
 
-.section--alt { background: $light-gray; }
+.section--alt {
+  background: $white;
+  border-bottom: 1px solid $border-light;
+  border-top: 1px solid $border-light;
+}
 
 /*------ Section Title Line ------*/
 

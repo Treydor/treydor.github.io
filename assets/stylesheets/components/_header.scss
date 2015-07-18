@@ -1,6 +1,9 @@
 /*------ Header ------*/
 
-header { background: $primary; }
+header {
+  background: $white;
+  border-bottom: 1px solid $border-light;
+}
 
 header .container {
   display: flex;
@@ -10,7 +13,7 @@ header .container {
 /*------ Logo ------*/
 
 .logo {
-  color: $white;
+  color: $black;
   font-weight: $bold;
   text-decoration: none;
 }
@@ -33,10 +36,10 @@ nav { flex: auto; }
 }
 
 .navigation-list__link {
-  color: $white;
+  color: $black;
   text-decoration: none;
 }
 
 .navigation-list__link--current {
-  color: darken($white, 20%);
+  color: darken($white, 30%);
 }
