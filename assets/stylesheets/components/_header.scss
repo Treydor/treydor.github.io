@@ -1,9 +1,6 @@
 /*------ Header ------*/
 
-header {
-  background: $white;
-  border-bottom: 1px solid $border-light;
-}
+header { background: $primary; }
 
 header .container {
   -webkit-align-items: center;
@@ -17,7 +14,7 @@ header .container {
 /*------ Navigation ------*/
 
 .logo {
-  color: $gray;
+  color: $white;
   font-weight: $bold;
   text-decoration: none;
 }
@@ -45,10 +42,10 @@ nav {
 
 .navigation-list__link {
   @include transition (color $duration $timing);
-  color: $gray;
+  color: $white;
   text-decoration: none;
 
-  &:hover { color: darken($gray, 20%); }
+  &:hover { color: lighten($white, 12%); }
 }
 
-.navigation-list__link--current { color: darken($gray, 20%); }
+.navigation-list__link--current { color: darken($white, 12%); }
