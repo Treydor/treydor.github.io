@@ -6,11 +6,15 @@ header {
 }
 
 header .container {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
   display: flex;
-  padding: 2rem 0;
+  max-width: 1400px;
+  padding: 1.5rem 0;
 }
 
-/*------ Logo ------*/
+/*------ Navigation ------*/
 
 .logo {
   color: $gray;
@@ -18,28 +22,33 @@ header .container {
   text-decoration: none;
 }
 
-/*------ Navigation ------*/
-
-nav { flex: auto; }
-
-.navigation-list {
-  @include clean-list;
+nav {
+  -webkit-flex: auto;
+  -webkit-justify-content: flex-end;
+  display: -webkit-flex;
   display: flex;
+  flex: auto;
   justify-content: flex-end;
 }
 
-.navigation-list__item {
-  display: inline-block;
-  margin-right: 1rem;
+.navigation-list {
+  @include clean-list;
+  display: -webkit-flex;
+  display: flex;
+}
 
-  &:last-child { margin-right: 0; }
+.navigation-list__item {
+  margin-right: 1.5rem;
+
+  &:last-of-type { margin-right: 0; }
 }
 
 .navigation-list__link {
+  @include transition (color $duration $timing);
   color: $gray;
   text-decoration: none;
+
+  &:hover { color: darken($gray, 20%); }
 }
 
-.navigation-list__link--current {
-  color: darken($white, 30%);
-}
+.navigation-list__link--current { color: darken($gray, 20%); }

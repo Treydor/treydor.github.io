@@ -8,7 +8,7 @@ title: Blog
       {% for post in site.posts do %}
         <li class="post__item">
           <div class="post__date"> {{ post.date | date: "%B %-d, %Y" }} </div>
-          <a class="post__title" href="{{ post.url }}"> {{ post.title }} </a>
+          <a class="post__link" href="{{ post.url }}"> {{ post.title }} </a>
           <p>{{ post.content | strip_html | truncatewords:40 }}</p>
         </li>
       {% endfor %}

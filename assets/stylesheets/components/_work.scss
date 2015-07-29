@@ -1,53 +1,70 @@
-/*------ Work Grid List ------*/
+/*------ Work List ------*/
 
-.work {
-  @include clean-list;
+.work-list { @include clean-list; }
+
+.work-list__item {
   @extend %clearfix;
+  border-bottom: 1px solid $border-light;
+  margin-bottom: 2rem;
+
+  &:last-of-type {
+    border-bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  p { color: $gray; }
 }
 
-.work__item {
-  display: table;
-  margin-bottom: 1.5rem;
+.work-list__column {
+  margin-bottom: 2rem;
   width: 100%;
-
-  &:last-child { margin-bottom: 0; }
 
   @media #{$large} {
     float: left;
-    margin-bottom: 0;
+    height: 300px;
     margin-right: 4%;
     width: 48%;
 
-    &:nth-of-type(2n+2) { margin-right: 0; }
+    &:last-of-type { margin-right: 0; }
   }
 }
 
-.work__link {
-  @include transition ($duration $timing);
+.work-list__column--work-item {
+  border: 1px solid $border-light;
   border-radius: $border-radius;
-  display: table-cell;
-  height: 160px;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
+  height: 300px;
 
-  @media #{$large} { height: 220px; }
-}
+  &.citypak {
+    background: url('/assets/images/work/citypak.png');
+    background-position: 50% 0;
+    background-size: cover;
+  }
 
-/*------ Work ------*/
-
-.citypak {
-  background: #f8f8f8;
-  border: 1px solid #ddd;
-
-  img { max-width: 110px; }
-}
-
-.greatpeaks {
-  background: #333;
-
-  img {
-    max-width: 280px;
-    width: 90%;
+  &.greatpeaks {
+    background: url('/assets/images/work/greatpeaks.png');
+    background-position: 50% 0;
+    background-size: cover;
   }
 }
+
+.work-list__title {
+  font-size: 1.2rem;
+  font-weight: $bold;
+  text-decoration: none;
+}
+
+.work-list__link {
+  display: inline-block;
+  margin-top: 1.5rem;
+
+  &:before {
+    content: "\f08e";
+    display: inline-block;
+    font-family: "FontAwesome";
+    margin-right: .3rem;
+    text-decoration: none;
+  }
+}
+
+/*------ Work List ------*/

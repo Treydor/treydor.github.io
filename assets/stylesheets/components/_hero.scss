@@ -1,31 +1,13 @@
 /*------ Hero ------*/
 
-.hero { text-align: center; }
-
-/*------ Introduction Hero ------*/
-
-.hero--introduction {
-  background: $primary;
-  color: $white;
-  display: table;
-  height: 100vh;
-  width: 100%;
-
-  @media #{$large} { height: 550px; }
+.hero {
+  -webkit-align-items: center;
+  align-items: center;
+  color: $black;
+  display: -webkit-flex;
+  display: flex;
+  height: 340px;
 }
-
-.hero--introduction .container {
-  display: table-cell;
-  padding: 0 10%;
-  vertical-align: middle;
-}
-
-.hero__title {
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-/*------ About Hero ------*/
 
 .about__self-photo {
   background-image: url(/assets/images/noah.jpg);
@@ -36,6 +18,17 @@
   margin: 0 auto 1.5rem;
   width: 120px;
 }
+
+.hero__container { padding: 0; }
+
+.hero--introduction { text-align: center; }
+
+.hero__title { }
+
+.hero__subtitle { color: $gray; }
+
+
+/*------ About Hero ------*/
 
 .about__nh-photo {
   background: url('/assets/images/noahhannah.jpg') no-repeat;
@@ -52,4 +45,13 @@
   @media #{$large} {
     height: 550px;
   }
+}
+
+.test {
+  background-image: url(/assets/images/noah.jpg);
+  background-position: 50% 20%;
+  background-size: cover;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
 }

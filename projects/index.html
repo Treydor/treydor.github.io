@@ -4,35 +4,6 @@ title: Projects
 ---
 <section>
   <div class="container">
-    <ul class="project">
-      <li class="project__item">
-        <a class="project__title" href="{{ site.url }}/media-queries/" target="_blank">My Favorites</a>
-        <p>A responsivie grid that displays some of my favorite books, movies and television shows. This project continues to build on my knowledge of responsive design and also introduces basic jQuery.</p>
-      </li>
-      <li class="project__item">
-        <a class="project__title" href="{{ site.url }}/settings-page/" target="_blank">User Settings</a>
-        <p>A user settings page styled using <a href="http://www.google.com/design/spec/style/color.html" target="_blank">Google's material design</a> guidelines. This page builds on my knowledge of HTML, CSS and responsive design by introducing forms.</p>
-      </li>
-      <li class="project__item">
-        <a class="project__title" href="{{ site.url }}/travel/" target="_blank">Travel Website</a>
-        <p>Built using skills from previous projects, this sample travel website uses a simple style and allows prospective customers to browse all-inclusive vacation packages.</p>
-      </li>
-      <li class="project__item">
-        <a class="project__title" href="{{ site.url }}/lengths/" target="_blank">CSS Length Units</a>
-        <p>An introduction to the most basic CSS length units.</p>
-      </li>
-      <li class="project__item">
-        <a class="project__title" href="{{ site.url }}/positioning/" target="_blank">Positioning</a>
-        <p>Notes and examples that take a look at some of the most common CSS positioning properties.</p>
-      </li>
-      <!-- <li class="project__item">
-        <a class="project__title" href="{{ site.url }}/projects/floats/">Floats &amp; Clearfixes</a>
-        <p>An introduction to floats, their pitfalls, and how to use clearfixes.</p>
-      </li>
-      <li class="project__item">
-        <a class="project__title" href="{{ site.url }}/projects/elements/">Basic Elements</a>
-        <p>A first look at the most basic CSS elements.</p>
-      </li> -->
-    </ul>
+    {% include project-list.html %}
   </div>
 </section>

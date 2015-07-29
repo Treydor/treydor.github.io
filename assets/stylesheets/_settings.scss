@@ -1,35 +1,30 @@
 // Font Weights
-$light: 300;
 $regular: 400;
 $bold: 700;
 
 // Body Font
-$body-font: $regular 100%/1.5 "Open Sans", sans-serif;
+$body-font: $regular 110%/1.5 "Lato", sans-serif;
 
 // Header Font
-$header-font: $light 100%/1.25 "Open Sans", sans-serif;
+$header-font: $bold 110%/1.25 "Lato", sans-serif;
 
 // Colors
-$primary: #30739c;
 $black: #333;
 $white: #fff;
-$gray: #777;
+$gray: #808080;
 $light-gray: #fafafa;
 
-// Border Colors
+// Border Color
 $border-light: #eee;
 
 // Border Radius
 $border-radius: 4px;
 
-// Button Colors
-$button-primary: #569fcb;
-
 // Medium Screens
 $medium: "(min-width: 600px)";
 
 // Medium Screens
-$large: "(min-width: 800px)";
+$large: "(min-width: 1000px)";
 
 // Animation Duration and Timing
 $duration: .2s;

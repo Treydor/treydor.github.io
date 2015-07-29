@@ -1,16 +1,61 @@
 /*------ Project List ------*/
 
-.project { @include clean-list; }
+.project-list { @include clean-list; }
 
-.project__item {
-  margin-bottom: 2rem;
+.project-list__item {
+  background: $white;
+  float: left;
+  margin-bottom: 1.5rem;
+  width: 100%;
 
   &:last-of-type { margin-bottom: 0; }
+
+  @media #{$medium} {
+    margin-right: 3%;
+    width: 48.5%;
+
+    &:nth-of-type(2n+2) { margin-right: 0; }
+  }
+
+  @media #{$large} {
+    width: 31.33%;
+
+    &:nth-of-type(2n+2) { margin-right: 3%; }
+    &:nth-of-type(3n+3) { margin-right: 0; }
+  }
 }
 
-.project__title {
+.project-list__link {
+  @include transition (border $duration $timing);
+  align-items: center;
+  border: 1px solid $border-light;
+  border-radius: $border-radius;
   display: block;
-  font-weight: $bold;
-  margin-bottom: .2rem;
+  padding: 2rem;
+  text-align: center;
   text-decoration: none;
+  width: 100%;
+
+  @media #{$medium} { height: 291px; }
+
+  &:hover { border: 1px solid darken($border-light, 7%); }
+
+  a { margin-top: 1.5rem; }
+
+  i {
+    color: $gray;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.project-list__title {
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+}
+
+.project-list__description {
+  color: $gray;
+  font-size: .9rem;
+  margin: 0;
 }
