@@ -18,7 +18,7 @@ html {
 
 body {
   background: $light-gray;
-  color: $black;
+  color: $gray;
 }
 
 /*------ Wrapper and Container ------*/
@@ -47,7 +47,7 @@ section { }
 /*------ Section Title Line ------*/
 
 .section__line {
-  background: $black;
+  background: $primary-dark;
   border: 0;
   height: 1px;
   margin: 0 auto 3rem;
