@@ -25,12 +25,13 @@
 }
 
 .project-list__link {
+  -webkit-align-items: center;
   @include transition (border $duration $timing);
   align-items: center;
   background: $white;
-  border: 1px solid $border-light;
   border-radius: $border-radius;
-  display: flex;
+  border: 1px solid $border-light;
+  display: -webkit-flex;
   padding: 2rem;
   text-align: center;
   text-decoration: none;
@@ -46,8 +47,6 @@
     margin-bottom: 1.2rem;
   }
 }
-
-.project-list__wrapper { }
 
 .project-list__title {
   font-size: 1.2rem;
