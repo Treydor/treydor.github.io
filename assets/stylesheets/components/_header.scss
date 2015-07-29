@@ -1,20 +1,17 @@
 /*------ Header ------*/
 
-header { background: $primary; }
-
 header .container {
   -webkit-align-items: center;
   align-items: center;
   display: -webkit-flex;
   display: flex;
   max-width: 1400px;
-  padding: 1.3rem 0;
+  padding: 2rem 0;
 }
 
 /*------ Navigation ------*/
 
 .logo {
-  color: $white;
   font-weight: $bold;
   text-decoration: none;
 }
@@ -42,9 +39,8 @@ nav {
 
 .navigation-list__link {
   @include transition (color $duration $timing);
-  color: $white;
   text-decoration: none;
 
   &:hover, &.navigation-list__link--current
-    { color: lighten($primary, 30%); }
+    { color: lighten($primary, 15%); }
 }
