@@ -47,7 +47,7 @@
 
 .post-menu__link {
   @include transition ($duration $timing);
-  background: $light-gray;
+  background: $primary-light;
   border: 1px solid $border-light;
   border-radius: $border-radius;
   color: $gray;
@@ -60,7 +60,7 @@
   white-space: nowrap;
 
   &:hover {
-    background: darken($light-gray, 1%);
+    background: darken($primary-light, 1%);
     border: 1px solid darken($border-light, 10%);
     color: $black;
   }
