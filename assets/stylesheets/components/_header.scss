@@ -1,19 +1,30 @@
 /*------ Header ------*/
 
+header {
+  background: $primary;
+
+  @media #{$medium} { background: none; }
+}
+
 header .container {
   -webkit-align-items: center;
   align-items: center;
   display: -webkit-flex;
   display: flex;
   max-width: 1400px;
-  padding: 2rem 0;
+  padding: 1.3rem 0;
+
+  @media #{$medium} { padding: 2rem 0; }
 }
 
 /*------ Navigation ------*/
 
 .logo {
+  color: $white;
   font-weight: $bold;
   text-decoration: none;
+
+  @media #{$medium} { color: $gray; }
 }
 
 nav {
@@ -39,8 +50,11 @@ nav {
 
 .navigation-list__link {
   @include transition (color $duration $timing);
+  color: $white;
   text-decoration: none;
 
+  @media #{$medium} { color: $gray; }
+
   &:hover, &.navigation-list__link--current
-    { color: lighten($primary, 15%); }
+    { color: lighten($primary, 20%); }
 }
