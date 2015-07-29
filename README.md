@@ -1,12 +1,8 @@
-# noahrogers.me (treydor.github.io)
-My personal website
-
-### To do
-* Create individual page for each work item that highlights my contributions.
+## www.noahrogers.me
 
 ### Viewing the project
 
-noahrogers.me or treydor.github.io
+www.noahrogers.me, www.noahrogers.com, treydor.github.io
 
 ### Install Jekyll
 ```
@@ -22,3 +18,10 @@ jekyll serve
 ```
 localhost:4000
 ```
+
+---------
+
+
+#### To do list
+* Creat contact page
+* Create individual page for each work item that highlights my contributions.
