@@ -5,20 +5,20 @@
 .work-list__item {
   @extend %clearfix;
   border-bottom: 2px solid $border-light;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 
   &:last-of-type {
     border-bottom: 0;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
-
-  p { color: $gray; }
 }
 
 .work-list__column {
-  margin-bottom: 2rem;
   width: 100%;
+
+  &:first-of-type { margin-bottom: 2rem; }
 
   @media #{$large} {
     float: left;
@@ -26,6 +26,7 @@
     margin-right: 4%;
     width: 48%;
 
+    &:first-of-type { margin-bottom: 0; }
     &:last-of-type { margin-right: 0; }
   }
 }
@@ -53,18 +54,13 @@
   font-size: 1.2rem;
   font-weight: $bold;
   text-decoration: none;
-}
 
-.work-list__link {
-  color: $black;
-  display: inline-block;
-  margin-top: 1.5rem;
-
-  &:before {
+  &:after {
     content: "\f08e";
-    display: inline-block;
     font-family: "FontAwesome";
-    margin-right: .3rem;
+    font-size: .7rem;
+    font-weight: $regular;
+    margin-left: .3rem;
     text-decoration: none;
   }
 }
