@@ -45,7 +45,6 @@ nav {
   color: $white;
   text-decoration: none;
 
-  &:hover { color: lighten($white, 12%); }
+  &:hover, &.navigation-list__link--current
+    { color: lighten($primary, 30%); }
 }
-
-.navigation-list__link--current { color: darken($white, 12%); }
