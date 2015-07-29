@@ -3,7 +3,6 @@
 .project-list { @include clean-list; }
 
 .project-list__item {
-  background: $white;
   float: left;
   margin-bottom: 1.5rem;
   width: 100%;
@@ -28,6 +27,7 @@
 .project-list__link {
   @include transition (border $duration $timing);
   align-items: center;
+  background: $white;
   border: 1px solid $border-light;
   border-radius: $border-radius;
   display: flex;
