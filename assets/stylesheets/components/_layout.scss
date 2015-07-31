@@ -21,6 +21,11 @@ body {
   color: $gray;
 }
 
+.confirmation {
+  background: $primary;
+  color: $white;
+}
+
 /*------ Wrapper and Container ------*/
 
 .wrapper { @extend %clearfix; }
@@ -47,7 +52,7 @@ section { }
 /*------ Section Title Line ------*/
 
 .section__line {
-  background: $black;
+  background: $primary-dark;
   border: 0;
   height: 1px;
   margin: 0 auto 3rem;

@@ -1,6 +1,5 @@
 ---
 ---
-
 // Variables
 @import "settings";
 @import "mixins";
@@ -9,16 +8,15 @@
 @import "components/normalize";
 @import "components/layout";
 @import "components/typography";
-@import "components/buttons";
+@import "components/forms";
 @import "components/header";
 @import "components/footer";
 @import "components/hero";
-@import "components/posts";
+
+// Pages
 @import "components/projects";
 @import "components/work";
+@import "components/contact";
 
 // Utilities
 @import "components/utilities";
-
-// Vendor
-@import "vendor/font-awesome/font-awesome";
