@@ -14,9 +14,10 @@
 @import "components/hero";
 
 // Pages
-@import "components/projects";
-@import "components/work";
-@import "components/contact";
+@import "pages/blog";
+@import "pages/projects";
+@import "pages/work";
+@import "pages/contact";
 
 // Utilities
 @import "components/utilities";

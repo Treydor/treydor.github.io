@@ -3,30 +3,43 @@
 header { background: $primary; }
 
 header .container {
-  -webkit-align-items: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  height: 81px;
   max-width: 1400px;
-  padding: 0;
+  padding: 2rem 0;
+  text-align: center;
+
+  @media #{$medium} {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    height: 91px;
+    padding: 0;
+  }
 }
 
 /*------ Navigation ------*/
 
 .logo {
   color: $white;
+  display: block;
+  font-size: 1.2rem;
   font-weight: $bold;
+  margin-bottom: 1.2rem;
   text-decoration: none;
+
+  @media #{$medium} { margin: 0; }
 }
 
 nav {
-  -webkit-flex: auto;
-  -webkit-justify-content: flex-end;
-  display: -webkit-flex;
-  display: flex;
-  flex: auto;
-  justify-content: flex-end;
+
+  @media #{$medium} {
+    -webkit-flex: auto;
+    -webkit-justify-content: flex-end;
+    display: -webkit-flex;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+  }
 }
 
 .navigation-list { @include clean-list; }

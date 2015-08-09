@@ -4,11 +4,11 @@ title: Blog
 ---
 <section>
   <div class="container">
-    <ul class="post">
+    <ul class="post-list">
       {% for post in site.posts do %}
-        <li class="post__item">
-          <div class="post__date"> {{ post.date | date: "%B %-d, %Y" }} </div>
-          <a class="post__link" href="{{ post.url }}"> {{ post.title }} </a>
+        <li class="post-list__item">
+          <div class="post-list__date"> {{ post.date | date: "%B %-d, %Y" }} </div>
+          <a class="post-list__title" href="{{ post.url }}"> {{ post.title }} </a>
           <p>{{ post.content | strip_html | truncatewords:40 }}</p>
         </li>
       {% endfor %}

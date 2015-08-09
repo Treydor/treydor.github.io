@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: $primary-light;
+  background: $light-gray;
   color: $gray;
 }
 
@@ -44,7 +44,7 @@ body {
 section { }
 
 .section--alt {
-  background: $primary-light;
+  background: $gray;
   border-bottom: 1px solid $border-light;
   border-top: 1px solid $border-light;
 }
@@ -52,7 +52,7 @@ section { }
 /*------ Section Title Line ------*/
 
 .section__line {
-  background: $primary-dark;
+  background: $black;
   border: 0;
   height: 1px;
   margin: 0 auto 3rem;
