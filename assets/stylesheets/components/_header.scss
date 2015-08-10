@@ -6,13 +6,18 @@ header {
 }
 
 header .container {
-  -webkit-align-items: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  height: 95px;
-  max-width: 1600px;
-  padding: 0;
+  padding: 1.5rem 0;
+  text-align: center;
+
+  @media #{$medium} {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    height: 95px;
+    max-width: 1600px;
+    padding: 0;
+  }
 }
 
 /*------ Navigation ------*/
@@ -22,11 +27,14 @@ header .container {
   display: block;
   font-size: 1.1rem;
   font-weight: $bold;
+  margin-bottom: 1rem;
   text-decoration: none;
+
+  @media #{$medium} { margin: 0; }
 }
 
 nav {
-  display: none;
+  display: block;
 
   @media #{$medium} {
     -webkit-flex: auto;
