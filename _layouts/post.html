@@ -7,40 +7,18 @@
 
     {% include header.html %}
 
-    <div class="container">
-      <article>
+      <div class="container">
+        <article>
 
-        {% if page.date %}
-          <span class="post__date">{{ page.date | date: "%B %-d, %Y" }}</span>
-        {% endif %}
+          {% include posts/post-header.html %}
 
-        <h1 class="page-title">{{ page.title }}</h1>
+          {{ content }}
 
-        {{ content }}
+        </article>
 
-      </article>
-      {% if page.previous or page.next %}
-        <ul class="post-menu">
-          {% if page.previous %}
-            <li class="post-menu__item">
-              <a class="post-menu__link" href="{{ page.previous.url }}">
-                Previous:
-                <span class="post-menu__link">{{ page.previous.title }}</span>
-              </a>
-            </li>
-          {% endif %}
+          {% include posts/post-footer.html %}
 
-          {% if page.next %}
-            <li class="post-menu__item post-menu__item--next">
-              <a class="post-menu__link" href="{{ page.next.url }}">
-                Next:
-                <span class="post-menu__link">{{ page.next.title }}</span>
-              </a>
-            </li>
-          {% endif %}
-        </ul>
-      {% endif %}
-  </div>
+      </div>
 
     {% include footer.html %}
 

@@ -1,0 +1,13 @@
+/*------ Code ------*/
+
+pre {
+  border: 1px solid $border-light;
+  border-radius: $border-radius;
+  padding: 1.6rem;
+}
+
+code {
+  color: $gray;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: .9rem;
+}

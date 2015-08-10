@@ -8,15 +8,16 @@
 @import "components/normalize";
 @import "components/layout";
 @import "components/typography";
-@import "components/forms";
 @import "components/header";
 @import "components/footer";
 @import "components/hero";
+@import "components/code";
 
 // Pages
-@import "components/projects";
-@import "components/work";
-@import "components/contact";
+@import "pages/blog";
+@import "pages/projects";
+@import "pages/work";
+@import "pages/contact";
 
 // Utilities
 @import "components/utilities";

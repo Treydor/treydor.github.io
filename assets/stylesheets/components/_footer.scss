@@ -1,26 +1,22 @@
 /*------ Footer ------*/
 
-footer {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-footer .container { padding: 2rem 0; }
+footer { text-align: center; }
 
 .footer-list { @include clean-list; }
 
 .footer-list__item {
   display: inline-block;
-  margin-right: 1.2rem;
+  margin-right: 1.5rem;
 
   &:last-of-type { margin-right: 0; }
 }
 
 .footer-list__link {
   @include transition (color $duration $timing);
-  color: lighten($gray, 20%);
-  font-size: .9rem;
+  color: $gray;
+  display: inline-block;
+  font-size: 1.4rem;
   text-decoration: none;
 
-  &:hover { color: $gray; }
+  &:hover { color: lighten($gray, 15%); }
 }

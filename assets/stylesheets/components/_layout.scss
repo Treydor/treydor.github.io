@@ -17,13 +17,8 @@ html {
 }
 
 body {
-  background: $primary-light;
+  background: $light-gray;
   color: $gray;
-}
-
-.confirmation {
-  background: $primary;
-  color: $white;
 }
 
 /*------ Wrapper and Container ------*/
@@ -39,22 +34,10 @@ body {
   @media #{$medium} { max-width: 920px; }
 }
 
-/*------ Sections ------*/
+/*------ Images ------*/
 
-section { }
-
-.section--alt {
-  background: $primary-light;
-  border-bottom: 1px solid $border-light;
-  border-top: 1px solid $border-light;
-}
-
-/*------ Section Title Line ------*/
-
-.section__line {
-  background: $primary-dark;
-  border: 0;
-  height: 1px;
-  margin: 0 auto 3rem;
-  width: 120px;
+img {
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }

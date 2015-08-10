@@ -39,7 +39,7 @@
 
   @media #{$medium} { height: 290px; }
 
-  &:hover { border: 1px solid darken($border-light, 7%); }
+  &:hover { border: 1px solid darken($border-light, 10%); }
 
   i {
     color: $primary;

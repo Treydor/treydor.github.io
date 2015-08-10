@@ -1,0 +1,67 @@
+/*------ Post list ------*/
+
+.post-list { @include clean-list; }
+
+.post-list__item {
+  margin-bottom: 2.4rem;
+
+  &:last-child { margin-bottom: 0; }
+}
+
+.post-list__title {
+  @include transition (color $duration $timing);
+  color: $black;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: $bold;
+  margin-bottom: .6rem;
+  text-decoration: none;
+}
+
+/*------ Post header ------*/
+
+.post-header { margin-bottom: 1.8rem; }
+
+.post-header__title { margin-bottom: .3rem; }
+
+/*------ Post footer ------*/
+
+.post-footer {
+  @include clean-list;
+  font-size: .9rem;
+  margin-top: 3.6rem;
+  text-align: center;
+
+  @media #{$large} {
+    display: flex;
+    display: -webkit-flex;
+  }
+}
+
+.post-footer__item {
+  @media #{$large} { margin: 0; }
+}
+
+.post-footer__link {
+  color: $black;
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.post-footer__item--next {
+
+  @media #{$large} {
+    -webkit-flex: auto;
+    -webkit-justify-content: flex-end;
+    display: -webkit-flex;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+  }
+}
+
+.post-footer__title {
+  @include transition (color $duration $timing);
+  font-weight: $bold;
+}

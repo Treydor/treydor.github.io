@@ -3,30 +3,44 @@
 header { background: $primary; }
 
 header .container {
-  -webkit-align-items: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  height: 81px;
-  max-width: 1400px;
-  padding: 0;
+  padding: 1.5rem 0;
+  text-align: center;
+
+  @media #{$medium} {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    height: 95px;
+    max-width: 1600px;
+    padding: 0;
+  }
 }
 
 /*------ Navigation ------*/
 
 .logo {
   color: $white;
+  display: block;
+  font-size: 1.1rem;
   font-weight: $bold;
+  margin-bottom: 1rem;
   text-decoration: none;
+
+  @media #{$medium} { margin: 0; }
 }
 
 nav {
-  -webkit-flex: auto;
-  -webkit-justify-content: flex-end;
-  display: -webkit-flex;
-  display: flex;
-  flex: auto;
-  justify-content: flex-end;
+  display: block;
+
+  @media #{$medium} {
+    -webkit-flex: auto;
+    -webkit-justify-content: flex-end;
+    display: -webkit-flex;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+  }
 }
 
 .navigation-list { @include clean-list; }
@@ -44,5 +58,5 @@ nav {
   text-decoration: none;
 
   &:hover, &.navigation-list__link--current
-    { color: darken($white, 20%); }
+    { color: darken($white, 15%); }
 }
