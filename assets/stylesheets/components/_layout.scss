@@ -34,26 +34,10 @@ body {
   @media #{$medium} { max-width: 920px; }
 }
 
-/*------ Sections ------*/
+/*------ Images ------*/
 
-section { }
-
-.section--alt {
-  background: $light-gray;
-  border-bottom: 1px solid $border-light;
-  border-top: 1px solid $border-light;
-}
-
-/*------ Section Title Line ------*/
-
-pre {
-  background: $black;
-  border-radius: $border-radius;
-  color: $light-gray;
-  padding: 2rem;
-}
-
-code {
-  font-family: Consolas,Monaco,'Andale Mono',monospace;
-  font-size: .9rem;
+img {
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
