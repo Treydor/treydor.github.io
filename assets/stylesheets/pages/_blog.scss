@@ -28,6 +28,7 @@
 
 .post-footer {
   @include clean-list;
+  font-size: .9rem;
   margin-top: 3.6rem;
   text-align: center;
 
@@ -37,15 +38,15 @@
   }
 }
 
+.post-footer__item {
+  @media #{$large} { margin: 0; }
+}
+
 .post-footer__link {
   color: $black;
   display: inline-block;
   margin-bottom: 1rem;
   text-decoration: none;
-}
-
-.post-footer__item {
-  @media #{$medium} { margin: 0; }
 }
 
 .post-footer__item--next {
@@ -60,4 +61,7 @@
   }
 }
 
-.post-footer__title { font-weight: $bold; }
+.post-footer__title {
+  @include transition (color $duration $timing);
+  font-weight: $bold;
+}
