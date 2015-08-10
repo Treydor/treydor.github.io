@@ -39,17 +39,17 @@
 
   @media #{$medium} { height: 290px; }
 
-  &:hover { border: 1px solid darken($border-light, 7%); }
+  &:hover { border: 1px solid darken($border-light, 10%); }
 
   i {
-    color: $primary;
+    color: $gray;
     font-size: 1.8rem;
     margin-bottom: 1.2rem;
   }
 }
 
 .project-list__title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: .5rem;
 }
 

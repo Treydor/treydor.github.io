@@ -1,10 +1,13 @@
 /*------ Header ------*/
 
-header { background: $primary; }
+header {
+  background: $white;
+  border-bottom: 1px solid $border-light;
+}
 
 header .container {
-  max-width: 1400px;
-  padding: 2rem 0;
+  max-width: 1600px;
+  padding: 2.2rem 0;
   text-align: center;
 
   @media #{$medium} {
@@ -12,7 +15,7 @@ header .container {
     align-items: center;
     display: -webkit-flex;
     display: flex;
-    height: 91px;
+    height: 95px;
     padding: 0;
   }
 }
@@ -20,9 +23,8 @@ header .container {
 /*------ Navigation ------*/
 
 .logo {
-  color: $white;
+  color: $gray;
   display: block;
-  font-size: 1.2rem;
   font-weight: $bold;
   margin-bottom: 1.2rem;
   text-decoration: none;
@@ -31,7 +33,6 @@ header .container {
 }
 
 nav {
-
   @media #{$medium} {
     -webkit-flex: auto;
     -webkit-justify-content: flex-end;
@@ -46,16 +47,16 @@ nav {
 
 .navigation-list__item {
   display: inline-block;
-  margin-right: 1.2rem;
+  margin-right: 1.5rem;
 
   &:last-of-type { margin-right: 0; }
 }
 
 .navigation-list__link {
   @include transition (color $duration $timing);
-  color: $white;
+  color: $gray;
   text-decoration: none;
 
   &:hover, &.navigation-list__link--current
-    { color: darken($white, 20%); }
+    { color: lighten($gray, 15%); }
 }

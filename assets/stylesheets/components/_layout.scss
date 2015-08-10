@@ -21,11 +21,6 @@ body {
   color: $gray;
 }
 
-.confirmation {
-  background: $primary;
-  color: $white;
-}
-
 /*------ Wrapper and Container ------*/
 
 .wrapper { @extend %clearfix; }
@@ -44,17 +39,21 @@ body {
 section { }
 
 .section--alt {
-  background: $gray;
+  background: $light-gray;
   border-bottom: 1px solid $border-light;
   border-top: 1px solid $border-light;
 }
 
 /*------ Section Title Line ------*/
 
-.section__line {
+pre {
   background: $black;
-  border: 0;
-  height: 1px;
-  margin: 0 auto 3rem;
-  width: 120px;
+  border-radius: $border-radius;
+  color: $light-gray;
+  padding: 2rem;
+}
+
+code {
+  font-family: Consolas,Monaco,'Andale Mono',monospace;
+  font-size: .9rem;
 }

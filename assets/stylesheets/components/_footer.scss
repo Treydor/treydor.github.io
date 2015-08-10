@@ -13,10 +13,10 @@ footer { text-align: center; }
 
 .footer-list__link {
   @include transition (color $duration $timing);
-  color: lighten($gray, 45%);
+  color: $gray;
   display: inline-block;
   font-size: 1.4rem;
   text-decoration: none;
 
-  &:hover { color: lighten($gray, 25%);}
+  &:hover { color: lighten($gray, 15%); }
 }

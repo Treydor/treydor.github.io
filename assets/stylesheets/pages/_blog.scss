@@ -9,9 +9,10 @@
 }
 
 .post-list__title {
+  @include transition (color $duration $timing);
   color: $black;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: $bold;
   margin-bottom: .6rem;
   text-decoration: none;
