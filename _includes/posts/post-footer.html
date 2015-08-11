@@ -1,8 +1,8 @@
 {% if page.previous or page.next %}
 <ul class="post-footer">
   {% if page.previous %}
-    <li class="post-footer__item post-footer__item--previous">
-      <a class="post-footer__link" href="{{ page.previous.url }}">
+    <li class="post-footer__item">
+      <a class="post-footer__link post-footer__link--previous" href="{{ page.previous.url }}">
         <span class="post-footer__title">{{ page.previous.title }}</span>
         <span class="post-footer__title--mobile">Previous</span>
       </a>
@@ -11,9 +11,10 @@
 
   {% if page.next %}
     <li class="post-footer__item post-footer__item--next">
-      <a class="post-footer__link" href="{{ page.next.url }}">
+      <a class="post-footer__link post-footer__link--next" href="{{ page.next.url }}">
         <span class="post-footer__title">{{ page.next.title }}</span>
         <span class="post-footer__title--mobile">Next</span>
+      </a>
     </li>
   {% endif %}
 </ul>
