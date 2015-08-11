@@ -38,15 +38,6 @@
   display: inline-block;
 }
 
-.post-footer__item--previous {
-
-  &:before {
-    font-family: "FontAwesome";
-    content: "\f104";
-    margin-right: .3rem;
-  }
-}
-
 .post-footer__item--next {
   -webkit-flex: auto;
   -webkit-justify-content: flex-end;
@@ -54,15 +45,31 @@
   display: flex;
   flex: auto;
   justify-content: flex-end;
+}
 
-  &:after {
+.post-footer__link {
+  color: $black;
+  display: inline-block;
+  font-weight: $bold;
+  text-decoration: none;
+}
+
+.post-footer__link--previous {
+  &:before {
+    content: "\f104";
     font-family: "FontAwesome";
-    content: "\f105";
-    margin-left: .3rem;
+    margin-right: .3rem;
   }
 }
 
-.post-footer__link { text-decoration: none; }
+.post-footer__link--next {
+
+  &:after {
+    content: "\f105";
+    font-family: "FontAwesome";
+    margin-left: .3rem;
+  }
+}
 
 .post-footer__title {
   display: none;
