@@ -3,7 +3,7 @@
 .post-list { @include clean-list; }
 
 .post-list__item {
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
 
   &:last-child { margin-bottom: 0; }
 }
