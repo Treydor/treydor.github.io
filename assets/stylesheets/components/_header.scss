@@ -3,7 +3,7 @@
 header { background: $primary; }
 
 header .container {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   text-align: center;
 
   @media #{$medium} {
@@ -11,7 +11,7 @@ header .container {
     align-items: center;
     display: -webkit-flex;
     display: flex;
-    height: 80px;
+    height: 90px;
     max-width: 1600px;
     padding: 0;
   }
