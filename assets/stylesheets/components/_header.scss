@@ -1,6 +1,9 @@
 /*------ Header ------*/
 
-header { background: $primary; }
+header {
+  background: $white;
+  border: 1px solid $border-light;
+}
 
 header .container {
   padding: 2rem 0;
@@ -20,7 +23,7 @@ header .container {
 /*------ Navigation ------*/
 
 .logo {
-  color: $white;
+  color: $gray;
   display: block;
   font-size: 1.1rem;
   font-weight: $bold;
@@ -54,9 +57,9 @@ nav {
 
 .navigation-list__link {
   @include transition (color $duration $timing);
-  color: $white;
+  color: $gray;
   text-decoration: none;
 
   &:hover, &.navigation-list__link--current
-    { color: darken($white, 15%); }
+    { color: $black; }
 }
