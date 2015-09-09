@@ -3,7 +3,7 @@
    =========================================================== */
 
 footer {
-  background: darken($primary-light, 3%);
+  background: darken($primary-light, 2%);
   border-top: 1px solid $border-light;
   text-align: center;
 }
@@ -17,7 +17,7 @@ footer .container { padding: 3rem 0; }
   margin-right: 1rem;
 }
 
-.social-navigation__icon {
+.social-navigation__link {
   color: $primary;
   text-decoration: none;
 
