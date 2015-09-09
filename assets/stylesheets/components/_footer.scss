@@ -3,8 +3,9 @@
    =========================================================== */
 
 footer {
-  background: darken($primary-light, 2%);
-  font: $header-font;
+  background: darken($primary-light, 3%);
+  border-top: 1px solid $border-light;
+  font: $body-font;
   font-weight: $regular;
   text-align: center;
 }
@@ -19,8 +20,8 @@ footer .container { padding: 3rem 0; }
 }
 
 .social-navigation__icon {
-  color: darken($primary-light, 25%);
+  color: $primary;
   text-decoration: none;
 
-  &:hover { color: $primary; }
+  &:hover { color: $primary-dark; }
 }

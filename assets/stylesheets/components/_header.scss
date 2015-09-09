@@ -5,13 +5,21 @@
 header {
   background: $primary;
   color: $white;
-  font: $header-font;
+  font: $body-font;
+  font-size: 1rem;
   font-weight: $regular;
 }
 
 header .container {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  height: 80px;
+  padding: 0;
+
   @media #{$medium} {
-    padding: 1.7rem 0;
+    height: 90px;
   }
 }
 
@@ -30,7 +38,14 @@ header .container {
 
 .navigation {
   @include clean-list;
-  float: right;
+  -webkit-align-items: center;
+  -webkit-flex: auto;
+  -webkit-justify-content: flex-end;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  flex: auto;
+  justify-content: flex-end;
 }
 
 .navigation__item {

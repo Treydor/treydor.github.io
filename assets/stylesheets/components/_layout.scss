@@ -15,7 +15,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
 
   @media #{$medium} {
-    font-size: 124%;
+    font-size: 120%;
+  }
+
+  @media #{$large} {
+    font-size: 130%;
   }
 }
 
