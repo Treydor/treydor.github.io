@@ -1,11 +1,14 @@
 # Site settings
 name: Noah Rogers
 title: Noah Rogers
-description: Hello, my name is Noah. I'm a freelance frontend web developer from Southeastern Wisconsin.
+description: Hello, my name is Noah. I'm web designer from Southeastern Wisconsin.
 highlighter: pygments
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - smart
 
 # Sass settings
 sass:
