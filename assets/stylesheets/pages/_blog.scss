@@ -1,80 +1,135 @@
-/*------ Post list ------*/
+/* ===========================================================
+   Post List
+   =========================================================== */
 
 .post-list { @include clean-list; }
 
 .post-list__item {
-  margin-bottom: 2rem;
+  border-bottom: 1px solid $border-light;
 
-  &:last-child { margin-bottom: 0; }
+  &:last-of-type { border-bottom: 0; }
 }
+
+.post-list__item .container { padding: 2rem 0; }
+
+.post-list__header { margin-bottom: 1rem; }
 
 .post-list__title {
-  @include transition (color $duration $timing);
-  color: $black;
-  display: inline-block;
   font: $header-font;
-  font-size: 1.3rem;
-  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0;
   text-decoration: none;
+
+  &:hover { text-decoration: underline; }
 }
 
-/*------ Post header ------*/
+.post-list__date { color: $gray; }
 
-.post-header { margin-bottom: 2rem; }
+/* ===========================================================
+   Post Header
+   =========================================================== */
 
-.post-header__title { margin-bottom: 0; }
+.post-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
-/*------ Post footer ------*/
+.post-header__date { color: $gray; }
+
+/* ===========================================================
+   Post Footer
+   =========================================================== */
 
 .post-footer {
+  @extend %clearfix;
   @include clean-list;
-  display: -webkit-flex;
-  display: flex;
-  margin-top: 3.6rem;
+  font: $header-font;
+  margin-top: 3rem;
 }
 
-.post-footer__item { display: inline-block; }
+.post-footer__item--previous {
+  float: left;
+
+  &:before {
+    content: "\f053";
+    font-family: "FontAwesome";
+    font-size: .7rem;
+    margin-right: .2rem;
+  }
+}
 
 .post-footer__item--next {
-  -webkit-flex: auto;
-  -webkit-justify-content: flex-end;
-  display: -webkit-flex;
-  display: flex;
-  flex: auto;
-  justify-content: flex-end;
+  float: right;
+
+  &:after {
+    content: "\f054";
+    font-family: "FontAwesome";
+    font-size: .7rem;
+    margin-left: .2rem;
+  }
 }
 
 .post-footer__link {
-  color: $black;
   display: inline-block;
   text-decoration: none;
+
+  &:hover { text-decoration: underline; }
 }
 
-.post-footer__link--previous {
-  &:before {
-    content: "\f104";
-    font-family: "FontAwesome";
-    margin-right: .3rem;
-  }
-}
-
-.post-footer__link--next {
-
-  &:after {
-    content: "\f105";
-    font-family: "FontAwesome";
-    margin-left: .3rem;
-  }
-}
-
-.post-footer__title {
+.post-footer__button {
   display: none;
 
-  @media #{$medium} { display: inline; }
+  @media #{$medium} {
+    display: inline;
+  }
 }
 
-.post-footer__title--mobile {
+.post-footer__button--mobile {
   display: inline;
 
-  @media #{$medium} { display: none; }
+  @media #{$medium} {
+    display: none;
+  }
 }
+
+/* ===========================================================
+   Browser
+   =========================================================== */
+
+.example { margin-bottom: 1rem; }
+
+.example__description {
+  color: $gray;
+  font: $header-font;
+  font-size: .9rem;
+  font-weight: $regular;
+  padding: .5rem 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.browser {
+  border-radius: $border-radius;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.browser__toolbar {
+  @include clean-list;
+  background: #e7e7e7;
+  line-height: 0;
+  padding: .6rem .5rem;
+}
+
+.browser__button {
+  background: $primary;
+  border-radius: $circle;
+  display: inline-block;
+  height: 10px;
+  margin-right: 1px;
+  width: 10px;
+}
+
+.browser__button--red { background: #FC625D; }
+.browser__button--yellow { background: #FDBC40; }
+.browser__button--green { background: #33C748; }

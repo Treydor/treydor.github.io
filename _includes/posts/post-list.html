@@ -1,0 +1,13 @@
+<ul class="post-list">
+  {% for post in site.posts do %}
+    <li class="post-list__item">
+      <div class="container">
+        <div class="post-list__header">
+          <a class="post-list__title" href="{{ post.url }}"> {{ post.title }}</a>
+          <div class="post-list__date"> {{ post.date | date: "%B %-d, %Y" }}</div>
+        </div>
+        <p class="post-list__description">{{ post.content | strip_html | truncatewords:45 }}</p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

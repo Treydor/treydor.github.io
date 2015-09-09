@@ -1,17 +1,14 @@
-/*------ Utilities ------*/
-
-.remove-margin { margin: 0; }
-.remove-padding { padding: 0; }
-
-.float-left { float: left; }
-.float-right { float: right; }
-
-.align-right { text-align: right; }
-.align-center { text-align: center; }
+/* ===========================================================
+   Utilities
+   =========================================================== */
 
 .hide { display: none; }
 
-/*------ Clearfix created by Nicolas Gallagher ------*/
+.center { text-align: center; }
+
+/* ===========================================================
+   Clearfix created by Nicolas Gallagher
+   =========================================================== */
 
 %clearfix {
   *zoom: 1;

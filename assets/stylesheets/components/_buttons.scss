@@ -1,0 +1,14 @@
+/* ===========================================================
+   Button
+   =========================================================== */
+
+.button {
+  border: 2px solid $white;
+  border-radius: $border-radius;
+  display: inline-block;
+  font: $header-font;
+  font-size: .9rem;
+  padding: .4rem 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}

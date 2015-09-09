@@ -1,65 +1,48 @@
-/*------ Header ------*/
+/* ===========================================================
+   Header
+   =========================================================== */
 
 header {
-  background: $white;
-  border-bottom: 1px solid $border-light;
+  background: $primary;
+  color: $white;
+  font: $header-font;
+  font-weight: $regular;
 }
 
 header .container {
-  padding: 2rem 0;
-  text-align: center;
-
   @media #{$medium} {
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-flex;
-    display: flex;
-    height: 80px;
-    max-width: 1600px;
-    padding: 0;
+    padding: 1.7rem 0;
   }
 }
 
-/*------ Navigation ------*/
+/* ===========================================================
+   Logo
+   =========================================================== */
 
 .logo {
-  color: $gray;
-  display: block;
-  font-size: 1.1rem;
   font-weight: $bold;
-  margin-bottom: 1rem;
   text-decoration: none;
-
-  @media #{$medium} { margin: 0; }
 }
 
-nav {
-  display: block;
+/* ===========================================================
+   Post List
+   =========================================================== */
 
-  @media #{$medium} {
-    -webkit-flex: auto;
-    -webkit-justify-content: flex-end;
-    display: -webkit-flex;
-    display: flex;
-    flex: auto;
-    justify-content: flex-end;
-  }
+.navigation {
+  @include clean-list;
+  float: right;
 }
 
-.navigation-list { @include clean-list; }
-
-.navigation-list__item {
+.navigation__item {
   display: inline-block;
-  margin-right: 1.2rem;
+  margin-right: 1rem;
 
   &:last-of-type { margin-right: 0; }
 }
 
-.navigation-list__link {
-  @include transition (color $duration $timing);
-  color: $gray;
-  text-decoration: none;
+.navigation__link { text-decoration: none; }
 
-  &:hover, &.navigation-list__link--current
-    { color: $black; }
+.navigation__link--current,
+.navigation__link:hover {
+  color: darken($primary-light, 8%);
 }

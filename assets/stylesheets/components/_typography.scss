@@ -1,32 +1,37 @@
-/*------ Typography ------*/
+/* ===========================================================
+   Typography
+   =========================================================== */
 
 h1, h2, h3, h4 {
-  color: $black;
   font: $header-font;
+  line-height: 1.25;
   margin-top: 0;
   margin-bottom: .5rem;
 }
 
-h1 { font-size: 1.9rem; }
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
 h2 { font-size: 1.5rem; }
 
-h3 { font-size: 1.3rem; }
+h3 { font-size: 1.2rem; }
 
-h4 { font-size: 1.1rem; }
+h4 { font-size: 1rem; }
 
-p {
+p, ul {
   margin: 0 0 1.5rem;
 
-  &:last-of-type { margin: 0; }
+  &:last-of-type { margin-bottom: 0; }
 }
-
-ul { margin: 0 0 1.5rem; }
 
 strong { font-weight: $bold; }
 em { font-style: italic; }
 
-/*------ Links ------*/
+/* ===========================================================
+   Links
+   =========================================================== */
 
 a {
   color: inherit;
