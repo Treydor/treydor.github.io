@@ -16,6 +16,8 @@ footer .container { padding: 1.5rem 0; }
 .social-navigation__item {
   display: inline-block;
   margin-right: 1rem;
+
+  &:last-of-type { margin-right: 0; }
 }
 
 .social-navigation__link {
