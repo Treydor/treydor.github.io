@@ -2,12 +2,7 @@
    Footer
    =========================================================== */
 
-footer {
-  background: darken($primary-light, 2%);
-  border-top: 1px solid $border-light;
-  color: $primary;
-  text-align: center;
-}
+footer { text-align: center; }
 
 footer .container { padding: 1.5rem 0; }
 
@@ -21,8 +16,9 @@ footer .container { padding: 1.5rem 0; }
 }
 
 .social-navigation__link {
-  color: $primary;
+  color: darken($primary-light, 30%);
+  font-size: 1.4rem;
   text-decoration: none;
 
-  &:hover { color: $primary-dark; }
+  &:hover { color: $primary; }
 }
