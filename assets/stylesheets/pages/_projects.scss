@@ -2,7 +2,10 @@
    Project List
    =========================================================== */
 
-.project-list { @include clean-list; }
+.project-list {
+  @extend %clearfix;
+  @include clean-list;
+}
 
 .project-list__item {
   margin-bottom: .8rem;
