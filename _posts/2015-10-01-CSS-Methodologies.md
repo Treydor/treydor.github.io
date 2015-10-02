@@ -85,7 +85,7 @@ The author adds thats that this particular methodology should not be interpreted
 
 The third and final methodology I'll talk about is Block, Element, Modifier or BEM.
 
-Although the BEM code may not scream visually appealing, there is certain simplicity to this methodology that makes organizing our CSS easy.
+Although the BEM code may not scream visually appealing, there is a certain simplicity to this methodology that makes organizing our CSS easy.
 
 ```css
 .project-list { ... }
@@ -99,7 +99,7 @@ The next level of BEM is element. The element level are child elements of our bl
 
 The last part of our BEM element is the modifier. Modifiers are written by  appending two hyphens to the name of the block. In our example, our modifier is `project-list__card--large`. Modifiers are modular in the sense that you can use them as you need for any block component.
 
-At first I was really turned off by the large class names associated with BEM. I asked myself why I needed an class called `.project-list__card--large` when instead I could just use `.card-big` and achieve the same thing. As I began to work in larger projects I was increasingly pushing myself to create cleaner and more reusable code. BEM, as an organizational tool, just seemed natural because of how literal it is. I think BEM really shines in larger projects, where there is a variety of people working on the same code.
+At first I was really turned off by the large class names associated with BEM. I asked myself why I needed a class called `.project-list__card--large` when instead I could just use `.card-big` and achieve the same thing. As I began to work in larger projects I was increasingly pushing myself to create cleaner and more reusable code. BEM, as an organizational tool, just seemed natural because of how literal it is. I think BEM really shines in larger projects, where there is a variety of people working on the same code.
 
 Within the next few days I hope to publish a new blog entry about Microdata, stay tuned!
 

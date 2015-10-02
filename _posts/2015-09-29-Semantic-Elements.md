@@ -49,7 +49,7 @@ Although these elements differ in name and how they are used, they all have one 
 This is a pretty simple situation of how semantic elements can be used. Instead of using numerous `<div>` elements and a variety of classes we can simply use semantic elements like `<header>` and `<nav>`, keeping our code nice and clean.
 
 ### Additional functionality
-Remember how semantic elements also communicate their meaning to the browser? Not only do these elements provide another level organization for us, they also make our content more accessible to a greater number of devices and users.
+Remember how semantic elements also communicate their meaning to the browser? Not only do these elements provide another level of organization for us, they also make our content more accessible to a greater number of devices and users.
 
 Semantic elements interact with things like web crawlers and screen readers, providing an increased functionality. Since these elements are understood by the browser and already have a meaning associated with them, the browser can easily identify them (assuming we're using them correctly). For example, an `<h1>` gives users an ability to skim content via a screen reader by reading each of the headings aloud. Remember, machines are smart, but they cannot infer the meaning we associate to our classes based of their name alone.
 
