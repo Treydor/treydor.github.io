@@ -40,6 +40,30 @@ body {
   }
 }
 
+ul {
+  margin: 0 1rem 1.5rem;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+hr {
+  border: 0;
+  background: $border-light;
+  height: 1px;
+  margin: 2rem auto;
+  width: 150px;
+}
+
+blockquote {
+  background: darken($primary-light, 2%);
+  border-left: 8px solid $border-light;
+  border-radius: $border-radius;
+  font-size: .9rem;
+  margin: 1.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
 /* ===========================================================
    Images
    =========================================================== */
