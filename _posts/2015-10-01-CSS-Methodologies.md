@@ -95,9 +95,9 @@ Although the BEM code may not scream visually appealing, there is a certain simp
 
 The BEM methodology starts with a block, which is essentially the top level of our element. In this case our block-lvel is `.project-list`.
 
-The next level of BEM is element. The element level are child elements of our block level. In this case `project-list__card` is the element level. Within BEM the element level is usually denoted by two underscores followed by the block name.
+The next level of BEM is element. The element level are child elements of our block level. In this case `project-list__card` is the element level. Within BEM the element level is usually denoted by two underscores followed by the block or element name.
 
-The last part of our BEM element is the modifier. Modifiers are written by  appending two hyphens to the name of the block. In our example, our modifier is `project-list__card--large`. Modifiers are modular in the sense that you can use them as you need for any block component.
+The last part of our BEM element is the modifier. Modifiers are written by  appending two hyphens to the name of the block. In our example, our modifier is `project-list__card--large`. Modifiers are modular in the sense that you can use them as you need.
 
 At first I was really turned off by the large class names associated with BEM. I asked myself why I needed a class called `.project-list__card--large` when instead I could just use `.card-big` and achieve the same thing. As I began to work in larger projects I was increasingly pushing myself to create cleaner and more reusable code. BEM, as an organizational tool, just seemed natural because of how literal it is. I think BEM really shines in larger projects, where there is a variety of people working on the same code.
 
