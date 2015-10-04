@@ -130,6 +130,18 @@
   width: 10px;
 }
 
-.browser__button--red { background: #FC625D; }
-.browser__button--yellow { background: #FDBC40; }
-.browser__button--green { background: #33C748; }
+.browser__button--red { background: #fc625d; }
+.browser__button--yellow { background: #fdbc40; }
+.browser__button--green { background: #33c748; }
+
+/* ===========================================================
+   Images sizes
+   =========================================================== */
+
+.blog__image {
+  margin: 0 auto;
+}
+
+.blog__image--small {
+  max-width: 480px;
+}
