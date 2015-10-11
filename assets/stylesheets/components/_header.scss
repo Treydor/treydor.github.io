@@ -3,8 +3,9 @@
    =========================================================== */
 
 header {
-  background: $primary;
-  color: $white;
+  background: $white;
+  border-bottom: 2px solid $border-light;
+  color: $gray;
 }
 
 header .container {
@@ -25,6 +26,7 @@ header .container {
    =========================================================== */
 
 .logo {
+  color: $primary;
   font: $header-font;
   text-decoration: none;
 }
@@ -47,7 +49,10 @@ header .container {
 
 .navigation__item {
   display: inline-block;
-  margin-right: 1.5rem;
+  font: $header-font;
+  font-size: .9rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
 
   &:last-of-type { margin-right: 0; }
 }
@@ -56,5 +61,5 @@ header .container {
 
 .navigation__link--current,
 .navigation__link:hover {
-  color: darken($primary-light, 8%);
+  color: lighten($gray, 20%);
 }

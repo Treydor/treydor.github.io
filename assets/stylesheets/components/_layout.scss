@@ -24,8 +24,8 @@ html {
 }
 
 body {
-  background: $primary-light;
-  color: $primary-dark;
+  background: $light-gray;
+  color: $black;
 }
 
 .container {
@@ -55,8 +55,8 @@ hr {
 }
 
 blockquote {
-  background: darken($primary-light, 2%);
-  border-left: 8px solid $border-light;
+  background: darken($light-gray, 2%);
+  border-left: 7px solid $primary;
   border-radius: $border-radius;
   font-size: .9rem;
   margin: 1.5rem;

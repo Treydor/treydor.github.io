@@ -17,7 +17,10 @@ h2 { font-size: 1.5rem; }
 
 h3 { font-size: 1.2rem; }
 
-h4 { font-size: 1rem; }
+h4 {
+  font-size: 1rem;
+    text-transform: uppercase;
+}
 
 p {
   margin: 0 0 1.5rem;
