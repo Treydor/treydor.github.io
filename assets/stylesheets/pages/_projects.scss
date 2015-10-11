@@ -18,14 +18,14 @@
     margin-right: 2%;
     width: 49%;
 
-    &:nth-of-type(n+5) { margin-bottom: 0; }
+    &:nth-of-type(n+6) { margin-bottom: 0; }
     &:nth-of-type(2n+2) { margin-right: 0; }
   }
 
   @media #{$large} {
     width: 32%;
 
-    &:nth-of-type(n+4) { margin-bottom: 0; }
+    &:nth-of-type(n+6) { margin-bottom: 0; }
     &:nth-of-type(2n+2) { margin-right: 2%; }
     &:nth-of-type(3n+3) { margin-right: 0; }
   }
