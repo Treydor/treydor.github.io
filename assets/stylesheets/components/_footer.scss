@@ -16,9 +16,9 @@ footer .container { padding: 1.5rem 0; }
 }
 
 .social-navigation__link {
-  color: lighten($primary, 10%);
+  color: lighten($gray, 10%);
   font-size: 1.4rem;
   text-decoration: none;
 
-  &:hover { color: $primary; }
+  &:hover { color: $gray; }
 }
