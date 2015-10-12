@@ -6,6 +6,7 @@ header {
   background: $white;
   border-bottom: 2px solid $border-light;
   color: $gray;
+  font-size: .9rem;
 }
 
 header .container {
@@ -29,6 +30,7 @@ header .container {
   color: $gray;
   font: $header-font;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* ===========================================================
@@ -50,7 +52,6 @@ header .container {
 .navigation__item {
   display: inline-block;
   font: $header-font;
-  font-size: .9rem;
   margin-right: 1rem;
   text-transform: uppercase;
 
