@@ -19,6 +19,7 @@ footer .container { padding: 1.5rem 0; }
   color: lighten($gray, 10%);
   font-size: 1.4rem;
   text-decoration: none;
+  transition: color ease-in-out .2s;
 
   &:hover { color: $gray; }
 }

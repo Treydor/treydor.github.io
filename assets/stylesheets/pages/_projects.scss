@@ -49,6 +49,7 @@
   padding: 1.4rem;
   text-align: center;
   text-decoration: none;
+  transition: border ease-in-out .2s;
 
   @media #{$medium} {
     font-size: .9rem;
