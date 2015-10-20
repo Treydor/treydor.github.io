@@ -72,7 +72,11 @@
 
 .project-list__title {
   font: $header-font;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: $bold;
   margin-bottom: .6rem;
+
+  @media #{$large} {
+    font-size: .9rem;
+  }
 }
