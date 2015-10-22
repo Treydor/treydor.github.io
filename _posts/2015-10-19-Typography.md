@@ -5,7 +5,7 @@ date: October 19, 2015
 blog: true
 ---
 
-The subject of Typography is vast and just as equally important. Many believe it to be one of the most important components of visual design. This week I created a [typography project](/typography/) to coincide with my blog post. The project was pretty interesting as I got to play with a variety of colors and typefaces.
+The subject of typography is vast and just as equally important. Many believe it to be one of the most important components of visual design. This week I created a [typography project](/typography/) to coincide with my blog post. The project was pretty interesting as I learned a lot and was able to play with a variety of colors and typefaces.
 
 ### What is typography?
 
