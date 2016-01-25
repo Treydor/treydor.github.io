@@ -8,8 +8,12 @@
 }
 
 .post-header__title {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   margin-bottom: 0;
+
+  @media #{$medium} {
+    font-size: 2.25rem;
+  }
 }
 
 /* ===========================================================
