@@ -3,64 +3,55 @@
    =========================================================== */
 
 header {
-  background: $white;
-  border-bottom: 1px solid $border-light;
-  color: $gray;
-  font-size: .9rem;
+  background: $primary;
+  border-bottom: 3px solid $white;
+  color: $white;
 }
 
 header .container {
-  -webkit-align-items: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  height: 80px;
-  padding: 0;
+ padding: 1rem 0;
+}
 
-  @media #{$medium} {
-    height: 90px;
+.header__logo {
+  font-weight: $bold;
+  text-decoration: none;
+}
+
+.header-navigation {
+  @include clean-list;
+  float: right;
+
+  a {
+    text-decoration: none;
+
+    &:hover { color: lighten($green, 15%); }
   }
 }
 
-/* ===========================================================
-   Logo
-   =========================================================== */
+.header-navigation__item {
+  float: left;
+  margin-left: 1rem;
 
-.logo {
-  color: $gray;
-  font: $header-font;
-  text-decoration: none;
-  text-transform: uppercase;
+  &:first-of-type { margin-left: 0; }
 }
 
 /* ===========================================================
-   Post List
+   Header photo
    =========================================================== */
 
-.navigation {
-  @include clean-list;
-  -webkit-align-items: center;
-  -webkit-flex: auto;
-  -webkit-justify-content: flex-end;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  flex: auto;
-  justify-content: flex-end;
+.photo {
+  background: $gray url("/assets/images/portrait.png") center no-repeat;
+  background-size: cover;
+  border: 2px solid $white;
+  border-radius: $circle;
+  display: block;
+  height: 55px;
+  width: 55px;
 }
 
-.navigation__item {
-  display: inline-block;
-  font: $header-font;
-  margin-right: 1rem;
-  text-transform: uppercase;
-
-  &:last-of-type { margin-right: 0; }
-}
-
-.navigation__link { text-decoration: none; }
-
-.navigation__link--current,
-.navigation__link:hover {
-  color: lighten($gray, 20%);
+.photo--large {
+  border: 5px solid $white;
+  height: 150px;
+  margin: 0 auto 1.5rem;
+  width: 150px;
 }

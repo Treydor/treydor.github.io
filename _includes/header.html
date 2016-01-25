@@ -1,12 +1,12 @@
-<header>
+<header class="{% if page.path == "index.html" %} hide {% endif %}">
   <div class="container">
-    <a class="{% if page.path == "index.html" %} hide {% endif %} logo" href="/">Noah Rogers</a>
-    <ul class="navigation">
-      <li class="navigation__item">
-        <a class="navigation__link{% if page.path == "blog/index.html" %} navigation__link--current{% endif %}" href="{{ site.baseurl }}/blog/">Blog</a>
+    <a class="header__logo" href="/">Noah Rogers</a>
+    <ul class="header-navigation">
+      <li class="header-navigation__item">
+        <a href="/#blog">Blog</a>
       </li>
-      <li class="navigation__item">
-        <a class="navigation__link{% if page.path == "projects/index.html" %} navigation__link--current{% endif %}" href="{{ site.baseurl }}/projects/">Projects</a>
+      <li class="header-navigation__item">
+        <a href="/#projects">Projects</a>
       </li>
     </ul>
   </div>

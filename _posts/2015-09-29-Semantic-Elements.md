@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Semantic Elements
+title: Semantics
 date: September 29, 2015
 blog: true
 ---

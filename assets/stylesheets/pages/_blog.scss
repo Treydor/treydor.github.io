@@ -1,42 +1,16 @@
 /* ===========================================================
-   Post List
-   =========================================================== */
-
-.post-list { @include clean-list; }
-
-.post-list__item {
-  border-bottom: 1px solid $border-light;
-
-  &:last-of-type { border-bottom: 0; }
-}
-
-.post-list__item .container { padding: 2rem 0; }
-
-.post-list__header { margin-bottom: 1rem; }
-
-.post-list__title {
-  font: $header-font;
-  font-size: 1.3rem;
-  margin-bottom: 0;
-  text-decoration: none;
-
-  &:hover { text-decoration: underline; }
-}
-
-.post-list__date { color: $gray; }
-
-/* ===========================================================
    Post Header
    =========================================================== */
 
 .post-header {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
-.post-header__title { margin-bottom: .5rem; }
-
-.post-header__date { color: $gray; }
+.post-header__title {
+  font-size: 2.25rem;
+  margin-bottom: 0;
+}
 
 /* ===========================================================
    Post Footer
@@ -49,33 +23,38 @@
   margin-top: 3rem;
 }
 
-.post-footer__item--previous {
+.post-footer__link {
+  background: $green;
+  border-radius: $border-radius;
+  color: $white;
+  display: inline-block;
+  font-size: .8rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+
+  &:hover { background: darken($green, 7%); }
+}
+
+.post-footer__link--previous {
   float: left;
 
   &:before {
-    content: "\f053";
+    content: "\f104";
     font-family: "FontAwesome";
     font-size: .7rem;
     margin-right: .2rem;
   }
 }
 
-.post-footer__item--next {
+.post-footer__link--next {
   float: right;
 
   &:after {
-    content: "\f054";
+    content: "\f105";
     font-family: "FontAwesome";
     font-size: .7rem;
     margin-left: .2rem;
   }
-}
-
-.post-footer__link {
-  display: inline-block;
-  text-decoration: none;
-
-  &:hover { text-decoration: underline; }
 }
 
 .post-footer__button {
@@ -95,17 +74,26 @@
 }
 
 /* ===========================================================
-   Browser
+   Post Images
+   =========================================================== */
+
+.blog__image--small {
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+/* ===========================================================
+   Post example browser
    =========================================================== */
 
 .example { margin-bottom: 1rem; }
 
 .example__description {
-  color: $gray;
   font-size: .9rem;
   padding: .5rem 0;
   overflow: hidden;
   text-align: center;
+  font-style: italic;
 }
 
 .browser {
@@ -116,7 +104,7 @@
 
 .browser__toolbar {
   @include clean-list;
-  background: #e7e7e7;
+  background: #d8d8d8;
   line-height: 0;
   padding: .6rem .5rem;
 }
@@ -133,11 +121,3 @@
 .browser__button--red { background: #fc625d; }
 .browser__button--yellow { background: #fdbc40; }
 .browser__button--green { background: #33c748; }
-
-/* ===========================================================
-   Images sizes
-   =========================================================== */
-
-.blog__image--small {
-  max-width: 480px;
-}

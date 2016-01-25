@@ -1,17 +1,22 @@
 // Font Weights
+$light:   300;
 $regular: 400;
-$bold: 700;
+$bold:    700;
+$ultra:   900;
 
 // Header Font
-$header-font: $bold 100%/1.3 "futura-pt", sans-serif;
+$header-font: $bold 20px/1.5 "Raleway", sans-serif;
 
 // Body Font
-$body-font: $regular 110%/1.5 "proxima-nova", sans-serif;
+$body-font: $regular 20px/1.5 "Raleway", sans-serif;
 
 // Colors
-$gray:            #777;
-$light-gray:      #f9f9f9;
-$black:           #3c3c3c;
+$black:           #4b585e;
+$blue:            #117de2;
+$gray:            #8f949d;
+$green:           #57be7e;
+$light-gray:      #ebeeef;
+$primary:         #5a6a71;
 $white:           #fff;
 
 // Border Color
@@ -21,8 +26,8 @@ $border-light:    #eee;
 $border-radius: 3px;
 $circle: 50%;
 
-// Medium Screens
-$medium: "(min-width: 640px)";
+// Large Screens
+$large: "(min-width: 900px)";
 
 // Medium Screens
-$large: "(min-width: 1024px)";
+$medium: "(min-width: 640px)";

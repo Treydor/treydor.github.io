@@ -8,13 +8,14 @@
 @import "components/normalize";
 @import "components/layout";
 @import "components/typography";
-@import "components/code";
 @import "components/header";
-@import "components/footer";
+@import "components/code";
+@import "components/sections";
+@import "components/instafeed";
+
 
 // Pages
 @import "pages/blog";
-@import "pages/projects";
 
 // Utilities
 @import "components/utilities";

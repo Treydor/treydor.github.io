@@ -3,9 +3,9 @@
    =========================================================== */
 
 code {
-  background: lighten($light-gray, 1%);
-  border: 1px solid lighten($border-light, 3%);
+  background: $white;
   border-radius: $border-radius;
+  color: #777;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-size: .8rem;
   padding: .2rem .3rem;

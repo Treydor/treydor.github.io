@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS Methodologies
+title: Methodologies
 date: October 1, 2015
 blog: true
 ---

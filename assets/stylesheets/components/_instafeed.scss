@@ -1,0 +1,32 @@
+/* ===========================================================
+   Instafeed Styles
+   =========================================================== */
+
+.instafeed__photos {
+  @extend %clearfix;
+  @include clean-list;
+
+  a {
+    display: none;
+    float: left;
+    overflow: hidden;
+    width: 33.33%;
+
+    &:nth-of-type(-n+3) { display: block; }
+
+    @media #{$medium} {
+      display: none;
+      width: 25%;
+
+      &:nth-of-type(-n+4) { display: block; }
+    }
+
+    @media #{$large} {
+      display: none;
+      width: 16.66%;
+
+      &:nth-of-type(-n+6) { display: block; }
+    }
+
+  }
+}

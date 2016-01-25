@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Starting at 8th Light
+title: 8th Light
 date: September 24, 2015
 blog: true
 ---

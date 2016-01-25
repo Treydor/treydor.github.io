@@ -2,8 +2,69 @@
 layout: default
 title: Noah Rogers
 ---
-<div class="container">
-  <h1>Hello, my name is Noah</h1>
-  <p>I am a Design Apprentice at <a href="http://www.8thlight.com" target="_blank">8th Light</a> who enjoys creating visually appealing and responsive websites. I also love  traveling abroad, learning about other cultures, trying new types food and playing video games.</p>
-  <p>If you'd like, you can view my code on <a href="http://www.github.com/noaharogers" target="_blank">GitHub</a>, take a look at a few of my photos on <a href="http://www.instagram.com/noaharogers" target="_blank">Instagram</a>, or just say hello on <a href="http://www.twitter.com/noaharogers" target="_blank">Twitter</a>.</p>
-</div>
+
+<section class="section--header">
+  <div class="container">
+    <span class="photo photo--large"></span>
+    <h1 class="header__title">Noah Rogers</h1>
+    <p>Design Apprentice | 8th Light, Chicago</p>
+  </div>
+</section>
+
+<section class="introduction">
+  <div class="container">
+    <div class="row">
+      <p>I enjoy creating visually appealing and simple interactions for the web. Feel free to look at my <a href="https://github.com/noaharogers" target="_blank">code</a>, say hi and <a href="https://twitter.com/noaharogers" target="_blank">tweet</a> me, or check out what I have been up to by browsing my <a href="https://www.instagram.com/noaharogers/" target="_blank">photos</a>.</p>
+    </div>
+    <div class="row">
+      <ul class="social">
+        <li>
+          <a href="https://github.com/noaharogers" target="_blank"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/noaharogers" target="_blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/noaharogers/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div id="instafeed" class="instafeed__photos"></div>
+</section>
+
+<section id="projects" class="section--projects">
+  <div class="container">
+    <h1 class="section__title">Projects</h1>
+    <p>Projects provide a great way to demonstrate what I've been learning about while also continuing to develop my skills.</p>
+    <hr>
+    {% include projects/project-list.html %}
+  </div>
+</section>
+
+<section id="blog" class="section--posts">
+  <div class="container">
+    <h1 class="section__title">Blog</h1>
+    <p>As an apprentice at 8th Light we are encouraged to write about some things we've recently learned or read about.</p>
+    <hr>
+    {% include posts/post-list.html %}
+  </div>
+</section>
+
+<script type="text/javascript">
+  var feed = new Instafeed({
+      get: 'user',
+      userId: '206646616',
+      clientId: 'a10ef903a8ee431cbaf847be45469778',
+      limit: 40,
+      sortBy: 'random',
+      resolution: 'standard_resolution',
+      after: function () {
+          var images = $("#instafeed").find('a');
+          $(images.slice(6, images.length)).remove();
+      }
+  }); feed.run();
+</script>

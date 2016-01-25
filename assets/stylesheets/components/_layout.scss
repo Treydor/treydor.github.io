@@ -13,14 +13,6 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media #{$medium} {
-    font-size: 118%;
-  }
-
-  @media #{$large} {
-    font-size: 128%;
-  }
 }
 
 body {
@@ -31,37 +23,39 @@ body {
 .container {
   @extend %clearfix;
   margin: 0 auto;
-  padding: 2rem 0;
+  max-width: 720px;
+  padding: 4rem 0;
   width: 90%;
-
-  @media #{$medium} {
-    max-width: 800px;
-    padding: 3rem 0;
-  }
-}
-
-ul {
-  margin: 0 1rem 1.5rem;
-  padding: 0;
-  padding-left: 1rem;
 }
 
 hr {
   border: 0;
-  background: $border-light;
+  background: $white;
   height: 1px;
-  margin: 2rem auto;
-  width: 150px;
+  margin: 1.5rem auto 2rem;
+  width: 70px;
 }
 
-blockquote {
-  background: darken($light-gray, 2%);
-  border-left: 7px solid $gray;
-  border-radius: $border-radius;
-  font-size: .9rem;
-  margin: 1.5rem;
-  padding: 1rem;
-  position: relative;
+/* ===========================================================
+   Grid
+   =========================================================== */
+
+.row {
+  @extend %clearfix;
+  margin-bottom: 3rem;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+.column {
+  margin-bottom: 3rem;
+  width: 100%;
+
+  @media #{$medium} {
+    float: left;
+    margin: 0;
+    width: 50%;
+  }
 }
 
 /* ===========================================================
