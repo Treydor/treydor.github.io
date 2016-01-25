@@ -95,12 +95,12 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 190px;
+    height: 200px;
     padding: 0 1.5rem;
     text-decoration: none;
 
-    @media #{$medium} { height: 245px; }
-    @media #{$large} { height: 275px; }
+    @media #{$medium} { height: 225px; }
+    @media #{$large} { height: 265px; }
 
     &:hover .circle {
       transform: rotate(360deg);
