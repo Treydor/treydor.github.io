@@ -10,11 +10,11 @@ On Monday I met with Eric Meyer and [Chris Peak](http://www.chrispeak.me) who in
 
 We still had many questions. Eric described the information he was interested in tracking, but suggested that this may have value outside of just him. The only way to find out was to actually talk to people and figure out their process when it came to apprenticeship data. Was this data even important to them? How were they using the data? Was the individual currently having any difficulties trying to apply the data? We wanted to get as much information as possible before we even thought about what we were going to create.
 
-### Asking questions
+### Do your research
 
 Before I even began thinking about talking to people I wanted to make sure I knew exactly what information we were hoping to get from these interviews. My co-mentor, [Erica Garcia](http://www.ericagarcia.me) gave me some great advice. She cautioned me to think about how I was going to ask questions. She said that depending on how a question is asked, it may influence the interviewee's response. That advice was very valuable when beginning to thing about the questions I was going to ask.
 
-### Ask the right questions
+### Ask open-ended questions
 
 From past jobs and school I knew that asking questions that warranted a response other than yes or no was a great place to start. Keeping Erica's advice in mind, I created a small list of questions I could ask each individual.
 
