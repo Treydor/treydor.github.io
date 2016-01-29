@@ -10,7 +10,7 @@
     display: none;
     float: left;
     overflow: hidden;
-    width: 33.33%;
+    width: 33.3333%;
 
     &:nth-of-type(-n+3) { display: block; }
 
@@ -23,7 +23,7 @@
 
     @media #{$large} {
       display: none;
-      width: 16.66%;
+      width: 16.6666%;
 
       &:nth-of-type(-n+6) { display: block; }
     }
