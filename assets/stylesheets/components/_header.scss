@@ -20,17 +20,17 @@ header .container {
 .header-navigation {
   @include clean-list;
   float: right;
+}
+
+.header-navigation__item {
+  float: left;
+  margin-left: 1.5rem;
 
   a {
     text-decoration: none;
 
     &:hover { color: lighten($green, 15%); }
   }
-}
-
-.header-navigation__item {
-  float: left;
-  margin-left: 1.5rem;
 
   &:first-of-type { margin-left: 0; }
 }
