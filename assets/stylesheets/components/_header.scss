@@ -9,7 +9,7 @@ header {
 }
 
 header .container {
- padding: 1.3rem 0;
+ padding: 1.5rem 0;
 }
 
 .header__logo {
@@ -33,25 +33,4 @@ header .container {
   }
 
   &:first-of-type { margin-left: 0; }
-}
-
-/* ===========================================================
-   Header photo
-   =========================================================== */
-
-.photo {
-  background: $gray url("/assets/images/portrait.jpg") center no-repeat;
-  background-size: cover;
-  border: 2px solid $white;
-  border-radius: $circle;
-  display: block;
-  height: 55px;
-  width: 55px;
-}
-
-.photo--large {
-  border: 5px solid $white;
-  height: 150px;
-  margin: 0 auto 1.5rem;
-  width: 150px;
 }
