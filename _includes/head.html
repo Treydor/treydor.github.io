@@ -3,20 +3,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
-
   {% if page.description %}
   <meta name="description" content="{{ page.description }}">
   {% else %}
   <meta name="description" content="{{ site.description }}">
   {% endif %}
-
-  <link rel="icon" type="image/ico" href="/assets/images/page-icon.ico">
-
-  <script type="text/javascript" src="/assets/javascript/vendor/instafeed.min.js"></script>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="{{ "/assets/stylesheets/main.css" | prepend: site.baseurl }}">
-
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="/assets/javascript/vendor/instafeed.min.js"></script>
+  <link rel="icon" type="image/ico" href="/assets/images/page-icon.ico">
 </head>
