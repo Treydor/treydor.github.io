@@ -35,6 +35,14 @@ p {
   &:last-of-type { margin-bottom: 0; }
 }
 
+blockquote {
+  background: $white;
+  border-radius: $border-radius;
+  font-style: italic;
+  margin: 0 0 1.5rem;
+  padding: 1.5rem;
+}
+
 /* ===========================================================
    Links
    =========================================================== */
