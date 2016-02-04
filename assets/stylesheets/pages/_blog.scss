@@ -2,9 +2,16 @@
    Article
    =========================================================== */
 
-article ul {
-  margin: 0 0 1.5rem 0;
-  padding-left: 3rem;
+article {
+  ul {
+    margin: 0 0 1.5rem 0;
+    padding-left: 3rem;
+  }
+
+  hr {
+    background: $gray;
+    margin: 3rem auto;
+  }
 }
 
 /* ===========================================================
@@ -33,7 +40,7 @@ article ul {
   display: inline-block;
   font-size: .8rem;
   font-weight: $bold;
-  padding: .3rem 1rem;
+  padding: .4rem 1rem;
 }
 
 /* ===========================================================
@@ -54,19 +61,22 @@ article ul {
   color: $white;
   display: inline-block;
   font-size: .9rem;
-  padding: .5rem 1rem .35rem;
+  padding: .6rem 1rem .4rem;
+  text-align: center;
   text-decoration: none;
 
-  &:hover { background: darken($green, 6%); }
+  &:hover {
+    background: darken($green, 7%);
+  }
 }
 
 .post-footer__link--previous {
+  border-right: 1px solid darken($border-light, 6%);
   float: left;
 
   &:before {
     content: "\f104";
     font-family: "FontAwesome";
-    font-size: .7rem;
     margin-right: .2rem;
   }
 }
@@ -77,7 +87,6 @@ article ul {
   &:after {
     content: "\f105";
     font-family: "FontAwesome";
-    font-size: .7rem;
     margin-left: .2rem;
   }
 }
