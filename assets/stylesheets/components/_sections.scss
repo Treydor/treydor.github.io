@@ -8,30 +8,45 @@
   margin-bottom: .7rem;
 }
 
-// Index header //
+/* ===========================================================
+   Introduction
+   =========================================================== */
 
-.section--header {
+.intro {
   background-image: url("/assets/images/background/header-texture.jpg");
   color: $black;
   text-align: center;
 
-  .container { padding: 6rem 0; }
+  .container { padding: 4.5rem 0; }
 }
 
-.header__title {
+.intro__title {
   font-size: 1.6rem;
   font-weight: $bold;
   margin-bottom: .5rem;
 }
 
-// Introduction //
+.intro__photo {
+  background: $gray url("/assets/images/portrait.jpg") center no-repeat;
+  background-size: cover;
+  border: 5px solid $white;
+  border-radius: $circle;
+  display: block;
+  height: 150px;
+  margin: 0 auto 1.5rem;
+  width: 150px;
+}
 
-.introduction {
+/* ===========================================================
+   Social
+   =========================================================== */
+
+.social {
   background: lighten($light-gray, 3%);
   text-align: center;
 }
 
-.social {
+.social__list {
   @include clean-list;
 
   li {
@@ -52,7 +67,70 @@
   }
 }
 
-// Projects //
+/* ===========================================================
+   Blog
+   =========================================================== */
+
+.section--posts {
+  background: lighten($green, 15%);
+  background: linear-gradient(to bottom right, lighten($green, 15%), $green);
+  color: $white;
+  text-align: center;
+
+  hr { background: $white; }
+
+  .post-list {
+    @extend %clearfix;
+    @include clean-list;
+    margin-top: 1.5rem;
+  }
+
+  .post-list__item {
+    margin-bottom: 1rem;
+    width: 100%;
+
+    @media #{$medium} {
+      float: left;
+      font-size: .9rem;
+      margin-left: 3%;
+      width: 48.5%;
+
+      &:nth-of-type(odd) { margin-left: 0; }
+    }
+
+    @media #{$large} {
+      margin-bottom: 1rem;
+      width: 31.33%;
+
+      &:nth-of-type(odd) { margin-left: 3%; }
+      &:nth-of-type(3n+1) { margin-left: 0; }
+    }
+
+    &:last-of-type { margin-bottom: 3rem; }
+
+    a {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: $border-radius;
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+
+      &:hover { background: rgba(255, 255, 255, 0.2); }
+    }
+  }
+
+  .post-list__title {
+    font-weight: $bold;
+  }
+
+  .post-list__date {
+    color: $light-gray;
+  }
+}
+
+/* ===========================================================
+   Projects
+   =========================================================== */
 
 .section--projects {
   background: $primary;
@@ -69,14 +147,15 @@
 .project-list__item {
   background: darken($primary, 3%);
   border-radius: $border-radius;
-  font-size: .9rem;
   margin-bottom: 1.5rem;
   width: 100%;
 
   &:last-of-type { margin-bottom: 0; }
 
+
   @media #{$medium} {
     float: left;
+    font-size: .9rem;
     margin-bottom: 1rem;
     margin-left: 3%;
     width: 48.5%;
@@ -125,64 +204,11 @@
     font-size: 1.2rem;
   }
 
-  p { color: $light-gray; }
-}
-
-// Posts //
-
-.section--posts {
-  background: lighten($green, 15%);
-  background: linear-gradient(to bottom right, lighten($green, 15%), $green);
-  color: $white;
-  text-align: center;
-
-  hr { background: $white; }
-
-  .post-list {
-    @extend %clearfix;
-    @include clean-list;
-    margin-top: 1.5rem;
-  }
-
-  .post-list__item {
+  h4 {
     font-size: .9rem;
-    margin-bottom: 1rem;
-    width: 100%;
 
-    @media #{$medium} {
-      float: left;
-      margin-left: 3%;
-      width: 48.5%;
-
-      &:nth-of-type(odd) { margin-left: 0; }
-    }
-
-    @media #{$large} {
-      margin-bottom: 1rem;
-      width: 31.33%;
-
-      &:nth-of-type(odd) { margin-left: 3%; }
-      &:nth-of-type(3n+1) { margin-left: 0; }
-    }
-
-    &:last-of-type { margin-bottom: 3rem; }
-
-    a {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: $border-radius;
-      display: block;
-      padding: 1rem;
-      text-decoration: none;
-
-      &:hover { background: rgba(255, 255, 255, 0.2); }
-    }
+    @media #{$medium} { font-size: .8rem; }
   }
 
-  .post-list__title {
-    font-weight: $bold;
-  }
-
-  .post-list__date {
-    color: $light-gray;
-  }
+  p { color: $light-gray; }
 }
