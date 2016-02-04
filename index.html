@@ -3,21 +3,21 @@ layout: default
 title: Noah Rogers
 ---
 
-<section class="section--header">
+<section class="intro">
   <div class="container">
-    <span class="photo photo--large"></span>
-    <h1 class="header__title">Noah Rogers</h1>
+    <span class="intro__photo intro__photo--large"></span>
+    <h1 class="intro__title">Noah Rogers</h1>
     <p>Design Apprentice | 8th Light, Chicago</p>
   </div>
 </section>
 
-<section class="introduction">
+<section class="social">
   <div class="container">
     <div class="row">
       <p>I enjoy creating visually appealing and simple interactions for the web. Feel free to look at my <a href="https://github.com/noaharogers" target="_blank">code</a>, say hi and <a href="https://twitter.com/noaharogers" target="_blank">tweet</a> me, or check out what I have been up to by browsing my <a href="https://www.instagram.com/noaharogers/" target="_blank">photos</a>.</p>
     </div>
     <div class="row">
-      <ul class="social">
+      <ul class="social__list">
         <li>
           <a href="https://github.com/noaharogers" target="_blank"><i class="fa fa-github"></i></a>
         </li>
@@ -36,15 +36,6 @@ title: Noah Rogers
   <div id="instafeed" class="instafeed__photos"></div>
 </section>
 
-<section id="projects" class="section--projects">
-  <div class="container">
-    <h1 class="section__title">Projects</h1>
-    <p>Projects provide a great way to demonstrate what I've been learning about while also continuing to develop my skills.</p>
-    <hr>
-    {% include projects/project-list.html %}
-  </div>
-</section>
-
 <section id="blog" class="section--posts">
   <div class="container">
     <h1 class="section__title">Blog</h1>
@@ -54,7 +45,30 @@ title: Noah Rogers
   </div>
 </section>
 
+<section id="projects" class="section--projects">
+  <div class="container">
+    <h1 class="section__title">Projects</h1>
+    <p>Projects provide a great way to demonstrate what I've been learning about while also continuing to develop my skills.</p>
+    <hr>
+    {% include projects/project-list.html %}
+  </div>
+</section>
+
 <script type="text/javascript">
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 500);
+          return false;
+        }
+      }
+    });
+  });
   var feed = new Instafeed({
       get: 'user',
       userId: '206646616',
