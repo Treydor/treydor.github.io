@@ -78,6 +78,9 @@ Scalable and Modular Architecture for CSS (SMACSS) creates CSS rules and categor
 The purpose of the different categories is to allow for better organization. The creator of SMACSS, [Jonathan Snook](http://snook.ca/), also recommends adding prefixes to class names. The prefixes attached to classes directly correlate to their specified rule category.
 
 > I like to use a prefix to differentiate between Layout, State, and Module rules. For Layout, I use l- but layout- would work just as well. Using prefixes like grid- also provide enough clarity to separate layout styles from other styles.
+<sup>
+  [[2]](https://smacss.com/book/categorizing)
+</sup>
 
 The author adds thats that this particular methodology should not be interpreted as a rigid framework, but instead more as a style guide to help us better organize our CSS.
 
@@ -106,6 +109,6 @@ Within the next few days I hope to publish a new blog entry about Microdata, sta
 ---
 
 ### References
-* [AppendTo - What is OOCSS?](http://appendto.com/2014/04/oocss/)
-* [Scalable and Modular Architecture for CSS](https://smacss.com/)
-* [CSS Tricks - BEM 101](https://css-tricks.com/bem-101/)
+1. [AppendTo - What is OOCSS?](http://appendto.com/2014/04/oocss/)
+2. [Scalable and Modular Architecture for CSS](https://smacss.com/)
+3. [CSS Tricks - BEM 101](https://css-tricks.com/bem-101/)

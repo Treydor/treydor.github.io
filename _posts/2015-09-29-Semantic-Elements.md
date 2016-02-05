@@ -58,6 +58,6 @@ In my next blog post I'll continue my discussion about semantics with class name
 ---
 
 ### References
-* [Dive Into HTML5 - Semantics](http://diveintohtml5.info/semantics.html)
-* [HTML5 Doctor - Let's Talk about Semantics](http://html5doctor.com/lets-talk-about-semantics/)
-* [Shay Howe - Getting to know HTML](http://learn.shayhowe.com/html-css/getting-to-know-html/)
+1. [Dive Into HTML5 - Semantics](http://diveintohtml5.info/semantics.html)
+2. [HTML5 Doctor - Let's Talk about Semantics](http://html5doctor.com/lets-talk-about-semantics/)
+3. [Shay Howe - Getting to know HTML](http://learn.shayhowe.com/html-css/getting-to-know-html/)

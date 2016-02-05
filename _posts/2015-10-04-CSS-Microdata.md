@@ -49,6 +49,6 @@ If you ever find yourself using microdata there are plenty of resources to make 
 ---
 
 ### References
-* [Dive Into HTML5 - Microdata](http://diveintohtml5.info/extensibility.html)
-* [HTML5 Doctor - Extending HTML5 Microdata](http://html5doctor.com/microdata/)
-* [HTML Goodies - HTML5 Microdata](http://www.htmlgoodies.com/html5/Web-Developer-Tutorial-HTML5-Microdata-3920016.htm#fbid=4RysEGf-yCX)
+1. [Dive Into HTML5 - Microdata](http://diveintohtml5.info/extensibility.html)
+2. [HTML5 Doctor - Extending HTML5 Microdata](http://html5doctor.com/microdata/)
+3. [HTML Goodies - HTML5 Microdata](http://www.htmlgoodies.com/html5/Web-Developer-Tutorial-HTML5-Microdata-3920016.htm#fbid=4RysEGf-yCX)
