@@ -3,7 +3,7 @@
    =========================================================== */
 
 article {
-  ul {
+  ol, ul {
     margin: 0 0 1.5rem 0;
     padding-left: 3rem;
   }
@@ -64,6 +64,7 @@ article {
   padding: .6rem 1rem .4rem;
   text-align: center;
   text-decoration: none;
+  transition: background ease-in-out .2s;
 
   &:hover {
     background: darken($green, 7%);
