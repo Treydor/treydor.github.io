@@ -2,7 +2,10 @@
 name: Noah Rogers
 title: Noah Rogers
 description: Hello, my name is Noah. I am a design apprentice at 8th Light.
-highlighter: pygments
+highlighter: Rouge
+
+# Build settings
+markdown: kramdown
 
 # Sass settings
 sass:
