@@ -50,25 +50,8 @@ article {
 .post-footer {
   @extend %clearfix;
   @include clean-list;
-  font-weight: $bold;
+  font-size: .7rem;
   margin-top: 3rem;
-}
-
-.post-footer__link {
-  background: $green;
-  border-bottom: 4px solid darken($green, 6%);
-  border-radius: $border-radius;
-  color: $white;
-  display: inline-block;
-  font-size: .9rem;
-  padding: .6rem 1rem .4rem;
-  text-align: center;
-  text-decoration: none;
-  transition: background ease-in-out .2s;
-
-  &:hover {
-    background: darken($green, 7%);
-  }
 }
 
 .post-footer__link--previous {

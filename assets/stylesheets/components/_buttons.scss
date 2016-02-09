@@ -1,0 +1,29 @@
+/* ===========================================================
+   Buttons
+   =========================================================== */
+
+.button {
+  border-radius: $border-radius;
+  color: $white;
+  display: inline-block;
+  font-size: .9rem;
+  font-weight: $bold;
+  margin-top: 1.5rem;
+  padding: .6rem 1rem .5rem;
+  text-decoration: none;
+  transition: background ease-in-out .2s;
+}
+
+.button--primary {
+  background: $gray;
+  border-bottom: 3px solid darken($gray, 7%);
+
+  &:hover { background: darken($gray, 7%); }
+}
+
+.button--secondary {
+  background: $green;
+  border-bottom: 3px solid darken($green, 7%);
+
+  &:hover { background: darken($green, 7%); }
+}
