@@ -4,12 +4,6 @@ title: Noah Rogers
 description: Hello, my name is Noah. I am a design apprentice at 8th Light.
 highlighter: pygments
 
-# Build settings
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - smart
-
 # Sass settings
 sass:
   sass_dir: assets/stylesheets
