@@ -5,7 +5,7 @@
         <div class="container container--small">
           <h2 class="post-list__title">{{ post.title }}</h2>
           <div class="post-list__date">{{ post.date | date: "%B %-d, %Y" }}</div>
-          {{ post.content | strip_html | truncatewords:55 }}
+          {{ post.content | strip_html | truncatewords:45 }}
         </div>
       </a>
     </li>
