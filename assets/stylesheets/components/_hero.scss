@@ -5,7 +5,7 @@
 .hero {
   background: $light-gray;
   border-bottom: 1px solid $border-light;
-  padding: 1.5rem 0;
+  padding: 2.5rem 0;
 }
 
 .hero--intro {
@@ -16,6 +16,7 @@
 
 .hero--blue {
   background: $blue;
+  background-image: url("/assets/images/background.png");
   color: $white;
 
   h1, h2, h3, h4 { color: $white; }
