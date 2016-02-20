@@ -132,41 +132,12 @@ article {
 }
 
 /* ===========================================================
-   Post example browser
+   Post example
    =========================================================== */
 
-.example { margin-bottom: 1.5rem; }
-
-.example__description {
-  font-size: .9rem;
-  padding: .5rem 0;
-  overflow: hidden;
-  text-align: center;
-  font-style: italic;
-}
-
-.browser {
+.example {
+  border: 1px solid $border-light;
   border-radius: $border-radius;
+  margin-bottom: 1.5rem;
   overflow: hidden;
-  max-height: 500px;
 }
-
-.browser__toolbar {
-  @include clean-list;
-  background: #ddd;
-  line-height: 0;
-  padding: .6rem .5rem;
-}
-
-.browser__button {
-  background: $black;
-  border-radius: $circle;
-  display: inline-block;
-  height: 12px;
-  margin-right: 1px;
-  width: 12px;
-}
-
-.browser__button--red { background: #fc625d; }
-.browser__button--yellow { background: #fdbc40; }
-.browser__button--green { background: #33c748; }

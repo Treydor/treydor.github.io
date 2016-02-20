@@ -17,27 +17,13 @@ As part of the redesign we knew we wanted to add more information about the appr
 Laying out the information in paragraphs was one of the first things I thought about. I thought that having the information upfront may be a good idea.
 
 <div class="example">
-  <div class="browser">
-    <ul class="browser__toolbar">
-      <li class="browser__button browser__button--red"></li>
-      <li class="browser__button browser__button--yellow"></li>
-      <li class="browser__button browser__button--green"></li>
-    </ul>
-    <img src="/assets/images/blog/apprenticeship/apprenticeship-project1.png">
-  </div>
+  <img src="/assets/images/blog/apprenticeship/apprenticeship-project1.png">
 </div>
 
 After the actual wireframe our team quickly realized that this type of layout was not optimal. There was simply too much information. I went back to the drawing board and created a different type of layout. We found this to be much more user-friendly.
 
 <div class="example">
-  <div class="browser">
-    <ul class="browser__toolbar">
-      <li class="browser__button browser__button--red"></li>
-      <li class="browser__button browser__button--yellow"></li>
-      <li class="browser__button browser__button--green"></li>
-    </ul>
-    <img src="/assets/images/blog/apprenticeship/apprenticeship-project2.png">
-  </div>
+  <img src="/assets/images/blog/apprenticeship/apprenticeship-project2.png">
 </div>
 
 Breaking up the text in to alternating sections and adding photos really made the content much easier to read. We were presenting the same amount of information and the page length was slightly longer, but we felt this was the best option.
@@ -51,14 +37,7 @@ The biggest challenge was actually deciding how to utilize the space of the page
 Keeping page length and readability in mind I iterated on the design and ultimately created a wireframe that looked like this:
 
 <div class="example">
-  <div class="browser">
-    <ul class="browser__toolbar">
-      <li class="browser__button browser__button--red"></li>
-      <li class="browser__button browser__button--yellow"></li>
-      <li class="browser__button browser__button--green"></li>
-    </ul>
-    <img src="/assets/images/blog/apprenticeship/apprenticeship-project3.png">
-  </div>
+  <img src="/assets/images/blog/apprenticeship/apprenticeship-project3.png">
 </div>
 
 I imagined one section that would contain the content for all three of the apprenticeship levels. At the top of the section would be small navigation with a button for each level. Depending on which button was selected would determine which section was shown. I thought this particular design would keep our page length in check while also keeping the content easy to read for our users.
@@ -66,14 +45,7 @@ I imagined one section that would contain the content for all three of the appre
 Much like our wireframe, I think the final design came out really well.
 
 <div class="example">
-  <div class="browser">
-    <ul class="browser__toolbar">
-      <li class="browser__button browser__button--red"></li>
-      <li class="browser__button browser__button--yellow"></li>
-      <li class="browser__button browser__button--green"></li>
-    </ul>
-    <img src="/assets/images/blog/apprenticeship/apprenticeship-project4.png">
-  </div>
+  <img src="/assets/images/blog/apprenticeship/apprenticeship-project4.png">
 </div>
 
 ### The conclusion
