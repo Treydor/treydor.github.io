@@ -6,7 +6,9 @@ date: February 3, 2016
 blog: true
 ---
 
-This post is a continuation of my previous blog post, [{{ page.previous.title }}]({{ page.previous.url }}), where I talked about the benefits of interviewing potential users. Once the majority of the interviews were completed we brought our findings to Eric and talked about some of things the users said. In our meeting we were able to decide on what v1 of the app should look like.
+This post is a continuation of my previous blog post, [{{ page.previous.title }}]({{ page.previous.url }}), where I talked about the benefits of interviewing potential users.
+
+Once the majority of the interviews were completed we brought our findings to Eric and talked about some of things the users said. In our meeting we were able to decide on what v1 of the app should look like.
 
 ### MVP
 Minimum viable product, or MVP, are the features we wanted to include in the app at launch. There was a lot we learned from our interviews and even more we talked about with Eric. It was important to keep our MVP fairly basic, but build the app in such a way that we can easily add features in future versions. In addition to creating a list of apprentices and displaying important dates about their apprenticeships we also wanted to tackle how review boards were rolled and displayed.

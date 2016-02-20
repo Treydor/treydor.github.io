@@ -9,14 +9,14 @@
 @import "components/layout";
 @import "components/typography";
 @import "components/header";
+@import "components/footer";
 @import "components/buttons";
 @import "components/code";
 @import "components/utilities";
-@import "components/sections";
-@import "components/instafeed";
 
 // Pages
 @import "pages/blog";
+@import "pages/projects";
 
 // Vendor
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";

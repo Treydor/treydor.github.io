@@ -32,19 +32,19 @@ There are quite a few semantic elements that were added along with HTML5. Here i
 
 Although these elements differ in name and how they are used, they all have one thing in common: they are HTML5 semantic elements. Some are used more than others, but they all shed a little light on their meaning and purpose by their name alone.
 
-```html
+~~~ html
 <div class="header">
   <a class="logo">Logo</a>
   <div class="navigation">Navigation</div>
 </div>
-```
+~~~
 
-```html
+~~~ html
 <header>
   <a class="logo">Logo</a>
   <nav>Navigation</nav>
 </header>
-```
+~~~
 
 This is a pretty simple situation of how semantic elements can be used. Instead of using numerous `<div>` elements and a variety of classes we can simply use semantic elements like `<header>` and `<nav>`, keeping our code nice and clean.
 

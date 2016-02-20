@@ -13,9 +13,9 @@ There are five different microdata attributes, but only a few them are necessary
 
 To create an item with microdata add `itemscope` to our container.
 
-```HTML
+~~~HTML
 <div itemscope></div>
-```
+~~~
 
 We also want to add a vocabulary to our microdata. We can do this by adding the `itemtype` attribute.
 
@@ -23,22 +23,22 @@ One of the most common vocabularies is [Schema.org](http://schema.org). Schema.o
 
 For the sake of our example, let's add the Schema.org [Recipe](http://schema.org/Recipe) vocabulary.
 
-```HTML
+~~~HTML
 <div itemscope itemtype="http://schema.org/Recipe"></div>
-```
+~~~
 
 Once you have your vocabulary specified, the next thing we want to do is add properties to our element. These properties give meaning to our data.
 
 To add properties to our newly created item use the `itemprop` attribute.
 
-```HTML
+~~~HTML
 <div itemscope itemtype="http://schema.org/Recipe">
   <h1 itemprop="name"> ... </h1>
   <span itemprop="recipeIngredient"> ... </span>
   <span itemprop="recipeIngredient"> ... </span>
   <span itemprop="recipeIngredient"> ... </span>
 </div>
-```
+~~~
 
 So what do all these variables do? Well for one, adding microdata will allow for more eye-catching search results. A search result that stands out and is different from the others can contribute to more clicks which will ultimately increase the website's traffic.
 

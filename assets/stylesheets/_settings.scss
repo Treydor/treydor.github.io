@@ -1,7 +1,8 @@
 // Font Weights
-$light:   300;
-$regular: 400;
-$bold:    700;
+$light:       300;
+$regular:     400;
+$bold:        700;
+$ultra-bold:  900;
 
 // Header Font
 $header-font: $bold 18px/1.5 "Raleway", sans-serif;
@@ -10,16 +11,16 @@ $header-font: $bold 18px/1.5 "Raleway", sans-serif;
 $body-font: $regular 18px/1.5 "Raleway", sans-serif;
 
 // Colors
-$black:           #4b585e;
-$blue:            #117de2;
-$gray:            #8f949d;
-$green:           #57be7e;
-$light-gray:      #ebeeef;
-$primary:         #5a6a71;
+$black:           #373d41;
+$blue:            #76818a;
+$light-blue:      #157fd4;
+$light-gray:      #f6f7f8;
+$gray:            #919aa1;
 $white:           #fff;
 
 // Border Color
-$border-light:    #eee;
+$border-light:    #e4e6e8;
+$border-dark:     #dbdee0;
 
 // Border Radius
 $border-radius: 3px;

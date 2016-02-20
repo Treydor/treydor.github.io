@@ -3,22 +3,32 @@
    =========================================================== */
 
 header {
-  background: $primary;
-  color: $white;
+  background: $white;
+  border-bottom: 1px solid $border-light;
+
+  a { color: $black; }
 }
 
 header .container {
- padding: 1.5rem 0;
+  padding: 1.5rem 0;
 }
 
 .header__logo {
-  font-weight: $bold;
+  background: $blue;
+  color: $white;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: $ultra-bold;
+  letter-spacing: 1px;
+  padding: .3rem .6rem .25rem;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header-navigation {
   @include clean-list;
   float: right;
+  line-height: 1.7;
 }
 
 .header-navigation__item {
@@ -26,9 +36,11 @@ header .container {
   margin-left: 1.5rem;
 
   a {
+    color: $gray;
+    font-weight: $bold;
     text-decoration: none;
 
-    &:hover { color: lighten($green, 15%); }
+    &:hover { color: $blue; }
   }
 
   &:first-of-type { margin-left: 0; }

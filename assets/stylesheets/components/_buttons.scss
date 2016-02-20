@@ -14,16 +14,16 @@
 }
 
 .button--primary {
-  background: $gray;
-  border-bottom: 3px solid darken($gray, 7%);
+  background: $blue;
+  border-bottom: 3px solid darken($black, 7%);
   margin-top: 1.5rem;
 
-  &:hover { background: darken($gray, 7%); }
+  &:hover { background: darken($black, 7%); }
 }
 
 .button--secondary {
-  background: $green;
-  border-bottom: 3px solid darken($green, 7%);
+  background: $blue;
+  border-bottom: 3px solid darken($blue, 7%);
 
-  &:hover { background: darken($green, 7%); }
+  &:hover { background: darken($blue, 7%); }
 }

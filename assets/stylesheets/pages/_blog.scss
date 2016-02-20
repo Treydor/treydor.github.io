@@ -1,16 +1,51 @@
 /* ===========================================================
+   Post List
+   =========================================================== */
+
+.post-list {
+  @include clean-list;
+}
+
+.post-list__item {
+  border-bottom: 1px solid $border-light;
+
+  &:last-of-type { border-bottom: 0; }
+
+  a {
+    color: $black;
+    display: block;
+    text-decoration: none;
+
+    &:hover .post-list__title { color: $blue; }
+  }
+}
+
+.post-list__title {
+  color: $black;
+  margin: 0;
+  text-align: center;
+  transition: color ease-in-out .2s;
+}
+
+.post-list__date {
+  color: $gray;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ===========================================================
    Article
    =========================================================== */
 
 article {
+
   ol, ul {
     margin: 0 0 1.5rem 0;
     padding-left: 3rem;
   }
 
   hr {
-    background: $gray;
-    margin: 3rem auto;
+    margin: 1.5rem auto;
   }
 }
 
@@ -19,13 +54,8 @@ article {
    =========================================================== */
 
 .post-header {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-}
-
-.post-header__date {
-  font-size: .9rem;
-  margin-bottom: .5rem;
 }
 
 .post-header__title {
@@ -50,7 +80,6 @@ article {
 }
 
 .post-footer__link--previous {
-  border-right: 1px solid darken($border-light, 6%);
   float: left;
 
   &:before {
@@ -91,8 +120,16 @@ article {
    =========================================================== */
 
 .blog__image--small {
+  border-radius: $border-radius;
   margin: 0 auto;
   max-width: 480px;
+}
+
+.blog__image--list {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 31%;
 }
 
 /* ===========================================================
@@ -123,7 +160,7 @@ article {
 }
 
 .browser__button {
-  background: $gray;
+  background: $black;
   border-radius: $circle;
   display: inline-block;
   height: 12px;

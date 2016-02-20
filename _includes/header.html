@@ -1,12 +1,12 @@
-<header class="{% if page.path == "index.html" %} hide {% endif %}">
+<header>
   <div class="container">
-    <a class="header__logo" href="/">Noah Rogers</a>
+    <a class="header__logo {% if page.path == "index.html" %} hide {% endif %}" href="/">Noah Rogers</a>
     <ul class="header-navigation">
       <li class="header-navigation__item">
-        <a href="/#blog">Blog</a>
+        <a href="/blog/">Blog</a>
       </li>
       <li class="header-navigation__item">
-        <a href="/#projects">Projects</a>
+        <a href="/projects/">Projects</a>
       </li>
     </ul>
   </div>

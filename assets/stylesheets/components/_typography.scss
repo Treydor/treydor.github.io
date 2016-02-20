@@ -3,6 +3,7 @@
    =========================================================== */
 
 h1, h2, h3, h4 {
+  color: $black;
   font: $header-font;
   margin: 0;
 }
@@ -13,7 +14,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.666rem;
   margin-bottom: 1rem;
 }
 
@@ -42,7 +43,7 @@ blockquote {
 
   a {
     border-radius: $border-radius;
-    color: $gray;
+    color: $black;
     font-size: .9rem;
     text-decoration: none;
   }
@@ -53,7 +54,7 @@ blockquote {
    =========================================================== */
 
 a {
-  color: inherit;
+  color: $light-blue;
   text-decoration: underline;
   transition: color ease-in-out .2s;
 }

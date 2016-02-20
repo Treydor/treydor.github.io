@@ -3,9 +3,10 @@
    =========================================================== */
 
 code {
-  background: $white;
+  background: darken($light-gray, 2%);
+  border: 1px solid $border-light;
   border-radius: $border-radius;
-  color: $gray;
+  color: $blue;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-size: .8rem;
   padding: .2rem .3rem;
