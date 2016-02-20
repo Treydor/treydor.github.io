@@ -15,15 +15,15 @@
 
 .button--primary {
   background: $blue;
-  border-bottom: 3px solid darken($black, 7%);
+  border-bottom: 3px solid darken($blue, 7%);
   margin-top: 1.5rem;
 
-  &:hover { background: darken($black, 7%); }
+  &:hover { background: darken($blue, 7%); }
 }
 
 .button--secondary {
-  background: $blue;
-  border-bottom: 3px solid darken($blue, 7%);
+  background: $light-blue;
+  border-bottom: 3px solid darken($light-blue, 7%);
 
-  &:hover { background: darken($blue, 7%); }
+  &:hover { background: darken($light-blue, 7%); }
 }
