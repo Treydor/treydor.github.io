@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Noah Rogers
-title: It's alive!
+title: Apprenticeship page
 date: January 27, 2016
 blog: true
 ---
