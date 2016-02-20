@@ -40,10 +40,6 @@ main {
   max-width: 700px;
 }
 
-.container--tall {
-  padding: 6rem 0;
-}
-
 hr {
   border: 0;
   background: darken($border-light, 10%);
@@ -65,7 +61,11 @@ img {
    Intro
    =========================================================== */
 
-.intro { text-align: center; }
+.intro__list {
+  @include clean-list;
+
+  li { display: inline-block; }
+}
 
 .intro__photo {
   background: $light-gray url("/assets/images/portrait.jpg") center no-repeat;
@@ -73,13 +73,20 @@ img {
   border: 3px solid $white;
   border-radius: $circle;
   display: block;
-  height: 130px;
+  height: 145px;
   margin: 0 auto 1.5rem;
-  width: 130px;
+  width: 145px;
+
+  @media #{$medium} {
+    float: left;
+    height: 145px;
+    margin-bottom: 0;
+    margin-right: 3rem;
+    width: 145px;
+  }
 }
 
 .intro__title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0;
-  margin-top: 1.5rem;
 }
