@@ -59,7 +59,6 @@
 .project-list__circle {
   align-items: center;
   background: $blue;
-  background: linear-gradient($blue, darken($blue, 6%));
   border-radius: $circle;
   display: flex;
   height: 55px;
