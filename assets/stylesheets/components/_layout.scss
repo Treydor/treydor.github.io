@@ -61,6 +61,12 @@ img {
    Intro
    =========================================================== */
 
+.intro {
+  text-align: center;
+
+  @media #{$medium} { text-align: left; }
+}
+
 .intro__list {
   @include clean-list;
 
@@ -70,14 +76,15 @@ img {
 .intro__photo {
   background: $light-gray url("/assets/images/portrait.jpg") center no-repeat;
   background-size: cover;
-  border: 3px solid $white;
+  border: 2px solid $white;
   border-radius: $circle;
   display: block;
-  height: 145px;
+  height: 125px;
   margin: 0 auto 1.5rem;
-  width: 145px;
+  width: 125px;
 
   @media #{$medium} {
+    border: 3px solid $white;
     float: left;
     height: 145px;
     margin-bottom: 0;
@@ -88,5 +95,5 @@ img {
 
 .intro__title {
   font-size: 1.4rem;
-  margin: 0;
+  margin-bottom: 0;
 }
