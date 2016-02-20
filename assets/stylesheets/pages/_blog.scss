@@ -118,8 +118,14 @@ article {
    Post Images
    =========================================================== */
 
-.blog__image--small {
+.blog__image {
+  border: 1px solid $border-light;
   border-radius: $border-radius;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.blog__image--small {
   margin: 0 auto;
   max-width: 480px;
 }
@@ -129,15 +135,4 @@ article {
   margin: 0 auto;
   padding: 1.5rem;
   width: 31%;
-}
-
-/* ===========================================================
-   Post example
-   =========================================================== */
-
-.example {
-  border: 1px solid $border-light;
-  border-radius: $border-radius;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
 }
