@@ -8,17 +8,23 @@
 
     {% include header.html %}
 
-      <div class="container container--small">
         <article>
-          {% include posts/post-header.html %}
 
-          {{ content }}
+          <div class="hero hero--blue">
+            <div class="container container--small">
+              {% include posts/post-header.html %}
+            </div>
+          </div>
 
-          {% include posts/post-footer.html %}
+          <div class="container container--small">
+            {{ content }}
+
+            {% include posts/post-footer.html %}
+          </div>
+
         </article>
       </div>
 
-      {% include footer.html %}
     </main>
   </body>
 </html>

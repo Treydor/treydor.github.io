@@ -1,0 +1,22 @@
+/* ===========================================================
+   Hero
+   =========================================================== */
+
+.hero {
+  background: $light-gray;
+  border-bottom: 1px solid $border-light;
+  padding: 1.5rem 0;
+}
+
+.hero--intro {
+  text-align: center;
+
+  @media #{$medium} { text-align: left; }
+}
+
+.hero--blue {
+  background: $light-blue;
+  color: $white;
+
+  h1, h2, h3, h4 { color: $white; }
+}

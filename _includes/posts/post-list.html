@@ -1,13 +1,13 @@
 <ul class="post-list">
   {% for post in site.posts limit: 15 %}
     <li class="post-list__item">
-      <div class="container container--small">
-        <a href="{{ post.url }}">
+      <a href="{{ post.url }}">
+        <div class="container container--small">
           <h2 class="post-list__title">{{ post.title }}</h2>
           <div class="post-list__date">{{ post.date | date: "%B %-d, %Y" }}</div>
           {{ post.content | strip_html | truncatewords:75}}
-        </a>
-      </div>
+        </div>
+      </a>
     </li>
   {% endfor %}
 </ul>
