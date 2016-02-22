@@ -13,18 +13,18 @@ Object Oriented CSS (OOCSS) focuses on reusable classes that are not only scalab
 
 The first principle of OOCSS aims at keeping structural properties separate from visual properties. The example below is what an element may look like if the developer is not adhering to OOCSS principles.
 
-~~~css
+{% highlight css %}
 .rectangle {
   background: #ddd;
   border: 1px solid #ccc;
   height: 40px;
   width: 300px;
 }
-~~~
+{% endhighlight %}
 
 After applying OOCSS principles, our new element would look something like this:
 
-~~~css
+{% highlight css %}
 .rectangle {
   height: 40px;
   width: 300px;
@@ -34,32 +34,32 @@ After applying OOCSS principles, our new element would look something like this:
   background: #eee;
   border: 1px solid #ddd;
 }
-~~~
+{% endhighlight %}
 
 Separating the structural properties from the visual properties gives us standalone classes that are completely modular and can be applied to any element.
 
 The second principle talks about keeping the content separate from the container. Below is an example that is not using OOCSS.
 
-~~~css
+{% highlight css %}
 .footer h2 {
   color: orange;
   font-size: 2em;
   text-transform: uppercase;
 }
-~~~
+{% endhighlight %}
 
 The problem with this particular element is that it is not reusable. We are being too specific and limiting our style to just the `<h2>` elements in our `<footer>`. What if we wanted to apply a style to a `<h2>` located somewhere else on our website? One option is to create another class, but then we would just be duplicating code.
 
 One of things I really like about OOCSS is that it forces us to think about our code in a reusable way. Instead of targeting the `<h2>` specifically in the `<footer>`, think about applying a base style to the `<h2>` and adding `.special` to modify the style.
 
-~~~css
+{% highlight css %}
 h2 { font-size: 2em; }
 
 .special {
   color: orange;
   text-transform: uppercase;
 }
-~~~
+{% endhighlight %}
 
 ### Scalable and Modular Architecture for CSS
 
@@ -90,11 +90,11 @@ The third and final methodology I'll talk about is Block, Element, Modifier or B
 
 Although the BEM code may not scream visually appealing, there is a certain simplicity to this methodology that makes organizing our CSS easy.
 
-~~~css
+{% highlight css %}
 .project-list { ... }
 .project-list__card { ... }
 .project-list__card--large { ... }
-~~~
+{% endhighlight %}
 
 The BEM methodology starts with a block, which is essentially the top level of our element. In this case our block-lvel is `.project-list`.
 
