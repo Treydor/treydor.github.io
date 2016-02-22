@@ -60,10 +60,11 @@ article {
 .post-header__title {
   font-size: 2rem;
   font-weight: $bold;
-  margin: 0;
+  margin-bottom: .5rem;
 
   @media #{$medium} {
     font-size: 3rem;
+    margin-bottom: 0;
   }
 }
 
