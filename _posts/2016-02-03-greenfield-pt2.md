@@ -18,7 +18,9 @@ As it stood, the process was completely static. Choosing a review board required
 ### To the drawing board
 Having nailed down our MVP, Chris and I wrote down the features that we expected to launch with version one and also some features that would come in later versions.
 
-<img src="/assets/images/blog/project/flow.jpg">
+<div class="blog__image">
+  <img src="/assets/images/blog/project/flow.jpg">
+</div>
 
 ### To be continued...
 The next step is to actually begin creating wireframes and higher resolution mockups. Make sure to keep a look out for another post on the continuation of this process.
