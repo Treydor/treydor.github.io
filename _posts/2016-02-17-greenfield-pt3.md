@@ -19,13 +19,13 @@ I started with the login, or splash page. The splash page seemed pretty universa
 After quickly sketching out the splash page I began thinking about the main view for the project. Having nailed down our MVP I already knew the information I wanted to display. This really helped when thinking about the page's overall design.
 
 <div class="blog__image">
-  <img src="/assets/images/blog/project/mockup1.jpg">
+  <img src="/assets/images/blog/project/wireframe1.jpg">
 </div>
 
 Going in to the project I wanted to keep it simple. I wanted the information displayed up front. I wanted the app to be informative, but also very easy to use. While sketching out the layout I also began thinking of a name for the app.
 
 <div class="blog__image">
-  <img src="/assets/images/blog/project/mockup2.jpg">
+  <img src="/assets/images/blog/project/wireframe2.jpg">
 </div>
 
 At this point I felt like the basic design was really starting to come together. The next major part of the app to be explored was the milestones feature. In addition to being able to see when an apprentice's review board was, we wanted to add functionality that allowed an apprentice's mentor to fill remaining seats on an apprentice's review board. We also wanted the ability to add specific Craftsmen or exclude other's from the random roll if they were not available.
