@@ -22,13 +22,13 @@ For me, I like to think of mockups as the next stop in the design process. Wiref
 
 Thinking specifically about Snapshot, the earlier wireframes proved to be pretty valuable when creating stylized elements for our project.
 
-The first thing I did was began to lay out all of the information we knew we wanted to track. This ensured that I was taking in to account everything that I needed to style. I think began to build out a few different elements that our website may use.
+The first thing I did was began to lay out all of the information we knew we wanted to track. This ensured that I was taking in to account everything that I needed to style. I then began to build out a few different elements that our website may use.
 
 <div class="blog__image">
   <img src="/assets/images/blog/project/mockup2.jpg">
 </div>
 
-If it still looks kind of messy it's because it is. I took much of the same approach that I took when sketching out my wireframes. This particular mockup allowed to start visualizing the style guide.
+If it still looks kind of messy it's because it is. I took much of the same approach that I took when sketching out my wireframes. This particular mockup allowed me to start visualizing the style guide.
 
 Having nailed down the overall color scheme and a few of the elements, I started constructing the main page.
 
@@ -44,8 +44,8 @@ As a late addition, Eric and I talked about the possibility of adding a third se
 
 ### Stressing their importance
 
-Ultimately, mockups are created to show your client the overall look and feel of their new website. Mockups are a great way to get our client's approval before even investing a serious amount of time into our design. This is good thing for a variety of reasons.
+Ultimately, mockups are created to show your client the overall look and feel of their new website. Mockups are a great way to get our client's approval before even investing a serious amount of time into our design.
 
-On one hand, if your client loves your mockup they will ultimately sign off the design. This will make the developmental phase very easy. On the other hand, if presenting a mockup doesn't go so well we'll always have the opportunity to create another batch without having to change our code around.
+If your client loves your mockup they will ultimately sign off the design. This will make the developmental phase very easy. On the other hand, if presenting your mockup draws a lot of feedback then you can easily adjust your image to accommodate the new changes without going through your markup and styles.
 
 When it comes to Snapshot, we still had many meetings and I could totally think about ways the overall design may eventually change. At any rate, the wireframes and mockups have already proved to be extremely valuable.
