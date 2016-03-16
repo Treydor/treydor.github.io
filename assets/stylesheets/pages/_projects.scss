@@ -59,6 +59,8 @@
 .project-list__circle {
   align-items: center;
   background: $light-blue;
+  background-image: url("/assets/images/background.png");
+  border: 1px solid $blue;
   border-radius: $circle;
   display: flex;
   height: 55px;
