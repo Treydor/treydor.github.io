@@ -45,7 +45,7 @@ I imagined one section that would contain the content for all three of the appre
 Much like our wireframe, I think the final design came out really well.
 
 <div class="blog__image">
-  <img src="/assets/images/blog/apprenticeship/apprenticeship-project4.png">
+  <img src="/assets/images/blog/apprenticeship/apprenticeship-project4.jpg">
 </div>
 
 ### The conclusion
