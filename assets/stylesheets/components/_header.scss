@@ -23,7 +23,6 @@ header .container {
 .header-navigation {
   @include clean-list;
   float: right;
-  line-height: 1.7;
 }
 
 .header-navigation__item {
