@@ -15,7 +15,7 @@
 
 .hero--blue {
   background: $blue;
-  background: linear-gradient($blue, lighten($blue, 5%));
+  background-image: url("/assets/images/pattern.png");
   color: $white;
 
   .container { padding: 6rem 0; }
