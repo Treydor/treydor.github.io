@@ -15,17 +15,16 @@ After updating our markup and implementing a few basic styles we began to tackle
 <pre>
 stylesheets/
 |
-| _main.scss                # Primary sass file
-| _settings.scss            # Variables
+| _main.scss                
+| _settings.scss            
 |
 |– partials/              
-|   |– _buttons.scss        # Button
-|   |– _layout.scss         # Layout
-|   |– _typography.scss     # Typography rules
+|   |– _buttons.scss        
+|   |– _layout.scss         
+|   |– _typography.scss    
 |   ...                     
 |
 |– vendor/
-|   |– _colorpicker.scss    
 |   |– _font-awesome.scss  
 |   ...                  
 </pre>
