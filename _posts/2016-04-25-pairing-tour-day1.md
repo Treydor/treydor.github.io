@@ -22,7 +22,7 @@ stylesheets/
 |   |– _buttons.scss        # Button
 |   |– _layout.scss         # Layout
 |   |– _typography.scss     # Typography rules
-|   ...                     # Etc…
+|   ...                     
 |
 |– vendor/
 |   |– _colorpicker.scss    
