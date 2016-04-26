@@ -25,11 +25,11 @@
   @media #{$medium} {
     background: url("../images/portrait.jpg") center no-repeat;
     background-size: cover;
-    border: 3px solid $white;
+    border: 4px solid $white;
     border-radius: $circle;
     display: block;
     margin-right: 1.5rem;
-    height: 135px;
-    width: 135px;
+    height: 125px;
+    width: 125px;
   }
 }
