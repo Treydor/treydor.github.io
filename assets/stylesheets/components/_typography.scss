@@ -5,39 +5,38 @@
 h1, h2, h3, h4 {
   color: $black;
   font: $header-font;
+  line-height: 1.5;
   margin: 0;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-h2 {
-  font-size: 1.666rem;
+  font-size: 2.25rem;
+  font-weight: $light;
+  line-height: 1.25;
   margin-bottom: 1rem;
 }
 
-h3 {
-  font-size: 1rem;
+h2 {
+  font-size: 1.75rem;
+  font-weight: $light;
   margin-bottom: .5rem;
 }
 
-h4 {
-  font-size: .8rem;
-  letter-spacing: 2px;
+h3 {
+  font-size: 1.1rem;
   margin-bottom: .5rem;
-  text-transform: uppercase;
 }
 
 p {
   margin: 0 0 1.5em;
 
-  &:last-of-type { margin-bottom: 0; }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 blockquote {
-  border-left: 5px solid $light-blue;
+  border-left: 5px solid green;
   margin: 0 1.5rem 1.5rem;
   padding: 0 1rem 0;
 
@@ -54,7 +53,7 @@ blockquote {
    =========================================================== */
 
 a {
-  color: $link-color;
+  color: inherit;
   text-decoration: underline;
   transition: color ease-in-out .2s;
 

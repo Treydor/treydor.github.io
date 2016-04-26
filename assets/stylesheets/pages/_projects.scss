@@ -3,67 +3,73 @@
    =========================================================== */
 
 .project-list {
+  @extend %clearfix;
   @include clean-list;
 }
 
 .project-list__item {
   background: $white;
+  background: linear-gradient($white 90%, lighten($light-gray, 3%) 100%);
   border: 1px solid $border-light;
   border-radius: $border-radius;
-  margin-bottom: 1.5rem;
+  box-shadow: $box-shadow;
+  margin-bottom: 1.25rem;
   text-align: center;
-  transition: border ease-in-out .2s;
+  transition: transform ease-in-out .2s;
 
+  &:hover {
+    transform: translateY(3px);
+  }
 
   @media #{$medium} {
     float: left;
     margin-left: 3%;
     width: 48.5%;
 
-    &:nth-of-type(odd) { margin-left: 0; }
+    &:nth-of-type(odd) {
+      margin-left: 0;
+    }
   }
 
   @media #{$large} {
     width: 31%;
 
-    &:nth-of-type(odd) { margin-left: 3%; }
-    &:nth-of-type(3n+1) { margin-left: 0; }
-  }
-
-  a {
-    align-items: center;
-    color: $black;
-    display: flex;
-    height: 240px;
-    padding: 0 2.5rem;
-    justify-content: center;
-    text-decoration: none;
-
-    @media #{$medium} {
-      height: 300px;
+    &:nth-of-type(odd) {
+      margin-left: 3%;
     }
 
-    &:hover .project-list__circle  { transform: rotate(360deg); }
+    &:nth-of-type(3n+1) {
+       margin-left: 0;
+    }
   }
+}
+
+.project-list__link {
+  align-items: center;
+  color: lighten($black, 15%);
+  display: flex;
+  height: 200px;
+  padding: 0 1.25rem;
+  justify-content: center;
+  text-decoration: none;
+
+  @media #{$medium} {
+    height: 270px;
+  }
+}
+
+.project-list__icon {
+  align-items: center;
+  background: $green;
+  border-radius: $circle;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  width: 50px;
 
   i {
     color: $white;
     font-size: 1.1rem;
   }
-
-  h3 { font-size: 1.1rem; }
-
-  &:hover { border: 1px solid darken($border-light, 5%); }
-}
-
-.project-list__circle {
-  align-items: center;
-  background: $light-blue;
-  border-radius: $circle;
-  display: flex;
-  height: 55px;
-  justify-content: center;
-  margin: 0 auto 1rem;
-  transition: transform .7s ease-in-out;
-  width: 55px;
 }

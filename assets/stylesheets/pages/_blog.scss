@@ -10,9 +10,9 @@
   border-bottom: 1px solid $border-light;
   transition: background ease-in-out .2s;
 
-  &:hover { background: darken($light-gray, 3%); }
-
-  &:last-of-type { border-bottom: 0; }
+  &:hover {
+    background: lighten($light-gray, 2%);
+  }
 
   a {
     color: $black;
@@ -21,14 +21,17 @@
   }
 }
 
+.post-list--recent {
+  @extend %clearfix;
+  @include clean-list;
+}
+
 .post-list__title {
-  color: $black;
-  margin: 0;
+  margin-bottom: 0;
   text-align: center;
 }
 
 .post-list__date {
-  color: $light-blue;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -43,10 +46,6 @@ article {
     margin: 0 0 1.5rem 0;
     padding-left: 3rem;
   }
-
-  hr {
-    margin: 1.5rem auto;
-  }
 }
 
 /* ===========================================================
@@ -58,9 +57,7 @@ article {
 }
 
 .post-header__title {
-  font-size: 2rem;
-  font-weight: $bold;
-  line-height: 1.25;
+  margin-bottom: .5rem;
 }
 
 /* ===========================================================

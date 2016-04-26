@@ -3,22 +3,29 @@
    =========================================================== */
 
 .hero {
-  background: $light-gray;
-  border-bottom: 1px solid $border-light;
-}
-
-.hero--intro {
-  text-align: center;
-
-  @media #{$medium} { text-align: left; }
-}
-
-.hero--blue {
   background: $blue;
-  background-image: url("/assets/images/pattern.png");
   color: $white;
 
-  .container { padding: 6rem 0; }
+  h1, h2, h3, h4 {
+    color: $white;
+  }
+}
 
-  h1, h2, h3, h4 { color: $white; }
+.hero .container {
+  padding: 6rem 0;
+}
+
+.photo {
+  display: none;
+
+  @media #{$medium} {
+    background: url("../images/portrait.jpg") center no-repeat;
+    background-size: cover;
+    border: 3px solid $white;
+    border-radius: $circle;
+    display: block;
+    margin-right: 1.5rem;
+    height: 135px;
+    width: 135px;
+  }
 }

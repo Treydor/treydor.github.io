@@ -1,11 +1,11 @@
 <ul class="post-list">
-  {% for post in site.posts limit: 25 %}
+  {% for post in site.posts limit: 30 %}
     <li class="post-list__item">
       <a href="{{ post.url }}">
-        <div class="container container--small">
+        <div class="container">
           <h2 class="post-list__title">{{ post.title }}</h2>
           <div class="post-list__date">{{ post.date | date: "%B %-d, %Y" }}</div>
-          {{ post.content | strip_html | truncatewords:45 }}
+          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
         </div>
       </a>
     </li>

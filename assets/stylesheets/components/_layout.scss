@@ -2,7 +2,9 @@
    Layout
    =========================================================== */
 
-html { box-sizing: border-box; }
+html {
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -15,17 +17,21 @@ html {
   -moz-osx-font-smoothing: grayscale;
 
   @media #{$medium} {
-    font-size: 124%;
+    font-size: 110%;
   }
 }
 
 body {
-  background: $white;
-  color: $black;
+  background: $light-gray;
+  color: lighten($black, 15%);
 }
 
-main {
-  background: $light-gray;
+section {
+  border-bottom: 1px solid $border-light;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
 }
 
 .container {
@@ -36,16 +42,17 @@ main {
   width: 90%;
 }
 
-.container--wide {
-  max-width: 1000px;
+.container--align-middle {
+  align-items: center;
+  display: flex;
 }
 
 hr {
   border: 0;
-  background: darken($border-light, 10%);
-  height: 1px;
-  margin: 1rem auto 1.5rem;
-  width: 70px;
+  background: $border-light;
+  height: 2px;
+  margin: 3rem auto;
+  width: 100px;
 }
 
 /* ===========================================================
@@ -55,39 +62,4 @@ hr {
 img {
   display: block;
   width: 100%;
-}
-
-/* ===========================================================
-   Intro
-   =========================================================== */
-
-.intro__list {
-  @include clean-list;
-
-  li { display: inline-block; }
-}
-
-.intro__photo {
-  background: $light-gray url("/assets/images/portrait.jpg") center no-repeat;
-  background-size: cover;
-  border: 2px solid $white;
-  border-radius: $circle;
-  display: block;
-  height: 125px;
-  margin: 0 auto 1.5rem;
-  width: 125px;
-
-  @media #{$medium} {
-    border: 3px solid $white;
-    float: left;
-    height: 145px;
-    margin-bottom: 0;
-    margin-right: 3rem;
-    width: 145px;
-  }
-}
-
-.intro__title {
-  font-size: 1.4rem;
-  margin-bottom: .6rem;
 }

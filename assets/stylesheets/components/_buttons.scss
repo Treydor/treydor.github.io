@@ -4,26 +4,39 @@
 
 .button {
   border-radius: $border-radius;
+  box-shadow: $box-shadow;
   color: $white;
   display: inline-block;
-  font-size: .9rem;
-  font-weight: $bold;
-  padding: .6rem 1rem .5rem;
+  font-size: .75rem;
+  font-weight: $extra-bold;
+  letter-spacing: .5px;
+  padding: .65rem .75rem;
   text-decoration: none;
-  transition: background ease-in-out .2s;
+  text-transform: uppercase;
+  transition: box-shadow ease-in-out .2s;
 }
 
 .button--primary {
-  background: $blue;
-  border-bottom: 3px solid darken($blue, 7%);
-  margin-top: 1.5rem;
+  background: $white;
+  background: linear-gradient(lighten($blue, 5%), $blue);
 
-  &:hover { background: darken($blue, 7%); }
+  &:hover {
+    box-shadow: 0 2px 2px darken($shadow, 12%);
+  }
 }
 
 .button--secondary {
-  background: $light-blue;
-  border-bottom: 3px solid darken($light-blue, 7%);
+  background: $green;
+  background: linear-gradient(lighten($green, 6%), $green);
 
-  &:hover { background: darken($light-blue, 7%); }
+  &:hover {
+    box-shadow: 0 2px 2px darken($shadow, 12%);
+  }
+}
+
+.button--center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 175px;
 }

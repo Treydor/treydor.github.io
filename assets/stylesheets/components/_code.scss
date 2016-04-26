@@ -2,23 +2,22 @@
    Code
    =========================================================== */
 
-code {
-  background: darken($light-gray, 2%);
-  border: 1px solid $border-light;
+code, pre {
+  background: $white;
   border-radius: $border-radius;
-  color: $blue;
+  color: gray;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-size: .8rem;
   padding: .2rem .3rem;
 }
 
 pre {
-  background: $white;
-  border-radius: $border-radius;
-  color: $blue;
   margin: 0;
   margin: 2rem 0;
   padding: 1.5rem;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
 
   code {
     background: none;

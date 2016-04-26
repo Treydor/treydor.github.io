@@ -3,19 +3,18 @@
    =========================================================== */
 
 header {
-  background: $white;
-  border-bottom: 1px solid $border-light;
+  background: darken($blue, 5%);
+  color: $white;
   font-size: .9rem;
-
-  a { color: $black; }
 }
 
 header .container {
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
 }
 
 .header__logo {
   display: inline-block;
+  color: $white;
   font-weight: $bold;
   text-decoration: none;
 }
@@ -29,13 +28,17 @@ header .container {
   float: left;
   margin-left: 1.5rem;
 
+  &:first-of-type {
+    margin-left: 0;
+  }
+
   a {
-    color: $light-blue;
+    color: $white;
     font-weight: $bold;
     text-decoration: none;
 
-    &:hover { color: $blue; }
+    &:hover {
+      color: $light-gray;
+    }
   }
-
-  &:first-of-type { margin-left: 0; }
 }

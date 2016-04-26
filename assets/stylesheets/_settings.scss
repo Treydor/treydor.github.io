@@ -1,31 +1,36 @@
 // Font Weights
 $light:       300;
 $regular:     400;
-$bold:        700;
-$ultra-bold:  900;
+$bold:        600;
+$extra-bold:  700;
 
 // Header Font
-$header-font: $bold 18px/1.5 "Raleway", sans-serif;
+$header-font: $bold 16px/1.5 "Raleway", sans-serif;
 
 // Body Font
-$body-font: $regular 18px/1.5 "Raleway", sans-serif;
+$body-font: $regular 16px/1.5 "Raleway", sans-serif;
 
 // Colors
-$black:           #47535a;
-$blue:            #6d7e8a;
-$light-blue:      #8897a1;
-$light-gray:      #fafbfb;
+$black:           #414141;
+$blue:            #5775b3;
+$gray:            #999;
+$green:           #44c38b;
+$light-gray:      #f3f3f3;
 $white:           #fff;
 
 // Border Color
-$border-light:    #e7eaec;
+$border-light:    #e7e7e7;
 
-// Link Color
-$link-color:      #157fd4;
+// Shadow Color
+$shadow:          #eaeaea;
 
 // Border Radius
-$border-radius: 3px;
-$circle: 50%;
+$border-radius:   4px;
+$pill:            50px;
+$circle:          50%;
+
+// Box Shadow
+$box-shadow: 0 2px 2px $shadow;
 
 // Large Screens
 $large: "(min-width: 900px)";
