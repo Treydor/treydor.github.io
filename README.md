@@ -1,20 +1,17 @@
 ## www.noahrogers.com
-
-### Viewing the project
-
 noahrogers.com, noahrogers.me, treydor.github.io
 
 #### Install Jekyll
-~~~
+```
 bundle
-~~~
+```
 
-#### Start server
-~~~
+#### Starting the server
+```
 jekyll serve
-~~~
+```
 
-#### Runt the server
-~~~
+#### Viewing the project
+```
 localhost:4000
-~~~
+```
