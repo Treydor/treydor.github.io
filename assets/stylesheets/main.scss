@@ -1,6 +1,6 @@
 ---
 ---
-// Variables
+// Variables & Mixins
 @import "settings";
 @import "mixins";
 
@@ -12,7 +12,9 @@
 @import "components/buttons";
 @import "components/code";
 @import "components/hero";
-@import "components/utilities";
+
+// Utilities
+@import "utilities/utilities";
 
 // Pages
 @import "pages/blog";
