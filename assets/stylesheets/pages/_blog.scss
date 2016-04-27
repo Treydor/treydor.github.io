@@ -112,20 +112,27 @@ article {
    =========================================================== */
 
 .blog__image {
-  border: 1px solid $border-light;
-  border-radius: $border-radius;
   margin-bottom: 1.5rem;
+  max-height: 550px;
   overflow: hidden;
+
+  img {
+    border: 1px solid $border-light;
+    border-radius: $border-radius;
+  }
+}
+
+.blog__image--side-by-side img {
+  float: left;
+  margin-left: 4%;
+  width: 48%;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
 }
 
 .blog__image--small {
   margin: 0 auto;
   max-width: 480px;
-}
-
-.blog__image--list {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 1.5rem;
-  width: 31%;
 }
