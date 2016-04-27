@@ -16,13 +16,13 @@ As part of the redesign we knew we wanted to add more information about the appr
 
 Laying out the information in paragraphs was one of the first things I thought about. I thought that having the information upfront may be a good idea.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/apprenticeship/apprenticeship-project1.png">
 </div>
 
 After the actual wireframe our team quickly realized that this type of layout was not optimal. There was simply too much information. I went back to the drawing board and created a different type of layout. We found this to be much more user-friendly.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/apprenticeship/apprenticeship-project2.png">
 </div>
 
@@ -36,7 +36,7 @@ The biggest challenge was actually deciding how to utilize the space of the page
 
 Keeping page length and readability in mind I iterated on the design and ultimately created a wireframe that looked like this:
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/apprenticeship/apprenticeship-project3.png">
 </div>
 
@@ -44,7 +44,7 @@ I imagined one section that would contain the content for all three of the appre
 
 Much like our wireframe, I think the final design came out really well.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/apprenticeship/apprenticeship-project4.jpg">
 </div>
 

@@ -15,7 +15,7 @@ Planted tanks are a hobby of mine I started to get in to about two years ago. Mu
 
 A new aquarium is kind of like a new web project in the sense that you have complete creative freedom. Like typefaces and colors within our web projects, we can add live plants, driftwood and fish to really bring our aquarium to life and truly make it unique.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/planted-tank/compare.jpg">
 </div>
 
@@ -26,7 +26,7 @@ Essentially, we are creating our very own ecosystem. We keep the water temperatu
 
 Here is a great photo I found on [The Planted Tank](http://plantedtank.net) that illustrates the entire process:
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/planted-tank/nitrogen-cycle.jpg">
 </div>
 
@@ -36,7 +36,7 @@ So now that we have our fish and some of our plants starting to grow, what are s
 
 I currently have a 20 gallon tank. The ultimate goal is to have something larger, at least 55 gallons, although my wife may have something to say about that. The difference between size directly translates to how many fish and plants you can have comfortably live in our aquarium. One of the rules that aquarium owners try to follow is the one inch of fish per 1 gallon of water rule.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/planted-tank/aquarium1.jpg">
 </div>
 
@@ -46,7 +46,7 @@ Secondly, it's also important for the balance of our planted tank. Over stocking
 
 If math is not your strong suit, rest assured. There is a great calculator over at [How Many Fish](http://www.howmanyfish.com/), that allows you to input information about your aquarium to see your personal recommendation for the number of fish you should be keeping in your tank.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/planted-tank/aquarium2.jpg">
 </div>
 
@@ -60,13 +60,13 @@ Directly injecting CO2 from an outside source can be a great way to stimulate pl
 
 This sketch shows a basic overview of the process:
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/planted-tank/co2.jpg">
 </div>
 
 Basically, our tank is connected to a bubble counter, which is used to measure exactly how much CO2 is being released from the paintball tank and injected in to our aquarium. Depending on the size of our aquarium and how many plants you have in it, it is recommended that our bubble counter bubbles between 1-3 times a second. The bubble counter is then connected to our diffuser, which is actually inside of the aquarium. Our diffuser breaks apart the large bubbles of CO2 in to hundreds of smaller bubbles. Breaking up the large bubbles is the best way to diffuse the CO2 gas in to our aquarium's water.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/planted-tank/diffuser.jpg">
 </div>
 

@@ -111,7 +111,7 @@ article {
    Post Images
    =========================================================== */
 
-.blog__image {
+.image-container {
   margin-bottom: 1.5rem;
   overflow: hidden;
 
@@ -121,17 +121,17 @@ article {
   }
 }
 
-.blog__image--side-by-side img {
+.image-container--small {
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+.image-container--three-across img {
   float: left;
-  margin-left: 4%;
-  width: 48%;
+  margin: 0 0 0 2%;
+  width: 32%;
 
   &:first-of-type {
     margin-left: 0;
   }
-}
-
-.blog__image--small {
-  margin: 0 auto;
-  max-width: 480px;
 }

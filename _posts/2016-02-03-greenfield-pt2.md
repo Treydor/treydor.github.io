@@ -18,7 +18,7 @@ As it stood, the process was completely static. Choosing a review board required
 ### To the drawing board
 Having nailed down our MVP, Chris and I wrote down the features that we expected to launch with version one and also some features that would come in later versions.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/project/flow.jpg">
 </div>
 

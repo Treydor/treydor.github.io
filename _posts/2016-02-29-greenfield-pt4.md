@@ -24,7 +24,7 @@ Thinking specifically about Snapshot, the earlier wireframes proved to be pretty
 
 The first thing I did was began to lay out all of the information we knew we wanted to track. This ensured that I was taking in to account everything that I needed to style. I then began to build out a few different elements that our website may use.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/project/mockup2.jpg">
 </div>
 
@@ -32,13 +32,13 @@ If it still looks kind of messy it's because it is. I took much of the same appr
 
 Having nailed down the overall color scheme and a few of the elements, I started constructing the main page.
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/project/mockup1.jpg">
 </div>
 
 As a late addition, Eric and I talked about the possibility of adding a third section within the card to track milestones of each apprentice. I experimented with a few different ideas, this being one of them:
 
-<div class="blog__image">
+<div class="image-container">
   <img src="/assets/images/blog/project/mockup3.jpg">
 </div>
 
