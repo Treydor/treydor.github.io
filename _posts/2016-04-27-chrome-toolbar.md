@@ -12,11 +12,12 @@ Well it turns out that a new version of Chrome was released for Android's Lollip
 
 For example, I added `meta name="theme-color" content="#3e5688"` to my my personal website. This changes the color of the address bar to a dark blue.
 
-If you don't have an android phone don't worry, I posted a few photos below. Basically, the screenshot of GitHub is the default behavior that you would expect when visiting websites. The screenshot of my personal blog has a specified theme color.
+If you don't have an android phone don't worry, I posted a few photos below. Basically, the screenshot of GitHub is the default behavior that you would expect when visiting websites. The screenshot of Steam and my personal blog has a specified theme color.
 
-<div class="blog__image blog__image--side-by-side">
+<div class="image-container image-container--three-across">
   <img src="/assets/images/blog/theme-color/theme-default.png">
   <img src="/assets/images/blog/theme-color/theme-custom.png">
+  <img src="/assets/images/blog/theme-color/theme-custom2.png">
 </div>
 
 So far it looks like it's only supported on Android phones that run Lollipop. Check out [Google Developers](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android?hl=en) for more information!
