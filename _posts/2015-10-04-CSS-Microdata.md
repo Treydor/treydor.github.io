@@ -42,7 +42,9 @@ To add properties to our newly created item use the `itemprop` attribute.
 
 So what do all these variables do? Well for one, adding microdata will allow for more eye-catching search results. A search result that stands out and is different from the others can contribute to more clicks which will ultimately increase the website's traffic.
 
-<img class="image-container image-container--small" src="/assets/images/blog/microdata/microdata.png">
+<div class="image-container image-container--small">
+  <img src="/assets/images/blog/microdata/microdata.png">
+</div>
 
 If you ever find yourself using microdata there are plenty of resources to make sure you are highlighting your content effectively. In the case of our recipe, [Google Developers](https://developers.google.com/structured-data/rich-snippets/recipes) displays a variety of examples, and explains the vocabulary attribute very thoroughly.
 
