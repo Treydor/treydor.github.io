@@ -1,6 +1,7 @@
 ---
 ---
-// Variables & Mixins
+
+// Settings & Mixins
 @import "settings";
 @import "mixins";
 
@@ -13,12 +14,9 @@
 @import "components/code";
 @import "components/hero";
 
-// Utilities
-@import "utilities/utilities";
-
 // Pages
 @import "pages/blog";
 @import "pages/projects";
 
-// Vendor
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+// Utilities
+@import "utilities/utilities";
