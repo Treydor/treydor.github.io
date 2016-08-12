@@ -4,24 +4,21 @@
   {% include head.html %}
 
   <body>
+    <main id="page">
+      {% include sidebar.html %}
 
-    {% include header.html %}
+      <section class="content">
+        <div class="wrapper">
 
-      <article>
+          {% include post/post-header.html %}
 
-        <div class="hero">
-          <div class="container">
-            {% include posts/post-header.html %}
-          </div>
-        </div>
-
-        <div class="container">
           {{ content }}
 
-          {% include posts/post-footer.html %}
-        </div>
-        
-      </article>
+          {% include post/post-footer.html %}
 
+        </div>
+      </section>
+    </main>
   </body>
+
 </html>

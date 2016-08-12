@@ -1,7 +1,4 @@
-/* ===========================================================
-   Layout
-   =========================================================== */
-
+// Layout
 html {
   box-sizing: border-box;
 }
@@ -15,45 +12,78 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media #{$medium} {
-    font-size: 110%;
-  }
 }
 
 body {
   background: $light-gray;
-  color: lighten($black, 15%);
+  color: $gray;
+  display: flex;
 }
 
-section {
-  border-bottom: 1px solid $border-light;
+// Page structure
+#page {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
 
-  &:last-of-type {
-    border-bottom: 0;
+  @media #{$medium} {
+    flex-flow: row;
+    height: 100%;
   }
 }
 
-.container {
-  @extend %clearfix;
-  margin: 0 auto;
-  max-width: 700px;
-  padding: 3rem 0;
-  width: 90%;
+.wrapper {
+  padding: 2rem 1.5rem;
 }
 
-hr {
+.content {
+  flex: 1;
+  max-width: 840px;
+}
+
+.content--large {
+  max-width: 1600px;
+}
+
+.sidebar {
+  background: $blue-gray;
+  color: $white;
+
+  @media #{$medium} {
+    flex: none;
+    min-height: 100vh;
+    width: 265px;
+  }
+}
+
+.sidebar .wrapper {
+  @extend %clearfix;
+  padding: .75rem 1rem .5rem;
+  user-select: none;
+
+  @media #{$medium} {
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: inherit;
+  }
+}
+
+// Separator
+hr, [class*="separator"] {
   border: 0;
   background: $border-light;
-  height: 2px;
-  margin: 3rem auto;
-  width: 100px;
+  height: 1px;
+  margin: 2rem auto;
+  width: 125px;
 }
 
-/* ===========================================================
-   Images
-   =========================================================== */
+.separator--lg {
+  width: 100%;
+}
 
+// Images
 img {
   display: block;
   width: 100%;

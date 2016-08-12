@@ -1,23 +1,21 @@
-/* ===========================================================
-   Utilities
-   =========================================================== */
-
+// Utilities
 .hide {
-  display: none; 
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .center {
-  text-align: center; 
+  text-align: center;
 }
 
 .margin-top {
-  margin-top: 1.75rem; 
+  margin-top: 1.75rem;
 }
 
-/* ===========================================================
-   Clearfix created by Nicolas Gallagher
-   =========================================================== */
-
+// Clearfix created by Nicolas Gallagher
 %clearfix {
   *zoom: 1;
 

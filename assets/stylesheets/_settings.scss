@@ -1,38 +1,36 @@
 // Font Weights
 $light:       300;
 $regular:     400;
-$bold:        600;
-$extra-bold:  700;
+$bold:        700;
 
 // Header Font
-$header-font: $bold 16px/1.5 "Raleway", sans-serif;
+$header-font: $bold 18px/1.45 "Varela Round", sans-serif;
 
 // Body Font
-$body-font: $regular 16px/1.5 "Raleway", sans-serif;
+$body-font: $regular 18px/1.45 "Varela Round", sans-serif;
 
 // Colors
-$black:           #414141;
-$blue:            #5775b3;
-$gray:            #999;
-$green:           #44c38b;
-$light-gray:      #f3f3f3;
+$blue-gray:       #464e57;
+$gray:            #6b7987;
+$orange:          #ffb26b;
+$light-gray:      #f8f8f9;
 $white:           #fff;
 
 // Border Color
-$border-light:    #e7e7e7;
-
-// Shadow Color
-$shadow:          #eaeaea;
+$border-light:    #e5e7ea;
 
 // Border Radius
-$border-radius:   4px;
+$border-radius:   3px;
 $circle:          50%;
 
-// Box Shadow
-$box-shadow: 0 2px 2px $shadow;
+// Transition
+$ease:            ease-in-out .3s;
 
-// Large Screens
+// Medium screens
+$medium: "(min-width: 700px)";
+
+// Large screens
 $large: "(min-width: 900px)";
 
-// Medium Screens
-$medium: "(min-width: 640px)";
+// Extra-large screens
+$extra-large: "(min-width: 1200px)";

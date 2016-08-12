@@ -1,0 +1,114 @@
+// Logo
+.logo {
+  @extend %clearfix;
+  display: inline-block;
+  text-decoration: none;
+
+  @media #{$medium} {
+    display: block;
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+}
+
+.logo__photo {
+  background: url("../images/portrait.jpg") center no-repeat;
+  background-size: cover;
+  border: 2px solid $white;
+  border-radius: $circle;
+  display: inline-block;
+  float: left;
+  height: 55px;
+  width: 55px;
+
+  @media #{$medium} {
+    border: 3px solid $white;
+    display: block;
+    float: none;
+    height: 135px;
+    margin: 0 auto .75rem;
+    width: 135px;
+  }
+}
+
+.logo__name {
+  color: $white;
+  display: inline-block;
+  float: left;
+  font-size: 1rem;
+  font-weight: $bold;
+  line-height: 55px;
+  margin: 0;
+  margin-left: 1rem;
+
+  @media #{$medium} {
+    float: none;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+// Toggle
+.toggle {
+  color: lighten($blue-gray, 15%);
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 1.75em;
+  line-height: 55px;
+
+  @media #{$medium} {
+    display: none;
+  }
+}
+
+// Navigation
+nav {
+  display: none;
+
+  @media #{$medium} {
+    display: block;
+  }
+}
+
+.nav-list {
+  @include clean-list;
+  border-top: 1px dotted lighten($blue-gray, 9%);
+  margin: .5rem 0;
+  padding-top: 1rem;
+
+  @media #{$medium} {
+    border-top: 1px solid lighten($blue-gray, 3%);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.nav-list__item {
+  margin-bottom: .25rem;
+
+  @media #{$medium} {
+    border-bottom: 1px solid lighten($blue-gray, 3%);
+    margin-bottom: 0;
+  }
+}
+
+.nav-list__link {
+  align-items: center;
+  border-radius: $border-radius;
+  display: flex;
+  padding: .75rem;
+  text-decoration: none;
+  width: auto;
+
+  &:hover {
+    background: lighten($blue-gray, 2%);
+  }
+}
+
+.nav-list__icon {
+  color: $orange;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}

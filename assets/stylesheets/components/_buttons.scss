@@ -1,42 +1,15 @@
-/* ===========================================================
-   Buttons
-   =========================================================== */
-
+// Buttons
 .button {
+  background: lighten($blue-gray, 65%);
+  border: 1px solid $border-light;
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
-  color: $white;
-  display: inline-block;
-  font-size: .75rem;
-  font-weight: $extra-bold;
-  letter-spacing: .5px;
-  padding: .65rem .75rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: box-shadow ease-in-out .2s;
-}
-
-.button--primary {
-  background: $white;
-  background: linear-gradient(lighten($blue, 5%), $blue);
-
-  &:hover {
-    box-shadow: 0 2px 2px darken($shadow, 12%);
-  }
-}
-
-.button--secondary {
-  background: $green;
-  background: linear-gradient(lighten($green, 6%), $green);
-
-  &:hover {
-    box-shadow: 0 2px 2px darken($shadow, 12%);
-  }
-}
-
-.button--center {
   display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 175px;
+  font-size: .85rem;
+  padding: .55rem 1.1rem;
+  text-decoration: none;
+  transition: border $ease;
+
+  &:hover {
+    border: 1px solid darken($border-light, 10%);
+  }
 }

@@ -1,12 +1,18 @@
 # Site settings
 name: Noah Rogers
 title: Noah Rogers
-description: Hello, my name is Noah. I am a design apprentice at 8th Light.
+description: Hello, my name is Noah. I am a designer at 8th Light.
+permalink: /writing/:title
 
 # Build settings
 highlighter: rouge
 markdown: kramdown
 
+# Gems
+gems:
+  - octopress-autoprefixer
+
 # Sass settings
 sass:
   sass_dir: assets/stylesheets
+  style: :compressed

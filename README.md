@@ -1,5 +1,5 @@
 ## www.noahrogers.com
-noahrogers.com, noahrogers.me, treydor.github.io
+noahrogers.com, treydor.github.io
 
 #### Install Jekyll
 ```

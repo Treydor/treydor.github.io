@@ -1,34 +1,31 @@
-/* ===========================================================
-   Typography
-   =========================================================== */
-
+// Typography
 h1, h2, h3, h4 {
-  color: $black;
+  color: $blue-gray;
   font: $header-font;
-  line-height: 1.5;
+  line-height: 1.45;
   margin: 0;
+  margin-bottom: .5rem;
 }
 
 h1 {
-  font-size: 2.25rem;
-  font-weight: $light;
-  line-height: 1.25;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.75rem;
-  font-weight: $light;
-  margin-bottom: .75rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.1rem;
-  margin-bottom: .5rem;
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 p {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -36,22 +33,17 @@ p {
 }
 
 blockquote {
-  border-left: 5px solid $green;
-  margin: 0 1.5rem 1.5rem;
-  padding: 0 1rem 0;
+  border-left: 5px solid $orange;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
 
   a {
-    border-radius: $border-radius;
-    color: $black;
-    font-size: .9rem;
-    text-decoration: none;
+    font-style: normal;
   }
 }
 
-/* ===========================================================
-   Links
-   =========================================================== */
-
+// Links
 a {
   color: inherit;
   text-decoration: underline;

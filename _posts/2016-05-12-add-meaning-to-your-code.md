@@ -16,8 +16,8 @@ Before we fully dive into semantic elements, I want to stress that there are man
 {% highlight html %}
 <div class="navigation"> ... </div>
   <div class="section">
-    <div class="section-title">An amazing title</div>
-    <div class="description">A very cool description about a very cool thing.</div>
+    <div class="section-title">Title</div>
+    <div class="description">Description.</div>
   </div>
 <div class="footer"> ... </div>
 {% endhighlight %}
@@ -27,8 +27,8 @@ A human may look at this bit of code and be able to make some assumptions about 
 {% highlight html %}
 <nav> ... </nav>
   ￼<section>
-    <h1>An amazing title</h1>
-    <p>A very cool description about a very cool thing.</p>
+    <h1>Title</h1>
+    <p>Description</p>
   </section>
 <footer> ... </footer>
 {% endhighlight %}
@@ -38,7 +38,9 @@ Class names aside, the addition of semantic HTML elements allows humans and comp
 ### Semantic elements give power to assistive technologies
 Assistive technologies like screen readers also leverage our semantic HTML.
 
-> “Screen readers are audio interfaces. Rather than displaying web content visually for users in a "window" or screen on the monitor, screen readers convert text into synthesized speech so that users can listen to the content.” [WebAIM](http://www.webaim.org/techniques/screenreader)
+> “Screen readers are audio interfaces. Rather than displaying web content visually for users in a "window" or screen on the monitor, screen readers convert text into synthesized speech so that users can listen to the content.”
+>
+> -- [WebAIM](http://www.webaim.org/techniques/screenreader)
 ​
 
 Screen readers are an essential tool for millions of people worldwide who are visually impaired. The addition of semantic elements within our example allows screen reading software to better identify elements within our HTML. Instead of an entire webpage full of `<div>` elements, we have structured our code in such a way that we have easily recognizable elements with meanings attached to them.
@@ -48,7 +50,9 @@ Much like visual skimming, we look at headings or keywords to determine if the c
 ### An introduction to microdata
 ￼Microdata is a semantic syntax that allows us to define groups of name:value pairs, ultimately allowing us to apply additional semantics to our HTML. Microdata relies on custom vocabularies to contextualize our code:
 
-> “Think of ‘the set of all HTML5 elements’ as one vocabulary. This vocabulary includes elements to represent a section or an article, but it doesn’t include elements to represent a person or a event.” [Dive into HTML5](http://www.diveintohtml5.info/extensibility.html)
+> “Think of ‘the set of all HTML5 elements’ as one vocabulary. This vocabulary includes elements to represent a section or an article, but it doesn’t include elements to represent a person or a event.”
+>
+> -- [Dive Into HTML5](http://www.diveintohtml5.info/extensibility.html)
 
 Microdata allows us to represent different items and then create unique properties used to describe each item. Although we are able to create our very own, there are many established vocabularies that are completely free to use and compatible with major search engines like Google, Bing and Yahoo.
 
@@ -87,7 +91,9 @@ In the example above, an `<itemtype>` of recipe is applied. The `<itemtype>` def
 ### Conclusion
 In the end, a structured semantic hierarchy helps us easily add context to our code. Semantic markup not only gives us a clear sense of what our content is about, but also makes it possible for search engines, web browsers and assistive technologies like screen readers to more accurately parse our code. Microdata vocabularies like Schema.org enable us with another option to enhance computer readability of our content. With microdata, we are able create more eye-catching search results in the form of rich snippets. Together, these tools ensure that the context of our code will be better understood by both humans and computers alike.
 
-### Sources
+---
+
+### References
 * [Dive in to HTML5 - Extensibility](http://diveintohtml5.info/extensibility.html)
 * [Dive in to HTML5 - Semantics](http://diveintohtml5.info/semantics.html)
 * [National Federation of the Blind](https://nfb.org/blindness-statistics)

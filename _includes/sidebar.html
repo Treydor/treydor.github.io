@@ -1,0 +1,51 @@
+<aside class="sidebar">
+  <div class="wrapper">
+    <a class="logo" href="/">
+      <span class="logo__photo"></span>
+      <h1 class="logo__name">Noah Rogers</h1>
+    </a>
+    <span class="toggle" data-id="navigation-toggle">
+      <i class="fa fa-bars"></i>
+    </span>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="/writing">
+            <i class="fa fa-fw fa-file-text-o nav-list__icon" aria-hidden="true"></i> Writing
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="/projects">
+            <i class="fa fa-fw fa-code nav-list__icon" aria-hidden="true"></i> Projects
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="http://www.github.com/noaharogers">
+            <i class="fa fa-fw fa-github nav-list__icon" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="http://www.instagram.com/noaharogers">
+            <i class="fa fa-fw fa-instagram nav-list__icon" aria-hidden="true"></i> Instagram
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="http://www.twitter.com/noaharogers">
+            <i class="fa fa-fw fa-twitter nav-list__icon" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<script>
+  $(function() {
+    var navigation = $("nav");
+    var navigationToggle = $('[data-id="navigation-toggle"]');
+    navigationToggle.click(function() {
+      navigation.toggleClass("active");
+      navigation.toggleClass("show");
+    });
+  });
+</script>
