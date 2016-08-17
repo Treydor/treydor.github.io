@@ -8,10 +8,6 @@ permalink: /writing/:title
 highlighter: rouge
 markdown: kramdown
 
-# Gems
-gems:
-  - octopress-autoprefixer
-
 # Sass settings
 sass:
   sass_dir: assets/stylesheets
