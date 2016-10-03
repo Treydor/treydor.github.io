@@ -8,7 +8,7 @@
 
 .post-list__item {
   border-bottom: 1px solid $border-light;
-  transition: background ease-in-out .2s;
+  transition: background $ease;
 
   &:hover {
     background: lighten($light-gray, 2%);

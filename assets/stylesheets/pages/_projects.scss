@@ -15,7 +15,7 @@
   box-shadow: $box-shadow;
   margin-bottom: 1.25rem;
   text-align: center;
-  transition: transform ease-in-out .2s;
+  transition: transform $ease;
 
   &:hover {
     transform: translateY(3px);
