@@ -5,10 +5,6 @@
 .hero {
   background: $blue;
   color: $white;
-
-  h1, h2, h3, h4 {
-    color: $white;
-  }
 }
 
 .hero .container {
@@ -19,14 +15,20 @@
   }
 }
 
+.hero__title {
+  color: $white;
+  font-size: 1.5rem;
+  font-weight: $bold;
+}
+
 .hero__photo {
   background: url("../images/portrait.jpg") center no-repeat;
   background-size: cover;
-  border: 4px solid $white;
+  border: 3px solid $white;
   border-radius: $circle;
-  height: 125px;
+  height: 120px;
   margin: 0 auto 1.5rem;
-  width: 125px;
+  width: 120px;
 
   @media #{$medium} {
     float: left;
