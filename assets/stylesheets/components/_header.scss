@@ -15,7 +15,7 @@ header .container {
 .header__logo {
   display: inline-block;
   color: $white;
-  font-weight: $bold;
+  font-weight: $extra-bold;
   text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ header .container {
     text-decoration: none;
 
     &:hover {
-      color: $light-gray;
+      color: lighten($blue, 30%);
     }
   }
 }
