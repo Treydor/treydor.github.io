@@ -1,44 +1,42 @@
-/* ===========================================================
-   Header
-   =========================================================== */
-
+// Header
 header {
-  background: darken($blue, 5%);
-  color: $white;
+  background: $white;
   font-size: .9rem;
 }
 
 header .container {
-  padding: 1.25rem 0;
+  padding: 2rem 0;
 }
 
 .header__logo {
   display: inline-block;
-  color: $white;
-  font-weight: $extra-bold;
+  color: $black;
+  font: $header-font;
+  line-height: 1.6;
   text-decoration: none;
 }
 
 .header-navigation {
   @include clean-list;
   float: right;
+  line-height: 1.6;
 }
 
 .header-navigation__item {
   float: left;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 
   &:first-of-type {
     margin-left: 0;
   }
 
   a {
-    color: $white;
-    font-weight: $bold;
+    color: $gray;
     text-decoration: none;
+    transition: color .2s ease-in-out;
 
     &:hover {
-      color: lighten($blue, 30%);
+      color: $black;
     }
   }
 }

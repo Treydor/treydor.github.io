@@ -1,40 +1,24 @@
-/* ===========================================================
-   Buttons
-   =========================================================== */
-
-.button {
+// Default Button
+[class*=button] {
+  border: 0;
   border-radius: $border-radius;
   color: $white;
   display: inline-block;
-  font-size: .75rem;
-  font-weight: $extra-bold;
-  letter-spacing: .5px;
-  padding: .65rem 1.3rem;
+  font: $header-font;
+  font-size: .9rem;
+  font-weight: $bold;
+  outline: 0;
+  padding: .6rem 1rem;
   text-decoration: none;
-  text-transform: uppercase;
-  transition: background $ease;
+  transition: transform .2s ease-in-out;
 }
 
+// Button Primary
 .button--primary {
-  background: $blue;
+  background: $red;
+  color: $white;
 
   &:hover {
-    background: lighten($blue, 3%);
+    transform: scale(1.05);
   }
-}
-
-.button--secondary {
-  background: $green;
-
-  &:hover {
-    background: lighten($green, 3%);
-  }
-}
-
-.button--center {
-  display: block;
-  margin: 0 auto;
-  padding: .65rem;
-  text-align: center;
-  width: 200px;
 }

@@ -106,8 +106,6 @@ At first I was really turned off by the large class names associated with BEM. I
 
 Within the next few days I hope to publish a new blog entry about Microdata, stay tuned!
 
----
-
 ### References
 1. [AppendTo - What is OOCSS?](http://appendto.com/2014/04/oocss/)
 2. [Scalable and Modular Architecture for CSS](https://smacss.com/)

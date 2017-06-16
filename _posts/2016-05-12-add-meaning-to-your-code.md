@@ -17,7 +17,7 @@ Before we fully dive into semantic elements, I want to stress that there are man
 <div class="navigation"> ... </div>
   <div class="section">
     <div class="section-title">An amazing title</div>
-    <div class="description">A very cool description about a very cool thing.</div>
+    <div class="description">A very cool description.</div>
   </div>
 <div class="footer"> ... </div>
 {% endhighlight %}
@@ -28,14 +28,14 @@ A human may look at this bit of code and be able to make some assumptions about 
 <nav> ... </nav>
   ￼<section>
     <h1>An amazing title</h1>
-    <p>A very cool description about a very cool thing.</p>
+    <p>A very cool description.</p>
   </section>
 <footer> ... </footer>
 {% endhighlight %}
 
 Class names aside, the addition of semantic HTML elements allows humans and computers alike to contextualize our code. The above example becomes semantic because we properly apply meaning in a way that both humans and computers can understand.
 
-### Semantic elements give power to assistive technologies
+### Semantic elements & assistive devices
 Assistive technologies like screen readers also leverage our semantic HTML.
 
 > “Screen readers are audio interfaces. Rather than displaying web content visually for users in a "window" or screen on the monitor, screen readers convert text into synthesized speech so that users can listen to the content.” [WebAIM](http://www.webaim.org/techniques/screenreader)
@@ -87,7 +87,7 @@ In the example above, an `<itemtype>` of recipe is applied. The `<itemtype>` def
 ### Conclusion
 In the end, a structured semantic hierarchy helps us easily add context to our code. Semantic markup not only gives us a clear sense of what our content is about, but also makes it possible for search engines, web browsers and assistive technologies like screen readers to more accurately parse our code. Microdata vocabularies like Schema.org enable us with another option to enhance computer readability of our content. With microdata, we are able create more eye-catching search results in the form of rich snippets. Together, these tools ensure that the context of our code will be better understood by both humans and computers alike.
 
-### Sources
+### References
 * [Dive in to HTML5 - Extensibility](http://diveintohtml5.info/extensibility.html)
 * [Dive in to HTML5 - Semantics](http://diveintohtml5.info/semantics.html)
 * [National Federation of the Blind](https://nfb.org/blindness-statistics)

@@ -1,0 +1,95 @@
+// Post List
+.post-list {
+  @extend %clearfix;
+  @include clean-list;
+}
+
+.post-list__item {
+  border-bottom: 1px solid $border-light;
+  padding: 4rem 0;
+  text-align: center;
+
+  &:first-of-type {
+    border-top: 1px solid $border-light;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.post-list__title {
+  margin-bottom: .5rem;
+}
+
+.post-list__date {
+  color: $gray;
+}
+
+// Post Header
+.post-header {
+  text-align: center;
+
+  hr {
+    background: $border-light;
+    border: 0;
+    border-radius: $border-radius;
+    height: 1px;
+    margin: 0 auto 3rem;
+    max-width: 60px;
+  }
+}
+
+.post-header__title {
+  margin-bottom: .5rem;
+}
+
+.post-header__date {
+  color: $gray;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+// Post Footer
+.post-footer {
+  @extend %clearfix;
+  @include clean-list;
+  margin-top: 3rem;
+}
+
+[class*=post-footer__item] {
+  float: left;
+}
+
+.post-footer__item--next {
+  float: right;
+}
+
+// Blog Images
+.image-container {
+  margin-bottom: 1.5rem;
+
+  img {
+    border-radius: $border-radius;
+  }
+}
+
+.image-container--three-across img {
+  float: left;
+  margin-bottom: 1.5rem;
+  margin-left: 3.5%;
+  width: 31%;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+// Blog References
+#references {
+  margin-top: 3rem;
+}

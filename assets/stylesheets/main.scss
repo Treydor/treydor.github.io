@@ -11,12 +11,12 @@
 @import "components/typography";
 @import "components/header";
 @import "components/buttons";
+@import "components/tags";
 @import "components/code";
-@import "components/hero";
 
-// Pages
-@import "pages/blog";
-@import "pages/projects";
+@import "components/blog";
+@import "components/projects";
+@import "components/work";
 
 // Utilities
 @import "utilities/utilities";

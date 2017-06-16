@@ -1,30 +1,32 @@
-/* ===========================================================
-   Typography
-   =========================================================== */
-
+// Tyupography Base
 h1, h2, h3, h4 {
   color: $black;
   font: $header-font;
-  line-height: 1.5;
+  letter-spacing: -.5px;
   margin: 0;
 }
 
 h1 {
-  font-size: 2.25rem;
-  font-weight: $light;
-  line-height: 1.25;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+
+  @media #{$medium} {
+    font-size: 2rem;
+  }
 }
 
 h2 {
-  font-size: 1.75rem;
-  font-weight: $light;
-  margin-bottom: .75rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.1rem;
-  margin-bottom: .5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: .9rem;
+  letter-spacing: .5px;
+  text-transform: uppercase;
 }
 
 p {
@@ -36,14 +38,5 @@ p {
 }
 
 blockquote {
-  border-left: 5px solid $green;
-  margin: 0 1.5rem 1.5rem;
-  padding: 0 1rem 0;
-
-  a {
-    border-radius: $border-radius;
-    color: $black;
-    font-size: .9rem;
-    text-decoration: none;
-  }
+  margin: 2rem 5rem;
 }

@@ -1,7 +1,4 @@
-/* ===========================================================
-   Layout
-   =========================================================== */
-
+// Base Styles
 html {
   box-sizing: border-box;
 }
@@ -15,15 +12,11 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media #{$medium} {
-    font-size: 110%;
-  }
 }
 
 body {
-  background: $light-gray;
-  color: lighten($black, 15%);
+  background: $white;
+  color: $gray;
 }
 
 section {
@@ -34,37 +27,70 @@ section {
   }
 }
 
+section {
+  overflow: hidden;
+}
+
 .container {
   @extend %clearfix;
   margin: 0 auto;
-  max-width: 700px;
-  padding: 3rem 0;
+  max-width: 1400px;
+  padding: 1.5rem 0;
   width: 90%;
 }
 
-hr {
-  border: 0;
-  background: $border-light;
-  height: 2px;
-  margin: 3rem auto;
-  width: 100px;
+article {
+  margin: 0 auto;
+  max-width: 700px;
 }
 
-/* ===========================================================
-   Links
-   =========================================================== */
+figure {
+  margin: 0;
+}
 
+// Default Link
 a {
   color: inherit;
   text-decoration: underline;
   transition: color $ease;
 }
 
-/* ===========================================================
-   Images
-   =========================================================== */
-
+// Default Image
 img {
   display: block;
   width: 100%;
+}
+
+// Homepage
+.home {
+  margin: 2rem auto 0;
+  text-align: center;
+
+  @media #{$large} {
+    margin-top: 4rem;
+  }
+}
+
+.home__photo {
+  border-radius: $circle;
+  height: 175px;
+  margin: 0 auto 1.5rem;
+  width: 175px;
+}
+
+.home__title {
+  font: $header-font;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+
+  @media #{$medium} {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  @media #{$large} {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
 }

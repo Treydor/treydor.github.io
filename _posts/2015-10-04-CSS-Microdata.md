@@ -48,8 +48,6 @@ So what do all these variables do? Well for one, adding microdata will allow for
 
 If you ever find yourself using microdata there are plenty of resources to make sure you are highlighting your content effectively. In the case of our recipe, [Google Developers](https://developers.google.com/structured-data/rich-snippets/recipes) displays a variety of examples, and explains the vocabulary attribute very thoroughly.
 
----
-
 ### References
 1. [Dive Into HTML5 - Microdata](http://diveintohtml5.info/extensibility.html)
 2. [HTML5 Doctor - Extending HTML5 Microdata](http://html5doctor.com/microdata/)

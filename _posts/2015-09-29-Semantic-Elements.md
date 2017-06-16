@@ -56,8 +56,6 @@ Semantic elements interact with things like web crawlers and screen readers, pro
 
 In my next blog post I'll continue my discussion about semantics with class names and various CSS methodologies. Make sure to look for it in a few days!
 
----
-
 ### References
 1. [Dive Into HTML5 - Semantics](http://diveintohtml5.info/semantics.html)
 2. [HTML5 Doctor - Let's Talk about Semantics](http://html5doctor.com/lets-talk-about-semantics/)
