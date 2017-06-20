@@ -23,7 +23,16 @@
 }
 
 .post-list__title {
+  font-size: 1.25rem;
   margin-bottom: .5rem;
+
+  @media #{$medium} {
+    font-size: 1.5rem;
+  }
+
+  @media #{$large} {
+    font-size: 2rem;
+  }
 }
 
 .post-list__date {

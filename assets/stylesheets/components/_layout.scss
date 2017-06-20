@@ -63,7 +63,7 @@ img {
 
 // Homepage
 .home {
-  margin: 2rem auto 0;
+  margin: 0 auto 0;
   text-align: center;
 
   @media #{$large} {
@@ -73,9 +73,14 @@ img {
 
 .home__photo {
   border-radius: $circle;
-  height: 175px;
+  height: 150px;
   margin: 0 auto 1.5rem;
-  width: 175px;
+  width: 150px;
+
+  @media #{$medium} {
+    height: 175px;
+    width: 175px;
+  }
 }
 
 .home__title {
