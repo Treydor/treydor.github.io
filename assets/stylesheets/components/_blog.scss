@@ -71,11 +71,28 @@
 }
 
 [class*=post-footer__item] {
-  float: left;
+
+  @media #{$medium} {
+    display: inline-block;
+    float: left;
+  }
+
+  .button--primary {
+    margin-bottom: .5rem;
+    text-align: center;
+    width: 100%;
+
+    @media #{$medium} {
+      margin-bottom: 0;
+      width: auto;
+    }
+  }
 }
 
 .post-footer__item--next {
-  float: right;
+  @media #{$medium} {
+    float: right;
+  }
 }
 
 // Blog Images
