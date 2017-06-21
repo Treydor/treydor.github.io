@@ -4,9 +4,10 @@
 }
 
 [class*="tag-list__item"] {
-  background: $gray;
+  background: $white;
+  border: 1px solid darken($border-light, 10%);
   border-radius: $border-radius;
-  color: $white;
+  color: darken($border-light, 35%);
   display: inline-block;
   font: $header-font;
   font-size: .65rem;
