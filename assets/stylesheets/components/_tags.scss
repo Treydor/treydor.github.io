@@ -4,8 +4,8 @@
 }
 
 [class*="tag-list__item"] {
-  background: $white;
-  border: 1px solid darken($border-light, 10%);
+  background: lighten($light-gray, 3%);
+  border: 1px solid darken($border-light, 5%);
   border-radius: $border-radius;
   color: darken($border-light, 35%);
   display: inline-block;

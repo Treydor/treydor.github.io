@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Noah Rogers
-title: "Add meaning to your code"
+title: "The importance of semantics"
 date: May 12, 2016
 blog: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Noah Rogers
-title: "Pairing Tour: Day 3"
+title: "8th Light Pairing: Day 3"
 date: April 27, 2016
 blog: true
 ---

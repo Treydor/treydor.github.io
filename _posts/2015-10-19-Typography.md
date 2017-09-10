@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Typography
+title: The absolute basics of Typography
 date: October 19, 2015
 blog: true
 ---

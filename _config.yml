@@ -6,6 +6,15 @@ description: Hello, my name is Noah Rogers, I'm a designer at 8th Light.
 # Build settings
 highlighter: rouge
 markdown: kramdown
+gems:
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+#Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 # Sass settings
 sass:

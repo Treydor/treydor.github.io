@@ -5,40 +5,70 @@
 }
 
 .post-list__item {
-  border-bottom: 1px solid $border-light;
-  text-align: center;
+  margin-bottom: 3rem;
 
-  &:first-of-type {
-    border-top: 1px solid $border-light;
+  &:last-of-type {
+    margin: 0;
   }
 }
 
 .post-list__link {
   display: block;
-  padding: 4rem 0;
   text-decoration: none;
-  transition: transform 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 }
 
 .post-list__title {
-  font-size: 1.25rem;
-  margin-bottom: .5rem;
+  font-size: 1.1rem;
+  font-weight: $bold;
+  margin-bottom: .2rem;
 
   @media #{$medium} {
-    font-size: 1.5rem;
-  }
-
-  @media #{$large} {
-    font-size: 2.25rem;
+    font-size: 1.3rem;
   }
 }
 
 .post-list__date {
   color: $gray;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+
+// Pagination
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+
+  a {
+    font-size: .9rem;
+    padding: .25rem .5rem;
+    text-decoration: none;
+    transition: background .2s ease-in-out;
+
+    @media #{$medium} {
+      font-size: 1rem;
+      padding: .5rem 1rem;
+    }
+
+    &:hover {
+      background: $light-gray;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.pagination__current {
+  background: $red;
+  border-radius: $border-radius;
+  color: $white;
+  font-size: .9rem;
+  font-weight: $bold;
+  padding: .25rem .5rem;
+
+  @media #{$medium} {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
 }
 
 // Post Header
@@ -49,19 +79,20 @@
     background: $border-light;
     border: 0;
     border-radius: $border-radius;
-    height: 1px;
+    height: 2px;
     margin: 0 auto 3rem;
     max-width: 60px;
   }
 }
 
 .post-header__title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: .5rem;
 
   @media #{$large} {
-    font-size: 2.25rem;
-    line-height: 1.3;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    margin-bottom: .75rem;
   }
 }
 
@@ -75,32 +106,21 @@
 .post-footer {
   @extend %clearfix;
   @include clean-list;
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 
-[class*=post-footer__item] {
+[class*="post-footer__item"] {
+  display: inline-block;
+  float: left;
+  font: $header-font;
 
-  @media #{$medium} {
-    display: inline-block;
-    float: left;
-  }
-
-  .button--primary {
-    margin-bottom: .5rem;
-    text-align: center;
-    width: 100%;
-
-    @media #{$medium} {
-      margin-bottom: 0;
-      width: auto;
-    }
+  a {
+    text-decoration: none;
   }
 }
 
 .post-footer__item--next {
-  @media #{$medium} {
-    float: right;
-  }
+  float: right;
 }
 
 // Blog Images

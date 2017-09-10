@@ -2,17 +2,13 @@
 <ul class="post-footer">
   {% if page.previous %}
     <li class="post-footer__item">
-      <a class="button button--primary" href="{{ page.previous.url }}">
-        <span>Previous: {{ page.previous.title }}</span>
-      </a>
+      <a href="{{ page.previous.url }}">&lsaquo; Previous</a>
     </li>
   {% endif %}
 
   {% if page.next %}
     <li class="post-footer__item--next">
-      <a class="button button--primary" href="{{ page.next.url }}">
-        <span>Next: {{ page.next.title }}</span>
-      </a>
+      <a href="{{ page.next.url }}">Next &rsaquo;</a>
     </li>
   {% endif %}
 </ul>

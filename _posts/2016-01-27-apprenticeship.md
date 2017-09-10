@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Noah Rogers
-title: Apprenticeship page
+title: "8th Light's Apprenticeship Page"
 date: January 27, 2016
 blog: true
 ---

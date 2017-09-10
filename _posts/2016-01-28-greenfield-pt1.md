@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Noah Rogers
-title: Greenfield Pt. 1
+title: "The Greenfield Series: Part 1"
 date: January 28, 2016
 blog: true
 ---

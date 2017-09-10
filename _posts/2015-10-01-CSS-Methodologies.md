@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Methodologies
+title: A quick look at a few of the different CSS methodologies
 date: October 1, 2015
 blog: true
 ---

@@ -1,7 +1,6 @@
 // Header
 header {
-  background: $white;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 header .container {
@@ -9,22 +8,26 @@ header .container {
 }
 
 .header__logo {
+  background: url("../images/logo.svg") no-repeat;
+  background-size: cover;
   display: inline-block;
-  color: $black;
-  font: $header-font;
-  line-height: 1.6;
-  text-decoration: none;
+  width: 44px;
+  height: 44px;
 }
 
 .header-navigation {
   @include clean-list;
   float: right;
-  line-height: 1.6;
+  line-height: 44px;
 }
 
 .header-navigation__item {
   float: left;
   margin-left: 1rem;
+
+  @media #{$medium} {
+    margin-left: 1.5rem;
+  }
 
   &:first-of-type {
     margin-left: 0;

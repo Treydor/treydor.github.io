@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animations
+title: Exploring Animations
 date: October 11, 2015
 blog: true
 ---

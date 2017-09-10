@@ -11,10 +11,14 @@ code, pre {
 pre {
   margin: 0;
   margin: 1.5rem 0;
-  padding: 3rem;
+  padding: 1.5rem;
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   word-wrap: break-word;
+
+  @media #{$medium} {
+    padding: 3rem;
+  }
 
   code {
     background: none;
@@ -27,7 +31,7 @@ pre {
 // Syntax Highlighting
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { font-style: italic } /* Comment */
-.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .err { background: #FF0000 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
 .highlight .cm { font-style: italic } /* Comment.Multiline */
 .highlight .c1 { font-style: italic } /* Comment.Single */

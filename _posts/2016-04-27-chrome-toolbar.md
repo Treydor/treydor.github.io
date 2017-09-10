@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Noah Rogers
-title: "theme-color meta tag"
+title: "You can now style Google Chrome's address bar"
 date: April 27, 2016
 blog: true
 ---

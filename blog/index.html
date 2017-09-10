@@ -2,13 +2,38 @@
 layout: default
 title: Blog
 ---
-<ul class="post-list">
-  {% for post in site.posts limit: 50 %}
-    <li class="post-list__item">
-      <a class="post-list__link" href="{{ post.url }}">
-        <h1 class="post-list__title">{{ post.title }}</h1>
-        <span class="post-list__date">{{ post.date | date: "%B %-d, %Y" }}</span>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="container--narrow">
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li class="post-list__item">
+        <a class="post-list__link" href="{{ post.url }}">
+          <h1 class="post-list__title">{{ post.title }}</h1>
+          <div class="post-list__date">{{ post.date | date: "%B %-d, %Y" }}</div>
+          <div>{{ post.content | strip_html | truncatewords:50}}</div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous</a>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="pagination__current">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
