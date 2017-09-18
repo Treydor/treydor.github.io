@@ -13,7 +13,7 @@ exclude:
   - Gemfile.lock
 
 #Pagination
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page:num/"
 
 # Sass settings

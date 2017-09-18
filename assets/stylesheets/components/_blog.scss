@@ -52,14 +52,12 @@
 
     &:hover {
       background: $light-gray;
-      border-radius: $border-radius;
     }
   }
 }
 
 .pagination__current {
   background: $red;
-  border-radius: $border-radius;
   color: $white;
   font-size: .9rem;
   font-weight: $bold;

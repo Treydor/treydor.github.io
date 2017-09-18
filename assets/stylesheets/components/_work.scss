@@ -1,12 +1,12 @@
 // Work List
 .work-list {
   @include clean-list;
-  text-align: center;
 }
 
 .work-list__item {
   background: $white;
   padding: 3rem 0;
+  text-align: center;
 
   @media #{$large} {
     padding: 1rem 0;
@@ -14,6 +14,7 @@
 
   .tag-list {
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   .button--primary {
@@ -37,13 +38,15 @@
 
 // Preview
 .work-list__preview {
-  border-radius: $border-radius;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  border: 1px solid $border-light;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
   max-width: 1000px;
 
   @media #{$large} {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    border: 1px solid $border-light;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
     display: block;
     height: auto;
     margin: 0;
@@ -81,6 +84,7 @@
 .work-list__title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  text-align: center;
 
   @media #{$large} {
     font-size: 1.75rem;
