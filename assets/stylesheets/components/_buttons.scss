@@ -17,4 +17,8 @@
 .button--primary {
   background: $red;
   color: $white;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
