@@ -5,9 +5,8 @@
 }
 
 [class*="project-list__item"] {
+  background: $gray;
   border-radius: $border-radius;
-  background: -webkit-linear-gradient(to right, #F45C43, $red);
-  background: linear-gradient(45deg, #F45C43, $red);
   margin-bottom: 1rem;
   transition: transform .2s ease-in-out;
 
@@ -65,7 +64,7 @@
 // Projects
 .project-list__item--labels {
   background: #f53855;
-  background: linear-gradient(300deg, #f53855, #557bfe);
+  background: linear-gradient(220deg, #f53855, #557bfe);
 }
 
 .project-list__item--typography {
